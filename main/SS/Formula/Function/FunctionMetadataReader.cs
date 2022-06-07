@@ -15,14 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Function
+namespace BetListNPOI.SS.Formula.Function
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.IO;
     using System.Text.RegularExpressions;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.PTG;
     using System.Globalization;
     using System.Text;
 
@@ -34,7 +34,7 @@ namespace NPOI.SS.Formula.Function
     class FunctionMetadataReader
     {
 #if NETSTANDARD2_1 || NETSTANDARD2_0
-        private const String METADATA_FILE_NAME = "NPOI.Resources.functionMetadata.txt";
+        private const String METADATA_FILE_NAME = "BetListNPOI.Resources.functionMetadata.txt";
 #else
         private const String METADATA_FILE_NAME = "functionMetadata.txt";
 #endif

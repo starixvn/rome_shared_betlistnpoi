@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -26,8 +26,8 @@
  * ==============================================================*/
 
 using System.IO;
-using NPOI.POIFS.Common;
-namespace NPOI.POIFS.Storage
+using BetListNPOI.POIFS.Common;
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// Abstract base class of all POIFS block storage classes. All

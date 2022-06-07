@@ -1,5 +1,5 @@
-﻿using NPOI.OpenXml4Net.Util;
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
+﻿using BetListNPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -7,7 +7,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Dml
+namespace BetListNPOI.OpenXmlFormats.Dml
 {
     [Serializable]
     

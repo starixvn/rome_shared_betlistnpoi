@@ -1,4 +1,4 @@
-﻿using NPOI.OpenXmlFormats.Spreadsheet;
+﻿using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace NPOI.XSSF.Util
+namespace BetListNPOI.XSSF.Util
 {
     [Obsolete]
     public class XmlEnumParser<TReturn>

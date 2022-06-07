@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -29,12 +29,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-using NPOI.Util;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.Util.Collections;
+using BetListNPOI.Util;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.Util.Collections;
 
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// This interface defines methods specific to Directory objects

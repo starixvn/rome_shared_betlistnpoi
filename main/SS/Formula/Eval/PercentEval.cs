@@ -15,9 +15,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using NPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.Functions;
     /**
      * Implementation of Excel formula token '%'. <p/>
      * @author Josh Micich

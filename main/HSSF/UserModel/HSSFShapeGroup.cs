@@ -16,10 +16,10 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.DDF;
+    using BetListNPOI.HSSF.Record;
     using System;
     using System.Collections;
     using System.Collections.Generic;

@@ -4,8 +4,8 @@ using System.Text;
 using System.IO;
 using System.Xml;
 using ICSharpCode.SharpZipLib.Zip;
-using NPOI.Util;
-namespace NPOI.OpenXml4Net.OPC.Internal
+using BetListNPOI.Util;
+namespace BetListNPOI.OpenXml4Net.OPC.Internal
 {
 /**
  * Zip implementation of the ContentTypeManager.

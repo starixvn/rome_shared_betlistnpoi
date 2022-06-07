@@ -1,5 +1,5 @@
 ﻿using System;
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
 
 

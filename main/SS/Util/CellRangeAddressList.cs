@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
     public class CellRangeAddressList
     {

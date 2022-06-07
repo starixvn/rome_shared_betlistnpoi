@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Serialization;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.Xml;
 using System.IO;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     [XmlType(Namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main")]
     [XmlRoot("pivotCacheRecords", Namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main", IsNullable = false)]

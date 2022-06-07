@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-using NPOI.HSSF.Record.Chart;
-using NPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record.Chart;
+using BetListNPOI.HSSF.Model;
 using System.Diagnostics;
 
-namespace NPOI.HSSF.Record.Aggregates.Chart
+namespace BetListNPOI.HSSF.Record.Aggregates.Chart
 {
     /// <summary>
     /// DAT = Dat Begin LD End

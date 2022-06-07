@@ -6,10 +6,10 @@ using System.Xml.Serialization;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
-using NPOI.OpenXml4Net.Util;
-using NPOI.OpenXmlFormats.Vml;
+using BetListNPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXmlFormats.Vml;
 
-namespace NPOI.OpenXmlFormats.Dml.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Dml.Spreadsheet
 {
     [Serializable]
     [System.ComponentModel.DesignerCategoryAttribute("code")]

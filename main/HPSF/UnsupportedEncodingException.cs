@@ -17,7 +17,7 @@
 using System;
 using System.IO;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     /**
      * The Character Encoding is not supported.

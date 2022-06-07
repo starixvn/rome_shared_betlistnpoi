@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 using System.Collections.Generic;
-using NPOI.OpenXmlFormats.Dml;
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Dml;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
 using System;
 using System.Text;
-using NPOI.XSSF.Model;
+using BetListNPOI.XSSF.Model;
 using System.Drawing;
-using NPOI.Util;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.Util;
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * Represents a paragraph of text within the Containing text body.

@@ -4,7 +4,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 
-namespace NPOI.OpenXml4Net.OPC
+namespace BetListNPOI.OpenXml4Net.OPC
 {
     public class StreamHelper
     {

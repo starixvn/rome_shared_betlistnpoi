@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     using System;
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
 
 
     /// <summary>
@@ -420,7 +420,7 @@ namespace NPOI.SS.Formula.Atp
         /// <returns></returns>
         private static SimpleDate CreateDate(int dayCount)
         {
-            var dt= NPOI.SS.UserModel.DateUtil.SetCalendar(dayCount, 0, false, false);
+            var dt= BetListNPOI.SS.UserModel.DateUtil.SetCalendar(dayCount, 0, false, false);
             return new SimpleDate(dt);
         }
 

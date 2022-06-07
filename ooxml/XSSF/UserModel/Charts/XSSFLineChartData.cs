@@ -1,12 +1,12 @@
-﻿using NPOI.OpenXmlFormats.Dml;
-using NPOI.OpenXmlFormats.Dml.Chart;
-using NPOI.SS.UserModel.Charts;
+﻿using BetListNPOI.OpenXmlFormats.Dml;
+using BetListNPOI.OpenXmlFormats.Dml.Chart;
+using BetListNPOI.SS.UserModel.Charts;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 
-namespace NPOI.XSSF.UserModel.Charts
+namespace BetListNPOI.XSSF.UserModel.Charts
 {
     /// <summary>
     /// Holds data for a XSSF Line Chart

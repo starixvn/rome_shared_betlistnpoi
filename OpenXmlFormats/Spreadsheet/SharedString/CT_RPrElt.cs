@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     /// <summary>
     /// Properties of Rich Text Run.

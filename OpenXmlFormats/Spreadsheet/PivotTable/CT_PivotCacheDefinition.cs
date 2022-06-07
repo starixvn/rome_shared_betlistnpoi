@@ -4,10 +4,10 @@ using System.Text;
 using System.Xml.Serialization;
 using System.Xml;
 using System.Xml.Schema;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     [XmlType(Namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main")]
     [XmlRoot("pivotCacheDefinition", Namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main", IsNullable = false)]

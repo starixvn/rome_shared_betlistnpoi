@@ -1,10 +1,10 @@
-﻿using NPOI.OpenXml4Net.OPC;
+﻿using BetListNPOI.OpenXml4Net.OPC;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     public class XSSFVBAPart : POIXMLDocumentPart
     {

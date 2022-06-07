@@ -5,7 +5,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats
+namespace BetListNPOI.OpenXmlFormats
 {
     public class ExtendedPropertiesDocument
     {

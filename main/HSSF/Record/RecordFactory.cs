@@ -16,23 +16,23 @@
    limitations Under the License.
 ==================================================================== */
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * POI Version: 3.8 beta4
  * Date: 2012-02-15
  * 
  * ==============================================================*/
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.IO;
     using System.Reflection;
     using System.Collections;
     using System.Collections.Generic;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.HSSF.Record.PivotTable;
-    using NPOI.HSSF.Record.AutoFilter;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record.Chart;
+    using BetListNPOI.HSSF.Record.PivotTable;
+    using BetListNPOI.HSSF.Record.AutoFilter;
+    using BetListNPOI.Util;
     using System.Globalization;
 
     /**

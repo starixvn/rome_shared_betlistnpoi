@@ -22,9 +22,9 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig.Facets
+namespace BetListNPOI.POIFS.Crypt.Dsig.Facets
 {
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System;
     using System.Collections.Generic;
     using System.Security.Cryptography.Xml;

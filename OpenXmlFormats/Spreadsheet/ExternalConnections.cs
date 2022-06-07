@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Xml.Serialization;
 using System.IO;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.Xml;
 
-namespace NPOI.OpenXmlFormats {
+namespace BetListNPOI.OpenXmlFormats {
     
     
 

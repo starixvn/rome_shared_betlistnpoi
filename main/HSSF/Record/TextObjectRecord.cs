@@ -15,22 +15,22 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-    using NPOI.HSSF.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
+    using BetListNPOI.HSSF.UserModel;
 
-    using NPOI.SS.UserModel;
-    using NPOI.HSSF.Record.Cont;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Record.Cont;
+    using BetListNPOI.SS.Formula.PTG;
     using System.Globalization;
 
     public class TextObjectRecord : ContinuableRecord
     {
-        NPOI.SS.UserModel.IRichTextString _text;
+        BetListNPOI.SS.UserModel.IRichTextString _text;
 
         public const short sid = 0x1B6;
 

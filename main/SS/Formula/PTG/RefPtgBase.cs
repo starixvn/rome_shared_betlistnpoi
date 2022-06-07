@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+namespace BetListNPOI.SS.Formula.PTG
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
 
     /**

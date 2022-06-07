@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
 using System;
-using NPOI.OpenXmlFormats.Dml;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.OpenXmlFormats.Dml;
+namespace BetListNPOI.XSSF.UserModel
 {
     public class XSSFChildAnchor : XSSFAnchor
     {

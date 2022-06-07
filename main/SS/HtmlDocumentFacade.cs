@@ -16,7 +16,7 @@
 ==================================================================== */
 
 
-namespace NPOI.SS
+namespace BetListNPOI.SS
 {
     using System.Collections.Generic;
     using System.Text;

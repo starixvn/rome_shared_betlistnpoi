@@ -1,4 +1,4 @@
-﻿using NPOI.OpenXml4Net.Util;
+﻿using BetListNPOI.OpenXml4Net.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     [Serializable]
     [XmlType(Namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main")]

@@ -15,16 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI
+namespace BetListNPOI
 {
     using System;
     using System.IO;
     using System.Collections;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.HPSF;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.HPSF;
     using System.Collections.Generic;
-    using NPOI.POIFS.Crypt;
-    using NPOI.Util;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.Util;
 
 
     /// <summary>

@@ -18,8 +18,8 @@
  */
 
 using System;
-using NPOI.SS.UserModel;
-namespace NPOI.SS.Util
+using BetListNPOI.SS.UserModel;
+namespace BetListNPOI.SS.Util
 {
     /// <summary>
     /// Represents data marker used in charts.

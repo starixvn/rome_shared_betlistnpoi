@@ -17,7 +17,7 @@
 using System.IO;
 using System;
 using System.Collections.Generic;
-namespace NPOI.XSSF.Util
+namespace BetListNPOI.XSSF.Util
 {
 
 

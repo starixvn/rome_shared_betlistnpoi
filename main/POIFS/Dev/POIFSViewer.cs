@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -31,9 +31,9 @@ using System.IO;
 using System.Collections;
 
 
-namespace NPOI.POIFS.Dev
+namespace BetListNPOI.POIFS.Dev
 {
-    using NPOI.POIFS.FileSystem;
+    using BetListNPOI.POIFS.FileSystem;
 
     public class POIFSViewer
     {

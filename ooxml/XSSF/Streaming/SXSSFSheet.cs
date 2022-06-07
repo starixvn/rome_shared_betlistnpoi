@@ -20,13 +20,13 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using NPOI.SS;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.Util;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.SS;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SXSSFSheet : ISheet
     {

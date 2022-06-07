@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.OpenXml4Net.OPC
+namespace BetListNPOI.OpenXml4Net.OPC
 {
     /**
      * Represents the core properties of an OPC package.

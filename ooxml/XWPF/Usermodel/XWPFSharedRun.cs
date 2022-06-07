@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NPOI.OpenXmlFormats.Shared;
-using NPOI.WP.UserModel;
-using NPOI.XWPF.UserModel;
-using W = NPOI.OpenXmlFormats.Wordprocessing;
+using BetListNPOI.OpenXmlFormats.Shared;
+using BetListNPOI.WP.UserModel;
+using BetListNPOI.XWPF.UserModel;
+using W = BetListNPOI.OpenXmlFormats.Wordprocessing;
 
-namespace NPOI.XWPF.Usermodel
+namespace BetListNPOI.XWPF.Usermodel
 {
     public class XWPFSharedRun : ICharacterRun
     {

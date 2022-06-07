@@ -2,17 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using NPOI.OpenXmlFormats.Vml.Wordprocessing;
-using NPOI.OpenXmlFormats.Vml.Office;
-using NPOI.OpenXmlFormats.Vml.Spreadsheet;
-using NPOI.OpenXmlFormats.Vml.Presentation;
+using BetListNPOI.OpenXmlFormats.Vml.Wordprocessing;
+using BetListNPOI.OpenXmlFormats.Vml.Office;
+using BetListNPOI.OpenXmlFormats.Vml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Vml.Presentation;
 using System.IO;
 using System.Xml;
 using System.Text;
 using System.ComponentModel;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 
-namespace NPOI.OpenXmlFormats.Vml
+namespace BetListNPOI.OpenXmlFormats.Vml
 {
     [Serializable]
 
@@ -88,7 +88,7 @@ namespace NPOI.OpenXmlFormats.Vml
             if (node.Attributes["type"] != null)
                 ctObj.type = (ST_FillType)Enum.Parse(typeof(ST_FillType), node.Attributes["type"].Value);
             if (node.Attributes["on"] != null)
-                ctObj.on = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
+                ctObj.on = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
             ctObj.color = XmlHelper.ReadString(node.Attributes["color"]);
             ctObj.opacity = XmlHelper.ReadString(node.Attributes["opacity"]);
             ctObj.color2 = XmlHelper.ReadString(node.Attributes["color2"]);
@@ -102,16 +102,16 @@ namespace NPOI.OpenXmlFormats.Vml
             if (node.Attributes["angle"] != null)
                 ctObj.angle = XmlHelper.ReadDecimal(node.Attributes["angle"]);
             if (node.Attributes["alignshape"] != null)
-                    ctObj.alignshape = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["alignshape"]);
+                    ctObj.alignshape = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["alignshape"]);
             ctObj.focus = XmlHelper.ReadString(node.Attributes["focus"]);
             ctObj.focussize = XmlHelper.ReadString(node.Attributes["focussize"]);
             ctObj.focusposition = XmlHelper.ReadString(node.Attributes["focusposition"]);
             if (node.Attributes["method"] != null)
                 ctObj.method = (ST_FillMethod)Enum.Parse(typeof(ST_FillMethod), node.Attributes["method"].Value);
             if (node.Attributes["recolor"] != null)
-                ctObj.recolor = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["recolor"]);
+                ctObj.recolor = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["recolor"]);
             if (node.Attributes["rotate"] != null)
-                ctObj.rotate = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["rotate"]);
+                ctObj.rotate = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["rotate"]);
             return ctObj;
         }
 
@@ -122,7 +122,7 @@ namespace NPOI.OpenXmlFormats.Vml
             sw.Write(string.Format("<v:{0}", nodeName));
             XmlHelper.WriteAttribute(sw, "id", this.id);
             XmlHelper.WriteAttribute(sw, "type", this.type.ToString());
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
             XmlHelper.WriteAttribute(sw, "color", this.color);
             XmlHelper.WriteAttribute(sw, "opacity", this.opacity);
             XmlHelper.WriteAttribute(sw, "color2", this.color2);
@@ -133,13 +133,13 @@ namespace NPOI.OpenXmlFormats.Vml
             XmlHelper.WriteAttribute(sw, "aspect", this.aspect.ToString());
             XmlHelper.WriteAttribute(sw, "colors", this.colors);
             XmlHelper.WriteAttribute(sw, "angle", (double)this.angle);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "alignshape", this.alignshape);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "alignshape", this.alignshape);
             XmlHelper.WriteAttribute(sw, "focus", this.focus);
             XmlHelper.WriteAttribute(sw, "focussize", this.focussize);
             XmlHelper.WriteAttribute(sw, "focusposition", this.focusposition);
             XmlHelper.WriteAttribute(sw, "method", this.method.ToString());
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "recolor", this.recolor);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "rotate", this.rotate);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "recolor", this.recolor);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "rotate", this.rotate);
             sw.Write(">");
             sw.Write(string.Format("</v:{0}>", nodeName));
         }
@@ -641,7 +641,7 @@ namespace NPOI.OpenXmlFormats.Vml
             CT_Shape ctObj = new CT_Shape();
             ctObj.wrapcoords = XmlHelper.ReadString(node.Attributes["wrapcoords"]);
             if (node.Attributes["stroked"] != null)
-                ctObj.stroked = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["stroked"]);
+                ctObj.stroked = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["stroked"]);
             ctObj.spid = XmlHelper.ReadString(node.Attributes["o:spid"]);
             ctObj.id = XmlHelper.ReadString(node.Attributes["id"]);
             ctObj.fillcolor = XmlHelper.ReadString(node.Attributes["fillcolor"]);
@@ -706,7 +706,7 @@ namespace NPOI.OpenXmlFormats.Vml
             XmlHelper.WriteAttribute(sw, "type", this.type);
             XmlHelper.WriteAttribute(sw, "style", this.style);
             XmlHelper.WriteAttribute(sw, "fillcolor", this.fillcolor);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "stroked", this.stroked);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "stroked", this.stroked);
             XmlHelper.WriteAttribute(sw, "wrapcoords", this.wrapcoords);
             XmlHelper.WriteAttribute(sw, "o:insetmode", this.insetmode.ToString());
             XmlHelper.WriteAttribute(sw, "adj", this.adj);
@@ -1426,11 +1426,11 @@ namespace NPOI.OpenXmlFormats.Vml
             ctObj.polar = XmlHelper.ReadString(node.Attributes["polar"]);
             ctObj.map = XmlHelper.ReadString(node.Attributes["map"]);
             if (node.Attributes["invx"] != null)
-                ctObj.invx = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["invx"]);
+                ctObj.invx = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["invx"]);
             if (node.Attributes["invy"] != null)
-                ctObj.invy = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["invy"]);
+                ctObj.invy = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["invy"]);
             if (node.Attributes["switch"] != null)
-                ctObj.@switch = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalseBlank(node.Attributes["switch"]);
+                ctObj.@switch = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalseBlank(node.Attributes["switch"]);
             ctObj.xrange = XmlHelper.ReadString(node.Attributes["xrange"]);
             ctObj.yrange = XmlHelper.ReadString(node.Attributes["yrange"]);
             ctObj.radiusrange = XmlHelper.ReadString(node.Attributes["radiusrange"]);
@@ -1445,9 +1445,9 @@ namespace NPOI.OpenXmlFormats.Vml
             XmlHelper.WriteAttribute(sw, "position", this.position);
             XmlHelper.WriteAttribute(sw, "polar", this.polar);
             XmlHelper.WriteAttribute(sw, "map", this.map);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "invx", this.invx);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "invy", this.invy);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "switch", this.@switch);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "invx", this.invx);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "invy", this.invy);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "switch", this.@switch);
             XmlHelper.WriteAttribute(sw, "xrange", this.xrange);
             XmlHelper.WriteAttribute(sw, "yrange", this.yrange);
             XmlHelper.WriteAttribute(sw, "radiusrange", this.radiusrange);
@@ -1522,9 +1522,9 @@ namespace NPOI.OpenXmlFormats.Vml
             ctObj.blacklevel = XmlHelper.ReadString(node.Attributes["blacklevel"]);
             ctObj.gamma = XmlHelper.ReadString(node.Attributes["gamma"]);
             if (node.Attributes["grayscale"] != null)
-                ctObj.grayscale = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["grayscale"]);
+                ctObj.grayscale = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["grayscale"]);
             if (node.Attributes["bilevel"] != null)
-                ctObj.bilevel = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["bilevel"]);
+                ctObj.bilevel = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["bilevel"]);
             ctObj.chromakey = XmlHelper.ReadString(node.Attributes["chromakey"]);
             ctObj.embosscolor = XmlHelper.ReadString(node.Attributes["embosscolor"]);
             ctObj.recolortarget = XmlHelper.ReadString(node.Attributes["recolortarget"]);
@@ -1551,8 +1551,8 @@ namespace NPOI.OpenXmlFormats.Vml
             XmlHelper.WriteAttribute(sw, "gain", this.gain);
             XmlHelper.WriteAttribute(sw, "blacklevel", this.blacklevel);
             XmlHelper.WriteAttribute(sw, "gamma", this.gamma);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "grayscale", this.grayscale);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "bilevel", this.bilevel);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "grayscale", this.grayscale);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "bilevel", this.bilevel);
             XmlHelper.WriteAttribute(sw, "chromakey", this.chromakey);
             XmlHelper.WriteAttribute(sw, "embosscolor", this.embosscolor);
             XmlHelper.WriteAttribute(sw, "recolortarget", this.recolortarget);
@@ -2162,23 +2162,23 @@ namespace NPOI.OpenXmlFormats.Vml
             ctObj.limo = XmlHelper.ReadString(node.Attributes["limo"]);
             ctObj.textboxrect = XmlHelper.ReadString(node.Attributes["textboxrect"]);
             if (node.Attributes["fillok"] != null)
-                ctObj.fillok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["fillok"]);
+                ctObj.fillok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["fillok"]);
             if (node.Attributes["strokeok"] != null)
-                ctObj.strokeok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["strokeok"]);
+                ctObj.strokeok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["strokeok"]);
             if (node.Attributes["shadowok"] != null)
-                ctObj.shadowok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["shadowok"]);
+                ctObj.shadowok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["shadowok"]);
             if (node.Attributes["arrowok"] != null)
-                ctObj.arrowok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["arrowok"]);
+                ctObj.arrowok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["arrowok"]);
             if (node.Attributes["gradientshapeok"] != null)
-                ctObj.gradientshapeok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["gradientshapeok"]);
+                ctObj.gradientshapeok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["gradientshapeok"]);
             if (node.Attributes["textpathok"] != null)
-                ctObj.textpathok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["textpathok"]);
+                ctObj.textpathok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["textpathok"]);
             if (node.Attributes["insetpenok"] != null)
-                ctObj.insetpenok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["insetpenok"]);
+                ctObj.insetpenok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["insetpenok"]);
             ctObj.connectlocs = XmlHelper.ReadString(node.Attributes["connectlocs"]);
             ctObj.connectangles = XmlHelper.ReadString(node.Attributes["connectangles"]);
             if (node.Attributes["o:extrusionok"] != null)
-                ctObj.extrusionok = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["o:extrusionok"]);
+                ctObj.extrusionok = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["o:extrusionok"]);
             return ctObj;
         }
 
@@ -2192,16 +2192,16 @@ namespace NPOI.OpenXmlFormats.Vml
             XmlHelper.WriteAttribute(sw, "v", this.v);
             XmlHelper.WriteAttribute(sw, "limo", this.limo);
             XmlHelper.WriteAttribute(sw, "textboxrect", this.textboxrect);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "fillok", this.fillok);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "strokeok", this.strokeok);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "shadowok", this.shadowok);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "arrowok", this.arrowok);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "gradientshapeok", this.gradientshapeok);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "textpathok", this.textpathok);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "insetpenok", this.insetpenok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "fillok", this.fillok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "strokeok", this.strokeok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "shadowok", this.shadowok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "arrowok", this.arrowok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "gradientshapeok", this.gradientshapeok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "textpathok", this.textpathok);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "insetpenok", this.insetpenok);
             XmlHelper.WriteAttribute(sw, "connectlocs", this.connectlocs);
             XmlHelper.WriteAttribute(sw, "connectangles", this.connectangles);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "o:extrusionok", this.extrusionok, false);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "o:extrusionok", this.extrusionok, false);
             sw.Write(">");
             sw.Write(string.Format("</v:{0}>", nodeName));
         }
@@ -2250,11 +2250,11 @@ namespace NPOI.OpenXmlFormats.Vml
             CT_Shadow ctObj = new CT_Shadow();
             ctObj.id = XmlHelper.ReadString(node.Attributes["id"]);
             if (node.Attributes["on"] != null)
-                ctObj.on = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
+                ctObj.on = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
             if (node.Attributes["type"] != null)
                 ctObj.type = (ST_ShadowType)Enum.Parse(typeof(ST_ShadowType), node.Attributes["type"].Value);
             if (node.Attributes["obscured"] != null)
-                ctObj.obscured = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["obscured"]);
+                ctObj.obscured = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["obscured"]);
             ctObj.color = XmlHelper.ReadString(node.Attributes["color"]);
             ctObj.opacity = XmlHelper.ReadString(node.Attributes["opacity"]);
             ctObj.offset = XmlHelper.ReadString(node.Attributes["offset"]);
@@ -2271,9 +2271,9 @@ namespace NPOI.OpenXmlFormats.Vml
         {
             sw.Write(string.Format("<v:{0}", nodeName));
             XmlHelper.WriteAttribute(sw, "id", this.id);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
             XmlHelper.WriteAttribute(sw, "type", this.type.ToString());
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "obscured", this.obscured);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "obscured", this.obscured);
             XmlHelper.WriteAttribute(sw, "color", this.color);
             XmlHelper.WriteAttribute(sw, "opacity", this.opacity);
             XmlHelper.WriteAttribute(sw, "offset", this.offset);
@@ -2553,7 +2553,7 @@ namespace NPOI.OpenXmlFormats.Vml
             CT_Stroke ctObj = new CT_Stroke();
             ctObj.id = XmlHelper.ReadString(node.Attributes["id"]);
             if (node.Attributes["on"] != null)
-                ctObj.on = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
+                ctObj.on = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
             ctObj.weight = XmlHelper.ReadString(node.Attributes["weight"]);
             ctObj.color = XmlHelper.ReadString(node.Attributes["color"]);
             ctObj.opacity = XmlHelper.ReadString(node.Attributes["opacity"]);
@@ -2617,7 +2617,7 @@ namespace NPOI.OpenXmlFormats.Vml
             ctObj.imagesize = XmlHelper.ReadString(node.Attributes["imagesize"]);
             if (node.Attributes["imagealignshape"] != null)
             {
-                ctObj.imagealignshape = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["imagealignshape"]);
+                ctObj.imagealignshape = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["imagealignshape"]);
                 ctObj.imagealignshapeSpecified = true;
             }
             else
@@ -2680,7 +2680,7 @@ namespace NPOI.OpenXmlFormats.Vml
                 ctObj.endarrowlengthFieldSpecified = false;
             }
             if (node.Attributes["insetpen"] != null)
-                ctObj.insetpen = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["insetpen"]);
+                ctObj.insetpen = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["insetpen"]);
             return ctObj;
         }
 
@@ -2690,7 +2690,7 @@ namespace NPOI.OpenXmlFormats.Vml
         {
             sw.Write(string.Format("<v:{0}", nodeName));
             XmlHelper.WriteAttribute(sw, "id", this.id);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
             XmlHelper.WriteAttribute(sw, "weight", this.weight);
             XmlHelper.WriteAttribute(sw, "color", this.color);
             XmlHelper.WriteAttribute(sw, "opacity", this.opacity);
@@ -2710,7 +2710,7 @@ namespace NPOI.OpenXmlFormats.Vml
                 XmlHelper.WriteAttribute(sw, "imageaspect", this.imageaspect.ToString());
             XmlHelper.WriteAttribute(sw, "imagesize", this.imagesize);
             if(imagealignshapeFieldSpecified)
-                NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "imagealignshape", this.imagealignshape);
+                BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "imagealignshape", this.imagealignshape);
             XmlHelper.WriteAttribute(sw, "color2", this.color2);
             if(startarrowSpecified)
                 XmlHelper.WriteAttribute(sw, "startarrow", this.startarrow.ToString());
@@ -2724,7 +2724,7 @@ namespace NPOI.OpenXmlFormats.Vml
                 XmlHelper.WriteAttribute(sw, "endarrowwidth", this.endarrowwidth.ToString());
             if(endarrowlengthFieldSpecified)
                 XmlHelper.WriteAttribute(sw, "endarrowlength", this.endarrowlength.ToString());
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "insetpen", this.insetpen);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "insetpen", this.insetpen);
             sw.Write("/>");
         }
 
@@ -3402,15 +3402,15 @@ namespace NPOI.OpenXmlFormats.Vml
             ctObj.id = XmlHelper.ReadString(node.Attributes["id"]);
             ctObj.style = XmlHelper.ReadString(node.Attributes["style"]);
             if (node.Attributes["on"] != null)
-                ctObj.on = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
+                ctObj.on = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["on"]);
             if (node.Attributes["fitshape"] != null)
-                ctObj.fitshape = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["fitshape"]);
+                ctObj.fitshape = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["fitshape"]);
             if (node.Attributes["fitpath"] != null)
-                ctObj.fitpath = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["fitpath"]);
+                ctObj.fitpath = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["fitpath"]);
             if (node.Attributes["trim"] != null)
-                ctObj.trim = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["trim"]);
+                ctObj.trim = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["trim"]);
             if (node.Attributes["xscale"] != null)
-                ctObj.xscale = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["xscale"]);
+                ctObj.xscale = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["xscale"]);
             ctObj.@string = XmlHelper.ReadString(node.Attributes["string"]);
             return ctObj;
         }
@@ -3422,11 +3422,11 @@ namespace NPOI.OpenXmlFormats.Vml
             sw.Write(string.Format("<v:{0}", nodeName));
             XmlHelper.WriteAttribute(sw, "id", this.id);
             XmlHelper.WriteAttribute(sw, "style", this.style);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "fitshape", this.fitshape);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "fitpath", this.fitpath);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "trim", this.trim);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "xscale", this.xscale);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "on", this.on);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "fitshape", this.fitshape);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "fitpath", this.fitpath);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "trim", this.trim);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "xscale", this.xscale);
             XmlHelper.WriteAttribute(sw, "string", this.@string);
             sw.Write(">");
             sw.Write(string.Format("</v:{0}>", nodeName));
@@ -3713,11 +3713,11 @@ namespace NPOI.OpenXmlFormats.Vml
                 return null;
             CT_Shapetype ctObj = new CT_Shapetype();
             if (node.Attributes["stroked"] != null)
-                ctObj.stroked = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["stroked"]);
+                ctObj.stroked = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["stroked"]);
             if (node.Attributes["filled"] != null)
-                ctObj.filled = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["filled"]);
+                ctObj.filled = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["filled"]);
             if (node.Attributes["o:preferrelative"] != null)
-                ctObj.preferrelative = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["o:preferrelative"]);
+                ctObj.preferrelative = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse2(node.Attributes["o:preferrelative"]);
             ctObj.coordsize = XmlHelper.ReadString(node.Attributes["coordsize"]);
             if (node.Attributes["o:spt"] != null)
                 ctObj.id = XmlHelper.ReadString(node.Attributes["o:spt"]);
@@ -3785,9 +3785,9 @@ namespace NPOI.OpenXmlFormats.Vml
         public void Write(StreamWriter sw, string nodeName)
         {
             sw.Write(string.Format("<v:{0}", nodeName));
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "stroked", this.stroked, true);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "filled", this.filled, true);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "o:preferrelative", this.preferrelative);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "stroked", this.stroked, true);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "filled", this.filled, true);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "o:preferrelative", this.preferrelative);
             XmlHelper.WriteAttribute(sw, "coordsize", this.coordsize);
             XmlHelper.WriteAttribute(sw, "o:spt", this.spt);
             XmlHelper.WriteAttribute(sw, "id", this.id);

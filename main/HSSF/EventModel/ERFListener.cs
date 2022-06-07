@@ -15,9 +15,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventModel
+namespace BetListNPOI.HSSF.EventModel
 {
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
     /**
      * An ERFListener Is registered with the EventRecordFactory.

@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System.Diagnostics;
     public class SysIndexSource
     {
@@ -312,7 +312,7 @@ namespace NPOI.DDF
         /**
          * @return index of the scheme color or -1 if {@link #hasSchemeIndexFlag()} is {@code false}
          * 
-         * @see NPOI.HSLF.Record.ColorSchemeAtom#getColor(int)
+         * @see BetListNPOI.HSLF.Record.ColorSchemeAtom#getColor(int)
          */
         public int GetSchemeIndex()
         {

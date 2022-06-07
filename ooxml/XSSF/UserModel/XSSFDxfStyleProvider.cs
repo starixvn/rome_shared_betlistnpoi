@@ -1,11 +1,11 @@
-﻿using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
+﻿using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.UserModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.OOXML.XSSF.UserModel
+namespace BetListNPOI.OOXML.XSSF.UserModel
 {
     public class XSSFDxfStyleProvider : DifferentialStyleProvider
     {

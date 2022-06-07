@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     using System;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.IO;
     using System.Xml;
-    using NPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
 
 
     public class XSSFPivotCacheRecords : POIXMLDocumentPart

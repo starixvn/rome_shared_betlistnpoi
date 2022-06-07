@@ -14,14 +14,14 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
 
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS.Util;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.Aggregates;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.SS.UserModel;
 
     /// <summary>
     /// HSSFConditionalFormatting class encapsulates all Settings of Conditional Formatting.

@@ -16,21 +16,21 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Model
+namespace BetListNPOI.HSSF.Model
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Util;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.DDF;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Util;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.UserModel;
     using System.Security;
-    using NPOI.POIFS.Crypt;
-    using NPOI.Util;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.Util;
 
 
     /**
@@ -1329,7 +1329,7 @@ namespace NPOI.HSSF.Model
         private static Record CreateWriteAccess()
         {
             WriteAccessRecord retval = new WriteAccessRecord();
-            String defaultUserName = "NPOI";
+            String defaultUserName = "BetListNPOI";
             try
             {
                 String username = (Environment.UserName);

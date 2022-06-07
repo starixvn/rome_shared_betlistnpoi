@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
-    using NPOI.SS.Formula;
-    using NPOI.Util;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.Util;
 
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.SS.Formula.PTG;
 
     /**
      * Encapsulates an encoded formula token array. 

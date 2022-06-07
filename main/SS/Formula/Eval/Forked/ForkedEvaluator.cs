@@ -17,19 +17,19 @@
 
 using System;
 using System.Reflection;
-using NPOI.HSSF.UserModel;
-using NPOI.SS.Formula;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.Formula.UDF;
-using NPOI.SS.UserModel;
-namespace NPOI.SS.Formula.Eval.Forked
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.UDF;
+using BetListNPOI.SS.UserModel;
+namespace BetListNPOI.SS.Formula.Eval.Forked
 {
 
 
     /**
      * An alternative workbook Evaluator that saves memory in situations where a single workbook is
      * concurrently and independently Evaluated many times.  With standard formula Evaluation, around
-     * 90% of memory consumption is due to loading of the {@link HSSFWorkbook} or {@link NPOI.xssf.usermodel.XSSFWorkbook}.
+     * 90% of memory consumption is due to loading of the {@link HSSFWorkbook} or {@link BetListNPOI.xssf.usermodel.XSSFWorkbook}.
      * This class enables a 'master workbook' to be loaded just once and shared between many Evaluation
      * clients.  Each Evaluation client Creates its own {@link ForkedEvaluator} and can Set cell values
      * that will be used for local Evaluations (and don't disturb Evaluations on other Evaluators).
@@ -58,8 +58,8 @@ namespace NPOI.SS.Formula.Eval.Forked
                 try
                 {
                     // TODO: check if this is Java 9 compatible ...
-                    Type evalWB = Type.GetType("NPOI.XSSF.UserModel.XSSFEvaluationWorkbook");
-                    Type xssfWB = Type.GetType("NPOI.XSSF.UserMode.XSSFWorkbook");
+                    Type evalWB = Type.GetType("BetListNPOI.XSSF.UserModel.XSSFEvaluationWorkbook");
+                    Type xssfWB = Type.GetType("BetListNPOI.XSSF.UserMode.XSSFWorkbook");
                     MethodInfo createM = evalWB.GetMethod("create", new Type[] { xssfWB });
                     return (IEvaluationWorkbook)createM.Invoke(null, new object[] { wb });
                 }

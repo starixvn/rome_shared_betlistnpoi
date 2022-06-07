@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 
-namespace NPOI.XSSF.Util
+namespace BetListNPOI.XSSF.Util
 {
     public class CTColComparator:Comparer<CT_Col>
     {

@@ -22,7 +22,7 @@
  *
  * Created on October 2, 2001, 8:27 PM
  */
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
 
     /**

@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
 
     /**
      * Default Paragraph style, from which other styles will override

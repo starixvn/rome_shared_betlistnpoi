@@ -14,14 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
     using System.Drawing;
     using System.IO;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
 
     /**
      * @author Yegor Kozlov
@@ -54,8 +54,8 @@ namespace NPOI.SS.Util
          * Return the dimension of this image
          *
          * @param is the stream Containing the image data
-         * @param type type of the picture: {@link NPOI.SS.UserModel.Workbook#PICTURE_TYPE_JPEG},
-         * {@link NPOI.SS.UserModel.Workbook#PICTURE_TYPE_PNG} or {@link NPOI.SS.UserModel.Workbook#PICTURE_TYPE_DIB}
+         * @param type type of the picture: {@link BetListNPOI.SS.UserModel.Workbook#PICTURE_TYPE_JPEG},
+         * {@link BetListNPOI.SS.UserModel.Workbook#PICTURE_TYPE_PNG} or {@link BetListNPOI.SS.UserModel.Workbook#PICTURE_TYPE_DIB}
          *
          * @return image dimension in pixels
          */

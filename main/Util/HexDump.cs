@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -31,7 +31,7 @@ using System.IO;
 using System.Globalization;
 
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// dump data in hexadecimal format; derived from a HexDump utility I

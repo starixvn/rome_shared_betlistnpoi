@@ -17,7 +17,7 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /**
      * High level representation for Font Formatting component

@@ -15,15 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
 
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.HSSF.Record.Common;
-    using NPOI.SS.UserModel;
-    using ExtendedColorR = NPOI.HSSF.Record.Common.ExtendedColor;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.CF;
+    using BetListNPOI.HSSF.Record.Common;
+    using BetListNPOI.SS.UserModel;
+    using ExtendedColorR = BetListNPOI.HSSF.Record.Common.ExtendedColor;
     /**
      * High level representation for Color Scale / Color Gradient 
      *  Formatting component of Conditional Formatting Settings

@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.UDF
+namespace BetListNPOI.SS.Formula.UDF
 {
 
     using System;
     using System.Collections.Generic;
-    using NPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.Functions;
 
     /**
      * Default UDF Finder - for Adding your own user defined functions.

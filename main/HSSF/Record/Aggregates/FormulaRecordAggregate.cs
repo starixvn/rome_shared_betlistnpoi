@@ -16,15 +16,15 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Aggregates
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
 
     using System;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.Util;
+    using BetListNPOI.SS.UserModel;
 
     /// <summary>
     /// The formula record aggregate is used to join toGether the formula record and it's
@@ -423,7 +423,7 @@ namespace NPOI.HSSF.Record.Aggregates
         public void SetArrayFormula(CellRangeAddress r, Ptg[] ptgs)
         {
 
-            ArrayRecord arr = new ArrayRecord(NPOI.SS.Formula.Formula.Create(ptgs), new CellRangeAddress8Bit(r.FirstRow, r.LastRow, r.FirstColumn, r.LastColumn));
+            ArrayRecord arr = new ArrayRecord(BetListNPOI.SS.Formula.Formula.Create(ptgs), new CellRangeAddress8Bit(r.FirstRow, r.LastRow, r.FirstColumn, r.LastColumn));
             _sharedValueManager.AddArrayRecord(arr);
         }
         /**

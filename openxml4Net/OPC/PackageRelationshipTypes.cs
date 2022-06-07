@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.OpenXml4Net.OPC
+namespace BetListNPOI.OpenXml4Net.OPC
 {
     /**
      * Relationship types.

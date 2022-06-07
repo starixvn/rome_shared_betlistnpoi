@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt.Agile
+namespace BetListNPOI.POIFS.Crypt.Agile
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Text;
-    using NPOI.OpenXmlFormats.Encryption;
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
+    using BetListNPOI.OpenXmlFormats.Encryption;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.Util;
 
     public class AgileEncryptor : Encryptor {
         private AgileEncryptionInfoBuilder builder;

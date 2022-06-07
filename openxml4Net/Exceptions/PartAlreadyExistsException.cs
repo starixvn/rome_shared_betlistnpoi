@@ -18,7 +18,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.OpenXml4Net.Exceptions
+namespace BetListNPOI.OpenXml4Net.Exceptions
 {
     public class PartAlreadyExistsException : InvalidOperationException
     {

@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel.DummyRecord
+namespace BetListNPOI.HSSF.EventUserModel.DummyRecord
 {
 
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
 
     /**
      */

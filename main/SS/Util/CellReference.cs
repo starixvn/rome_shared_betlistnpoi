@@ -17,13 +17,13 @@
 
 
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
     using System.Text;
     using System.Text.RegularExpressions;
-    using NPOI.SS.Formula;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.UserModel;
     using System.Globalization;
 
     public enum NameType:int

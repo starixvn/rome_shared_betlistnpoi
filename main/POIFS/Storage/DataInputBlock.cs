@@ -16,7 +16,7 @@
 ==================================================================== */
 
 using System;
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
 
     /**

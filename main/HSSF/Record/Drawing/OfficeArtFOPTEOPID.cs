@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.HSSF.Record.Drawing
+namespace BetListNPOI.HSSF.Record.Drawing
 {
     /// <summary>
     /// specifies the header for an entry in a property table

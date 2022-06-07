@@ -18,7 +18,7 @@
  * Created on May 6, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     using System;
 

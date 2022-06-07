@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Common
+namespace BetListNPOI.HSSF.Record.Common
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
 
     /**
      * FeatFormulaErr2 (Formula Evaluation Shared Feature) common record part

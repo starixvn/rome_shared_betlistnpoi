@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
 
     using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
 
     /**
      * This class performs 'operand class' transformation. Non-base Tokens are classified into three 

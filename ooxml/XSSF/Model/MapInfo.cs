@@ -18,13 +18,13 @@
 using System.Xml;
 using System.Collections.Generic;
 using System.IO;
-using NPOI.OpenXmlFormats;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System;
-using NPOI.XSSF.UserModel;
-using NPOI.Util;
-namespace NPOI.XSSF.Model
+using BetListNPOI.XSSF.UserModel;
+using BetListNPOI.Util;
+namespace BetListNPOI.XSSF.Model
 {
 
 
@@ -115,11 +115,11 @@ namespace NPOI.XSSF.Model
          * @param schemaId the schema ID
          * @return CTSchema by it's ID
          */
-        public NPOI.OpenXmlFormats.Spreadsheet.CT_Schema GetCTSchemaById(String schemaId)
+        public BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Schema GetCTSchemaById(String schemaId)
         {
-            NPOI.OpenXmlFormats.Spreadsheet.CT_Schema xmlSchema = null;
+            BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Schema xmlSchema = null;
 
-            foreach (NPOI.OpenXmlFormats.Spreadsheet.CT_Schema schema in mapInfo.Schema)
+            foreach (BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Schema schema in mapInfo.Schema)
             {
                 if (schema.ID.Equals(schemaId))
                 {

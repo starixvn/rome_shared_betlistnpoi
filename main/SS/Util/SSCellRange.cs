@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
 
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System.Collections.Generic;
     using System.Globalization;
 

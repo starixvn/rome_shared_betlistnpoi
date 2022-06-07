@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
-    using NPOI.Util;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.Util;
+    using BetListNPOI.HSSF.Record;
 
     public class CellRangeAddress8Bit : CellRangeAddressBase
     {

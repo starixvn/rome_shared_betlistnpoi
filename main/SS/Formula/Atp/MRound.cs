@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.Eval;
     using System;
 
 

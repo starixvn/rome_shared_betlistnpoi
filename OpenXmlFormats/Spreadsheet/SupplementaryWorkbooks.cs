@@ -3,12 +3,12 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Serialization;
 using System.Collections.Generic;
-using NPOI.OpenXmlFormats.Spreadsheet.Document;
+using BetListNPOI.OpenXmlFormats.Spreadsheet.Document;
 using System.Xml;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     public enum ExternalLinkItem : int
     {

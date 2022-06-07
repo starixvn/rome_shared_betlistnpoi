@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using System.Text;
 using System.Xml.Serialization;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 using System.Xml;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     /// <summary>
     /// Rich Text Run container.

@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
     using System;
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
 
     /**
      * Optional Extension to the likes of {@link AreaEval} and 
-     *  {@link NPOI.SS.Formula.Eval.AreaEvalBase},
+     *  {@link BetListNPOI.SS.Formula.Eval.AreaEvalBase},
      *  which allows for looking up 3D (sheet+row+column) Evaluations
      */
     public interface ThreeDEval : TwoDEval, ISheetRange

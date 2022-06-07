@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
+    using BetListNPOI.DDF;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
 
 
     /// <summary>

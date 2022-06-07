@@ -16,8 +16,8 @@
 ==================================================================== */
 using System;
 using System.Collections.Generic;
-using NPOI.SS.UserModel;
-namespace NPOI.SS.Formula.Atp
+using BetListNPOI.SS.UserModel;
+namespace BetListNPOI.SS.Formula.Atp
 {
     /**
      * A calculator for workdays, considering dates as excel representations.

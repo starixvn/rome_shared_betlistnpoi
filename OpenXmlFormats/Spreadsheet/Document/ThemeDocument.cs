@@ -1,10 +1,10 @@
 ﻿using System.IO;
 using System.Xml.Serialization;
-using NPOI.OpenXmlFormats.Dml;
+using BetListNPOI.OpenXmlFormats.Dml;
 using System.Diagnostics;
 using System;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     public class ThemeDocument
     {

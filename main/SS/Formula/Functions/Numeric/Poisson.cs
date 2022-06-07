@@ -1,6 +1,6 @@
-﻿namespace NPOI.SS.Formula.Functions
+﻿namespace BetListNPOI.SS.Formula.Functions
 {
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
     using System;
 
     public class Poisson : Fixed3ArgFunction

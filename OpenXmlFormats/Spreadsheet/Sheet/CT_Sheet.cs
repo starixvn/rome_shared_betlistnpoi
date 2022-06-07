@@ -1,5 +1,5 @@
-﻿using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXml4Net.Util;
+﻿using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXml4Net.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     [Serializable]
     [System.ComponentModel.DesignerCategory("code")]

@@ -22,21 +22,21 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Xml;
-using NPOI.HSSF.Record;
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXmlFormats;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS;
-using NPOI.SS.Formula;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.Util;
-using NPOI.XSSF.Model;
-using NPOI.XSSF.UserModel.Helpers;
-using NPOI.POIFS.Crypt;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXmlFormats;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.POIFS.Crypt;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * High level representation of a SpreadsheetML worksheet.
@@ -80,7 +80,7 @@ namespace NPOI.XSSF.UserModel
         /**
          * Creates new XSSFSheet   - called by XSSFWorkbook to create a sheet from scratch.
          *
-         * @see NPOI.XSSF.usermodel.XSSFWorkbook#CreateSheet()
+         * @see BetListNPOI.XSSF.usermodel.XSSFWorkbook#CreateSheet()
          */
         public XSSFSheet()
             : base()
@@ -580,7 +580,7 @@ namespace NPOI.XSSF.UserModel
         internal XSSFVMLDrawing GetVMLDrawing(bool autoCreate)
         {
             XSSFVMLDrawing drawing = null;
-            NPOI.OpenXmlFormats.Spreadsheet.CT_LegacyDrawing ctDrawing = GetCTLegacyDrawing();
+            BetListNPOI.OpenXmlFormats.Spreadsheet.CT_LegacyDrawing ctDrawing = GetCTLegacyDrawing();
             if (ctDrawing == null)
             {
                 if (autoCreate)
@@ -742,7 +742,7 @@ namespace NPOI.XSSF.UserModel
          *
          * @param rownum  row number
          * @return High level {@link XSSFRow} object representing a row in the sheet
-         * @see #RemoveRow(NPOI.SS.usermodel.Row)
+         * @see #RemoveRow(BetListNPOI.SS.usermodel.Row)
          */
         public virtual IRow CreateRow(int rownum)
         {
@@ -791,10 +791,10 @@ namespace NPOI.XSSF.UserModel
          * @param leftmostColumn   Left column visible in right pane.
          * @param activePane    Active pane.  One of: PANE_LOWER_RIGHT,
          *                      PANE_UPPER_RIGHT, PANE_LOWER_LEFT, PANE_UPPER_LEFT
-         * @see NPOI.SS.usermodel.Sheet#PANE_LOWER_LEFT
-         * @see NPOI.SS.usermodel.Sheet#PANE_LOWER_RIGHT
-         * @see NPOI.SS.usermodel.Sheet#PANE_UPPER_LEFT
-         * @see NPOI.SS.usermodel.Sheet#PANE_UPPER_RIGHT
+         * @see BetListNPOI.SS.usermodel.Sheet#PANE_LOWER_LEFT
+         * @see BetListNPOI.SS.usermodel.Sheet#PANE_LOWER_RIGHT
+         * @see BetListNPOI.SS.usermodel.Sheet#PANE_UPPER_LEFT
+         * @see BetListNPOI.SS.usermodel.Sheet#PANE_UPPER_RIGHT
          */
         public void CreateSplitPane(int xSplitPos, int ySplitPos, int leftmostColumn, int topRow, PanePosition activePane)
         {
@@ -3779,8 +3779,8 @@ namespace NPOI.XSSF.UserModel
                 {
                     worksheet.AddNewHyperlinks();
                 }
-                NPOI.OpenXmlFormats.Spreadsheet.CT_Hyperlink[] ctHls
-                    = new NPOI.OpenXmlFormats.Spreadsheet.CT_Hyperlink[hyperlinks.Count];
+                BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Hyperlink[] ctHls
+                    = new BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Hyperlink[hyperlinks.Count];
                 for (int i = 0; i < ctHls.Length; i++)
                 {
                     // If our sheet has hyperlinks, have them add
@@ -4393,7 +4393,7 @@ namespace NPOI.XSSF.UserModel
         {
             CT_SheetPr pr = worksheet.sheetPr;
             if (pr == null) pr = worksheet.AddNewSheetPr();
-            NPOI.OpenXmlFormats.Spreadsheet.CT_Color color = new OpenXmlFormats.Spreadsheet.CT_Color();
+            BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Color color = new OpenXmlFormats.Spreadsheet.CT_Color();
             color.indexed = (uint)(colorIndex);
             pr.tabColor = (color);
         }
@@ -4437,7 +4437,7 @@ namespace NPOI.XSSF.UserModel
             {
                 if (drawing == null)
                 {
-                    NPOI.OpenXmlFormats.Spreadsheet.CT_Drawing ctDrawing = GetCTDrawing();
+                    BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Drawing ctDrawing = GetCTDrawing();
                     if (ctDrawing == null)
                     {
                         return null;

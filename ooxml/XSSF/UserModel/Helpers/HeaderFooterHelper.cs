@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XSSF.UserModel.Helpers
+namespace BetListNPOI.XSSF.UserModel.Helpers
 {
     using System;
     using System.Text;

@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Crypto
+namespace BetListNPOI.HSSF.Record.Crypto
 {
     using System;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
     /**
      * Used for both encrypting and decrypting BIFF8 streams. The internal

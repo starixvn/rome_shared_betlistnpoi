@@ -15,13 +15,13 @@
 * limitations Under the License.
 */
 
-namespace NPOI.HSSF.Record.Aggregates
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
 
     using System;
     using System.Collections;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Model;
     using System.Globalization;
     using System.Collections.Generic;
 

@@ -16,13 +16,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.CF
+namespace BetListNPOI.HSSF.Record.CF
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Font Formatting Block of the Conditional Formatting Rule Record.

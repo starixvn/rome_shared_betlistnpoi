@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.Collections.Generic;
-    using NPOI;
+    using BetListNPOI;
     using System.IO;
-    using NPOI.HSSF.Record.Crypto;
-    using NPOI.Util;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.POIFS.Crypt;
+    using BetListNPOI.HSSF.Record.Crypto;
+    using BetListNPOI.Util;
+    using BetListNPOI.HSSF.Record.Chart;
+    using BetListNPOI.POIFS.Crypt;
 
     /**
 * A stream based way to get at complete records, with

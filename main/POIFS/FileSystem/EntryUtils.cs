@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.IO;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     public class EntryUtils
     {

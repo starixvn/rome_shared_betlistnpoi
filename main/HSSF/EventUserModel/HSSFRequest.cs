@@ -17,11 +17,11 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
     using System;
     using System.Collections;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
 
     /// <summary>

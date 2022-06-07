@@ -14,15 +14,15 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.Extractor
+namespace BetListNPOI.XWPF.Extractor
 {
     using System;
-    using NPOI.XWPF.Model;
-    using NPOI.XWPF.UserModel;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.XWPF.Model;
+    using BetListNPOI.XWPF.UserModel;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.Text;
     using System.Collections.Generic;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
     using System.IO;
     using System.Xml;
 

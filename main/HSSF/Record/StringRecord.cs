@@ -17,12 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.Text;
-    using NPOI.Util;
-    using NPOI.HSSF.Record.Cont;
+    using BetListNPOI.Util;
+    using BetListNPOI.HSSF.Record.Cont;
 
     /**
      * Supports the STRING record structure.

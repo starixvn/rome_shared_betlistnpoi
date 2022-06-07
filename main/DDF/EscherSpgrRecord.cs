@@ -18,10 +18,10 @@
 
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// The spgr record defines information about a shape group.  Groups in escher

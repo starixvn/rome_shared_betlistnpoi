@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using NPOI.Util;
+using BetListNPOI.Util;
 using System.Collections.Generic;
 using System;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.XSSF.Model;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.XSSF.Model;
 using System.IO;
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /// <summary>

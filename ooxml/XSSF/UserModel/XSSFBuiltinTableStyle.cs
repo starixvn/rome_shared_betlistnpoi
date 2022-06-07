@@ -1,13 +1,13 @@
 ﻿using EnumsNET;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.Model;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     public enum XSSFBuiltinTableStyleEnum:int
     {
@@ -302,7 +302,7 @@ namespace NPOI.XSSF.UserModel
     public class XSSFBuiltinTableStyle
     {
 #if NETSTANDARD2_1 || NETSTANDARD2_0
-        const string presetTableStylesResourceName = "NPOI.OOXML.Resources.presetTableStyles.xml";
+        const string presetTableStylesResourceName = "BetListNPOI.OOXML.Resources.presetTableStyles.xml";
 #else
         const string presetTableStylesResourceName= "presetTableStyles.xml";
 #endif

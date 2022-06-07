@@ -17,11 +17,11 @@
  * ====================================================================
  */
 
-namespace NPOI.HSSF.Record.Cont
+namespace BetListNPOI.HSSF.Record.Cont
 {
 
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
 
     /**
      * A decorated {@link RecordInputStream} that can read primitive data types
@@ -44,7 +44,7 @@ namespace NPOI.HSSF.Record.Cont
      *
      * <p>
      * YK: For now (March 2011) this class is only used to read
-     *   @link NPOI.HSSF.Record.Common.UnicodeString.ExtRst} blocks of a UnicodeString.
+     *   @link BetListNPOI.HSSF.Record.Common.UnicodeString.ExtRst} blocks of a UnicodeString.
      *
      * </p>
      *

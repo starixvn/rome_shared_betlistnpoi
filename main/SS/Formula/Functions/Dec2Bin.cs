@@ -14,12 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     using System;
 
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
 
     /**
      * Implementation for Excel Bin2Dec() function.<p/>

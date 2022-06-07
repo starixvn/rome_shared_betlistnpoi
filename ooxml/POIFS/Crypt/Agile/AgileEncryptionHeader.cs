@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt.Agile
+namespace BetListNPOI.POIFS.Crypt.Agile
 {
     using System;
-    using NPOI.OpenXmlFormats.Encryption;
-    using NPOI.POIFS.Crypt;
+    using BetListNPOI.OpenXmlFormats.Encryption;
+    using BetListNPOI.POIFS.Crypt;
 
 
     public class AgileEncryptionHeader : EncryptionHeader

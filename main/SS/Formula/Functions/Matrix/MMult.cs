@@ -1,11 +1,11 @@
 ﻿using MathNet.Numerics.LinearAlgebra;
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using static NPOI.SS.Formula.Functions.MatrixFunction;
+using static BetListNPOI.SS.Formula.Functions.MatrixFunction;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     public class MMulti: TwoArrayArg
     {

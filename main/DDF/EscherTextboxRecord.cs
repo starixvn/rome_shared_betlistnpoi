@@ -17,7 +17,7 @@
 ==================================================================== */
 
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
     using System.Text;

@@ -1,10 +1,10 @@
-﻿using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.XSSF.UserModel.Helpers;
+﻿using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.XSSF.UserModel.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     public class XSSFTableColumn
     {

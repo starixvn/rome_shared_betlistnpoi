@@ -14,9 +14,9 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     internal class Currency
     {

@@ -15,14 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
     using System.Collections;
     using System.IO;
     using System.Drawing;
     using System.Configuration;
-    using NPOI.Util.Collections;
+    using BetListNPOI.Util.Collections;
 
     /**
      * Allows the user to lookup the font metrics for a particular font without
@@ -36,7 +36,7 @@ namespace NPOI.HSSF.UserModel
     class StaticFontMetrics
     {
 #if NETSTANDARD2_1 || NETSTANDARD2_0
-        private const String FONT_METRICS_PROPERTIES_FILE_NAME = "NPOI.Resources.font_metrics.properties";
+        private const String FONT_METRICS_PROPERTIES_FILE_NAME = "BetListNPOI.Resources.font_metrics.properties";
 #else
         private const String FONT_METRICS_PROPERTIES_FILE_NAME = "font_metrics.properties";
 #endif

@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
     using System.Collections;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
     using System.Collections.Generic;
 
     /**
@@ -99,7 +99,7 @@ namespace NPOI.SS.Util
             {
                 return new CellRangeAddress[] { };
             }
-            //ArrayList temp = MergeCellRanges(NPOI.Util.Arrays.AsList(cellRanges));
+            //ArrayList temp = MergeCellRanges(BetListNPOI.Util.Arrays.AsList(cellRanges));
             List<CellRangeAddress> lst = new List<CellRangeAddress>(cellRanges);
             List<CellRangeAddress> temp = MergeCellRanges(lst);
             return temp.ToArray();

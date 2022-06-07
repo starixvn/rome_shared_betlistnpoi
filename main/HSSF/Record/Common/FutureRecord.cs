@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Common
+namespace BetListNPOI.HSSF.Record.Common
 {
     using System;
 
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
     /**
      * Title: Future Record, a newer (largely Excel 2007+) record

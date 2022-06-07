@@ -3,14 +3,14 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyName>NPOI.OOXML</AssemblyName>
-    <RootNamespace>NPOI.OOXML</RootNamespace>
+    <AssemblyName>BestListNPOI.OOXML</AssemblyName>
+    <RootNamespace>BestListNPOI.OOXML</RootNamespace>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
+    
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\github\npoi\ooxml\NPOI.OOXML.xml</DocumentationFile>
+    <DocumentationFile>C:\github\npoi\ooxml\BetListNPOI.OOXML.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -44,9 +44,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\main\NPOI.Core.csproj" />
-    <ProjectReference Include="..\openxml4Net\NPOI.OpenXml4Net.Core.csproj" />
-    <ProjectReference Include="..\OpenXmlFormats\NPOI.OpenXmlFormats.Core.csproj" />
+    <ProjectReference Include="..\main\BetListNPOI.Core.csproj" />
+    <ProjectReference Include="..\openxml4Net\BetListNPOI.OpenXml4Net.Core.csproj" />
+    <ProjectReference Include="..\OpenXmlFormats\BetListNPOI.OpenXmlFormats.Core.csproj" />
   </ItemGroup>
 
 </Project>

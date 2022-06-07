@@ -18,11 +18,11 @@
 
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
     using System.IO;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// A complex property differs from a simple property in that the data can not fit inside a 32 bit

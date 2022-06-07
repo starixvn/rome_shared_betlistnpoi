@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XSSF.Util
+namespace BetListNPOI.XSSF.Util
 {
 
     public class NumericRanges

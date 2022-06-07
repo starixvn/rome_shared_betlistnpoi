@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,12 +25,12 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     using System;
     using System.Collections;
-    using NPOI.HPSF.Wellknown;
-    using NPOI.Util;
+    using BetListNPOI.HPSF.Wellknown;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// Convenience class representing a DocumentSummary Information stream in a

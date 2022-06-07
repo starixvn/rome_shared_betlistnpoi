@@ -17,12 +17,12 @@
  * ====================================================================
  */
 
-using NPOI.SS.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System.Collections.Generic;
-using NPOI.SS.Util;
+using BetListNPOI.SS.Util;
 using System;
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
 

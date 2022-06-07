@@ -18,10 +18,10 @@
 
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// A simple property is of fixed Length and as a property number in Addition

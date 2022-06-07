@@ -15,21 +15,21 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System;
-using NPOI.XSSF.Model;
-using NPOI.XSSF.UserModel;
-using NPOI.SS.Util;
-using NPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.XSSF.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.SS.UserModel;
 using System.Collections.Generic;
-using NPOI.Util;
-using NPOI.SS;
+using BetListNPOI.Util;
+using BetListNPOI.SS;
 using System.Collections;
-using NPOI.XSSF.UserModel.Helpers;
-using NPOI.SS.Formula;
+using BetListNPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.SS.Formula;
 using System.Linq;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -236,7 +236,7 @@ namespace NPOI.XSSF.UserModel
 
         /**
          * Returns the cell at the given (0 based) index,
-         *  with the {@link NPOI.SS.usermodel.Row.MissingCellPolicy} from the parent Workbook.
+         *  with the {@link BetListNPOI.SS.usermodel.Row.MissingCellPolicy} from the parent Workbook.
          *
          * @return the cell at the given (0 based) index
          */
@@ -260,7 +260,7 @@ namespace NPOI.XSSF.UserModel
             return _cells[cellnum];
         }
         /**
-         * Returns the cell at the given (0 based) index, with the specified {@link NPOI.SS.usermodel.Row.MissingCellPolicy}
+         * Returns the cell at the given (0 based) index, with the specified {@link BetListNPOI.SS.usermodel.Row.MissingCellPolicy}
          *
          * @return the cell at the given (0 based) index
          * @throws ArgumentException if cellnum < 0 or the specified MissingCellPolicy is invalid
@@ -337,7 +337,7 @@ namespace NPOI.XSSF.UserModel
 
         /**
          * Get the row's height measured in twips (1/20th of a point). If the height is not Set, the default worksheet value is returned,
-         * See {@link NPOI.XSSF.usermodel.XSSFSheet#GetDefaultRowHeightInPoints()}
+         * See {@link BetListNPOI.XSSF.usermodel.XSSFSheet#GetDefaultRowHeightInPoints()}
          *
          * @return row height measured in twips (1/20th of a point)
          */
@@ -365,10 +365,10 @@ namespace NPOI.XSSF.UserModel
 
         /**
          * Returns row height measured in point size. If the height is not Set, the default worksheet value is returned,
-         * See {@link NPOI.XSSF.usermodel.XSSFSheet#GetDefaultRowHeightInPoints()}
+         * See {@link BetListNPOI.XSSF.usermodel.XSSFSheet#GetDefaultRowHeightInPoints()}
          *
          * @return row height measured in point size
-         * @see NPOI.XSSF.usermodel.XSSFSheet#GetDefaultRowHeightInPoints()
+         * @see BetListNPOI.XSSF.usermodel.XSSFSheet#GetDefaultRowHeightInPoints()
          */
         public float HeightInPoints
         {
@@ -549,7 +549,7 @@ namespace NPOI.XSSF.UserModel
         /**
          * Fired when the document is written to an output stream.
          *
-         * @see NPOI.XSSF.usermodel.XSSFSheet#Write(java.io.OutputStream) ()
+         * @see BetListNPOI.XSSF.usermodel.XSSFSheet#Write(java.io.OutputStream) ()
          */
         internal void OnDocumentWrite()
         {

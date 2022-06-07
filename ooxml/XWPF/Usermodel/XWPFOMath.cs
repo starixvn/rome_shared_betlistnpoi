@@ -14,15 +14,15 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using NPOI.OpenXmlFormats.Shared;
-    using NPOI.XWPF.Usermodel;
+    using BetListNPOI.OpenXmlFormats.Shared;
+    using BetListNPOI.XWPF.Usermodel;
 
     public class XWPFOMath : MathContainer
     {

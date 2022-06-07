@@ -18,9 +18,9 @@
  * Created on May 9, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
 
     /// <summary>
     /// Function serves as a marker interface.

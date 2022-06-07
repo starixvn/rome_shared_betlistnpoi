@@ -17,9 +17,9 @@
 
 using System.IO;
 using System.Security;
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     using System;
     using System.Collections;

@@ -17,15 +17,15 @@
  * ====================================================================
  */
 
-namespace NPOI.XSSF.UserModel.Helpers
+namespace BetListNPOI.XSSF.UserModel.Helpers
 {
     using System;
     using System.Globalization;
     using System.Xml;
     using System.Xml.XPath;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.POIFS.Crypt;
-    using NPOI.Util;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.Util;
     using Org.BouncyCastle.Security;
 
     public class XSSFPasswordHelper

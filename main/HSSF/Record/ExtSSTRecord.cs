@@ -17,14 +17,14 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     using System;
     using System.Collections;
     using System.Text;
-    using NPOI.HSSF.Record.Cont;
+    using BetListNPOI.HSSF.Record.Cont;
     using System.Collections.Generic;
 
     /**

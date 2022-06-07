@@ -14,12 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.Util;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.Util;
 using System;
 
-namespace NPOI
+namespace BetListNPOI
 {
 
 

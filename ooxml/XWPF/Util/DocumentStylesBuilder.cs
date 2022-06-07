@@ -1,7 +1,7 @@
-﻿using NPOI.OpenXmlFormats.Wordprocessing;
-using NPOI.XWPF.UserModel;
+﻿using BetListNPOI.OpenXmlFormats.Wordprocessing;
+using BetListNPOI.XWPF.UserModel;
 
-namespace NPOI.OOXML.XWPF.Util
+namespace BetListNPOI.OOXML.XWPF.Util
 {
     public class DocumentStylesBuilder
     {

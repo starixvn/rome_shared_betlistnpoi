@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -29,10 +29,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-using NPOI.Util;
-using NPOI.POIFS.Common;
+using BetListNPOI.Util;
+using BetListNPOI.POIFS.Common;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// This class manages and creates the Block Allocation Table, which is

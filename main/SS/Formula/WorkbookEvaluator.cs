@@ -16,22 +16,22 @@
 ==================================================================== */
 
 using System.Diagnostics;
-using NPOI.SS.Formula.Atp;
+using BetListNPOI.SS.Formula.Atp;
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
     using System;
     using System.Collections;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.UDF;
     using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
-    using NPOI.SS.Formula.Function;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.Util;
+    using BetListNPOI.SS.Formula.Function;
     using EnumsNET;
 
     /**

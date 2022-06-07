@@ -16,10 +16,10 @@
 */
 
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     using System;
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
     using System.Text;
 
     /**

@@ -15,9 +15,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Util
+namespace BetListNPOI.HSSF.Util
 {
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System;
     using System.Collections;
     using System.Collections.Generic;

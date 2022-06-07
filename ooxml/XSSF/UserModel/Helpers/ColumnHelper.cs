@@ -18,11 +18,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.Util;
-using NPOI.XSSF.Util;
-namespace NPOI.XSSF.UserModel.Helpers
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.Util;
+namespace BetListNPOI.XSSF.UserModel.Helpers
 {
     /**
      * Helper class for dealing with the Column Settings on
@@ -449,7 +449,7 @@ namespace NPOI.XSSF.UserModel.Helpers
                 if (col.Equals(overrideColumn)) haveOverrideColumn = overrideColumn;
                 while (currentIndex <= nextIndex && !(currentElements.Count == 0))
                 {
-                    NPOI.Util.Collections.HashSet<CT_Col> currentIndexElements = new NPOI.Util.Collections.HashSet<CT_Col>();
+                    BetListNPOI.Util.Collections.HashSet<CT_Col> currentIndexElements = new BetListNPOI.Util.Collections.HashSet<CT_Col>();
                     long currentElemIndex;
 
                     {

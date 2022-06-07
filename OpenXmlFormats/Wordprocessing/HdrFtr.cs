@@ -3,13 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Serialization;
-using NPOI.OpenXmlFormats.Shared;
+using BetListNPOI.OpenXmlFormats.Shared;
 using System.Xml.Schema;
 using System.IO;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.Collections;
 
-namespace NPOI.OpenXmlFormats.Wordprocessing
+namespace BetListNPOI.OpenXmlFormats.Wordprocessing
 {
 
     [Serializable]

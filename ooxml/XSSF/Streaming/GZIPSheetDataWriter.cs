@@ -16,10 +16,10 @@
 ==================================================================== */
 using System.IO;
 using ICSharpCode.SharpZipLib.GZip;
-using NPOI.Util;
-using NPOI.XSSF.Model;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.Model;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class GZIPSheetDataWriter : SheetDataWriter
     {

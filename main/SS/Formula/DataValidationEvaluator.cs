@@ -1,9 +1,9 @@
-﻿using NPOI.SS.UserModel;
+﻿using BetListNPOI.SS.UserModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
     public class DataValidationEvaluator
     {

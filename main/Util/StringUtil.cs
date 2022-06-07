@@ -17,7 +17,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -32,7 +32,7 @@ using System.Collections.Generic;
 
 
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// Title: String Utility Description: Collection of string handling utilities

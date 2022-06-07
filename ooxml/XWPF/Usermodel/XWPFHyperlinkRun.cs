@@ -14,10 +14,10 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
 
     /**
      * A run of text with a Hyperlink applied to it.

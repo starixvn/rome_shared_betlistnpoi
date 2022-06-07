@@ -17,10 +17,10 @@
 
 using System;
 using System.Text;
-using NPOI.Util;
+using BetListNPOI.Util;
 
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     public abstract class CellRecord : StandardRecord, CellValueRecordInterface,IComparable
     {

@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.Model
+namespace BetListNPOI.XSSF.Model
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Xml;
-    using NPOI.OpenXml4Net.OPC;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.XSSF.UserModel;
+    using BetListNPOI.OpenXml4Net.OPC;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.XSSF.UserModel;
     using OpenXmlFormats.Spreadsheet;
 
     public class CommentsTable : POIXMLDocumentPart

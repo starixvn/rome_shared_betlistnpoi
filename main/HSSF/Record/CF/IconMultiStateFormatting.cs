@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.CF
+namespace BetListNPOI.HSSF.Record.CF
 {
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
     using System;
     using System.Text;
 

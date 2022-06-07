@@ -22,13 +22,13 @@
  *
  * Created on January 19, 2002, 9:30 AM
  */
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
 
     using System;
     using System.Text;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.Util;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Creates new BoolErrRecord. 

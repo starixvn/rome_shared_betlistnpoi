@@ -3,9 +3,10 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyName>NPOI.OpenXml4Net</AssemblyName>
+    <AssemblyName>BestListNPOI.OpenXmlFormats</AssemblyName>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
+    
+    <RootNamespace>BestListNPOI.OpenXmlFormats.Core</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -13,14 +14,16 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-    <WarningLevel>5</WarningLevel>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\main\NPOI.Core.csproj" />
+    <ProjectReference Include="..\main\BetListNPOI.Core.csproj" />
+    <ProjectReference Include="..\openxml4Net\BetListNPOI.OpenXml4Net.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Enums.NET" Version="4.0.0" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
 </Project>

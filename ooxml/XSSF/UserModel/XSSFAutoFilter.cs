@@ -15,8 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.UserModel;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.SS.UserModel;
+namespace BetListNPOI.XSSF.UserModel
 {
 
 

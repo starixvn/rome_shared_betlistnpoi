@@ -17,11 +17,11 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
 
-    using NPOI.HSSF.Record.CF;
+    using BetListNPOI.HSSF.Record.CF;
 
     /**
      * High level representation for the Color Scale / Colour Scale /

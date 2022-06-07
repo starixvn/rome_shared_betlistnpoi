@@ -18,10 +18,10 @@
 
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// A list of the most recently used colours for the drawings contained in

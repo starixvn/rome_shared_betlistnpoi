@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
     using System.Text;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.UserModel;
     using System.Globalization;
 
     /**
@@ -115,7 +115,7 @@ namespace NPOI.SS.UserModel
          * @return Returns the errorValue.
          */
         //the return value should be sbyte? the byte in java is signed(-128~127) and is unsiged(0~255) in c#.
-        //if use byte, the test NPOI.SS.Formula.TestWorkbookEvaluator.TestResultOutsideRange failed.
+        //if use byte, the test BetListNPOI.SS.Formula.TestWorkbookEvaluator.TestResultOutsideRange failed.
         public sbyte ErrorValue
         {
             get

@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Implementation for the Excel EOMONTH() function.<p/>

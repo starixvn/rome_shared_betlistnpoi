@@ -17,12 +17,12 @@
 
 using System.IO;
 using System;
-using NPOI.Util;
+using BetListNPOI.Util;
 using System.Collections.Generic;
 using System.Security;
 using System.Reflection;
 //using System.IO.MemoryMappedFiles;
-namespace NPOI.POIFS.NIO
+namespace BetListNPOI.POIFS.NIO
 {
     /// <summary>
     /// A POIFS DataSource backed by a File

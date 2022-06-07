@@ -17,10 +17,10 @@
  * ====================================================================
  */
 using System;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.UserModel;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
  * Implementation for the Excel function WEEKDAY

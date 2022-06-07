@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
 
     using System;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
 
     public interface RecordVisitor

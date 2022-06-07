@@ -16,11 +16,11 @@
 ==================================================================== */
 
 using System.IO;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.FileSystem;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System;
 
     public interface IKey

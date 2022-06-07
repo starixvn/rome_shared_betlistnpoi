@@ -15,11 +15,11 @@
   limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Format
+namespace BetListNPOI.SS.Format
 {
     using System;
 
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System.Text.RegularExpressions;
     using System.Collections.Generic;
     using System.Drawing;
@@ -218,7 +218,7 @@ namespace NPOI.SS.Format
         public virtual CellFormatResult Apply(Object value)
         {
             //if (value is Number) {
-            if (NPOI.Util.Number.IsNumber(value))
+            if (BetListNPOI.Util.Number.IsNumber(value))
             {
                 double val ;
                 double.TryParse(value.ToString(), out val);
@@ -321,7 +321,7 @@ namespace NPOI.SS.Format
         private CellFormatPart GetApplicableFormatPart(Object value)
         {
             //if (value is Number) {
-            if (NPOI.Util.Number.IsNumber(value))
+            if (BetListNPOI.Util.Number.IsNumber(value))
             {
                 double val;
                 double.TryParse(value.ToString(), out val);

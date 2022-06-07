@@ -16,11 +16,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
     using System.Collections;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System.Collections.Generic;
 
     /// <summary>

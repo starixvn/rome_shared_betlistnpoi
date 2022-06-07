@@ -3,17 +3,17 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <AssemblyName>NPOI</AssemblyName>
-    <RootNamespace>NPOI</RootNamespace>
+    <AssemblyName>BestListNPOI</AssemblyName>
+    <RootNamespace>BestListNPOI</RootNamespace>
     <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
-    <PackageId>NPOI</PackageId>
+    
+    <PackageId>BetListNPOI</PackageId>
     <RepositoryUrl>https://github.com/tonyqus/npoi</RepositoryUrl>
     <OutputPath></OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
-    <DocumentationFile>C:\github\npoi\main\NPOI.xml</DocumentationFile>
+    <DocumentationFile>C:\github\npoi\main\BetListNPOI.xml</DocumentationFile>
   </PropertyGroup>
 
 

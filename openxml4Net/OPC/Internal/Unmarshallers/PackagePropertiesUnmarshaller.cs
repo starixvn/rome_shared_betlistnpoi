@@ -4,10 +4,10 @@ using System.Text;
 using System.Xml;
 using System.IO;
 using System.Collections;
-using NPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.Exceptions;
 using ICSharpCode.SharpZipLib.Zip;
-using NPOI.Util;
-namespace NPOI.OpenXml4Net.OPC.Internal.Unmarshallers
+using BetListNPOI.Util;
+namespace BetListNPOI.OpenXml4Net.OPC.Internal.Unmarshallers
 {
     /**
      * Package properties unmarshaller.

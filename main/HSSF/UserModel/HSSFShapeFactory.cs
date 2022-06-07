@@ -16,11 +16,11 @@
 ==================================================================== */
 
 using System.Collections.Generic;
-using NPOI.DDF;
-using NPOI.HSSF.Record;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.POIFS.FileSystem;
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     /**
      * @author Evgeniy Berlog

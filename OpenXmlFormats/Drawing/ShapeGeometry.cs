@@ -4,10 +4,10 @@ using System.ComponentModel;
 using System.Xml.Serialization;
 using System.Diagnostics;
 using System.Xml;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 
-namespace NPOI.OpenXmlFormats.Dml
+namespace BetListNPOI.OpenXmlFormats.Dml
 {
 
 

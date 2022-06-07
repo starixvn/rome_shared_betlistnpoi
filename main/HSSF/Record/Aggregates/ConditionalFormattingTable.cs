@@ -15,16 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
 
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
 
     /**
      * Holds all the conditional formatting for a workbook sheet.<p/>

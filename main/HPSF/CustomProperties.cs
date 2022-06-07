@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,13 +25,13 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     using System;
     using System.Collections;
-    using NPOI.HPSF.Wellknown;
+    using BetListNPOI.HPSF.Wellknown;
     using System.Text;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
 
     /// <summary>
@@ -337,7 +337,7 @@ namespace NPOI.HPSF
                             codepage = (int)CodePageUtil.CP_UNICODE;
                         byte[] a= Encoding.GetEncoding(codepage).GetBytes(key);
                         byte[] b = Encoding.UTF8.GetBytes(name);
-                        if (NPOI.Util.Arrays.Equals(a, b))
+                        if (BetListNPOI.Util.Arrays.Equals(a, b))
                             x = ((DictionaryEntry)dic.Current).Value;
                     }
                     if (x == null)

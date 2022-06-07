@@ -1,11 +1,11 @@
-﻿using NPOI.SS.Formula.Eval;
-using NPOI.SS.Formula.Functions;
-using NPOI.SS.UserModel;
+﻿using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.UserModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     public class WorkdayIntlFunction: FreeRefFunction
     {

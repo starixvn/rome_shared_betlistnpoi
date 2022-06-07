@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
 
     using System;
     using System.Text;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Util;
 
     /**
      * Provides Lazy Evaluation to 3D Ranges

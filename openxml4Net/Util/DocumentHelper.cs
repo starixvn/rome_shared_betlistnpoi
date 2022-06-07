@@ -22,7 +22,7 @@ using System.Xml.XPath;
 using System.Xml;
 using System.Xml.Schema;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class DocumentHelper
     {

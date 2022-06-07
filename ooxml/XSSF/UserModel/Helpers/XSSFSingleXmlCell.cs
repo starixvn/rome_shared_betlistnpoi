@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System;
-using NPOI.SS.Util;
-using NPOI.XSSF.Model;
-using NPOI.SS.UserModel;
-namespace NPOI.XSSF.UserModel.Helpers
+using BetListNPOI.SS.Util;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.SS.UserModel;
+namespace BetListNPOI.XSSF.UserModel.Helpers
 {
 
     /**

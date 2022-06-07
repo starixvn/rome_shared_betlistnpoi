@@ -15,15 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
 
     using System;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.CF;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * 
@@ -301,7 +301,7 @@ namespace NPOI.HSSF.UserModel
         {
             get
             {
-                return NPOI.SS.UserModel.ConditionType.ForId(cfRuleRecord.ConditionType);
+                return BetListNPOI.SS.UserModel.ConditionType.ForId(cfRuleRecord.ConditionType);
             }
         }
         /**

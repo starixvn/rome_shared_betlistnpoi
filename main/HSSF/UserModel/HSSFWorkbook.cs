@@ -15,7 +15,7 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
 
     using System;
@@ -26,17 +26,17 @@ namespace NPOI.HSSF.UserModel
     using System.Reflection;
     using System.Security.Cryptography;
     using System.Text;
-    using NPOI.DDF;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.SS;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+    using BetListNPOI.DDF;
+    using BetListNPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.SS;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.Util;
 
 
     /// <summary>
@@ -113,7 +113,7 @@ namespace NPOI.HSSF.UserModel
 
         //private static POILogger log = POILogFactory.GetLogger(typeof(HSSFWorkbook));
 
-        public NPOI.SS.UserModel.ICreationHelper GetCreationHelper()
+        public BetListNPOI.SS.UserModel.ICreationHelper GetCreationHelper()
         {
             return new HSSFCreationHelper(this);
         }
@@ -121,7 +121,7 @@ namespace NPOI.HSSF.UserModel
         /// <summary>
         /// Totals the sizes of all sheet records and eventually serializes them
         /// </summary>
-        private class SheetRecordCollector : NPOI.HSSF.Record.Aggregates.RecordVisitor,IDisposable
+        private class SheetRecordCollector : BetListNPOI.HSSF.Record.Aggregates.RecordVisitor,IDisposable
         {
 
             private ArrayList _list;
@@ -427,14 +427,14 @@ namespace NPOI.HSSF.UserModel
             //    log.Log(POILogger.DEBUG, "ConvertLabelRecords exit");
         }
         [NonSerialized]
-        private NPOI.SS.UserModel.MissingCellPolicy missingCellPolicy = NPOI.SS.UserModel.MissingCellPolicy.RETURN_NULL_AND_BLANK;
+        private BetListNPOI.SS.UserModel.MissingCellPolicy missingCellPolicy = BetListNPOI.SS.UserModel.MissingCellPolicy.RETURN_NULL_AND_BLANK;
         /// <summary>
         /// Retrieves the current policy on what to do when
         /// getting missing or blank cells from a row.
         /// The default is to return blank and null cells.
         /// </summary>
         /// <value>The missing cell policy.</value>
-        public NPOI.SS.UserModel.MissingCellPolicy MissingCellPolicy
+        public BetListNPOI.SS.UserModel.MissingCellPolicy MissingCellPolicy
         {
             get { return missingCellPolicy; }
             set { this.missingCellPolicy = value; }
@@ -912,7 +912,7 @@ namespace NPOI.HSSF.UserModel
         ///</summary>
         /// <param name="index">index of the sheet number (0-based)</param>
         /// <returns>HSSFSheet at the provided index</returns>
-        public NPOI.SS.UserModel.ISheet GetSheetAt(int index)
+        public BetListNPOI.SS.UserModel.ISheet GetSheetAt(int index)
         {
             return (HSSFSheet)_sheets[index];
         }
@@ -922,7 +922,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="name">name of the sheet</param>
         /// <returns>HSSFSheet with the name provided or null if it does not exist</returns>
-        public NPOI.SS.UserModel.ISheet GetSheet(String name)
+        public BetListNPOI.SS.UserModel.ISheet GetSheet(String name)
         {
             HSSFSheet retval = null;
 
@@ -1078,7 +1078,7 @@ namespace NPOI.HSSF.UserModel
         /// Create a new Font and Add it to the workbook's font table
         /// </summary>
         /// <returns>new font object</returns>
-        public NPOI.SS.UserModel.IFont CreateFont()
+        public BetListNPOI.SS.UserModel.IFont CreateFont()
         {
             FontRecord font = workbook.CreateNewFont();
             short fontindex = (short)(NumberOfFonts - 1);
@@ -1096,9 +1096,9 @@ namespace NPOI.HSSF.UserModel
             return GetFontAt(fontindex);
         }
 
-        //public NPOI.SS.UserModel.Font FindFont(NPOI.SS.UserModel.FontBoldWeight boldWeight, short color, short fontHeight,
+        //public BetListNPOI.SS.UserModel.Font FindFont(BetListNPOI.SS.UserModel.FontBoldWeight boldWeight, short color, short fontHeight,
         //                 String name, bool italic, bool strikeout,
-        //                 NPOI.SS.UserModel.FontSuperScript typeOffset, NPOI.SS.UserModel.FontUnderlineType Underline)
+        //                 BetListNPOI.SS.UserModel.FontSuperScript typeOffset, BetListNPOI.SS.UserModel.FontUnderlineType Underline)
         //{
         //    return this.FindFont(boldWeight, color, fontHeight, name, italic, strikeout, typeOffset, Underline);
         //}
@@ -1116,7 +1116,7 @@ namespace NPOI.HSSF.UserModel
         /// <param name="underline">The underline.</param>
         /// <returns></returns>
         [Obsolete("deprecated 3.15 beta 2. Use {@link #findFont(boolean, short, short, String, boolean, boolean, short, byte)} instead.")]
-        public NPOI.SS.UserModel.IFont FindFont(short boldWeight, short color, short fontHeight,
+        public BetListNPOI.SS.UserModel.IFont FindFont(short boldWeight, short color, short fontHeight,
                          String name, bool italic, bool strikeout,
                          FontSuperScript typeOffset, FontUnderlineType underline)
         {
@@ -1127,7 +1127,7 @@ namespace NPOI.HSSF.UserModel
                 if (i == 4)
                     continue;
 
-                NPOI.SS.UserModel.IFont hssfFont = GetFontAt(i);
+                BetListNPOI.SS.UserModel.IFont hssfFont = GetFontAt(i);
                 if (hssfFont.Boldweight == boldWeight
                         && hssfFont.Color == color
                         && hssfFont.FontHeight == fontHeight
@@ -1385,19 +1385,19 @@ namespace NPOI.HSSF.UserModel
             //{
             //    this.DocumentSummaryInformation = HPSF.PropertySetFactory.CreateDocumentSummaryInformation();
             //}
-            //NPOI.HPSF.CustomProperties cp = this.DocumentSummaryInformation.CustomProperties;
+            //BetListNPOI.HPSF.CustomProperties cp = this.DocumentSummaryInformation.CustomProperties;
             //if (cp == null)
             //{
-            //    cp = new NPOI.HPSF.CustomProperties();
+            //    cp = new BetListNPOI.HPSF.CustomProperties();
             //}
-            //cp.Put("Generator", "NPOI");
+            //cp.Put("Generator", "BetListNPOI");
             //cp.Put("Generator Version", Assembly.GetExecutingAssembly().GetName().Version.ToString(3));
             //this.DocumentSummaryInformation.CustomProperties = cp;
             //if (this.SummaryInformation == null)
             //{
             //    this.SummaryInformation = HPSF.PropertySetFactory.CreateSummaryInformation();
             //}
-            //this.SummaryInformation.ApplicationName = "NPOI";
+            //this.SummaryInformation.ApplicationName = "BetListNPOI";
 
             // For tracking what we've written out, used if we're
             //  going to be preserving nodes
@@ -1681,7 +1681,7 @@ namespace NPOI.HSSF.UserModel
         /// Creates a new named range and Add it to the model
         /// </summary>
         /// <returns>named range high level</returns>
-        public NPOI.SS.UserModel.IName CreateName()
+        public BetListNPOI.SS.UserModel.IName CreateName()
         {
             NameRecord nameRecord = workbook.CreateName();
 
@@ -1750,7 +1750,7 @@ namespace NPOI.HSSF.UserModel
         /// Creates the instance of HSSFDataFormat for this workbook.
         /// </summary>
         /// <returns>the HSSFDataFormat object</returns>
-        public NPOI.SS.UserModel.IDataFormat CreateDataFormat()
+        public BetListNPOI.SS.UserModel.IDataFormat CreateDataFormat()
         {
             if (formatter == null)
                 formatter = new HSSFDataFormat(workbook);
@@ -1853,7 +1853,7 @@ namespace NPOI.HSSF.UserModel
         /// <param name="format">The format of the picture.  One of 
         /// PictureType.</param>
         /// <returns>the index to this picture (1 based).</returns>
-        public int AddPicture(byte[] pictureData, NPOI.SS.UserModel.PictureType format)
+        public int AddPicture(byte[] pictureData, BetListNPOI.SS.UserModel.PictureType format)
         {
             InitDrawings();
 

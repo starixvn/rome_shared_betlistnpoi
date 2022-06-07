@@ -16,7 +16,7 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula.PTG
+namespace BetListNPOI.SS.Formula.PTG
 {
     using System;
     using System.Text;

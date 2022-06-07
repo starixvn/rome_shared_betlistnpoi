@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
     using System.Collections.Generic;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
     using System.Text;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System.Collections;
-    using NPOI.WP.UserModel;
-    using S=NPOI.OpenXmlFormats.Shared;
+    using BetListNPOI.WP.UserModel;
+    using S=BetListNPOI.OpenXmlFormats.Shared;
 
     /**
 * <p>A Paragraph within a Document, Table, Header etc.</p> 
@@ -1552,7 +1552,7 @@ namespace NPOI.XWPF.UserModel
 
         /**
          * returns the type of the BodyElement Paragraph
-         * @see NPOI.XWPF.UserModel.IBodyElement#getElementType()
+         * @see BetListNPOI.XWPF.UserModel.IBodyElement#getElementType()
          */
         public BodyElementType ElementType
         {
@@ -1572,7 +1572,7 @@ namespace NPOI.XWPF.UserModel
 
         /**
          * returns the part of the bodyElement
-         * @see NPOI.XWPF.UserModel.IBody#getPart()
+         * @see BetListNPOI.XWPF.UserModel.IBody#getPart()
          */
         public POIXMLDocumentPart Part
         {
@@ -1589,7 +1589,7 @@ namespace NPOI.XWPF.UserModel
         /**
          * returns the partType of the bodyPart which owns the bodyElement
          * 
-         * @see NPOI.XWPF.UserModel.IBody#getPartType()
+         * @see BetListNPOI.XWPF.UserModel.IBody#getPartType()
          */
         public BodyType PartType
         {

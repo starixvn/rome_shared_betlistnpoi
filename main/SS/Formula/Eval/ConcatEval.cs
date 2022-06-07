@@ -15,11 +15,11 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
     using System;
     using System.Text;
-    using NPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.Functions;
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      *  

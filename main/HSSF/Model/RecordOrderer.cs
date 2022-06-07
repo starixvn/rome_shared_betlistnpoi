@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
+namespace BetListNPOI.HSSF.Model
 {
     using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.Aggregates;
     using System.Collections.Generic;
-    using NPOI.HSSF.Record.PivotTable;
+    using BetListNPOI.HSSF.Record.PivotTable;
 
     /**
      * Finds correct insert positions for records in workbook streams<p/>

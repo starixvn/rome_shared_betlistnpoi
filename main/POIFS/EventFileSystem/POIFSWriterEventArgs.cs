@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -26,9 +26,9 @@
  * ==============================================================*/
 
 using System;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.FileSystem;
 
-namespace NPOI.POIFS.EventFileSystem
+namespace BetListNPOI.POIFS.EventFileSystem
 {
 
 

@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -28,12 +28,12 @@
 using System.IO;
 using System.Collections;
 
-using NPOI.POIFS.Common;
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Properties;
+using BetListNPOI.POIFS.FileSystem;
 using System.Collections.Generic;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// This class implements reading the small document block list from an

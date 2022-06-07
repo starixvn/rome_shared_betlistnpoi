@@ -17,22 +17,22 @@
 
 using System.Xml;
 using System.Collections.Generic;
-using NPOI.SS.Util;
+using BetListNPOI.SS.Util;
 using System;
-using NPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXml4Net.OPC;
 using System.IO;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.Util;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.Util;
 using System.Collections;
-using NPOI.XSSF.UserModel.Helpers;
-using NPOI.SS.UserModel;
+using BetListNPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.SS.UserModel;
 using System.Text.RegularExpressions;
 using System.Globalization;
-using NPOI.SS;
+using BetListNPOI.SS;
 using System.Linq;
-using NPOI.OOXML.XSSF.UserModel;
+using BetListNPOI.OOXML.XSSF.UserModel;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**

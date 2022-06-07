@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     public class MessageDigest
     {

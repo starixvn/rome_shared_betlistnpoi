@@ -4,10 +4,10 @@ using System.Xml.Serialization;
 using System.Text;
 using System.Collections.Generic;
 using System.IO;
-using NPOI.OpenXml4Net.Util;
-using NPOI.OpenXmlFormats.Vml;
+using BetListNPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXmlFormats.Vml;
 
-namespace NPOI.OpenXmlFormats.Wordprocessing
+namespace BetListNPOI.OpenXmlFormats.Wordprocessing
 {
     [XmlInclude(typeof(CT_Picture))]
     [XmlInclude(typeof(CT_Object))]

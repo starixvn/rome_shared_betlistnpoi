@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
+namespace BetListNPOI.SS.Format
 {
     using System;
 
-    using NPOI.HSSF.Util;
+    using BetListNPOI.HSSF.Util;
     using System.Collections.Generic;
     using System.Drawing;
     using System.Collections;

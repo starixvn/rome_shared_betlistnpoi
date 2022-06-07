@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Crypto
+namespace BetListNPOI.HSSF.Record.Crypto
 {
     using System;
     using System.IO;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
     /**
      *

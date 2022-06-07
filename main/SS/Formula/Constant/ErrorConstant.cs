@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Constant
+namespace BetListNPOI.SS.Formula.Constant
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.UserModel;
 
     /// <summary>
     /// Represents a constant error code value as encoded in a constant values array.

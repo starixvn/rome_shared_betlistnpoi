@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
 
     using System;
@@ -24,13 +24,13 @@ namespace NPOI.SS.Formula
     using System.Globalization;
     using System.Text;
     using System.Text.RegularExpressions;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.Formula.Constant;
-    using NPOI.SS.Formula.Function;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.Formula.Constant;
+    using BetListNPOI.SS.Formula.Function;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// Specific exception thrown when a supplied formula does not Parse properly.

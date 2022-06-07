@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using NPOI.SS.UserModel;
-using NPOI.Util;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SXSSFCreationHelper : ICreationHelper
     {

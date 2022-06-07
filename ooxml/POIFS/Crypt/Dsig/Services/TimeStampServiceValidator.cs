@@ -22,7 +22,7 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig.Services
+namespace BetListNPOI.POIFS.Crypt.Dsig.Services
 {
     using Org.BouncyCastle.X509;
     using System;

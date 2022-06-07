@@ -16,7 +16,7 @@
 ==================================================================== */
 using System;
 
-namespace NPOI.Openxml4Net.Exceptions
+namespace BetListNPOI.Openxml4Net.Exceptions
 {
     /**
      * This exception is thrown when we are given an OLE2-based file

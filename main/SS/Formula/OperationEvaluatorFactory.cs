@@ -15,16 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
 
     using System;
     using System.Collections;
     using System.Reflection;
 
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.PTG;
 
     /**
      * This class Creates <c>OperationEval</c> instances To help evaluate <c>OperationPtg</c>
@@ -91,7 +91,7 @@ namespace NPOI.SS.Formula
             {
                 throw new ArgumentException("ptg must not be null");
             }
-            NPOI.SS.Formula.Functions.Function result = _instancesByPtgClass[ptg] as NPOI.SS.Formula.Functions.Function;
+            BetListNPOI.SS.Formula.Functions.Function result = _instancesByPtgClass[ptg] as BetListNPOI.SS.Formula.Functions.Function;
 
             FreeRefFunction udfFunc = null;
             if (result == null)
@@ -102,10 +102,10 @@ namespace NPOI.SS.Formula
                     int functionIndex = fptg.FunctionIndex;
                     switch (functionIndex)
                     {
-                        case NPOI.SS.Formula.Function.FunctionMetadataRegistry.FUNCTION_INDEX_INDIRECT:
+                        case BetListNPOI.SS.Formula.Function.FunctionMetadataRegistry.FUNCTION_INDEX_INDIRECT:
                             udfFunc = Indirect.instance;
                             break;
-                        case NPOI.SS.Formula.Function.FunctionMetadataRegistry.FUNCTION_INDEX_EXTERNAL:
+                        case BetListNPOI.SS.Formula.Function.FunctionMetadataRegistry.FUNCTION_INDEX_EXTERNAL:
                             udfFunc = UserDefinedFunction.instance;
                             break;
                         default:

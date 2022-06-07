@@ -6,7 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 
 
-namespace NPOI.OpenXmlFormats.Dml.Chart
+namespace BetListNPOI.OpenXmlFormats.Dml.Chart
 {
 
     [Serializable]

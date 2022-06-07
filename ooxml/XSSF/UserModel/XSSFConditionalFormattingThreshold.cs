@@ -17,10 +17,10 @@
  * ====================================================================
  */
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.SS.UserModel;
     using System;
     using System.Globalization;
 

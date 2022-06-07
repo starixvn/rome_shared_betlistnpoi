@@ -1,10 +1,10 @@
-﻿using NPOI.Util;
+﻿using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NPOI.OpenXml4Net.Exceptions
+namespace BetListNPOI.OpenXml4Net.Exceptions
 {
     public class OpenXML4NetRuntimeException : RuntimeException
     {

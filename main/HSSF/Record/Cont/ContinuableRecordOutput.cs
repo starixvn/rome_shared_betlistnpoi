@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Cont
+namespace BetListNPOI.HSSF.Record.Cont
 {
     using System;
 
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
 
     /**
      * An augmented {@link LittleEndianOutput} used for serialization of {@link ContinuableRecord}s.

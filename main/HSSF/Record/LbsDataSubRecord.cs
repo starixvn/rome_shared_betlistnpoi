@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Text;
-using NPOI.Util;
-using NPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using BetListNPOI.SS.Formula.PTG;
 using System.Globalization;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     public class LbsDataSubRecord : SubRecord, ICloneable
     {

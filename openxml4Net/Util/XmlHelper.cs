@@ -1,4 +1,4 @@
-﻿using NPOI.Util;
+﻿using BetListNPOI.Util;
 using System;
 using System.Globalization;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXml4Net.Util
+namespace BetListNPOI.OpenXml4Net.Util
 {
     public static class XmlHelper
     {

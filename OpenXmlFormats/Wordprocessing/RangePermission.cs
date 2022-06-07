@@ -2,10 +2,10 @@
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 
 
-namespace NPOI.OpenXmlFormats.Wordprocessing
+namespace BetListNPOI.OpenXmlFormats.Wordprocessing
 {
     #region Range Permission
 

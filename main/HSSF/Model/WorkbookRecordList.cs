@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
+namespace BetListNPOI.HSSF.Model
 {
     using System.Collections;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
     using System.Collections.Generic;
 
 
@@ -61,7 +61,7 @@ namespace NPOI.HSSF.Model
         }
 
         /// <summary>
-        /// Gets the <see cref="NPOI.HSSF.Record.Record"/> at the specified index.
+        /// Gets the <see cref="BetListNPOI.HSSF.Record.Record"/> at the specified index.
         /// </summary>
         /// <value></value>
         public Record this[int index]

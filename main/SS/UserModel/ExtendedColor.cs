@@ -14,19 +14,19 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
     using System.Drawing;
     using System.Text;
-    using NPOI.HSSF.Util;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Util;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
 
     /**
      * Represents a XSSF-style color (based on either a
-     *  {@link NPOI.XSSF.UserModel.XSSFColor} or a
-     *  {@link NPOI.HSSF.Record.Common.ExtendedColor} 
+     *  {@link BetListNPOI.XSSF.UserModel.XSSFColor} or a
+     *  {@link BetListNPOI.HSSF.Record.Common.ExtendedColor} 
      */
     public abstract class ExtendedColor : IColor
     {

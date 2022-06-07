@@ -16,16 +16,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
 
     using System;
     using System.Text;
     using System.IO;
 
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.PTG;
     using System.Globalization;
 
     /**

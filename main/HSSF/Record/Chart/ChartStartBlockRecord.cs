@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     using System;
     using System.IO;
     using System.Text;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
 
     /**

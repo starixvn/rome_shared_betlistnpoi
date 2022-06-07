@@ -14,13 +14,13 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
     using System.IO;
     using System.Text;
     using System.Drawing;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using ICSharpCode.SharpZipLib.Zip.Compression;
     using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 

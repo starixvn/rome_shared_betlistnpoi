@@ -17,7 +17,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -31,7 +31,7 @@ using System.Text;
 using System.Collections;
 using System.Globalization;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public abstract class POILogger
     {

@@ -17,12 +17,12 @@
 
 using System;
 using System.IO;
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXml4Net.OPC.Internal;
-using NPOI.OpenXmlFormats;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXml4Net.OPC.Internal;
+using BetListNPOI.OpenXmlFormats;
 
-namespace NPOI
+namespace BetListNPOI
 {
     /**
  * The core document properties

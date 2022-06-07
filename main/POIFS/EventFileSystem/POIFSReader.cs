@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,16 +25,16 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.POIFS.EventFileSystem
+namespace BetListNPOI.POIFS.EventFileSystem
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.IO;
 
-    using NPOI.POIFS.FileSystem;
-    using NPOI.POIFS.Properties;
-    using NPOI.POIFS.Storage;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.POIFS.Properties;
+    using BetListNPOI.POIFS.Storage;
 
     /// <summary>
     /// An event-driven Reader for POIFS file systems. Users of this class

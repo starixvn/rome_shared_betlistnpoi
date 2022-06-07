@@ -15,22 +15,22 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Converter
+namespace BetListNPOI.SS.Converter
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
     using System.Xml;
-    using NPOI.SS.Util;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.Util;
-    using NPOI.HSSF.Util;
-    using NPOI.SS;
-    using NPOI.HSSF.UserModel;
-    using NPOI.HPSF;
-    using NPOI.XSSF.UserModel;
-    using NPOI.XSSF.Model;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.Util;
+    using BetListNPOI.HSSF.Util;
+    using BetListNPOI.SS;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.HPSF;
+    using BetListNPOI.XSSF.UserModel;
+    using BetListNPOI.XSSF.Model;
 
     public class ExcelToHtmlConverter
     {
@@ -226,7 +226,7 @@ namespace NPOI.SS.Converter
 
         protected void ProcessDocumentInformation(IWorkbook workbook)
         {
-            if (workbook is NPOI.HSSF.UserModel.HSSFWorkbook)
+            if (workbook is BetListNPOI.HSSF.UserModel.HSSFWorkbook)
             {
                 SummaryInformation summaryInformation = ((HSSFWorkbook)workbook).SummaryInformation;
                 if (summaryInformation != null)
@@ -244,9 +244,9 @@ namespace NPOI.SS.Converter
                         htmlDocumentFacade.AddDescription(summaryInformation.Comments);
                 }
             }
-            else if(workbook is NPOI.XSSF.UserModel.XSSFWorkbook)
+            else if(workbook is BetListNPOI.XSSF.UserModel.XSSFWorkbook)
             {
-                POIXMLProperties props=((NPOI.XSSF.UserModel.XSSFWorkbook)workbook).GetProperties();
+                POIXMLProperties props=((BetListNPOI.XSSF.UserModel.XSSFWorkbook)workbook).GetProperties();
                 if (!string.IsNullOrEmpty(props.CoreProperties.Title))
                 {
                     htmlDocumentFacade.Title = props.CoreProperties.Title;

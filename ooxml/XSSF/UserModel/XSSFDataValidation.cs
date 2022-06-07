@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 using System.Collections.Generic;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
 using System;
 using System.Text;
-using NPOI.SS.Util;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.SS.Util;
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -98,7 +98,7 @@ namespace NPOI.XSSF.UserModel
 
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidation#CreateErrorBox(java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidation#CreateErrorBox(java.lang.String, java.lang.String)
          */
         public void CreateErrorBox(String title, String text)
         {
@@ -107,7 +107,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidation#CreatePromptBox(java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidation#CreatePromptBox(java.lang.String, java.lang.String)
          */
         public void CreatePromptBox(String title, String text)
         {
@@ -165,7 +165,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidation#getPromptBoxTitle()
+         * @see BetListNPOI.ss.usermodel.DataValidation#getPromptBoxTitle()
          */
         public String PromptBoxTitle
         {
@@ -176,7 +176,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidation#getShowErrorBox()
+         * @see BetListNPOI.ss.usermodel.DataValidation#getShowErrorBox()
          */
         public bool ShowErrorBox
         {
@@ -191,7 +191,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidation#getShowPromptBox()
+         * @see BetListNPOI.ss.usermodel.DataValidation#getShowPromptBox()
          */
         public bool ShowPromptBox
         {
@@ -206,7 +206,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidation#getSuppressDropDownArrow()
+         * @see BetListNPOI.ss.usermodel.DataValidation#getSuppressDropDownArrow()
          */
         public bool SuppressDropDownArrow
         {

@@ -16,7 +16,7 @@
  *    limitations under the License.
  * ====================================================================
  */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * Specifies a list of auto-fit types.

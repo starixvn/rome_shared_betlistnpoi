@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
 
     /**
      * The default data label text properties record identifies the text characteristics of the preceding text record.<p/>

@@ -17,12 +17,12 @@
  * ====================================================================
  */
 
-using NPOI.SS.Formula;
+using BetListNPOI.SS.Formula;
 using System;
-using NPOI.SS.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.Formula.PTG;
-namespace NPOI.XSSF.UserModel.Helpers
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.Formula.PTG;
+namespace BetListNPOI.XSSF.UserModel.Helpers
 {
     //class XSSFFormulaRenderingWorkbook : IFormulaRenderingWorkbook
     //{

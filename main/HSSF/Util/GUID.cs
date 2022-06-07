@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 using System.IO;
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.HSSF.Util
+namespace BetListNPOI.HSSF.Util
 {
     public class GUID {
         /*

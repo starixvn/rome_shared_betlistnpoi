@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.Text;
-    using NPOI.Util;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.Util;
+    using BetListNPOI.HSSF.Record;
 
     /**
      * Title:        Sup Book (EXTERNALBOOK) 

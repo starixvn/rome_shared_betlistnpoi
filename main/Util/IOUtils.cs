@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,7 +25,7 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     using System;
     using System.IO;

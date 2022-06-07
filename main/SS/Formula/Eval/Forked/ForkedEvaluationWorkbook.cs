@@ -16,14 +16,14 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula.Eval.Forked
+namespace BetListNPOI.SS.Formula.Eval.Forked
 {
     using System;
     using System.Collections.Generic;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Represents a workbook being used for forked Evaluation. Most operations are delegated to the

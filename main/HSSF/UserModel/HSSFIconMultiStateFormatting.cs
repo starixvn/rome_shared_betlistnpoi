@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
 
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.CF;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * High level representation for Icon / Multi-State Formatting 

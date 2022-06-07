@@ -1,10 +1,10 @@
-﻿using NPOI.SS.UserModel;
-using NPOI.SS.Util;
+﻿using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
     public class ConditionalFormattingEvaluator
     {

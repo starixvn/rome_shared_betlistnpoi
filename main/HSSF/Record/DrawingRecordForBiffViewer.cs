@@ -15,7 +15,7 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.IO;
@@ -48,7 +48,7 @@ namespace NPOI.HSSF.Record
         private static RecordInputStream ConvertToInputStream(DrawingRecord r)
         {
             byte[] data = r.Serialize();
-            using (MemoryStream ms = NPOI.Util.RecyclableMemory.GetStream(data))
+            using (MemoryStream ms = BetListNPOI.Util.RecyclableMemory.GetStream(data))
             {
                 RecordInputStream rinp = new RecordInputStream(ms);
                 rinp.NextRecord();

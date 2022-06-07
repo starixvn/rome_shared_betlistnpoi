@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.CF
+namespace BetListNPOI.HSSF.Record.CF
 {
     using System;
     using System.Text;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
 
     /**
      * Threshold / value (CFVO) for Changes in Conditional Formatting

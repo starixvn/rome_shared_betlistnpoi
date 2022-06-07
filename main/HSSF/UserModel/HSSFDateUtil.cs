@@ -22,13 +22,13 @@
  *
  * Created on January 19, 2002, 9:30 AM
  */
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
 
 
 
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Contains methods for dealing with Excel dates.

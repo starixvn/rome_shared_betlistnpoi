@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Dml.Picture
+namespace BetListNPOI.OpenXmlFormats.Dml.Picture
 {
     [Serializable]
     [System.Diagnostics.DebuggerStepThrough]

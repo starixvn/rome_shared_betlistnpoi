@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     using System;
     using System.IO;
-    using NPOI.POIFS.Properties;
-    using NPOI.POIFS.Common;
+    using BetListNPOI.POIFS.Properties;
+    using BetListNPOI.POIFS.Common;
 
     /**
      * This class provides methods to write a DocumentEntry managed by a

@@ -15,16 +15,16 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
     using System.IO;
     using System.Collections;
 
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.DDF;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.DDF;
 
 
     /**

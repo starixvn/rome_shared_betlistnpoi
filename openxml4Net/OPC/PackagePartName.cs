@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.Util;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.Util;
 
-namespace NPOI.OpenXml4Net.OPC
+namespace BetListNPOI.OpenXml4Net.OPC
 {
     /**
      * An immutable Open Packaging Convention compliant part name.

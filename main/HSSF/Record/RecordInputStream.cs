@@ -17,16 +17,16 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
 
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     using System;
     using System.IO;
 
 
-    using NPOI.HSSF.Record.Crypto;
+    using BetListNPOI.HSSF.Record.Crypto;
     using System.Diagnostics;
 
 

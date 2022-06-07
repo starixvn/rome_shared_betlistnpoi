@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.SS.Util;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.SS.Util;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.OpenXml4Net.OPC.Internal
+namespace BetListNPOI.OpenXml4Net.OPC.Internal
 {
     /**
      * Represents the core properties part of a package.

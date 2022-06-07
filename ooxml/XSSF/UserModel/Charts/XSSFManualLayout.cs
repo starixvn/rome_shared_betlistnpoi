@@ -15,10 +15,10 @@
    limitations under the License.
    ==================================================================== */
 
-using NPOI.SS.UserModel.Charts;
-using NPOI.OpenXmlFormats.Dml.Chart;
+using BetListNPOI.SS.UserModel.Charts;
+using BetListNPOI.OpenXmlFormats.Dml.Chart;
 using System;
-namespace NPOI.XSSF.UserModel.Charts
+namespace BetListNPOI.XSSF.UserModel.Charts
 {
 
 

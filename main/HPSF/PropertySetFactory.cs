@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,12 +25,12 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     using System.IO;
-    using NPOI.HPSF.Wellknown;
+    using BetListNPOI.HPSF.Wellknown;
     using System;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.FileSystem;
 
     /// <summary>
     /// Factory class To Create instances of {@link SummaryInformation},

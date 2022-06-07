@@ -17,13 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     using System;
     using System.Text;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.Util;
 
 
     /*

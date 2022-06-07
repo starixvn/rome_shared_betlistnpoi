@@ -1,6 +1,6 @@
 ﻿
 using System;
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
     public abstract class RefEvalBase : RefEval
     {

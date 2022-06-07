@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-using NPOI.HSSF.Model;
+using BetListNPOI.HSSF.Model;
 using System.Diagnostics;
-using NPOI.HSSF.Record.Chart;
+using BetListNPOI.HSSF.Record.Chart;
 
-namespace NPOI.HSSF.Record.Aggregates.Chart
+namespace BetListNPOI.HSSF.Record.Aggregates.Chart
 {
     /// <summary>
     /// SERIESAXIS = Axis Begin [CatSerRange] AXS [CRTMLFRT] End

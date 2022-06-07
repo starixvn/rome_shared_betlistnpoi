@@ -15,17 +15,17 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System.IO;
 using System.Xml;
 using System.Collections.Generic;
 using System;
-using NPOI.OpenXmlFormats;
-using NPOI.Util;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXmlFormats.Dml;
+using BetListNPOI.OpenXmlFormats;
+using BetListNPOI.Util;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXmlFormats.Dml;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -84,13 +84,13 @@ namespace NPOI.XSSF.UserModel
         }
 
 
-        protected override NPOI.OpenXmlFormats.Spreadsheet.CT_Drawing GetCTDrawing()
+        protected override BetListNPOI.OpenXmlFormats.Spreadsheet.CT_Drawing GetCTDrawing()
         {
             return chartsheet.drawing;
         }
 
 
-        protected override NPOI.OpenXmlFormats.Spreadsheet.CT_LegacyDrawing GetCTLegacyDrawing()
+        protected override BetListNPOI.OpenXmlFormats.Spreadsheet.CT_LegacyDrawing GetCTLegacyDrawing()
         {
             return chartsheet.legacyDrawing;
         }

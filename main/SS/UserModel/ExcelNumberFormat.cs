@@ -1,9 +1,9 @@
-﻿using NPOI.SS.Formula;
+﻿using BetListNPOI.SS.Formula;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     public class ExcelNumberFormat
     {

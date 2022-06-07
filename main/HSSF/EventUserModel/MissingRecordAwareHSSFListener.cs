@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.EventUserModel;
-    using NPOI.HSSF.EventUserModel.DummyRecord;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.EventUserModel;
+    using BetListNPOI.HSSF.EventUserModel.DummyRecord;
 
     /// <summary>
     /// A HSSFListener which tracks rows and columns, and will

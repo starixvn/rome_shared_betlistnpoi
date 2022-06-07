@@ -1,8 +1,8 @@
-﻿using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
+﻿using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
 using System;
 
-namespace NPOI.OOXML.XSSF.UserModel
+namespace BetListNPOI.OOXML.XSSF.UserModel
 {
     public class XSSFConditionFilterData:IConditionFilterData
     {

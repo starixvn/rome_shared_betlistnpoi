@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 using System;
-using NPOI.SS.Formula;
-using NPOI.SS.Formula.UDF;
-using NPOI.SS.UserModel;
-using NPOI.Util;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.UDF;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SXSSFFormulaEvaluator : BaseXSSFFormulaEvaluator
     {

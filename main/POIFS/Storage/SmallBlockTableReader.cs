@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Common;
+using BetListNPOI.POIFS.Properties;
+using BetListNPOI.POIFS.Common;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// This class implements reading the small document block list from an

@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -30,11 +30,11 @@ using System.Text;
 using System.Collections;
 using System.IO;
 
-using NPOI.POIFS.Dev;
-using NPOI.POIFS.Common;
-using NPOI.Util;
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.Properties
 {
     /// <summary>
     /// This abstract base class is the ancestor of all classes

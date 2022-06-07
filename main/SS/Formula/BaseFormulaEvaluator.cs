@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
     using System;
     using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
 
     /**
     * Common functionality across file formats for Evaluating formula cells.<p/>
@@ -161,7 +161,7 @@ namespace NPOI.SS.Formula
          * int EvaluatedCellType = Evaluator.EvaluateFormulaCell(cell);
          * </pre>
          * Be aware that your cell will hold both the formula, and the result. If you want the cell
-         * Replaced with the result of the formula, use {@link #EvaluateInCell(NPOI.SS.UserModel.Cell)}
+         * Replaced with the result of the formula, use {@link #EvaluateInCell(BetListNPOI.SS.UserModel.Cell)}
          * @param cell The cell to Evaluate
          * @return -1 for non-formula cells, or the type of the <em>formula result</em>
          */
@@ -184,7 +184,7 @@ namespace NPOI.SS.Formula
          * </pre>
          * Be aware that your cell will hold both the formula,
          *  and the result. If you want the cell Replaced with
-         *  the result of the formula, use {@link #Evaluate(NPOI.SS.UserModel.Cell)} }
+         *  the result of the formula, use {@link #Evaluate(BetListNPOI.SS.UserModel.Cell)} }
          * @param cell The cell to Evaluate
          * @return The type of the formula result (the cell's type remains as CellType.FORMULA however)
          *         If cell is not a formula cell, returns {@link CellType#_NONE} rather than throwing an exception.

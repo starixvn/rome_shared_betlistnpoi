@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
     /// <summary>
-    /// Common interface for NPOI.SS.UserModel.Header and NPOI.SS.UserModel.Footer
+    /// Common interface for BetListNPOI.SS.UserModel.Header and BetListNPOI.SS.UserModel.Footer
     /// </summary>
     public interface IHeaderFooter
     {

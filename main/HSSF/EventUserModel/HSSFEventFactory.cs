@@ -16,11 +16,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
     using System.IO;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.HSSF.Record;
 
 
     /// <summary>

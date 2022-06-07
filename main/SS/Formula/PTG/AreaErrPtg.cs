@@ -15,14 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+namespace BetListNPOI.SS.Formula.PTG
 {
     using System;
     
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * AreaErr - handles deleted cell area references.

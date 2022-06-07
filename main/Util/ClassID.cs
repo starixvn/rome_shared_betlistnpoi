@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -29,7 +29,7 @@ using System;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// Represents a class ID (16 bytes). Unlike other little-endian

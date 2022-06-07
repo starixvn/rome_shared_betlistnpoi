@@ -16,8 +16,8 @@
 ==================================================================== */
 
 using System.Collections.Generic;
-using NPOI.SS.Util;
-namespace NPOI.SS.UserModel.Charts
+using BetListNPOI.SS.Util;
+namespace BetListNPOI.SS.UserModel.Charts
 {
 
 

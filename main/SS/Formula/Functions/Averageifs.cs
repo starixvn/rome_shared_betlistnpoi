@@ -16,8 +16,8 @@
  *    limitations under the License.
  * ====================================================================
  */
-using NPOI.SS.Formula.Eval;
-namespace NPOI.SS.Formula.Functions {
+using BetListNPOI.SS.Formula.Eval;
+namespace BetListNPOI.SS.Formula.Functions {
     /**
      * Implementation for the Excel function AverageIfs<br/>
      * <p>

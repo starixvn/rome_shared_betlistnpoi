@@ -17,10 +17,10 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class AutoSizeColumnTracker
     {

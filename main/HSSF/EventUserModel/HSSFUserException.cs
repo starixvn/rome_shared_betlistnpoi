@@ -16,7 +16,7 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
     using System;
     /// <summary>

@@ -5,10 +5,10 @@ using System.ComponentModel;
 using System.Text;
 using System.Xml.Serialization;
 using System.Xml;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     /// <summary>
     /// Holds the Column Width and its Formatting

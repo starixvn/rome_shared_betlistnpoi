@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     /// <summary>
     /// Specifies the possible ways to store a chart element's position.

@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt.Standard
+namespace BetListNPOI.POIFS.Crypt.Standard
 {
     using System;
-    using NPOI.POIFS.Crypt;
-    using NPOI.Util;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.Util;
 
     public class StandardEncryptionInfoBuilder : IEncryptionInfoBuilder
     {

@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -29,9 +29,9 @@ using System;
 using System.Text;
 using System.Collections;
 using System.IO;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.FileSystem;
 
-namespace NPOI.POIFS.Dev
+namespace BetListNPOI.POIFS.Dev
 {
     /// <summary>
     /// This class contains methods used to inspect POIFSViewable objects

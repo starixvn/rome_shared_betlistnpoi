@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     using System;
     using System.Collections.Generic;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Internal POI use only - parent of XSSF and SXSSF formula Evaluators

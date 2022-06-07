@@ -22,7 +22,7 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig
+namespace BetListNPOI.POIFS.Crypt.Dsig
 {
     using System;
     using System.Security;

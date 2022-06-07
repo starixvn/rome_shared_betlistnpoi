@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -28,11 +28,11 @@
 using System.Collections.Generic;
 using System.IO;
 
-using NPOI.POIFS.Common;
-using NPOI.POIFS.FileSystem;
-using NPOI.Util;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
 
     /// <summary>

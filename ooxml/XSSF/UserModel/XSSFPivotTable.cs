@@ -14,17 +14,17 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
     using System.Xml;
-    using NPOI.OpenXml4Net.OPC;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.SS;
+    using BetListNPOI.OpenXml4Net.OPC;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.SS;
 
     public class XSSFPivotTable : POIXMLDocumentPart
     {

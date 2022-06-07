@@ -15,18 +15,18 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.UserModel;
-using NPOI.XSSF.Model;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.Util;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.Util;
 using System;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.Formula;
-using NPOI.SS;
-using NPOI.Util;
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS;
+using BetListNPOI.Util;
+using BetListNPOI.SS.Formula.Eval;
 using System.Globalization;
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -612,7 +612,7 @@ namespace NPOI.XSSF.UserModel
          *
          * @param formula the formula to Set, e.g. <code>"SUM(C4:E4)"</code>.
          *  If the argument is <code>null</code> then the current formula is Removed.
-         * @throws NPOI.ss.formula.FormulaParseException if the formula has incorrect syntax or is otherwise invalid
+         * @throws BetListNPOI.ss.formula.FormulaParseException if the formula has incorrect syntax or is otherwise invalid
          * @throws InvalidOperationException if the operation is not allowed, for example,
          *  when the cell is a part of a multi-cell array formula
          */

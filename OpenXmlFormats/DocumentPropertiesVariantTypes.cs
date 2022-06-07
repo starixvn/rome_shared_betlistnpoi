@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 using System.Collections.Generic;
 using System;
 
-namespace NPOI.OpenXmlFormats
+namespace BetListNPOI.OpenXmlFormats
 {
 
     [Serializable]

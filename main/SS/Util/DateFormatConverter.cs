@@ -19,9 +19,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
 
     /// <summary>

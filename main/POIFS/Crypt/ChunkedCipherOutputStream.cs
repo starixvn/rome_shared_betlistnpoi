@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     using System;
     using System.IO;
-    using NPOI.POIFS.EventFileSystem;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
+    using BetListNPOI.POIFS.EventFileSystem;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.Util;
 
 
     public abstract class ChunkedCipherOutputStream : LittleEndianOutputStream {

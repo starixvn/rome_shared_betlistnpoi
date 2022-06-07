@@ -23,13 +23,13 @@
  * Created on January 22, 2008, 10:05 PM
  */
 
-namespace NPOI.HSSF.Record.CF
+namespace BetListNPOI.HSSF.Record.CF
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
 
 
 

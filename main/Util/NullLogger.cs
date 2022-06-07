@@ -17,7 +17,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -28,7 +28,7 @@
 
 using System;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// A Logger class that strives to make it as easy as possible for

@@ -17,14 +17,14 @@
 ==================================================================== */
 
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     using System;
     using System.IO;
     using System.Text;
 
 
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using ICSharpCode.SharpZipLib.Zip.Compression;
     using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
 

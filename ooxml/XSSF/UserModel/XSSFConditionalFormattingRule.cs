@@ -18,17 +18,17 @@
  */
 
 using EnumsNET;
-using NPOI.OOXML.XSSF.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.Model;
-using NPOI.XSSF.Util;
+using BetListNPOI.OOXML.XSSF.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.XSSF.Util;
 using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using ConditionTypeClass = NPOI.SS.UserModel.ConditionType;
+using ConditionTypeClass = BetListNPOI.SS.UserModel.ConditionType;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -400,7 +400,7 @@ namespace NPOI.XSSF.UserModel
          * The comparison function used when the type of conditional formatting is Set to
          * {@link ConditionalFormattingRule#CONDITION_TYPE_CELL_VALUE_IS}
          * <p>
-         *     MUST be a constant from {@link NPOI.ss.usermodel.ComparisonOperator}
+         *     MUST be a constant from {@link BetListNPOI.ss.usermodel.ComparisonOperator}
          * </p>
          *
          * @return the conditional format operator
@@ -453,7 +453,7 @@ namespace NPOI.XSSF.UserModel
         /**
          * The formula used to Evaluate the second operand of the comparison when
          * comparison type is  {@link ConditionalFormattingRule#CONDITION_TYPE_CELL_VALUE_IS} and operator
-         * is either {@link NPOI.ss.usermodel.ComparisonOperator#BETWEEN} or {@link NPOI.ss.usermodel.ComparisonOperator#NOT_BETWEEN}
+         * is either {@link BetListNPOI.ss.usermodel.ComparisonOperator#BETWEEN} or {@link BetListNPOI.ss.usermodel.ComparisonOperator#NOT_BETWEEN}
          *
          * @return  the second formula
          */

@@ -16,13 +16,13 @@
    ==================================================================== */
 
 using System.Collections.Generic;
-using NPOI.OpenXmlFormats.Dml.Chart;
-using NPOI.SS.Util;
-using NPOI.SS.UserModel.Charts;
-using NPOI.XSSF.UserModel.Charts;
-using NPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Dml.Chart;
+using BetListNPOI.SS.Util;
+using BetListNPOI.SS.UserModel.Charts;
+using BetListNPOI.XSSF.UserModel.Charts;
+using BetListNPOI.SS.UserModel;
 using System;
-namespace NPOI.XSSF.UserModel.Charts
+namespace BetListNPOI.XSSF.UserModel.Charts
 {
 
     /**

@@ -16,15 +16,15 @@
 ==================================================================== */
 
 
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.HSSF.Record.Aggregates
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
     using System;
     using System.Text;
     using System.Collections.Generic;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.Util;
 
     /// <summary>
     /// Manages various auxiliary records while constructing a RowRecordsAggregate

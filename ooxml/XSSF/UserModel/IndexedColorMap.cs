@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.OOXML.XSSF.UserModel
+namespace BetListNPOI.OOXML.XSSF.UserModel
 {
     public interface IIndexedColorMap
     {

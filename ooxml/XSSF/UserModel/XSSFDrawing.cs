@@ -17,18 +17,18 @@
 
 using System;
 using System.IO;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXmlFormats.Dml.Spreadsheet; // http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing
-using NPOI.SS.UserModel;
-using NPOI.XSSF.Model;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet; // http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
 using System.Collections.Generic;
 using System.Xml;
-using NPOI.OpenXmlFormats.Dml;
-using NPOI.SS.Util;
-using NPOI.Util;
+using BetListNPOI.OpenXmlFormats.Dml;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
 
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -44,14 +44,14 @@ namespace NPOI.XSSF.UserModel
         /**
          * Root element of the SpreadsheetML Drawing part
          */
-        private NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_Drawing drawing = NewDrawing();
+        private BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_Drawing drawing = NewDrawing();
        // private bool isNew = true; not used so far
         private long numOfGraphicFrames = 0L;
 
         /**
          * Create a new SpreadsheetML Drawing
          *
-         * @see NPOI.xssf.usermodel.XSSFSheet#CreateDrawingPatriarch()
+         * @see BetListNPOI.xssf.usermodel.XSSFSheet#CreateDrawingPatriarch()
          */
         public XSSFDrawing()
             : base()
@@ -137,7 +137,7 @@ namespace NPOI.XSSF.UserModel
          *
          * @param anchor    the client anchor describes how this picture is attached to the sheet.
          * @param pictureIndex the index of the picture in the workbook collection of pictures,
-         *   {@link NPOI.xssf.usermodel.XSSFWorkbook#getAllPictures()} .
+         *   {@link BetListNPOI.xssf.usermodel.XSSFWorkbook#getAllPictures()} .
          *
          * @return  the newly Created picture shape.
          */
@@ -193,7 +193,7 @@ namespace NPOI.XSSF.UserModel
          * Add the indexed picture to this Drawing relations
          *
          * @param pictureIndex the index of the picture in the workbook collection of pictures,
-         *   {@link NPOI.xssf.usermodel.XSSFWorkbook#getAllPictures()} .
+         *   {@link BetListNPOI.xssf.usermodel.XSSFWorkbook#getAllPictures()} .
          */
         internal PackageRelationship AddPictureReference(int pictureIndex)
         {
@@ -276,7 +276,7 @@ namespace NPOI.XSSF.UserModel
             //create comments and vmlDrawing parts if they don't exist
             CommentsTable comments = sheet.GetCommentsTable(true);
             XSSFVMLDrawing vml = sheet.GetVMLDrawing(true);
-            NPOI.OpenXmlFormats.Vml.CT_Shape vmlShape = vml.newCommentShape();
+            BetListNPOI.OpenXmlFormats.Vml.CT_Shape vmlShape = vml.newCommentShape();
             if (ca.IsSet())
             {
                 // convert offsets from emus to pixels since we get a DrawingML-anchor

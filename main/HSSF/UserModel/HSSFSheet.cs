@@ -15,26 +15,26 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using NPOI.DDF;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.HSSF.Record.AutoFilter;
-    using NPOI.HSSF.Util;
-    using NPOI.SS;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
+    using BetListNPOI.DDF;
+    using BetListNPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.Aggregates;
+    using BetListNPOI.HSSF.Record.AutoFilter;
+    using BetListNPOI.HSSF.Util;
+    using BetListNPOI.SS;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
     using System.Globalization;
-    using NPOI.Util;
-    using NPOI.SS.UserModel.Helpers;
-    using NPOI.HSSF.UserModel.helpers;
+    using BetListNPOI.Util;
+    using BetListNPOI.SS.UserModel.Helpers;
+    using BetListNPOI.HSSF.UserModel.helpers;
 
 
 
@@ -86,7 +86,7 @@ namespace NPOI.HSSF.UserModel
         /// scratch. You should not be calling this from application code (its protected anyhow).
         /// </summary>
         /// <param name="workbook">The HSSF Workbook object associated with the _sheet.</param>
-        /// <see cref="NPOI.HSSF.UserModel.HSSFWorkbook.CreateSheet()"/>
+        /// <see cref="BetListNPOI.HSSF.UserModel.HSSFWorkbook.CreateSheet()"/>
         public HSSFSheet(HSSFWorkbook workbook)
         {
             _sheet = InternalSheet.CreateSheet();
@@ -101,7 +101,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="workbook">The HSSF Workbook object associated with the _sheet.</param>
         /// <param name="sheet">lowlevel Sheet object this _sheet will represent</param>
-        /// <see cref="NPOI.HSSF.UserModel.HSSFWorkbook(NPOI.POIFS.FileSystem.DirectoryNode, bool)"/>
+        /// <see cref="BetListNPOI.HSSF.UserModel.HSSFWorkbook(BetListNPOI.POIFS.FileSystem.DirectoryNode, bool)"/>
         public HSSFSheet(HSSFWorkbook workbook, InternalSheet sheet)
         {
             this._sheet = sheet;
@@ -254,7 +254,7 @@ namespace NPOI.HSSF.UserModel
         /// <returns></returns>
         /// @see org.apache.poi.hssf.usermodel.HSSFRow
         /// @see #RemoveRow(HSSFRow)
-        public NPOI.SS.UserModel.IRow CreateRow(int rownum)
+        public BetListNPOI.SS.UserModel.IRow CreateRow(int rownum)
         {
             HSSFRow row = new HSSFRow(_workbook, this, rownum);
             // new rows inherit default height from the sheet
@@ -347,7 +347,7 @@ namespace NPOI.HSSF.UserModel
             }
 
             int rownum = lastrow - 1;
-            NPOI.SS.UserModel.IRow r = GetRow(rownum);
+            BetListNPOI.SS.UserModel.IRow r = GetRow(rownum);
 
             while (r == null && rownum > 0)
             {
@@ -366,7 +366,7 @@ namespace NPOI.HSSF.UserModel
         private int FindFirstRow(int firstrow)
         {
             int rownum = firstrow + 1;
-            NPOI.SS.UserModel.IRow r = GetRow(rownum);
+            BetListNPOI.SS.UserModel.IRow r = GetRow(rownum);
 
             while (r == null && rownum <= LastRowNum)
             {
@@ -411,7 +411,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="column">The column.</param>
         /// <returns></returns>
-        public NPOI.SS.UserModel.ICellStyle GetColumnStyle(int column)
+        public BetListNPOI.SS.UserModel.ICellStyle GetColumnStyle(int column)
         {
             short styleIndex = _sheet.GetXFIndexForColAt((short)column);
 
@@ -431,7 +431,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="rowIndex">Index of the row to get.</param>
         /// <returns>the row number or null if its not defined on the _sheet</returns>
-        public NPOI.SS.UserModel.IRow GetRow(int rowIndex)
+        public BetListNPOI.SS.UserModel.IRow GetRow(int rowIndex)
         {
             if (!rows.ContainsKey(rowIndex))
                 return null;
@@ -534,7 +534,7 @@ namespace NPOI.HSSF.UserModel
         }
 
         /// <summary>
-        /// Get the visibility state for a given column.F:\Gloria\�о�\�ļ���ʽ\NPOI\src\NPOI\HSSF\Util\HSSFDataValidation.cs
+        /// Get the visibility state for a given column.F:\Gloria\�о�\�ļ���ʽ\BetListNPOI\src\BetListNPOI\HSSF\Util\HSSFDataValidation.cs
         /// </summary>
         /// <param name="column">the column to Get (0-based).</param>
         /// <param name="hidden">the visiblity state of the column.</param>
@@ -741,7 +741,7 @@ namespace NPOI.HSSF.UserModel
         /// <summary>
         /// Verify that none of the merged regions intersect a multi-cell array formula in this sheet
         /// </summary>
-        /// <exception cref="NPOI.Util.InvalidOperationException">if candidate region intersects an existing array formula in this sheet</exception>
+        /// <exception cref="BetListNPOI.Util.InvalidOperationException">if candidate region intersects an existing array formula in this sheet</exception>
         private void CheckForMergedRegionsIntersectingArrayFormulas()
         {
             foreach (CellRangeAddress region in MergedRegions)
@@ -889,11 +889,11 @@ namespace NPOI.HSSF.UserModel
         ///// </summary>
         ///// <param name="index">of the region to fetch</param>
         ///// <returns>the merged region (simple eh?)</returns>
-        //public NPOI.SS.Util.Region GetMergedRegionAt(int index)
+        //public BetListNPOI.SS.Util.Region GetMergedRegionAt(int index)
         //{
-        //    NPOI.SS.Util.CellRangeAddress cra = GetMergedRegion(index);
+        //    BetListNPOI.SS.Util.CellRangeAddress cra = GetMergedRegion(index);
 
-        //    return new NPOI.SS.Util.Region(cra.FirstRow, (short)cra.FirstColumn,
+        //    return new BetListNPOI.SS.Util.Region(cra.FirstRow, (short)cra.FirstColumn,
         //            cra.LastRow, (short)cra.LastColumn);
         //}
 
@@ -903,7 +903,7 @@ namespace NPOI.HSSF.UserModel
         /// <returns>
         /// an iterator of the PHYSICAL rows.  Meaning the 3rd element may not
         /// be the third row if say for instance the second row is undefined.
-        /// Call <see cref="NPOI.SS.UserModel.IRow.RowNum"/> on each row 
+        /// Call <see cref="BetListNPOI.SS.UserModel.IRow.RowNum"/> on each row 
         /// if you care which one it is.
         /// </returns>
         public IEnumerator GetRowEnumerator()
@@ -917,7 +917,7 @@ namespace NPOI.HSSF.UserModel
         /// <returns>
         /// an iterator of the PHYSICAL rows.  Meaning the 3rd element may not
         /// be the third row if say for instance the second row is undefined.
-        /// Call <see cref="NPOI.SS.UserModel.IRow.RowNum"/> on each row 
+        /// Call <see cref="BetListNPOI.SS.UserModel.IRow.RowNum"/> on each row 
         /// if you care which one it is.
         /// </returns>
         public IEnumerator GetEnumerator()
@@ -1773,10 +1773,10 @@ namespace NPOI.HSSF.UserModel
         /// <param name="leftmostColumn">Left column visible in right pane.</param>
         /// <param name="topRow">Top row visible in bottom pane.</param>
         /// <param name="activePane">Active pane.  One of: PANE_LOWER_RIGHT,PANE_UPPER_RIGHT, PANE_LOWER_LEFT, PANE_UPPER_LEFT</param>
-        public void CreateSplitPane(int xSplitPos, int ySplitPos, int leftmostColumn, int topRow, NPOI.SS.UserModel.PanePosition activePane)
+        public void CreateSplitPane(int xSplitPos, int ySplitPos, int leftmostColumn, int topRow, BetListNPOI.SS.UserModel.PanePosition activePane)
         //this would have the same parameter sequence as the internal method and matches the content of the description above,
         // if this signature changed do it in ISheet, too.
-        // public void CreateSplitPane(int xSplitPos, int ySplitPos, int topRow, int leftmostColumn, NPOI.SS.UserModel.PanePosition activePane)
+        // public void CreateSplitPane(int xSplitPos, int ySplitPos, int topRow, int leftmostColumn, BetListNPOI.SS.UserModel.PanePosition activePane)
         {
             Sheet.CreateSplitPane(xSplitPos, ySplitPos, topRow, leftmostColumn, activePane);
         }
@@ -1785,7 +1785,7 @@ namespace NPOI.HSSF.UserModel
         /// Returns the information regarding the currently configured pane (split or freeze).
         /// </summary>
         /// <value>null if no pane configured, or the pane information.</value>
-        public NPOI.SS.Util.PaneInformation PaneInformation
+        public BetListNPOI.SS.Util.PaneInformation PaneInformation
         {
             get
             {
@@ -1831,7 +1831,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="margin">which margin to get.</param>
         /// <returns>the size of the margin</returns>
-        public double GetMargin(NPOI.SS.UserModel.MarginType margin)
+        public double GetMargin(BetListNPOI.SS.UserModel.MarginType margin)
         {
             switch (margin)
             {
@@ -1849,7 +1849,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="margin">which margin to get.</param>
         /// <param name="size">the size of the margin</param>
-        public void SetMargin(NPOI.SS.UserModel.MarginType margin, double size)
+        public void SetMargin(BetListNPOI.SS.UserModel.MarginType margin, double size)
         {
             switch (margin)
             {
@@ -2281,7 +2281,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="column">the column index</param>
         /// <param name="style">the style to set</param>
-        public void SetDefaultColumnStyle(int column, NPOI.SS.UserModel.ICellStyle style)
+        public void SetDefaultColumnStyle(int column, BetListNPOI.SS.UserModel.ICellStyle style)
         {
             _sheet.SetDefaultColumnStyle(column, style.Index);
         }
@@ -2538,7 +2538,7 @@ namespace NPOI.HSSF.UserModel
         /// <summary>
         /// Provide a reference to the parent workbook.
         /// </summary>
-        public NPOI.SS.UserModel.IWorkbook Workbook
+        public BetListNPOI.SS.UserModel.IWorkbook Workbook
         {
             get
             {
@@ -2553,7 +2553,7 @@ namespace NPOI.HSSF.UserModel
         {
             get
             {
-                NPOI.SS.UserModel.IWorkbook wb = Workbook;
+                BetListNPOI.SS.UserModel.IWorkbook wb = Workbook;
                 int idx = wb.GetSheetIndex(this);
                 return wb.GetSheetName(idx);
             }

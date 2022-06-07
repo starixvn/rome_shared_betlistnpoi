@@ -18,11 +18,11 @@
  * Created on May 10, 2005
  *
  */
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
     using System;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Util;
 
     //public class RelationalValues
     //{

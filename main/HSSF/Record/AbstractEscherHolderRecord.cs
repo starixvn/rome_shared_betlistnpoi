@@ -16,16 +16,16 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
 
     using System;
     using System.Text;
     using System.Collections;
-    using NPOI.DDF;
-    using NPOI.Util;
+    using BetListNPOI.DDF;
+    using BetListNPOI.Util;
     using System.Collections.Generic;
-    using NPOI.HSSF.Util;
+    using BetListNPOI.HSSF.Util;
 
     /**
      * The escher container record is used to hold escher records.  It is abstract and

@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -31,14 +31,14 @@ using System.IO;
 using System.Collections;
 
 
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Dev;
-using NPOI.POIFS.FileSystem;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.Util;
-using NPOI.Util.Collections;
+using BetListNPOI.POIFS.Properties;
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.Util;
+using BetListNPOI.Util.Collections;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// Simple implementation of DirectoryEntry

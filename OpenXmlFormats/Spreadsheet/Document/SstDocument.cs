@@ -1,4 +1,4 @@
-﻿using NPOI.OpenXml4Net.Util;
+﻿using BetListNPOI.OpenXml4Net.Util;
 using System.Collections.Generic;
 using System.IO;
 using System.Security;
@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     public class SstDocument
     {

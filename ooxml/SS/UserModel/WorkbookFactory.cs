@@ -17,17 +17,17 @@
 
 using System;
 using System.IO;
-using NPOI.HSSF.Record.Crypto;
-using NPOI.HSSF.UserModel;
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.POIFS.Crypt;
-using NPOI.POIFS.FileSystem;
-using NPOI.Util;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.HSSF.Record.Crypto;
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.POIFS.Crypt;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.UserModel;
 using Org.BouncyCastle.Security;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     public enum ImportOption
     {

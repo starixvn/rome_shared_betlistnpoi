@@ -1,8 +1,8 @@
 using System;
 using System.Text;
-using NPOI.SS.UserModel;
+using BetListNPOI.SS.UserModel;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
 /**
  * Helper methods for when working with Usermodel Workbooks

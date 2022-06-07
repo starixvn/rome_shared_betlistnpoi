@@ -16,13 +16,13 @@
 ==================================================================== */
 
 using System;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.XSSF.UserModel.Helpers;
 using System.Collections.Generic;
-using NPOI.XSSF.Model;
-using NPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.SS.UserModel;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * This class : the Map element (Open Office XML Part 4:

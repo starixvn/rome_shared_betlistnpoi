@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
-using NPOI.OpenXml4Net.OPC.Internal.Unmarshallers;
+using BetListNPOI.OpenXml4Net.OPC.Internal.Unmarshallers;
 
-namespace NPOI.OpenXml4Net.OPC.Internal
+namespace BetListNPOI.OpenXml4Net.OPC.Internal
 {
     /**
      * Object implemented this interface are considered as part unmarshaller. A part

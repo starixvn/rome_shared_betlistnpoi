@@ -15,7 +15,7 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
 
     using System;
@@ -38,7 +38,7 @@ namespace NPOI.SS.Util
         private bool _isSingleCell;
         private SpreadsheetVersion _version; // never null
 
-        [Obsolete("deprecated since NPOI 2.5.1 Prefer supplying a spreadsheet version.")]
+        [Obsolete("deprecated since BetListNPOI 2.5.1 Prefer supplying a spreadsheet version.")]
         public AreaReference(String reference)
             : this(reference, DEFAULT_SPREADSHEET_VERSION)
         {

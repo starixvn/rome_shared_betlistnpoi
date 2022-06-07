@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -29,15 +29,15 @@ using System;
 using System.Collections;
 using System.IO;
 
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Dev;
-using NPOI.POIFS.Storage;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.POIFS.Common;
-using NPOI.Util;
+using BetListNPOI.POIFS.Properties;
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.POIFS.Storage;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// This is the main class of the POIFS system; it manages the entire

@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
 
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
 
     /**
      * @author <a href="rjankiraman@emptoris.com">Radhakrishnan J</a>
@@ -41,7 +41,7 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateDateConstraint
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateDateConstraint
          * (int, java.lang.String, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateDateConstraint(int operatorType, String formula1, String formula2, String dateFormat)
@@ -53,7 +53,7 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateExplicitListConstraint
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateExplicitListConstraint
          * (java.lang.String[])
          */
         public IDataValidationConstraint CreateExplicitListConstraint(String[] listOfValues)
@@ -65,7 +65,7 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateFormulaListConstraint
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateFormulaListConstraint
          * (java.lang.String)
          */
         public IDataValidationConstraint CreateFormulaListConstraint(String listFormula)
@@ -89,7 +89,7 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateNumericConstraint
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateNumericConstraint
          * (int, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateDecimalConstraint(int operatorType, String formula1, String formula2)
@@ -101,7 +101,7 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateTextLengthConstraint
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateTextLengthConstraint
          * (int, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateTextLengthConstraint(int operatorType, String formula1, String formula2)
@@ -113,7 +113,7 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateTimeConstraint
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateTimeConstraint
          * (int, java.lang.String, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateTimeConstraint(int operatorType, String formula1, String formula2)
@@ -132,9 +132,9 @@ namespace NPOI.HSSF.UserModel
          * (non-Javadoc)
          * 
          * @see
-         * NPOI.SS.UserModel.DataValidationHelper#CreateValidation(org
+         * BetListNPOI.SS.UserModel.DataValidationHelper#CreateValidation(org
          * .apache.poi.SS.UserModel.DataValidationConstraint,
-         * NPOI.SS.Util.CellRangeAddressList)
+         * BetListNPOI.SS.Util.CellRangeAddressList)
          */
         public IDataValidation CreateValidation(IDataValidationConstraint constraint, CellRangeAddressList cellRangeAddressList)
         {

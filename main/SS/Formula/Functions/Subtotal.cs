@@ -18,10 +18,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NPOI.SS.Formula.Eval;
-using NPOI.Util;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.Util;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implementation for the Excel function SUBTOTAL<p>

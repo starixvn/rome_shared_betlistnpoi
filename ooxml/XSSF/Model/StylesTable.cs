@@ -20,16 +20,16 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
-using NPOI.XSSF.UserModel.Extensions;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.UserModel;
+using BetListNPOI.XSSF.UserModel.Extensions;
 using System.Collections.ObjectModel;
-using NPOI.SS;
-using NPOI.OOXML.XSSF.UserModel;
+using BetListNPOI.SS;
+using BetListNPOI.OOXML.XSSF.UserModel;
 
-namespace NPOI.XSSF.Model
+namespace BetListNPOI.XSSF.Model
 {
 
 

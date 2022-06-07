@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /**
      * Represents a type of a conditional formatting rule

@@ -15,9 +15,9 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     using System;
 

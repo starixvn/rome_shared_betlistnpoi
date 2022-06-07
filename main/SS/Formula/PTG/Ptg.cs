@@ -15,7 +15,7 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+namespace BetListNPOI.SS.Formula.PTG
 {
 
     using System;
@@ -23,7 +23,7 @@ namespace NPOI.SS.Formula.PTG
     using System.Runtime.Serialization.Formatters.Binary;
     using System.Collections;
 
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System.Collections.Generic;
 
 

@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
     using System.Collections.Generic;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /**
      * @author Philipp Epp

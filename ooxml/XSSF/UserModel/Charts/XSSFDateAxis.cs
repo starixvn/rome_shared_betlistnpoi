@@ -1,10 +1,10 @@
-﻿using NPOI.OpenXmlFormats.Dml.Chart;
-using NPOI.SS.UserModel.Charts;
+﻿using BetListNPOI.OpenXmlFormats.Dml.Chart;
+using BetListNPOI.SS.UserModel.Charts;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.XSSF.UserModel.Charts
+namespace BetListNPOI.XSSF.UserModel.Charts
 {
     public class XSSFDateAxis : XSSFChartAxis
     {

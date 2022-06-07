@@ -17,15 +17,15 @@
 
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using NPOI.SS.Formula.Function;
+using BetListNPOI.SS.Formula.Function;
 
-namespace NPOI.SS.Formula.Atp {
+namespace BetListNPOI.SS.Formula.Atp {
     using System;
     using System.Collections;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.UDF;
 
     public class NotImplemented : FreeRefFunction
     {

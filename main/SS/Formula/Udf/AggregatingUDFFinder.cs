@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.UDF
+namespace BetListNPOI.SS.Formula.UDF
 {
     using System;
-    using NPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.Functions;
     using System.Collections.Generic;
 
     /**

@@ -14,9 +14,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using Org.BouncyCastle.Crypto;
     using Org.BouncyCastle.Security;
     using System;

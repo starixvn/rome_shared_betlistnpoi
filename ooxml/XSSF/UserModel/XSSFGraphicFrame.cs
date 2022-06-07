@@ -18,12 +18,12 @@
  */
 
 using System;
-using NPOI.OpenXmlFormats;
-using NPOI.OpenXmlFormats.Dml;
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats;
+using BetListNPOI.OpenXmlFormats.Dml;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
 using System.Xml;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -65,8 +65,8 @@ namespace NPOI.XSSF.UserModel
 
                 CT_GraphicalObjectFrame graphicFrame = new CT_GraphicalObjectFrame();
 
-                NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_GraphicalObjectFrameNonVisual nvGraphic = graphicFrame.AddNewNvGraphicFramePr();
-                NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualDrawingProps props = nvGraphic.AddNewCNvPr();
+                BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_GraphicalObjectFrameNonVisual nvGraphic = graphicFrame.AddNewNvGraphicFramePr();
+                BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualDrawingProps props = nvGraphic.AddNewCNvPr();
                 props.id = (0);
                 props.name = ("Diagramm 1");
                 nvGraphic.AddNewCNvGraphicFramePr();
@@ -113,7 +113,7 @@ namespace NPOI.XSSF.UserModel
             }
         }
 
-        private NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualDrawingProps GetNonVisualProperties()
+        private BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualDrawingProps GetNonVisualProperties()
         {
             CT_GraphicalObjectFrameNonVisual nvGraphic = graphicFrame.nvGraphicFramePr;
             return nvGraphic.cNvPr;
@@ -192,7 +192,7 @@ namespace NPOI.XSSF.UserModel
         }
 
 
-        protected internal override NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_ShapeProperties GetShapeProperties()
+        protected internal override BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_ShapeProperties GetShapeProperties()
         {
             return null;
         }

@@ -16,10 +16,10 @@
 ==================================================================== */
 
 using System.IO;
-using NPOI.POIFS.FileSystem;
-using NPOI.Util;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     using System;
     using System.Reflection;

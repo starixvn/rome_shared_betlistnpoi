@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     public class MutableFPNumber
     {
 

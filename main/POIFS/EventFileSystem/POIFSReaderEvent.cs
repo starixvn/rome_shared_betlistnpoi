@@ -18,9 +18,9 @@
         
 using System;
 
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.FileSystem;
 
-namespace NPOI.POIFS.EventFileSystem
+namespace BetListNPOI.POIFS.EventFileSystem
 {
 
 /**

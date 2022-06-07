@@ -17,16 +17,16 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Aggregates
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
     using System;
     using System.Collections;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Formula;
-    using NPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.HSSF.Model;
     using System.Collections.Generic;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.SS;
+    using BetListNPOI.HSSF.Record.Chart;
+    using BetListNPOI.SS;
 
     /**
      *

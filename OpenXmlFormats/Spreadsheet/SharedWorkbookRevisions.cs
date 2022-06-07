@@ -15,7 +15,7 @@ using System.ComponentModel;
 using System.Collections.Generic;
 
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
  
     public enum ST_PivotAreaType

@@ -15,15 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Util
+namespace BetListNPOI.HSSF.Util
 {
     using System;
     using System.Collections;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System.Collections.Generic;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.SS.Util;
 
     /// <summary>
     /// Various utility functions that make working with a cells and rows easier.  The various

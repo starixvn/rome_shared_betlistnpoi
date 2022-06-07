@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     using System;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula;
 
     /**
      * Implementation of Excel 'Analysis ToolPak' function YEARFRAC()<br/>
@@ -96,7 +96,7 @@ namespace NPOI.SS.Formula.Atp
                     return dVal;
                 }
                 DateTime date = DateParser.ParseDate(strVal);
-                return NPOI.SS.UserModel.DateUtil.GetExcelDate(date, false);
+                return BetListNPOI.SS.UserModel.DateUtil.GetExcelDate(date, false);
             }
             return OperandResolver.CoerceValueToDouble(ve);
         }

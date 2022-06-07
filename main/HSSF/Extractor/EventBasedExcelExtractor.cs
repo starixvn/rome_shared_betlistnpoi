@@ -15,22 +15,22 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Extractor
+namespace BetListNPOI.HSSF.Extractor
 {
     using System;
     using System.Text;
     using System.IO;
     using System.Collections;
 
-    using NPOI.HSSF.UserModel;
-    using NPOI.HSSF.Record;
-    using NPOI.POIFS.FileSystem;
-    using NPOI;
-    using NPOI.HPSF;
-    using NPOI.HSSF.EventUserModel;
-    using NPOI.HSSF.Model;
-    //using NPOI.HSSF.Util;
-    using NPOI.SS.Util;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI;
+    using BetListNPOI.HPSF;
+    using BetListNPOI.HSSF.EventUserModel;
+    using BetListNPOI.HSSF.Model;
+    //using BetListNPOI.HSSF.Util;
+    using BetListNPOI.SS.Util;
     using System.Globalization;
 
     /// <summary>
@@ -314,8 +314,8 @@ namespace NPOI.HSSF.Extractor
                 else
                 {
                     // Is it a date?
-                    if (NPOI.SS.UserModel.DateUtil.IsADateFormat(formatIndex, formatString) &&
-                            NPOI.SS.UserModel.DateUtil.IsValidExcelDate(value))
+                    if (BetListNPOI.SS.UserModel.DateUtil.IsADateFormat(formatIndex, formatString) &&
+                            BetListNPOI.SS.UserModel.DateUtil.IsValidExcelDate(value))
                     {
                         // Java wants M not m for month
                         formatString = formatString.Replace('m', 'M');
@@ -323,7 +323,7 @@ namespace NPOI.HSSF.Extractor
                         formatString = formatString.Replace("\\\\-", "-");
 
                         // Format as a date
-                        DateTime d = NPOI.SS.UserModel.DateUtil.GetJavaDate(value, false);
+                        DateTime d = BetListNPOI.SS.UserModel.DateUtil.GetJavaDate(value, false);
                         SimpleDateFormat df = new SimpleDateFormat(formatString);
                         return df.Format(d, CultureInfo.CurrentCulture);
                     }

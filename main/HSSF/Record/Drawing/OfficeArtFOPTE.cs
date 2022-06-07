@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NPOI.Util;
-using NPOI.SS.UserModel.Drawing;
+using BetListNPOI.Util;
+using BetListNPOI.SS.UserModel.Drawing;
 
-namespace NPOI.HSSF.Record.Drawing
+namespace BetListNPOI.HSSF.Record.Drawing
 {
     public class OfficeArtFOPTE
     {

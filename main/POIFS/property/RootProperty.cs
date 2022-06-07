@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-using NPOI.POIFS.Common;
-using NPOI.POIFS.Storage;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Storage;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.Properties
 {
     public class RootProperty:DirectoryProperty
     {

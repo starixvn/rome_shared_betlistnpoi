@@ -17,7 +17,7 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /**
      * @author Yegor Kozlov

@@ -22,10 +22,10 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig
+namespace BetListNPOI.POIFS.Crypt.Dsig
 {
-    using NPOI.OpenXml4Net.Exceptions;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXml4Net.Exceptions;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System;
     using System.IO;
     using System.Security.Cryptography.Xml;

@@ -17,14 +17,14 @@
 ==================================================================== */
 
 
-using NPOI.POIFS.Common;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.FileSystem;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
 
     /**

@@ -17,12 +17,12 @@
 
 using System.IO;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     using System;
 
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.Util;
 
     public abstract class Decryptor
     {
@@ -55,17 +55,17 @@ namespace NPOI.POIFS.Crypt
 
         /**
      * Returns the length of the encrypted data that can be safely read with
-     * {@link #getDataStream(NPOI.POIFS.FileSystem.DirectoryNode)}.
+     * {@link #getDataStream(BetListNPOI.POIFS.FileSystem.DirectoryNode)}.
      * Just Reading to the end of the input stream is not sufficient because there are
      * normally pAdding bytes that must be discarded
      *
      * <p>
-     *    The length variable is Initialized in {@link #getDataStream(NPOI.POIFS.FileSystem.DirectoryNode)},
+     *    The length variable is Initialized in {@link #getDataStream(BetListNPOI.POIFS.FileSystem.DirectoryNode)},
      *    an attempt to call GetLength() prior to GetDataStream() will result in InvalidOperationException.
      * </p>
      *
      * @return length of the encrypted data
-     * @throws InvalidOperationException if {@link #getDataStream(NPOI.POIFS.FileSystem.DirectoryNode)}
+     * @throws InvalidOperationException if {@link #getDataStream(BetListNPOI.POIFS.FileSystem.DirectoryNode)}
      * was not called
      */
         public abstract long GetLength();

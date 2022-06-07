@@ -14,22 +14,22 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
+namespace BetListNPOI
 {
     using System;
-    using NPOI.POIFS.Common;
-    using NPOI.Util;
-    using NPOI.OpenXml4Net.Exceptions;
+    using BetListNPOI.POIFS.Common;
+    using BetListNPOI.Util;
+    using BetListNPOI.OpenXml4Net.Exceptions;
     using System.IO;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.Collections.Generic;
-    using NPOI.OpenXml4Net;
+    using BetListNPOI.OpenXml4Net;
     using System.Reflection;
-    using NPOI.POIFS.FileSystem;
+    using BetListNPOI.POIFS.FileSystem;
 
     public abstract class POIXMLDocument : POIXMLDocumentPart, ICloseable
     {
-        public static String DOCUMENT_CREATOR = "NPOI";
+        public static String DOCUMENT_CREATOR = "BetListNPOI";
 
         // OLE embeddings relation name
         public static String OLE_OBJECT_REL_TYPE = "http://schemas.openxmlformats.org/officeDocument/2006/relationships/oleObject";
@@ -213,7 +213,7 @@ namespace NPOI
                 throw new IOException("Cannot write data, document seems to have been closed already");
             }
             if (!this.GetProperties().CustomProperties.Contains("Generator"))
-                this.GetProperties().CustomProperties.AddProperty("Generator", "NPOI");
+                this.GetProperties().CustomProperties.AddProperty("Generator", "BetListNPOI");
             if (!this.GetProperties().CustomProperties.Contains("Generator Version"))
                 this.GetProperties().CustomProperties.AddProperty("Generator Version", Assembly.GetExecutingAssembly().GetName().Version.ToString(3));
             //force all children to commit their Changes into the underlying OOXML Package

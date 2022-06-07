@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -27,12 +27,12 @@
 
 using System.Collections.Generic;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     using System;
     using System.IO;
     using System.Globalization;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// Supports Reading and writing of variant data.

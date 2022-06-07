@@ -15,17 +15,17 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Extractor
+namespace BetListNPOI.HSSF.Extractor
 {
     using System;
     using System.IO;
     using System.Text;
-    using NPOI.HSSF;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+    using BetListNPOI.HSSF;
+    using BetListNPOI.HSSF.Model;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.POIFS.FileSystem;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.Util;
 
     /**
      * A text extractor for old Excel files, which are too old for

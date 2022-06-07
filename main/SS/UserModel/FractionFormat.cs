@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-using NPOI.SS.Util;
+using BetListNPOI.SS.Util;
 using System.Text.RegularExpressions;
 using System;
 using System.Text;
 using System.Globalization;
-using NPOI.SS.Format;
-namespace NPOI.SS.UserModel
+using BetListNPOI.SS.Format;
+namespace BetListNPOI.SS.UserModel
 {
 
     /**

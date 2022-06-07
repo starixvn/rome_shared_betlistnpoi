@@ -15,17 +15,17 @@
    limitations under the License.
 ==================================================================== */
 using System;
-using NPOI.SS;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.Util;
-using NPOI.XSSF.Streaming.Properties;
-using NPOI.XSSF.Streaming.Values;
-using NPOI.XSSF.UserModel;
-using Value = NPOI.XSSF.Streaming.Values.Value;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.Streaming.Properties;
+using BetListNPOI.XSSF.Streaming.Values;
+using BetListNPOI.XSSF.UserModel;
+using Value = BetListNPOI.XSSF.Streaming.Values.Value;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SXSSFCell : ICell
     {

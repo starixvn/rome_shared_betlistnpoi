@@ -15,11 +15,11 @@
    limitations under the License.
    ==================================================================== */
 
-namespace NPOI.SS.Util.CellWalk
+namespace BetListNPOI.SS.Util.CellWalk
 {
 
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
 
     /**
      * Traverse cell range.

@@ -16,19 +16,19 @@
 ==================================================================== */
 
 using System;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS;
-using NPOI.SS.Formula;
-using NPOI.SS.Formula.Functions;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.Formula.UDF;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.Model;
-using NPOI.Util;
-using NPOI.SS.Util;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Formula.UDF;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.Util;
+using BetListNPOI.SS.Util;
 using System.Collections.Generic;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * Internal POI use only

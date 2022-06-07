@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Xml.Serialization;
-using NPOI.OpenXmlFormats.Shared;
+using BetListNPOI.OpenXmlFormats.Shared;
 using System.Collections;
 using System.IO;
 using System.Xml;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 
 
-namespace NPOI.OpenXmlFormats.Wordprocessing
+namespace BetListNPOI.OpenXmlFormats.Wordprocessing
 {
 
     [Serializable]

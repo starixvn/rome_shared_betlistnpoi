@@ -17,14 +17,14 @@
 
 using System.Xml;
 using System.IO;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.XSSF.UserModel.Helpers;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System.Collections.Generic;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.XSSF.UserModel;
 using System;
 
-namespace NPOI.XSSF.Model
+namespace BetListNPOI.XSSF.Model
 {
 
 

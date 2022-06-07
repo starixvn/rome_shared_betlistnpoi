@@ -16,12 +16,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.Aggregates;
+    using BetListNPOI.SS.UserModel;
 
     /// <summary>
     /// Class to Read and manipulate the footer.

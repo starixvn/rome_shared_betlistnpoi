@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Constant
+namespace BetListNPOI.SS.Formula.Constant
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /**
      * To support Constant Values (2.5.7) as required by the CRN record.

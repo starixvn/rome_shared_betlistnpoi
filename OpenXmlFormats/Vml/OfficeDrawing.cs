@@ -1,14 +1,14 @@
 using System;
 using System.ComponentModel;
 using System.Xml.Serialization;
-using NPOI.OpenXmlFormats.Vml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Vml.Spreadsheet;
 using System.Collections.Generic;
 using System.Xml;
 using System.IO;
 using System.Text;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 
-namespace NPOI.OpenXmlFormats.Vml.Office
+namespace BetListNPOI.OpenXmlFormats.Vml.Office
 {
     
     
@@ -1694,27 +1694,27 @@ namespace NPOI.OpenXmlFormats.Vml.Office
             if (node.Attributes["v:ext"] != null)
                 ctObj.ext = (ST_Ext)Enum.Parse(typeof(ST_Ext), node.Attributes["v:ext"].Value);
             if (node.Attributes["position"] != null)
-                ctObj.position = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["position"]);
+                ctObj.position = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["position"]);
             if (node.Attributes["selection"] != null)
-                ctObj.selection = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["selection"]);
+                ctObj.selection = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["selection"]);
             if (node.Attributes["grouping"] != null)
-                ctObj.grouping = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["grouping"]);
+                ctObj.grouping = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["grouping"]);
             if (node.Attributes["ungrouping"] != null)
-                ctObj.ungrouping = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["ungrouping"]);
+                ctObj.ungrouping = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["ungrouping"]);
             if (node.Attributes["rotation"] != null)
-                ctObj.rotation = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["rotation"]);
+                ctObj.rotation = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["rotation"]);
             if (node.Attributes["cropping"] != null)
-                ctObj.cropping = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["cropping"]);
+                ctObj.cropping = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["cropping"]);
             if (node.Attributes["verticies"] != null)
-                ctObj.verticies = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["verticies"]);
+                ctObj.verticies = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["verticies"]);
             if (node.Attributes["adjusthandles"] != null)
-                ctObj.adjusthandles = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["adjusthandles"]);
+                ctObj.adjusthandles = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["adjusthandles"]);
             if (node.Attributes["text"] != null)
-                ctObj.text = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["text"]);
+                ctObj.text = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["text"]);
             if (node.Attributes["aspectratio"] != null)
-                ctObj.aspectratio = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["aspectratio"]);
+                ctObj.aspectratio = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["aspectratio"]);
             if (node.Attributes["shapetype"] != null)
-                ctObj.shapetype = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["shapetype"]);
+                ctObj.shapetype = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalse(node.Attributes["shapetype"]);
             return ctObj;
         }
 
@@ -1725,17 +1725,17 @@ namespace NPOI.OpenXmlFormats.Vml.Office
             sw.Write(string.Format("<o:{0}", nodeName));
             if(this.ext != ST_Ext.NONE)
                 XmlHelper.WriteAttribute(sw, "v:ext", this.ext.ToString());
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "position", this.position);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "selection", this.selection);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "grouping", this.grouping);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "ungrouping", this.ungrouping);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "rotation", this.rotation);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "cropping", this.cropping);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "verticies", this.verticies);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "adjusthandles", this.adjusthandles);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "text", this.text);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "aspectratio", this.aspectratio);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "shapetype", this.shapetype);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "position", this.position);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "selection", this.selection);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "grouping", this.grouping);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "ungrouping", this.ungrouping);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "rotation", this.rotation);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "cropping", this.cropping);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "verticies", this.verticies);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "adjusthandles", this.adjusthandles);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "text", this.text);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "aspectratio", this.aspectratio);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "shapetype", this.shapetype);
             sw.Write("/>");
         }
     }
@@ -2680,9 +2680,9 @@ namespace NPOI.OpenXmlFormats.Vml.Office
                 return null;
             CT_Proxy ctObj = new CT_Proxy();
             if (node.Attributes["start"] != null)
-                ctObj.start = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalseBlank(node.Attributes["start"]);
+                ctObj.start = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalseBlank(node.Attributes["start"]);
             if (node.Attributes["end"] != null)
-                ctObj.end = NPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalseBlank(node.Attributes["end"]);
+                ctObj.end = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadTrueFalseBlank(node.Attributes["end"]);
             ctObj.idref = XmlHelper.ReadString(node.Attributes["idref"]);
             if (node.Attributes["connectloc"] != null)
                 ctObj.connectloc = XmlHelper.ReadInt(node.Attributes["connectloc"]);
@@ -2692,8 +2692,8 @@ namespace NPOI.OpenXmlFormats.Vml.Office
         internal void Write(StreamWriter sw, string nodeName)
         {
             sw.Write(string.Format("<o:{0}", nodeName));
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "start", this.start);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "end", this.end);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "start", this.start);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "end", this.end);
             XmlHelper.WriteAttribute(sw, "idref", this.idref);
             XmlHelper.WriteAttribute(sw, "connectloc", this.connectloc);
             sw.Write(">");

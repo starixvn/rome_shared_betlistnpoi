@@ -18,8 +18,8 @@
         
 
 using System;
-using NPOI.POIFS.FileSystem;
-namespace NPOI.POIFS.EventFileSystem
+using BetListNPOI.POIFS.FileSystem;
+namespace BetListNPOI.POIFS.EventFileSystem
 {
 
     /**

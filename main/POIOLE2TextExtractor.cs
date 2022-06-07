@@ -14,17 +14,17 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
+namespace BetListNPOI
 {
-    using NPOI.HPSF;
-    using NPOI.HPSF.Extractor;
-    using NPOI.POIFS.FileSystem;
+    using BetListNPOI.HPSF;
+    using BetListNPOI.HPSF.Extractor;
+    using BetListNPOI.POIFS.FileSystem;
 
     /// <summary>
     /// Common Parent for OLE2 based Text Extractors
     /// of POI Documents, such as .doc, .xls
     /// You will typically find the implementation of
-    /// a given format's text extractor under NPOI.Format.Extractor
+    /// a given format's text extractor under BetListNPOI.Format.Extractor
     /// </summary>
     /// <remarks>
     /// @see org.apache.poi.hssf.extractor.ExcelExtractor

@@ -1,5 +1,5 @@
-﻿using NPOI.OpenXml4Net.Util;
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
+﻿using BetListNPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Dml.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Dml.Spreadsheet
 {
     [Serializable]
     [XmlType(Namespace = "http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing")]

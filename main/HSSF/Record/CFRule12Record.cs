@@ -15,19 +15,19 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.Text;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.HSSF.Record.Common;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.Util;
-    using ExtendedColorR = NPOI.HSSF.Record.Common.ExtendedColor;
+    using BetListNPOI.HSSF.Record.CF;
+    using BetListNPOI.HSSF.Record.Common;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.Util;
+    using ExtendedColorR = BetListNPOI.HSSF.Record.Common.ExtendedColor;
 
     /**
      * Conditional Formatting v12 Rule Record (0x087A). 

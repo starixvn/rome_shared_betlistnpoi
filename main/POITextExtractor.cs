@@ -14,9 +14,9 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
+namespace BetListNPOI
 {
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System;
     /// <summary>
     /// Common Parent for Text Extractors

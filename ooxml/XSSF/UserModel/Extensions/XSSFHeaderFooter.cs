@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.XSSF.UserModel.Helpers;
 using System;
-using NPOI.HSSF.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-namespace NPOI.XSSF.UserModel.Extensions
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+namespace BetListNPOI.XSSF.UserModel.Extensions
 {
     /// <summary>
     /// Parent class of all XSSF headers and footers.

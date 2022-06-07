@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 using System;
-using NPOI.SS.Formula;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.XSSF.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SXSSFEvaluationCell : IEvaluationCell 
     {

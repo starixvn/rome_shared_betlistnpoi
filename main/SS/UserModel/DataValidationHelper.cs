@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
 
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
     /**
      * @author <a href="rjankiraman@emptoris.com">Radhakrishnan J</a>

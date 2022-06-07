@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
-    using NPOI.OpenXmlFormats.Wordprocessing;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.IO;
     using System.Xml;
     using System.Xml.Serialization;
@@ -145,7 +145,7 @@ namespace NPOI.XWPF.UserModel
 
         /**
          * Get the PartType of the body
-         * @see NPOI.XWPF.UserModel.IBody#getPartType()
+         * @see BetListNPOI.XWPF.UserModel.IBody#getPartType()
          */
         public override BodyType PartType
         {

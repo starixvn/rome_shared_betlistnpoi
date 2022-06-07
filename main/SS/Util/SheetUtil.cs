@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
 
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System.Drawing;
     using System.Collections.Generic;
 
@@ -47,7 +47,7 @@ namespace NPOI.SS.Util
         /**
          *  Dummy formula Evaluator that does nothing.
          *  YK: The only reason of having this class is that
-         *  {@link NPOI.SS.UserModel.DataFormatter#formatCellValue(NPOI.SS.UserModel.Cell)}
+         *  {@link BetListNPOI.SS.UserModel.DataFormatter#formatCellValue(BetListNPOI.SS.UserModel.Cell)}
          *  returns formula string for formula cells. Dummy Evaluator Makes it to format the cached formula result.
          *
          *  See Bugzilla #50021 

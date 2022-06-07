@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 using System;
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
 using System.Diagnostics;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implements the Excel Rate function

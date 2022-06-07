@@ -18,13 +18,13 @@
  */
 
 using System;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.HSSF.Record.CF;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.HSSF.Record.CF;
 using System.Collections.Generic;
-using NPOI.SS;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.SS;
+namespace BetListNPOI.XSSF.UserModel
 {
 
 
@@ -52,7 +52,7 @@ namespace NPOI.XSSF.UserModel
          * TODO - formulas Containing cell references are currently not Parsed properly
          *
          * @param comparisonOperation - a constant value from
-         *		 <tt>{@link NPOI.hssf.record.CFRuleRecord.ComparisonOperator}</tt>: <p>
+         *		 <tt>{@link BetListNPOI.hssf.record.CFRuleRecord.ComparisonOperator}</tt>: <p>
          * <ul>
          *		 <li>BETWEEN</li>
          *		 <li>NOT_BETWEEN</li>
@@ -66,8 +66,8 @@ namespace NPOI.XSSF.UserModel
          * </p>
          * @param formula1 - formula for the valued, Compared with the cell
          * @param formula2 - second formula (only used with
-         * {@link NPOI.ss.usermodel.ComparisonOperator#BETWEEN}) and
-         * {@link NPOI.ss.usermodel.ComparisonOperator#NOT_BETWEEN} operations)
+         * {@link BetListNPOI.ss.usermodel.ComparisonOperator#BETWEEN}) and
+         * {@link BetListNPOI.ss.usermodel.ComparisonOperator#NOT_BETWEEN} operations)
          */
         public IConditionalFormattingRule CreateConditionalFormattingRule(
                 ComparisonOperator comparisonOperation,

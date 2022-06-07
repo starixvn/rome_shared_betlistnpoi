@@ -16,9 +16,9 @@
 ==================================================================== */
 
 using System;
-using NPOI.SS.UserModel;
-using NPOI.SS.Formula.Eval;
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Formula.Eval;
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implementation of Excel NOW() Function

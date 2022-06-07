@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Xml;
 using System.Xml.Serialization;
-using NPOI.OpenXmlFormats.Shared;
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXmlFormats.Shared;
+using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 using System.Collections;
 using System.Linq;
 
-namespace NPOI.OpenXmlFormats.Wordprocessing
+namespace BetListNPOI.OpenXmlFormats.Wordprocessing
 {
     [Serializable]
 

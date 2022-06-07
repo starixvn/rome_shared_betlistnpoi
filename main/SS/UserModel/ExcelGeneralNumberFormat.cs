@@ -18,10 +18,10 @@
    Alfresco Software has modified source of this file
    The details of Changes as svn diff can be found in svn at location root/projects/3rd-party/src 
 ==================================================================== */
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
-    using NPOI.SS.Util;
-    using NPOI.Util;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.Util;
     using System;
     using System.Globalization;
     using System.Text;

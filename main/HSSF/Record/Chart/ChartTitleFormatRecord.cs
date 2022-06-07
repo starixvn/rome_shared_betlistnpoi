@@ -18,13 +18,13 @@
 /*
  * HSSF Chart Title Format Record Type
  */
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
 
     using System;
     using System.Collections;
     using System.Text;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
 
     /**

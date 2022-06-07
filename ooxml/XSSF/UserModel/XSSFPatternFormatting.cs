@@ -16,11 +16,11 @@
  *    limitations under the License.
  * ====================================================================
  */
-using NPOI.SS.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * @author Yegor Kozlov

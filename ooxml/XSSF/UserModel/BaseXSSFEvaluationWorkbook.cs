@@ -15,21 +15,21 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     using System;
     using System.Collections.Generic;
     using System.Globalization;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.SS;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.XSSF.Model;
-    using NPOI.XSSF.Streaming;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.SS;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Functions;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.XSSF.Model;
+    using BetListNPOI.XSSF.Streaming;
 
     /**
      * Internal POI use only - parent of XSSF and SXSSF Evaluation workbooks

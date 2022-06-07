@@ -15,9 +15,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
     using System;
     using System.Globalization;
 

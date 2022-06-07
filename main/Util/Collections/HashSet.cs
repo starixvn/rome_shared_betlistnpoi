@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -29,7 +29,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace NPOI.Util.Collections
+namespace BetListNPOI.Util.Collections
 {
     /// <summary>
     /// This class comes from Java

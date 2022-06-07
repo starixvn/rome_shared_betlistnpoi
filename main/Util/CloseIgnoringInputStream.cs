@@ -16,7 +16,7 @@
 ==================================================================== */
 
 /* ================================================================
- * About NPOI
+ * About BetListNPOI
  * Author: Tony Qu 
  * Author's email: tonyqus (at) gmail.com 
  * Author's Blog: tonyqus.wordpress.com.cn (wp.tonyqus.cn)
@@ -27,7 +27,7 @@
 
 using System.IO;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     internal class CloseIgnoringInputStream : Stream
     {

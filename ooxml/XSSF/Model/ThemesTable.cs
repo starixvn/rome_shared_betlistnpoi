@@ -14,14 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.Model
+namespace BetListNPOI.XSSF.Model
 {
 
     using System.Xml;
-    using NPOI.OpenXml4Net.OPC;
-    using NPOI.XSSF.UserModel;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.OpenXmlFormats.Dml;
+    using BetListNPOI.OpenXml4Net.OPC;
+    using BetListNPOI.XSSF.UserModel;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.OpenXmlFormats.Dml;
     using System;
     using System.Collections.Generic;
     using System.IO;
@@ -101,7 +101,7 @@ namespace NPOI.XSSF.Model
             // i.e. these keys are NOT the same as the order in which theme colors appear
             // in theme1.xml. They are keys to a mapped color.
             CT_ColorScheme colorScheme = theme.GetTheme().themeElements.clrScheme;
-            NPOI.OpenXmlFormats.Dml.CT_Color ctColor = null;
+            BetListNPOI.OpenXmlFormats.Dml.CT_Color ctColor = null;
 
             switch (idx)
             {

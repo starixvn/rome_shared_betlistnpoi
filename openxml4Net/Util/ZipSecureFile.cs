@@ -1,6 +1,6 @@
 ﻿using ICSharpCode.SharpZipLib.Zip;
 using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-using NPOI.Util;
+using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace NPOI.OpenXml4Net.Util
+namespace BetListNPOI.OpenXml4Net.Util
 {
     public class ZipSecureFile : ZipFile
     {

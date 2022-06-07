@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.CF
+namespace BetListNPOI.HSSF.Record.CF
 {
     using System;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /**
      * Color Gradient / Color Scale specific Threshold / value (CFVO),

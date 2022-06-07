@@ -16,7 +16,7 @@
  *    limitations under the License.
  * ====================================================================
  */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * Specifies type of automatic numbered bullet points that should be applied to a paragraph.

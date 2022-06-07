@@ -15,14 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
-    using NPOI.SS.UserModel;
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.DDF;
+    using BetListNPOI.HSSF.Record;
     using System.IO;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     /// <summary>
     /// An abstract shape.
     /// 

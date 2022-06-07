@@ -18,14 +18,14 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Text;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.Util;
-using NPOI.XSSF.Model;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.XSSF.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SheetDataWriter
     {

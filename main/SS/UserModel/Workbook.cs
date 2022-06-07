@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
     using System.Collections;
     using System.IO;
-    using NPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.Formula.UDF;
     using System.Collections.Generic;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     public enum SheetState : int
     {

@@ -18,10 +18,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using NPOI.SS;
-using NPOI.SS.UserModel;
+using BetListNPOI.SS;
+using BetListNPOI.SS.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     public class SXSSFRow : IRow, IComparable<SXSSFRow>
     {

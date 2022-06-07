@@ -1,15 +1,15 @@
 ﻿using ICSharpCode.SharpZipLib.Zip;
-using NPOI.Openxml4Net.Exceptions;
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.OpenXml4Net.OPC.Internal;
-using NPOI.OpenXml4Net.OPC.Internal.Marshallers;
-using NPOI.OpenXml4Net.Util;
-using NPOI.Util;
+using BetListNPOI.Openxml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.OpenXml4Net.OPC.Internal;
+using BetListNPOI.OpenXml4Net.OPC.Internal.Marshallers;
+using BetListNPOI.OpenXml4Net.Util;
+using BetListNPOI.Util;
 using System;
 using System.Collections;
 using System.IO;
 
-namespace NPOI.OpenXml4Net.OPC
+namespace BetListNPOI.OpenXml4Net.OPC
 {
     /**
      * Physical zip package.

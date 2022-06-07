@@ -16,10 +16,10 @@
 ==================================================================== */
 
 using System.Collections.Generic;
-using NPOI.HSSF.Model;
-using NPOI.HSSF.Record.Chart;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record.Chart;
 
-namespace NPOI.HSSF.Record.Aggregates.Chart
+namespace BetListNPOI.HSSF.Record.Aggregates.Chart
 {
     /// <summary>
     /// SERIESDATA = Dimensions 3(SIIndex *(Number / BoolErr / Blank / Label))

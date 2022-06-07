@@ -22,10 +22,10 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig.Services
+namespace BetListNPOI.POIFS.Crypt.Dsig.Services
 {
-    using NPOI.POIFS.Crypt.Dsig;
-    using NPOI.Util;
+    using BetListNPOI.POIFS.Crypt.Dsig;
+    using BetListNPOI.Util;
     using Org.BouncyCastle.Asn1;
     using Org.BouncyCastle.Asn1.Cmp;
     using Org.BouncyCastle.Asn1.Nist;

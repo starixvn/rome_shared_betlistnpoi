@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NPOI.OpenXmlFormats.Shared;
-using NPOI.XWPF.UserModel;
+using BetListNPOI.OpenXmlFormats.Shared;
+using BetListNPOI.XWPF.UserModel;
 
-namespace NPOI.XWPF.Usermodel
+namespace BetListNPOI.XWPF.Usermodel
 {
     /// <summary>
     /// Radical Object

@@ -15,17 +15,17 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.Dsig
+namespace BetListNPOI.POIFS.Crypt.Dsig
 {
     using System;
     using System.Collections.Generic;
     using System.Security.Cryptography.X509Certificates;
     using System.Security.Cryptography.Xml;
     using System.Threading;
-    using NPOI.OpenXml4Net.OPC;
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.Crypt.Dsig.Facets;
-    using NPOI.POIFS.Crypt.Dsig.Services;
+    using BetListNPOI.OpenXml4Net.OPC;
+    using BetListNPOI.POIFS.Crypt;
+    using BetListNPOI.POIFS.Crypt.Dsig.Facets;
+    using BetListNPOI.POIFS.Crypt.Dsig.Services;
 
 
     /**

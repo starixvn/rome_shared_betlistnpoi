@@ -17,10 +17,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using NPOI.SS.Formula.Functions;
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     class Ifs : FreeRefFunction
     {

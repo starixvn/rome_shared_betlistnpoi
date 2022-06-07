@@ -14,14 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System;
-    using NPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
     using System.Collections.Generic;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
     /**
      * @author <a href="rjankiraman@emptoris.com">Radhakrishnan J</a>
@@ -39,7 +39,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateDateConstraint(int, java.lang.String, java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateDateConstraint(int, java.lang.String, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateDateConstraint(int operatorType, String formula1, String formula2, String dateFormat)
         {
@@ -47,7 +47,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateDecimalConstraint(int, java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateDecimalConstraint(int, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateDecimalConstraint(int operatorType, String formula1, String formula2)
         {
@@ -55,7 +55,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateExplicitListConstraint(java.lang.String[])
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateExplicitListConstraint(java.lang.String[])
          */
         public IDataValidationConstraint CreateExplicitListConstraint(String[] listOfValues)
         {
@@ -63,7 +63,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateFormulaListConstraint(java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateFormulaListConstraint(java.lang.String)
          */
         public IDataValidationConstraint CreateFormulaListConstraint(String listFormula)
         {
@@ -90,7 +90,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateintConstraint(int, java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateintConstraint(int, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateintConstraint(int operatorType, String formula1, String formula2)
         {
@@ -98,7 +98,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateTextLengthConstraint(int, java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateTextLengthConstraint(int, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateTextLengthConstraint(int operatorType, String formula1, String formula2)
         {
@@ -106,7 +106,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateTimeConstraint(int, java.lang.String, java.lang.String, java.lang.String)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateTimeConstraint(int, java.lang.String, java.lang.String, java.lang.String)
          */
         public IDataValidationConstraint CreateTimeConstraint(int operatorType, String formula1, String formula2)
         {
@@ -119,7 +119,7 @@ namespace NPOI.XSSF.UserModel
         }
 
         /* (non-Javadoc)
-         * @see NPOI.ss.usermodel.DataValidationHelper#CreateValidation(NPOI.ss.usermodel.DataValidationConstraint, NPOI.ss.util.CellRangeAddressList)
+         * @see BetListNPOI.ss.usermodel.DataValidationHelper#CreateValidation(BetListNPOI.ss.usermodel.DataValidationConstraint, BetListNPOI.ss.util.CellRangeAddressList)
          */
         public IDataValidation CreateValidation(IDataValidationConstraint constraint, CellRangeAddressList cellRangeAddressList)
         {

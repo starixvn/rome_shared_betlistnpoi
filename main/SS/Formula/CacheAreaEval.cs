@@ -1,11 +1,11 @@
-﻿using NPOI.SS.Formula.Eval;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.Util;
+﻿using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
     public class CacheAreaEval:AreaEvalBase
     {

@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * Various utility functions that make working with a region of cells easier.

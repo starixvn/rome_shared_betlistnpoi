@@ -17,13 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
     using System.Text;
 
-    using NPOI.SS.Util;
-    using NPOI.Util;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.Util;
 
     /**
      * Title:        Selection Record

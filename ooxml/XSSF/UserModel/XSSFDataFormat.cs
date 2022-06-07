@@ -14,10 +14,10 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using NPOI.SS.UserModel;
+using BetListNPOI.SS.UserModel;
 using System;
-using NPOI.XSSF.Model;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.XSSF.Model;
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**

@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     using System.IO;
     using System.Xml;
-    using NPOI.OpenXml4Net.OPC;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
+    using BetListNPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.Util;
     using System;
-    using NPOI.SS;
+    using BetListNPOI.SS;
 
     public class XSSFPivotCacheDefinition : POIXMLDocumentPart
     {
@@ -88,7 +88,7 @@ namespace NPOI.XSSF.UserModel
             ctPivotCacheDefinition.createdVersion = (byte)XSSFPivotTable.CREATED_VERSION;
             ctPivotCacheDefinition.minRefreshableVersion = (byte)XSSFPivotTable.MIN_REFRESHABLE_VERSION;
             ctPivotCacheDefinition.refreshedVersion = (byte)XSSFPivotTable.UPDATED_VERSION;
-            ctPivotCacheDefinition.refreshedBy = (/*setter*/"NPOI");
+            ctPivotCacheDefinition.refreshedBy = (/*setter*/"BetListNPOI");
             ctPivotCacheDefinition.refreshedDate = DateTime.Now.ToOADate();
             ctPivotCacheDefinition.refreshOnLoad = (/*setter*/true);
         }

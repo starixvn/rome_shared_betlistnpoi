@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     using System;
 
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
     /**
      * Conditional Formatting Header record CFHEADER (0x01B0).

@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Macros
+namespace BetListNPOI.POIFS.Macros
 {
     using System;
     using System.Collections.Generic;

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     //Don't remove this class
 

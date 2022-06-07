@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NPOI
+namespace BetListNPOI
 {
     [Serializable]
     public class OldFileFormatException : UnsupportedFileFormatException

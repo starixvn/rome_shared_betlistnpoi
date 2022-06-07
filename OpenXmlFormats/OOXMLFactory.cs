@@ -4,7 +4,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace NPOI.OpenXmlFormats
+namespace BetListNPOI.OpenXmlFormats
 {
     public class OOXMLFactory<T>
     {

@@ -1,12 +1,12 @@
-﻿using NPOI.OpenXmlFormats.Shared;
-using NPOI.XWPF.UserModel;
+﻿using BetListNPOI.OpenXmlFormats.Shared;
+using BetListNPOI.XWPF.UserModel;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NPOI.XWPF.Usermodel
+namespace BetListNPOI.XWPF.Usermodel
 {
     public abstract class MathContainer : IRunBody
     {

@@ -16,9 +16,9 @@
 ==================================================================== */
 
 using System;
-using NPOI.Util;
+using BetListNPOI.Util;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     public class Vector
     {

@@ -5,10 +5,10 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXml4Net.OPC.Internal;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXml4Net.OPC.Internal;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     [Serializable]
     [XmlType(Namespace = "http://schemas.openxmlformats.org/spreadsheetml/2006/main")]
@@ -113,7 +113,7 @@ namespace NPOI.OpenXmlFormats.Spreadsheet
             doc.LoadXml(p);
             return Parse(doc.DocumentElement, CreateDefaultNSM());
         }
-        //TODO: NPOI  duplication code, fix it.
+        //TODO: BetListNPOI  duplication code, fix it.
         public static XmlNamespaceManager CreateDefaultNSM()
         {
             //  Create a NamespaceManager to handle the default namespace, 

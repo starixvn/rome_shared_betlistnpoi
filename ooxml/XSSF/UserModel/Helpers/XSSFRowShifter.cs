@@ -16,16 +16,16 @@
 ==================================================================== */
 
 using System.Collections.Generic;
-using NPOI.SS.Util;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.Formula;
+using BetListNPOI.SS.Util;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Formula;
 using System;
-using NPOI.SS.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System.Linq;
-using NPOI.SS.UserModel.Helpers;
+using BetListNPOI.SS.UserModel.Helpers;
 
-namespace NPOI.XSSF.UserModel.Helpers
+namespace BetListNPOI.XSSF.UserModel.Helpers
 {
     /**
      * @author Yegor Kozlov

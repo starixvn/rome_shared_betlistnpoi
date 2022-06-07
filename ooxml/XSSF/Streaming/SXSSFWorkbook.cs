@@ -22,15 +22,15 @@ using System.ComponentModel;
 using System.IO;
 using System.Text;
 using ICSharpCode.SharpZipLib.Zip;
-using NPOI.OpenXml4Net.Util;
-using NPOI.SS;
-using NPOI.SS.Formula.UDF;
-using NPOI.SS.UserModel;
-using NPOI.Util;
-using NPOI.XSSF.Model;
-using NPOI.XSSF.UserModel;
+using BetListNPOI.OpenXml4Net.Util;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula.UDF;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.XSSF.UserModel;
 
-namespace NPOI.XSSF.Streaming
+namespace BetListNPOI.XSSF.Streaming
 {
     /**
      * Streaming version of XSSFWorkbook implementing the "BigGridDemo" strategy.

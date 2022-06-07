@@ -14,14 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using NPOI.OpenXmlFormats;
+using BetListNPOI.OpenXmlFormats;
 using System;
-using NPOI.HSSF.Util;
+using BetListNPOI.HSSF.Util;
 using System.Text;
-using NPOI.Util;
-using NPOI.SS.UserModel;
-using NPOI.OpenXmlFormats.Spreadsheet;
-namespace NPOI.XSSF.UserModel
+using BetListNPOI.Util;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**

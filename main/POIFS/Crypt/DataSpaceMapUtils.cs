@@ -16,15 +16,15 @@
 ==================================================================== */
 
 using System.IO;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.Util;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
     using System;
     using System.Text;
-    using NPOI.POIFS.Crypt.Standard;
-    using NPOI.POIFS.FileSystem;
+    using BetListNPOI.POIFS.Crypt.Standard;
+    using BetListNPOI.POIFS.FileSystem;
 
 
     public class DataSpaceMapUtils

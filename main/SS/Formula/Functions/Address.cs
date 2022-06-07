@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
     using System;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
     using System.Text;
     /**
      * Creates a text reference as text, given specified row and column numbers.

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     public interface IBarChartSeries<Tx, Ty> : IChartSeries
     {

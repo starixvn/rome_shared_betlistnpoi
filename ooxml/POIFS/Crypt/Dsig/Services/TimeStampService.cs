@@ -22,11 +22,11 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig.Services
+namespace BetListNPOI.POIFS.Crypt.Dsig.Services
 {
     using System;
 
-    using NPOI.POIFS.Crypt.Dsig;
+    using BetListNPOI.POIFS.Crypt.Dsig;
 
 
     /**

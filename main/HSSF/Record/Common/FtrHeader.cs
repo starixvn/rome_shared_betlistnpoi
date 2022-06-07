@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Common
+namespace BetListNPOI.HSSF.Record.Common
 {
     using System;
 
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.Util;
     using System.Text;
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
     /**
      * Title: FtrHeader (Future Record Header) common record part

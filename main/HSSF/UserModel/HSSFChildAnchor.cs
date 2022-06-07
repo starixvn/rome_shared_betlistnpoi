@@ -16,9 +16,9 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
-    using NPOI.DDF;
+    using BetListNPOI.DDF;
     using System;
 
     public class HSSFChildAnchor : HSSFAnchor

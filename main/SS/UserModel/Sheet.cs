@@ -15,15 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
 
     using System;
     using System.Collections.Generic;
 
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
     using System.Collections;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// Indicate the position of the margin. One of left, right, top and bottom.
@@ -216,7 +216,7 @@ namespace NPOI.SS.UserModel
         /// </summary>
         /// <param name="region">(rowfrom/colfrom-rowto/colto) to merge.</param>
         /// <returns>index of this region</returns>
-        int AddMergedRegion(NPOI.SS.Util.CellRangeAddress region);
+        int AddMergedRegion(BetListNPOI.SS.Util.CellRangeAddress region);
 
         /// <summary>
         /// Adds a merged region of cells (hence those cells form one).
@@ -236,8 +236,8 @@ namespace NPOI.SS.UserModel
         /// Verify that merged regions do not intersect multi-cell array formulas and
         /// no merged regions intersect another merged region in this sheet.
         /// </summary>
-        /// <exception cref="NPOI.Util.InvalidOperationException">if region intersects with a multi-cell array formula</exception>
-        /// <exception cref="NPOI.Util.InvalidOperationException">if at least one region intersects with another merged region in this sheet</exception>
+        /// <exception cref="BetListNPOI.Util.InvalidOperationException">if region intersects with a multi-cell array formula</exception>
+        /// <exception cref="BetListNPOI.Util.InvalidOperationException">if at least one region intersects with another merged region in this sheet</exception>
         void ValidateMergedRegions();
         /// <summary>
         /// Determine whether printed output for this sheet will be horizontally centered.
@@ -283,7 +283,7 @@ namespace NPOI.SS.UserModel
         /// <returns>
         /// an iterator of the PHYSICAL rows.  Meaning the 3rd element may not
         /// be the third row if say for instance the second row is undefined.
-        /// Call <see cref="NPOI.SS.UserModel.IRow.RowNum"/> on each row 
+        /// Call <see cref="BetListNPOI.SS.UserModel.IRow.RowNum"/> on each row 
         /// if you care which one it is.
         /// </returns>
         IEnumerator GetRowEnumerator();

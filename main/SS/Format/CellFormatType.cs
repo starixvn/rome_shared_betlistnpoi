@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Format
+namespace BetListNPOI.SS.Format
 {
     using System;
     internal class GeneralCellFormatType : CellFormatType

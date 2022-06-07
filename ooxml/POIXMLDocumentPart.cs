@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
+namespace BetListNPOI
 {
-    using NPOI.Util;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.Util;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System;
     using System.Collections.Generic;
     using System.IO;
-    using NPOI.OpenXml4Net.Exceptions;
+    using BetListNPOI.OpenXml4Net.Exceptions;
 using System.Xml;
-    using NPOI.OpenXml4Net.OPC.Internal;
+    using BetListNPOI.OpenXml4Net.OPC.Internal;
     using System.Diagnostics;
 
     /**
@@ -291,7 +291,7 @@ using System.Xml;
         public static XmlDocument ConvertStreamToXml(Stream xmlStream)
         {
             XmlDocument xmlDoc = new XmlDocument();
-            NPOI.OpenXml4Net.Util.XmlHelper.LoadXmlSafe(xmlDoc, xmlStream);
+            BetListNPOI.OpenXml4Net.Util.XmlHelper.LoadXmlSafe(xmlDoc, xmlStream);
             return xmlDoc;
         }
 

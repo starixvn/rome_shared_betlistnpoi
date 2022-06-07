@@ -1,4 +1,4 @@
-﻿namespace NPOI.SS.Util
+﻿namespace BetListNPOI.SS.Util
 {
     using System;
     using System.Drawing;

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     public interface ICellRange<T> : IEnumerable<T> where T : ICell
     {

@@ -17,26 +17,26 @@
 
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
-using NPOI.XSSF.Model;
-using NPOI.SS.UserModel;
-using NPOI.Util;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
 using System.IO;
 using System;
-using NPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
 using System.Xml;
-using NPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXml4Net.OPC;
 using System.Text;
-using NPOI.SS.Util;
-using NPOI.SS.Formula;
-using NPOI.XSSF.UserModel.Helpers;
-using NPOI.SS.Formula.UDF;
-using NPOI.OpenXmlFormats;
+using BetListNPOI.SS.Util;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.XSSF.UserModel.Helpers;
+using BetListNPOI.SS.Formula.UDF;
+using BetListNPOI.OpenXmlFormats;
 using System.Collections;
-using NPOI.OpenXml4Net.Exceptions;
-using NPOI.SS;
+using BetListNPOI.OpenXml4Net.Exceptions;
+using BetListNPOI.SS;
 using System.Globalization;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     /**
      * High level representation of a SpreadsheetML workbook.  This is the first object most users
@@ -145,7 +145,7 @@ namespace NPOI.XSSF.UserModel
         /**
          * The policy to apply in the event of missing or
          *  blank cells when fetching from a row.
-         * See {@link NPOI.ss.usermodel.Row.MissingCellPolicy}
+         * See {@link BetListNPOI.ss.usermodel.Row.MissingCellPolicy}
          */
         private MissingCellPolicy _missingCellPolicy = MissingCellPolicy.RETURN_NULL_AND_BLANK;
         private bool cellFormulaValidation = true;
@@ -1629,7 +1629,7 @@ namespace NPOI.XSSF.UserModel
          * @throws ArgumentException if the name is null or invalid
          *  or workbook already Contains a sheet with this name
          * @see {@link #CreateSheet(String)}
-         * @see {@link NPOI.ss.util.WorkbookUtil#CreateSafeSheetName(String nameProposal)}
+         * @see {@link BetListNPOI.ss.util.WorkbookUtil#CreateSafeSheetName(String nameProposal)}
          *      for a safe way to create valid names
          */
         public void SetSheetName(int sheetIndex, String sheetname)

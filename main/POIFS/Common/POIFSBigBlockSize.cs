@@ -17,8 +17,8 @@
 ==================================================================== */
 
 
-using NPOI.Util;
-namespace NPOI.POIFS.Common
+using BetListNPOI.Util;
+namespace BetListNPOI.POIFS.Common
 {
 
     /**

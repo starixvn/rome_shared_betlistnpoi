@@ -17,9 +17,9 @@
  * ====================================================================
  */
 
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
-using NPOI.OpenXmlFormats.Dml;
-namespace NPOI.XSSF.Model
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Dml;
+namespace BetListNPOI.XSSF.Model
 {
     /**
      *  Used internally to navigate the paragraph text style hierarchy within a shape and fetch properties

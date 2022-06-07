@@ -18,16 +18,16 @@
 using System;
 using System.Drawing;
 using System.IO;
-using NPOI.OpenXml4Net.OPC;
-using NPOI.OpenXmlFormats.Dml;
-using NPOI.OpenXmlFormats.Dml.Spreadsheet;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.Util;
+using BetListNPOI.OpenXml4Net.OPC;
+using BetListNPOI.OpenXmlFormats.Dml;
+using BetListNPOI.OpenXmlFormats.Dml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
 using System.Xml;
-using NPOI.SS.Util;
+using BetListNPOI.SS.Util;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     /**
@@ -86,20 +86,20 @@ namespace NPOI.XSSF.UserModel
 
                 CT_Picture pic = new CT_Picture();
                 CT_PictureNonVisual nvpr = pic.AddNewNvPicPr();
-                NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualDrawingProps nvProps = nvpr.AddNewCNvPr();
+                BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualDrawingProps nvProps = nvpr.AddNewCNvPr();
                 nvProps.id = (1);
                 nvProps.name = ("Picture 1");
                 nvProps.descr = ("Picture");
-                NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualPictureProperties nvPicProps = nvpr.AddNewCNvPicPr();
+                BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_NonVisualPictureProperties nvPicProps = nvpr.AddNewCNvPicPr();
                 nvPicProps.AddNewPicLocks().noChangeAspect = true;
 
 
 
-                NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_BlipFillProperties blip = pic.AddNewBlipFill();
+                BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_BlipFillProperties blip = pic.AddNewBlipFill();
                 blip.AddNewBlip().embed = "";
                 blip.AddNewStretch().AddNewFillRect();
 
-                NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_ShapeProperties sppr = pic.AddNewSpPr();
+                BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_ShapeProperties sppr = pic.AddNewSpPr();
                 CT_Transform2D t2d = sppr.AddNewXfrm();
                 CT_PositiveSize2D ext = t2d.AddNewExt();
                 //should be original picture width and height expressed in EMUs
@@ -271,7 +271,7 @@ namespace NPOI.XSSF.UserModel
             return GetImageDimension(picData.GetPackagePart(), picData.PictureType);
         }
 
-        protected internal override NPOI.OpenXmlFormats.Dml.Spreadsheet.CT_ShapeProperties GetShapeProperties()
+        protected internal override BetListNPOI.OpenXmlFormats.Dml.Spreadsheet.CT_ShapeProperties GetShapeProperties()
         {
             return ctPicture.spPr;
         }

@@ -4,12 +4,12 @@ using System.Collections;
 using System.Text;
 using System.IO;
 using ICSharpCode.SharpZipLib.Zip;
-using NPOI.POIFS.Common;
-using NPOI.Util;
-using NPOI.POIFS.Storage;
-using NPOI.Openxml4Net.Exceptions;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
+using BetListNPOI.POIFS.Storage;
+using BetListNPOI.Openxml4Net.Exceptions;
 
-namespace NPOI.OpenXml4Net.OPC.Internal
+namespace BetListNPOI.OpenXml4Net.OPC.Internal
 {
     public class ZipHelper
     {

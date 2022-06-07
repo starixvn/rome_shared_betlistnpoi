@@ -6,13 +6,13 @@ using System.Security;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NPOI OpenXml4Net")]
+[assembly: AssemblyTitle("BetListNPOI OpenXml4Net")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Nissl")]
-[assembly: AssemblyProduct("NPOI")]
+[assembly: AssemblyProduct("BetListNPOI")]
 [assembly: AssemblyCopyright("Apache 2.0")]
-[assembly: AssemblyTrademark("NPOI")]
+[assembly: AssemblyTrademark("BetListNPOI")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 

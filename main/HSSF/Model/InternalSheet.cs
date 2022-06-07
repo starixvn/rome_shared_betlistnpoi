@@ -15,17 +15,17 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
+namespace BetListNPOI.HSSF.Model
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.Aggregates;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Util;
+    using BetListNPOI.Util;
 
     /// <summary>
     /// Low level model implementation of a Sheet (one workbook Contains many sheets)
@@ -1117,8 +1117,8 @@ namespace NPOI.HSSF.Model
         /// <summary>
         /// Creates the DefaultRowHeight Record and Sets its options to 0 and rowheight to 0xff
         /// </summary>
-        /// <see cref="NPOI.HSSF.Record.DefaultRowHeightRecord"/>
-        /// <see cref="NPOI.HSSF.Record.Record"/>
+        /// <see cref="BetListNPOI.HSSF.Record.DefaultRowHeightRecord"/>
+        /// <see cref="BetListNPOI.HSSF.Record.Record"/>
         /// <returns>record containing a DefaultRowHeightRecord</returns>
         private static DefaultRowHeightRecord CreateDefaultRowHeight()
         {
@@ -1842,7 +1842,7 @@ namespace NPOI.HSSF.Model
          * @see #PANE_UPPER_LEFT
          * @see #PANE_UPPER_RIGHT
          */
-        public void CreateSplitPane(int xSplitPos, int ySplitPos, int topRow, int leftmostColumn, NPOI.SS.UserModel.PanePosition activePane)
+        public void CreateSplitPane(int xSplitPos, int ySplitPos, int topRow, int leftmostColumn, BetListNPOI.SS.UserModel.PanePosition activePane)
         {
             int paneLoc = FindFirstRecordLocBySid(PaneRecord.sid);
             if (paneLoc != -1)
@@ -1861,7 +1861,7 @@ namespace NPOI.HSSF.Model
             windowTwo.FreezePanesNoSplit = (false);
 
             SelectionRecord sel = (SelectionRecord)FindFirstRecordBySid(SelectionRecord.sid);
-            sel.Pane = (byte)NPOI.SS.UserModel.PanePosition.LowerRight;
+            sel.Pane = (byte)BetListNPOI.SS.UserModel.PanePosition.LowerRight;
 
         }
 
@@ -1877,7 +1877,7 @@ namespace NPOI.HSSF.Model
                 if (rec == null)
                     return null;
 
-                return new NPOI.SS.Util.PaneInformation(rec.X, rec.Y, rec.TopRow,
+                return new BetListNPOI.SS.Util.PaneInformation(rec.X, rec.Y, rec.TopRow,
                                            rec.LeftColumn, (byte)rec.ActivePane, windowTwo.FreezePanes);
             }
         }

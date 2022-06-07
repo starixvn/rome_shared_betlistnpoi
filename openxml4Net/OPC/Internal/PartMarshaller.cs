@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace NPOI.OpenXml4Net.OPC.Internal
+namespace BetListNPOI.OpenXml4Net.OPC.Internal
 {
     /**
      * Object implemented this interface are considered as part marshaller. A part

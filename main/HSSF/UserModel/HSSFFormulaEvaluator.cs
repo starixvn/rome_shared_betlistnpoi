@@ -15,15 +15,15 @@
 * limitations Under the License.
 */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
     using System.Collections;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.UDF;
+    using BetListNPOI.SS.UserModel;
     using System.Collections.Generic;
 
     /**

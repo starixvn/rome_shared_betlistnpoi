@@ -1,9 +1,9 @@
-﻿using NPOI.OpenXml4Net.Util;
+﻿using BetListNPOI.OpenXml4Net.Util;
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Spreadsheet
+namespace BetListNPOI.OpenXmlFormats.Spreadsheet
 {
     public class MapInfoDocument
     {

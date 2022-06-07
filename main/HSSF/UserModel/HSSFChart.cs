@@ -15,15 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
     using System.Collections;
     using System.Collections.Generic;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Util;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record.Chart;
+    using BetListNPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Util;
 
 
     public enum HSSFChartType : int

@@ -16,9 +16,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
     /// <summary>
     /// Interface for use with the HSSFRequest and HSSFEventFactory.  Users should Create

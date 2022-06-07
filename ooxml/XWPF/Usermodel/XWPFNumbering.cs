@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
-    using NPOI.OpenXml4Net.Exceptions;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXml4Net.Exceptions;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.Collections.Generic;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
     using System.IO;
     using System.Xml.Serialization;
     using System.Xml;

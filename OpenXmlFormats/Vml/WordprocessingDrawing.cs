@@ -1,10 +1,10 @@
-using NPOI.OpenXml4Net.Util;
+using BetListNPOI.OpenXml4Net.Util;
 using System;
 using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace NPOI.OpenXmlFormats.Vml.Wordprocessing
+namespace BetListNPOI.OpenXmlFormats.Vml.Wordprocessing
 {
     [Serializable]
 
@@ -32,7 +32,7 @@ namespace NPOI.OpenXmlFormats.Vml.Wordprocessing
                 ctObj.type = (ST_BorderType)Enum.Parse(typeof(ST_BorderType), node.Attributes["type"].Value);
             ctObj.width = XmlHelper.ReadString(node.Attributes["width"]);
 
-            ctObj.shadow = NPOI.OpenXmlFormats.Util.XmlHelper.ReadBorderShadow(node.Attributes["shadow"]);
+            ctObj.shadow = BetListNPOI.OpenXmlFormats.Util.XmlHelper.ReadBorderShadow(node.Attributes["shadow"]);
             return ctObj;
         }
 
@@ -42,7 +42,7 @@ namespace NPOI.OpenXmlFormats.Vml.Wordprocessing
             if(this.type!= ST_BorderType.none)
                 XmlHelper.WriteAttribute(sw, "type", this.type.ToString());
             XmlHelper.WriteAttribute(sw, "width", this.width);
-            NPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "shadow", this.shadow);
+            BetListNPOI.OpenXmlFormats.Util.XmlHelper.WriteAttribute(sw, "shadow", this.shadow);
             sw.Write(">");
             sw.Write(string.Format("</w:{0}>", nodeName));
         }

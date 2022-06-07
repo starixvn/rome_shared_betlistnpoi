@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XWPF.UserModel
+namespace BetListNPOI.XWPF.UserModel
 {
     using System;
 
     using System.Collections.Generic;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.IO;
-    using NPOI.Util;
+    using BetListNPOI.Util;
     using System.Text;
-    using NPOI.OpenXmlFormats.Wordprocessing;
+    using BetListNPOI.OpenXmlFormats.Wordprocessing;
 
     /**
      * Parent of XWPF headers and footers
@@ -485,7 +485,7 @@ namespace NPOI.XWPF.UserModel
 
         /**
          * Returns the table at position pos
-         * @see NPOI.XWPF.UserModel.IBody#getTableArray(int)
+         * @see BetListNPOI.XWPF.UserModel.IBody#getTableArray(int)
          */
         public XWPFTable GetTableArray(int pos)
         {
@@ -609,7 +609,7 @@ namespace NPOI.XWPF.UserModel
 
         /**
          * returns the Part, to which the body belongs, which you need for Adding relationship to other parts
-         * @see NPOI.XWPF.UserModel.IBody#getPart()
+         * @see BetListNPOI.XWPF.UserModel.IBody#getPart()
          */
         public POIXMLDocumentPart Part
         {

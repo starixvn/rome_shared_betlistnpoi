@@ -18,11 +18,11 @@
  * Created on May 8, 2005
  *
  */
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
     using System;
     using System.Text;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.SS.Formula.PTG;
 
 
     /**

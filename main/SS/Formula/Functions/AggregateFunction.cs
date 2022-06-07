@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.Formula.Functions;
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Functions;
+namespace BetListNPOI.SS.Formula.Functions
 {
     using System;
-    using NPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.Formula.Eval;
 
     public class AVEDEV : AggregateFunction
     {
@@ -209,7 +209,7 @@ namespace NPOI.SS.Formula.Functions
             double result;
             try
             {
-                double[] ds = NPOI.SS.Formula.Functions.AggregateFunction.ValueCollector.CollectValues(arg0);
+                double[] ds = BetListNPOI.SS.Formula.Functions.AggregateFunction.ValueCollector.CollectValues(arg0);
                 if (k > ds.Length)
                 {
                     return ErrorEval.NUM_ERROR;
@@ -266,7 +266,7 @@ namespace NPOI.SS.Formula.Functions
             double result;
             try
             {
-                double[] ds = NPOI.SS.Formula.Functions.AggregateFunction.ValueCollector.CollectValues(arg0);
+                double[] ds = BetListNPOI.SS.Formula.Functions.AggregateFunction.ValueCollector.CollectValues(arg0);
                 int N = ds.Length;
 
                 if (N == 0 || N > 8191)

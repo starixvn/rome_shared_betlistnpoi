@@ -16,15 +16,15 @@
 ==================================================================== */
 
 using System;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.OpenXmlFormats.Vml;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.XSSF.Model;
-using NPOI.Util;
-using NPOI.OpenXmlFormats.Vml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Vml;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.XSSF.Model;
+using BetListNPOI.Util;
+using BetListNPOI.OpenXmlFormats.Vml.Spreadsheet;
 
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
 
     public class XSSFComment : IComment

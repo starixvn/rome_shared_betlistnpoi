@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.XSSF.UserModel.Extensions
+namespace BetListNPOI.XSSF.UserModel.Extensions
 {
 
-    using NPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
     using System;
-    using NPOI.XSSF.UserModel;
-    using NPOI.XSSF.Model;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.XSSF.UserModel;
+    using BetListNPOI.XSSF.Model;
+    using BetListNPOI.SS.UserModel;
     /**
  * The enumeration value indicating the side being used for a cell border.
  */

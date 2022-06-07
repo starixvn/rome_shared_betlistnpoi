@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /**
  * This utility class is used to set locale and time zone settings beside

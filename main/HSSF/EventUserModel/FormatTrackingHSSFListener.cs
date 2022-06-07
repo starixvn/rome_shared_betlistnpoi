@@ -15,15 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
     using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.UserModel;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.UserModel;
     using System.Collections.Generic;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
     using System.Globalization;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /**
      * A proxy HSSFListener that keeps track of the document

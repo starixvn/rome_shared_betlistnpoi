@@ -1,12 +1,12 @@
-﻿using NPOI.OpenXmlFormats.Vml.Spreadsheet;
-using NPOI.OpenXmlFormats.Vml.Wordprocessing;
+﻿using BetListNPOI.OpenXmlFormats.Vml.Spreadsheet;
+using BetListNPOI.OpenXmlFormats.Vml.Wordprocessing;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace NPOI.OpenXmlFormats.Util
+namespace BetListNPOI.OpenXmlFormats.Util
 {
     public static class XmlHelper
     {
@@ -43,21 +43,21 @@ namespace NPOI.OpenXmlFormats.Util
             }
 
         }
-        public static NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse ReadTrueFalse(XmlAttribute attr)
+        public static BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse ReadTrueFalse(XmlAttribute attr)
         {
             if (attr == null)
-                return NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@false;
+                return BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@false;
             if (string.IsNullOrEmpty(attr.Value))
-                return NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@false;
+                return BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@false;
 
             string value = attr.Value.ToLower();
             if (value == "t" || value == "true")
             {
-                return NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@true;
+                return BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@true;
             }
             else
             {
-                return NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@false;
+                return BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse.@false;
             }
         }
         public static ST_BorderShadow ReadBorderShadow(XmlAttribute attr)
@@ -79,28 +79,28 @@ namespace NPOI.OpenXmlFormats.Util
             }
 
         }
-        public static NPOI.OpenXmlFormats.Vml.ST_TrueFalse ReadTrueFalse2(XmlAttribute attr)
+        public static BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse ReadTrueFalse2(XmlAttribute attr)
         {
             if (attr == null)
-                return NPOI.OpenXmlFormats.Vml.ST_TrueFalse.@false;
+                return BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse.@false;
             if (string.IsNullOrEmpty(attr.Value))
-                return NPOI.OpenXmlFormats.Vml.ST_TrueFalse.@false;
+                return BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse.@false;
 
             string value = attr.Value.ToLower();
             if (value == "t" || value == "true")
             {
-                return NPOI.OpenXmlFormats.Vml.ST_TrueFalse.@true;
+                return BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse.@true;
             }
             else
             {
-                return NPOI.OpenXmlFormats.Vml.ST_TrueFalse.@false;
+                return BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse.@false;
             }
         }
-        public static void WriteAttribute(StreamWriter sw, string attributeName, NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse value)
+        public static void WriteAttribute(StreamWriter sw, string attributeName, BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse value)
         {
             WriteAttribute(sw, attributeName, value, false);
         }
-        public static void WriteAttribute(StreamWriter sw, string attributeName, NPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse value, bool defaultValue)
+        public static void WriteAttribute(StreamWriter sw, string attributeName, BetListNPOI.OpenXmlFormats.Vml.Office.ST_TrueFalse value, bool defaultValue)
         {
             if (defaultValue == true && (value == OpenXmlFormats.Vml.Office.ST_TrueFalse.t || value == OpenXmlFormats.Vml.Office.ST_TrueFalse.@true))
                 return;
@@ -109,9 +109,9 @@ namespace NPOI.OpenXmlFormats.Util
                 return;
 
             if (value == OpenXmlFormats.Vml.Office.ST_TrueFalse.t || value == OpenXmlFormats.Vml.Office.ST_TrueFalse.@true)
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
             else
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
         }
         public static void WriteAttribute(StreamWriter sw, string attributeName, ST_BorderShadow value)
         {
@@ -126,15 +126,15 @@ namespace NPOI.OpenXmlFormats.Util
                 return;
 
             if (value ==ST_BorderShadow.t || value ==ST_BorderShadow.@true)
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
             else
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
         }
-        public static void WriteAttribute(StreamWriter sw, string attributeName, NPOI.OpenXmlFormats.Vml.ST_TrueFalse value)
+        public static void WriteAttribute(StreamWriter sw, string attributeName, BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse value)
         {
             WriteAttribute(sw, attributeName, value, false);
         }
-        public static void WriteAttribute(StreamWriter sw, string attributeName, NPOI.OpenXmlFormats.Vml.ST_TrueFalse value, bool defaultValue)
+        public static void WriteAttribute(StreamWriter sw, string attributeName, BetListNPOI.OpenXmlFormats.Vml.ST_TrueFalse value, bool defaultValue)
         {
             if (defaultValue == true && (value == OpenXmlFormats.Vml.ST_TrueFalse.t || value == OpenXmlFormats.Vml.ST_TrueFalse.@true))
                 return;
@@ -143,9 +143,9 @@ namespace NPOI.OpenXmlFormats.Util
                 return;
 
             if (value == OpenXmlFormats.Vml.ST_TrueFalse.t || value == OpenXmlFormats.Vml.ST_TrueFalse.@true)
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
             else
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
         }
         public static void WriteAttribute(StreamWriter sw, string attributeName, ST_TrueFalseBlank value)
         {
@@ -163,9 +163,9 @@ namespace NPOI.OpenXmlFormats.Util
                 return;
 
             if (value == ST_TrueFalseBlank.t || value == ST_TrueFalseBlank.@true)
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "t");
             else
-                NPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
+                BetListNPOI.OpenXml4Net.Util.XmlHelper.WriteAttribute(sw, attributeName, "f");
         }
     }
 }

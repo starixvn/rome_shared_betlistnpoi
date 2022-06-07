@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.Dsig
+namespace BetListNPOI.POIFS.Crypt.Dsig
 {
     using System;
     using System.Threading;

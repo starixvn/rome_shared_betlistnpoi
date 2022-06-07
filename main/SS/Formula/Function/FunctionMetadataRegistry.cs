@@ -15,7 +15,7 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Function
+namespace BetListNPOI.SS.Formula.Function
 {
     using System;
     using System.Collections;

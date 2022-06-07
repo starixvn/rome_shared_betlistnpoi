@@ -22,11 +22,11 @@
    Copyright (C) 2008-2014 FedICT.
    ================================================================= */
 
-namespace NPOI.POIFS.Crypt.Dsig
+namespace BetListNPOI.POIFS.Crypt.Dsig
 {
     using System;
     using System.Runtime.Serialization;
-    using NPOI.POIFS.Crypt;
+    using BetListNPOI.POIFS.Crypt;
 
     /**
      * Digest Information data transfer class.

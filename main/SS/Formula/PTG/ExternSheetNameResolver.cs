@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Text;
 
-namespace NPOI.SS.Formula.PTG
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using NPOI.SS.Formula;
+    using BetListNPOI.SS.Formula;
     public class ExternSheetNameResolver
     {
 

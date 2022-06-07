@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
 
     public class HSSFCreationHelper : ICreationHelper
     {
@@ -33,17 +33,17 @@ namespace NPOI.HSSF.UserModel
             dataFormat = new HSSFDataFormat(workbook.Workbook);
         }
 
-        public NPOI.SS.UserModel.IRichTextString CreateRichTextString(String text)
+        public BetListNPOI.SS.UserModel.IRichTextString CreateRichTextString(String text)
         {
             return new HSSFRichTextString(text);
         }
 
-        public NPOI.SS.UserModel.IDataFormat CreateDataFormat()
+        public BetListNPOI.SS.UserModel.IDataFormat CreateDataFormat()
         {
             return dataFormat;
         }
 
-        public NPOI.SS.UserModel.IHyperlink CreateHyperlink(HyperlinkType type)
+        public BetListNPOI.SS.UserModel.IHyperlink CreateHyperlink(HyperlinkType type)
         {
             return new HSSFHyperlink(type);
         }
@@ -53,7 +53,7 @@ namespace NPOI.HSSF.UserModel
          *
          * @return a HSSFFormulaEvaluator instance
          */
-        public NPOI.SS.UserModel.IFormulaEvaluator CreateFormulaEvaluator()
+        public BetListNPOI.SS.UserModel.IFormulaEvaluator CreateFormulaEvaluator()
         {
             return new HSSFFormulaEvaluator(workbook);
         }
@@ -62,16 +62,16 @@ namespace NPOI.HSSF.UserModel
          * Creates a HSSFClientAnchor. Use this object to position drawing object in a sheet
          *
          * @return a HSSFClientAnchor instance
-         * @see NPOI.SS.usermodel.Drawing
+         * @see BetListNPOI.SS.usermodel.Drawing
          */
-        public NPOI.SS.UserModel.IClientAnchor CreateClientAnchor()
+        public BetListNPOI.SS.UserModel.IClientAnchor CreateClientAnchor()
         {
             return new HSSFClientAnchor();
         }
 
         public ExtendedColor CreateExtendedColor()
         {
-            return new HSSFExtendedColor(new NPOI.HSSF.Record.Common.ExtendedColor());
+            return new HSSFExtendedColor(new BetListNPOI.HSSF.Record.Common.ExtendedColor());
         }
     }
 }

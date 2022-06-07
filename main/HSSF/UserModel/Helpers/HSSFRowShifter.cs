@@ -15,21 +15,21 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel.helpers
+namespace BetListNPOI.HSSF.UserModel.helpers
 {
     using System;
 
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.UserModel.Helpers;
-    using NPOI.Util;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.Formula;
+    using BetListNPOI.SS.Formula.Eval;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel.Helpers;
+    using BetListNPOI.Util;
 
     /**
      * Helper for Shifting rows up or down
      * 
-     * When possible, code should be implemented in the RowShifter abstract class to avoid duplication with {@link NPOI.XSSF.UserModel.helpers.XSSFRowShifter}
+     * When possible, code should be implemented in the RowShifter abstract class to avoid duplication with {@link BetListNPOI.XSSF.UserModel.helpers.XSSFRowShifter}
      */
     public class HSSFRowShifter : RowShifter
     {

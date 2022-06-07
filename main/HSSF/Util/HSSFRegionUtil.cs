@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Util
+namespace BetListNPOI.HSSF.Util
 {
     using System;
 
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.Util;
+    using BetListNPOI.HSSF.UserModel;
+    using BetListNPOI.SS.Util;
 
     /// <summary>
     /// Various utility functions that make working with a region of cells easier.
@@ -49,9 +49,9 @@ namespace NPOI.HSSF.Util
                 _propertyName = propertyName;
                 _propertyValue = (short)value;
             }
-            public void SetProperty(NPOI.SS.UserModel.IRow row, int column)
+            public void SetProperty(BetListNPOI.SS.UserModel.IRow row, int column)
             {
-                NPOI.SS.UserModel.ICell cell = HSSFCellUtil.GetCell(row, column);
+                BetListNPOI.SS.UserModel.ICell cell = HSSFCellUtil.GetCell(row, column);
                 HSSFCellUtil.SetCellStyleProperty(cell, _workbook, _propertyName, _propertyValue);
             }
         }
@@ -64,7 +64,7 @@ namespace NPOI.HSSF.Util
         /// <param name="region">The region that should have the border</param>
         /// <param name="sheet">The sheet that the region is on.</param>
         /// <param name="workbook">The workbook that the region is on.</param>
-        public static void SetBorderLeft(NPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
+        public static void SetBorderLeft(BetListNPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
                 HSSFWorkbook workbook)
         {
             int rowStart = region.FirstRow;
@@ -106,7 +106,7 @@ namespace NPOI.HSSF.Util
         /// <param name="region">The region that should have the border</param>
         /// <param name="sheet">The sheet that the region is on.</param>
         /// <param name="workbook">The workbook that the region is on.</param>
-        public static void SetBorderRight(NPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
+        public static void SetBorderRight(BetListNPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
                 HSSFWorkbook workbook)
         {
             int rowStart = region.FirstRow;
@@ -149,14 +149,14 @@ namespace NPOI.HSSF.Util
         /// <param name="region">The region that should have the border</param>
         /// <param name="sheet">The sheet that the region is on.</param>
         /// <param name="workbook">The workbook that the region is on.</param>
-        public static void SetBorderBottom(NPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
+        public static void SetBorderBottom(BetListNPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
                 HSSFWorkbook workbook)
         {
             int colStart = region.FirstColumn;
             int colEnd = region.LastColumn;
             int rowIndex = region.LastRow;
             CellPropertySetter cps = new CellPropertySetter(workbook, CellUtil.BORDER_BOTTOM, (int)border);
-            NPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
+            BetListNPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
             for (int i = colStart; i <= colEnd; i++)
             {
                 cps.SetProperty(row, i);
@@ -178,7 +178,7 @@ namespace NPOI.HSSF.Util
             int colEnd = region.LastColumn;
             int rowIndex = region.LastRow;
             CellPropertySetter cps = new CellPropertySetter(workbook, CellUtil.BOTTOM_BORDER_COLOR, color);
-            NPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
+            BetListNPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
             for (int i = colStart; i <= colEnd; i++)
             {
                 cps.SetProperty(row, i);
@@ -193,14 +193,14 @@ namespace NPOI.HSSF.Util
         /// <param name="region">The region that should have the border</param>
         /// <param name="sheet">The sheet that the region is on.</param>
         /// <param name="workbook">The workbook that the region is on.</param>
-        public static void SetBorderTop(NPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
+        public static void SetBorderTop(BetListNPOI.SS.UserModel.BorderStyle border, CellRangeAddress region, HSSFSheet sheet,
                 HSSFWorkbook workbook)
         {
             int colStart = region.FirstColumn;
             int colEnd = region.LastColumn;
             int rowIndex = region.FirstRow;
             CellPropertySetter cps = new CellPropertySetter(workbook, CellUtil.BORDER_TOP, (int)border);
-            NPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
+            BetListNPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
             for (int i = colStart; i <= colEnd; i++)
             {
                 cps.SetProperty(row, i);
@@ -221,7 +221,7 @@ namespace NPOI.HSSF.Util
             int colEnd = region.LastColumn;
             int rowIndex = region.FirstRow;
             CellPropertySetter cps = new CellPropertySetter(workbook, CellUtil.TOP_BORDER_COLOR, color);
-            NPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
+            BetListNPOI.SS.UserModel.IRow row = HSSFCellUtil.GetRow(rowIndex, sheet);
             for (int i = colStart; i <= colEnd; i++)
             {
                 cps.SetProperty(row, i);

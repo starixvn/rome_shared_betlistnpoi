@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     using System;
 
 
 
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
 
     /**
      * <p>This class is a Container for POI usermodel row=0 column=0 cell references.

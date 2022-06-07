@@ -16,13 +16,13 @@
  *    limitations under the License.
  * ====================================================================
  */
-namespace NPOI.XSSF.UserModel
+namespace BetListNPOI.XSSF.UserModel
 {
     using System;
     using EnumsNET;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.SS.UserModel;
-    using NPOI.XSSF.Util;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.XSSF.Util;
 
     /**
      * High level representation for Icon / Multi-State Formatting 

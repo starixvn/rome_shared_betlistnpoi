@@ -13,12 +13,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System.Collections;
-    using NPOI.SS.UserModel;
+    using BetListNPOI.SS.UserModel;
 
-    using NPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Record;
 
     /// <summary>
     /// Excel can Get cranky if you give it files containing too
@@ -148,7 +148,7 @@ namespace NPOI.HSSF.UserModel
             ArrayList doneUnicodeStrings = new ArrayList();
             for (int sheetNum = 0; sheetNum < workbook.NumberOfSheets; sheetNum++)
             {
-                NPOI.SS.UserModel.ISheet s = workbook.GetSheetAt(sheetNum);
+                BetListNPOI.SS.UserModel.ISheet s = workbook.GetSheetAt(sheetNum);
                 //IEnumerator rIt = s.GetRowEnumerator();
                 //while (rIt.MoveNext())
                 foreach (IRow row in s) 
@@ -159,7 +159,7 @@ namespace NPOI.HSSF.UserModel
                     foreach (ICell cell in row) 
                     {
                         //ICell cell = (HSSFCell)cIt.Current;
-                        if (cell.CellType == NPOI.SS.UserModel.CellType.String)
+                        if (cell.CellType == BetListNPOI.SS.UserModel.CellType.String)
                         {
                             HSSFRichTextString rtr = (HSSFRichTextString)cell.RichStringCellValue;
                             UnicodeString u = rtr.RawUnicodeString;
@@ -321,7 +321,7 @@ namespace NPOI.HSSF.UserModel
                     {
                         //ICell cell = (HSSFCell)cIt.Current;
                         short oldXf = ((HSSFCell)cell).CellValueRecord.XFIndex;
-                        NPOI.SS.UserModel.ICellStyle newStyle = workbook.GetCellStyleAt(
+                        BetListNPOI.SS.UserModel.ICellStyle newStyle = workbook.GetCellStyleAt(
                                 newPos[oldXf]
                         );
                         cell.CellStyle = (newStyle);

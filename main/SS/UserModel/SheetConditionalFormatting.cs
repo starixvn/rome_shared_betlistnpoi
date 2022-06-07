@@ -17,11 +17,11 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     using System;
 
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
 
     /**
      * The 'Conditional Formatting' facet of <c>Sheet</c>

@@ -14,16 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.XSSF.Model
+namespace BetListNPOI.XSSF.Model
 {
     using System;
-    using NPOI.SS.UserModel;
-    using NPOI.OpenXmlFormats.Spreadsheet;
-    using NPOI.OpenXml4Net.OPC;
+    using BetListNPOI.SS.UserModel;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet;
+    using BetListNPOI.OpenXml4Net.OPC;
     using System.IO;
     using System.Xml;
     using System.Collections.Generic;
-    using NPOI.OpenXmlFormats.Spreadsheet.Document;
+    using BetListNPOI.OpenXmlFormats.Spreadsheet.Document;
 
 
     /**

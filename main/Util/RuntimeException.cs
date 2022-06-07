@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     [Serializable]
     public class RuntimeException:Exception

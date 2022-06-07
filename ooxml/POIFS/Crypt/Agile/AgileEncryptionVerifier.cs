@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt.Agile
+namespace BetListNPOI.POIFS.Crypt.Agile
 {
     using System;
     using System.Collections.Generic;
     using System.IO;
-    using NPOI.OpenXmlFormats.Encryption;
-    using NPOI.POIFS.Crypt;
+    using BetListNPOI.OpenXmlFormats.Encryption;
+    using BetListNPOI.POIFS.Crypt;
     using Org.BouncyCastle.Asn1.X509;
     using Org.BouncyCastle.X509;
 

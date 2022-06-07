@@ -15,14 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     using System;
     using System.Text;
 
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Model;
-    using NPOI.SS.Formula.PTG;
+    using BetListNPOI.HSSF.Record;
+    using BetListNPOI.HSSF.Model;
+    using BetListNPOI.SS.Formula.PTG;
     using System.Text.RegularExpressions;
 
 
@@ -30,7 +30,7 @@ namespace NPOI.HSSF.UserModel
     /// High Level Represantion of Named Range
     /// </summary>
     /// <remarks>@author Libin Roman (Vista Portal LDT. Developer)</remarks>
-    public class HSSFName:NPOI.SS.UserModel.IName
+    public class HSSFName:BetListNPOI.SS.UserModel.IName
     {
         //private static Regex isValidName = new Regex(
         //    "[\\p{IsAlphabetic}_\\\\]" +
@@ -179,7 +179,7 @@ namespace NPOI.HSSF.UserModel
             }
             set
             {
-                Ptg[] ptgs = HSSFFormulaParser.Parse(value, book, NPOI.SS.Formula.FormulaType.NamedRange, SheetIndex);
+                Ptg[] ptgs = HSSFFormulaParser.Parse(value, book, BetListNPOI.SS.Formula.FormulaType.NamedRange, SheetIndex);
                 _definedNameRec.NameDefinition = ptgs;
             }
         }

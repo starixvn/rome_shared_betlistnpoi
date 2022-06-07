@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+namespace BetListNPOI.SS.Formula.PTG
 {
     using System;
 
-    using NPOI.SS.Util;
+    using BetListNPOI.SS.Util;
     using System.Text;
-    using NPOI.Util;
+    using BetListNPOI.Util;
 
     /**
      * <p>Title:        XSSF 3D Reference</p>
