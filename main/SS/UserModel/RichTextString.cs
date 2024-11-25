@@ -15,9 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+using System;
+
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
     /**
      * Rich text unicode string.  These strings can have fonts 
      *  applied to arbitary parts of the string.

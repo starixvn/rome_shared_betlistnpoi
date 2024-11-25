@@ -1,8 +1,8 @@
-namespace NPOI.SS.Formula.Functions
-{
-    using System.Text;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.Functions.Text
+{
     public class Concat : FreeRefFunction
     {
         public ValueEval Evaluate(ValueEval[] args, OperationEvaluationContext ec)

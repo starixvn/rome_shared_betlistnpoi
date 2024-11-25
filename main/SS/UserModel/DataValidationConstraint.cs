@@ -14,11 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
+
+using System;
+
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-
-
     public interface IDataValidationConstraint
     {
         /// <summary>

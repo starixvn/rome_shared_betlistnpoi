@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This exception is thrown when trying To Write a (yet) unsupported variant
     /// type.

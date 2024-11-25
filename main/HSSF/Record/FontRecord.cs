@@ -17,15 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
-
-
-
     /**
      * Title:        Font Record - descrbes a font in the workbook (index = 0-3,5-infinity - skip 4)
      * Description:  An element in the Font Table

@@ -16,13 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using System.IO;
+using BetListNPOI.Util;
+using System;
+using System.IO;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// @author Glen Stampoultzis
     /// @version $Id: EscherBlipRecord.java 569827 2007-08-26 15:26:29Z yegor $

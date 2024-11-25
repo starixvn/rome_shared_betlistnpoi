@@ -15,15 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-using System.IO;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using System;
-
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
-
     public abstract class Decryptor
     {
         public static String DEFAULT_PASSWORD = "VelvetSweatshop";

@@ -15,16 +15,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula;
-    using NPOI.Util;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Util;
-    using NPOI.SS;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title:        SharedFormulaRecord
      * Description:  Primarily used as an excel optimization so that multiple similar formulas
@@ -42,7 +42,7 @@ namespace NPOI.HSSF.Record
 
 
         private int field_5_reserved;
-        private NPOI.SS.Formula.Formula field_7_parsed_expr;
+        private Formula field_7_parsed_expr;
 
         public SharedFormulaRecord()
             : this(new CellRangeAddress8Bit(0, 0, 0, 0))
@@ -64,7 +64,7 @@ namespace NPOI.HSSF.Record
             field_5_reserved = in1.ReadShort();
             int field_6_expression_len = in1.ReadShort();
             int nAvailableBytes = in1.Available();
-            field_7_parsed_expr = NPOI.SS.Formula.Formula.Read(field_6_expression_len, in1, nAvailableBytes);
+            field_7_parsed_expr = Formula.Read(field_6_expression_len, in1, nAvailableBytes);
         }
         protected override int ExtraDataSize
         {

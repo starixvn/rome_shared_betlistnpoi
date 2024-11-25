@@ -15,13 +15,12 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula;
-    using System.Globalization;
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Globalization;
 
+namespace BetListNPOI.SS.Formula.Functions.Boolean
+{
     /**
      * Here are the general rules concerning Boolean functions:
      * <ol>

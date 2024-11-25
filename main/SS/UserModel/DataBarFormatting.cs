@@ -17,10 +17,8 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-
     /**
      * High level representation for the DataBar Formatting 
      *  component of Conditional Formatting Settings

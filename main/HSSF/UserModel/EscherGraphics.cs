@@ -15,16 +15,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.HSSF.Util;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
-    using SixLabors.ImageSharp;
-    using SixLabors.ImageSharp.PixelFormats;
-    using SixLabors.Fonts;
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using SixLabors.Fonts;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using System;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /**
      * Translates Graphics calls into escher calls.  The translation Is lossy so
      * many features are not supported and some just aren't implemented yet.  If
@@ -314,19 +314,19 @@ namespace NPOI.HSSF.UserModel
                 hssfColor = workbook.GetCustomPalette().FindSimilarColor((byte)foreground.R, (byte)foreground.G, (byte)foreground.B);
             bool bold = font.IsBold;
             bool italic = font.IsItalic;
-            HSSFFont hssfFont = (HSSFFont)workbook.FindFont(bold ? (short)NPOI.SS.UserModel.FontBoldWeight.Bold : (short)NPOI.SS.UserModel.FontBoldWeight.Normal,
+            HSSFFont hssfFont = (HSSFFont)workbook.FindFont(bold ? (short)FontBoldWeight.Bold : (short)FontBoldWeight.Normal,
                         hssfColor.Indexed,
                         (short)(font.Size * 20),
                         font.Name,
                         italic,
                         false,
-                        (short)NPOI.SS.UserModel.FontSuperScript.None,
-                        (byte)NPOI.SS.UserModel.FontUnderlineType.None
+                        (short)FontSuperScript.None,
+                        (byte)FontUnderlineType.None
                         );
             if (hssfFont == null)
             {
                 hssfFont = (HSSFFont)workbook.CreateFont();
-                hssfFont.Boldweight = (short)(bold ? NPOI.SS.UserModel.FontBoldWeight.Bold : 0);
+                hssfFont.Boldweight = (short)(bold ? FontBoldWeight.Bold : 0);
                 hssfFont.Color = (hssfColor.Indexed);
                 hssfFont.FontHeight = ((short)(font.Size * 20));
                 hssfFont.FontName = font.Name;

@@ -15,25 +15,22 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Formula.Atp;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Function;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Formula.Udf;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using EnumsNET;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using NPOI.SS.Formula.Atp;
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
-    using System;
-    using System.Collections;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.UDF;
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
-    using NPOI.SS.Formula.Function;
-    using EnumsNET;
-
     /**
      * Evaluates formula cells.<p/>
      *

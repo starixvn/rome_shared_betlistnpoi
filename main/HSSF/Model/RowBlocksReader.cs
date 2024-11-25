@@ -15,15 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.Model
 {
-    using System;
     //using System.Collections;
-    using System.Collections.Generic;
-    using NPOI.SS.Util;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using System.Collections;
 
     /**
      * Segregates the 'Row Blocks' section of a single sheet into plain row/cell records and 
@@ -50,7 +51,7 @@ namespace NPOI.HSSF.Model
             ArrayList tableRecords = new ArrayList();
             ArrayList mergeCellRecords = new ArrayList();
             List<CellReference> firstCellRefs = new List<CellReference>();
-            Record prevRec = null;
+            Record.Record prevRec = null;
 
             while (!RecordOrderer.IsEndOfRowBlock(rs.PeekNextSid()))
             {
@@ -63,7 +64,7 @@ namespace NPOI.HSSF.Model
                     throw new InvalidOperationException("Failed to find end of row/cell records");
 
                 }
-                Record rec = rs.GetNext();
+                Record.Record rec = rs.GetNext();
                 ArrayList dest;
                 switch (rec.Sid)
                 {

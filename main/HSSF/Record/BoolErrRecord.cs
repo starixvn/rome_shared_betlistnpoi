@@ -22,14 +22,14 @@
  *
  * Created on January 19, 2002, 9:30 AM
  */
-namespace NPOI.HSSF.Record
+
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
-
     /**
      * Creates new BoolErrRecord. 
      * REFERENCE:  PG ??? Microsoft Excel 97 Developer's Kit (ISBN: 1-57231-498-2)

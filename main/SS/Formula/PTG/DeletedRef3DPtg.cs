@@ -15,16 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.Util;
-    
-
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-
     /**
      * Title:        Deleted Reference 3D Ptg 
      * Description:  Defined a cell in extern sheet. 

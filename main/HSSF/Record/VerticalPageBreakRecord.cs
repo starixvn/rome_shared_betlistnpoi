@@ -16,11 +16,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * VerticalPageBreak record that stores page breaks at columns
      * 

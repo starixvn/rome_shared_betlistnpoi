@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
+using System;
 using System.IO;
 using System.Security;
-using NPOI.Util;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using System;
-    using System.Collections;
-
     public abstract class ChunkedCipherInputStream : LittleEndianInputStream
     {
         private readonly int _chunkSize;
@@ -259,7 +257,7 @@ namespace NPOI.POIFS.Crypt
         /// <param name="off">The offset.</param>
         /// <param name="len">The length.</param>
         /// <exception cref="System.IO.EndOfStreamException">buffer underrun</exception>
-        /// <exception cref="NPOI.Util.RuntimeException"></exception>
+        /// <exception cref="RuntimeException"></exception>
         public void ReadPlain(byte[] b, int off, int len)
         {
             if (len <= 0)

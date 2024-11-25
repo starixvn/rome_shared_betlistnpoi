@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
-    using System.Globalization;
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Globalization;
+using System.Text;
 
+namespace BetListNPOI.SS.UserModel
+{
     /**
      * Mimics the 'data view' of a cell. This allows formula Evaluator
      * to return a CellValue instead of precasting the value to String

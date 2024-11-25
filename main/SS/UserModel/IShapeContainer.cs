@@ -14,9 +14,10 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
+
 using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /// <summary>
     /// A common interface for shape groups.

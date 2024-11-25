@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Title:        Write Access Record
      * Description:  Stores the username of that who owns the spReadsheet generator

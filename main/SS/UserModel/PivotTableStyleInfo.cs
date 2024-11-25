@@ -1,4 +1,4 @@
-﻿namespace NPOI.SS.UserModel
+﻿namespace BetListNPOI.SS.UserModel
 {
     public interface IPivotTableStyleInfo : ITableStyleInfo
     {

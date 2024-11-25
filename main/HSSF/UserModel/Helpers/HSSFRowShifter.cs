@@ -15,18 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel.helpers
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.UserModel.Helpers;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel.Helpers
 {
-    using System;
-
-    using NPOI.HSSF.UserModel;
-    using NPOI.HSSF.UserModel.Helpers;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.UserModel.Helpers;
-    using NPOI.Util;
-
     /**
      * Helper for Shifting rows up or down
      * 

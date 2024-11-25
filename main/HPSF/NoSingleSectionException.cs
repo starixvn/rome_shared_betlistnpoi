@@ -25,9 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using System;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
     /// <summary>
     /// This exception is thrown if one of the {@link PropertySet}'s
     /// convenience methods that require a single {@link Section} is called

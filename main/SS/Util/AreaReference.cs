@@ -15,13 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+using System;
+using System.Collections;
+using System.Text;
+
+namespace BetListNPOI.SS.Util
 {
-
-    using System;
-    using System.Text;
-    using System.Collections;
-
     public class AreaReference
     {
 

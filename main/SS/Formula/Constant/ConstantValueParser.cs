@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Constant
-{
-    using System;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.SS.Formula.Constant
+{
     /**
      * To support Constant Values (2.5.7) as required by the CRN record.
      * This class is also used for two dimensional arrays which are encoded by 

@@ -18,11 +18,13 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class Npv : Function
     {
         [Obsolete]

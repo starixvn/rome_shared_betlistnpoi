@@ -17,12 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title:        Extended Format Record
      * Description:  Probably one of the more complex records.  There are two breeds:

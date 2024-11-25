@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// Implementors of this interface allow client code to 'delay' writing to a certain section of a 

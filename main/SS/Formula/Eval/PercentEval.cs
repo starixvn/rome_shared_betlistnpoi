@@ -15,16 +15,17 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Eval
+using BetListNPOI.SS.Formula.Functions;
+
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using NPOI.SS.Formula.Functions;
     /**
      * Implementation of Excel formula token '%'. <p/>
      * @author Josh Micich
      */
     public class PercentEval : Fixed1ArgFunction
     {
-        public static Function instance = new PercentEval();
+        public static Functions.Function instance = new PercentEval();
 
         private PercentEval()
         {

@@ -22,13 +22,14 @@
  *
  * Created on November 9, 2001, 4:53 PM
  */
-namespace NPOI.HSSF.Record
-{
-    using NPOI.Util;
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Util;
 
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Used to store multiple RK numbers on a row.  1 MulRk = Multiple Cell values.
      * HSSF just Converts this into multiple NUMBER records.  Read-ONLY SUPPORT!

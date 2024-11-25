@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using NPOI.SS.Formula;
-    using NPOI.SS.UserModel;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.UserModel;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /**
      * HSSF wrapper for a sheet under evaluation
      * 

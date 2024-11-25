@@ -1,7 +1,8 @@
-﻿using System;
-using NPOI.SS.Formula.Functions;
+﻿using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.Functions.Matrix;
+using System;
 
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval.TwoOperandNumeric
 {
 
     public abstract class TwoOperandNumericOperation : Fixed2ArgFunction, ArrayFunction
@@ -51,11 +52,11 @@ namespace NPOI.SS.Formula.Eval
 
         public abstract double Evaluate(double d0, double d1);
 
-        public static NPOI.SS.Formula.Functions.Function AddEval = new AddEval();
-        public static NPOI.SS.Formula.Functions.Function DivideEval = new DivideEval();
-        public static NPOI.SS.Formula.Functions.Function MultiplyEval = new MultiplyEval();
-        public static NPOI.SS.Formula.Functions.Function PowerEval = new PowerEval();
-        public static NPOI.SS.Formula.Functions.Function SubtractEval = new SubtractEval();
+        public static Functions.Function AddEval = new AddEval();
+        public static Functions.Function DivideEval = new DivideEval();
+        public static Functions.Function MultiplyEval = new MultiplyEval();
+        public static Functions.Function PowerEval = new PowerEval();
+        public static Functions.Function SubtractEval = new SubtractEval();
 
         private class ArrayEval : MatrixFunction.TwoArrayArg
         {

@@ -15,10 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
-    using System;
-
     /**
      * Provides access to a {@link WorkbookEvaluator}, eg for use with
      *  {@link CollaboratingWorkbooksEnvironment}

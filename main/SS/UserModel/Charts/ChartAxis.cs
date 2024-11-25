@@ -16,7 +16,8 @@
 ==================================================================== */
 
 using System;
-namespace NPOI.SS.UserModel.Charts
+
+namespace BetListNPOI.SS.UserModel.Charts
 {
 
     /**

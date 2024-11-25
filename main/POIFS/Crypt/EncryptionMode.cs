@@ -15,10 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using System;
-
     /**
      * Office supports various encryption modes.
      * The encryption is either based on the whole Container ({@link #agile}, {@link #standard} or {@link #binaryRC4})

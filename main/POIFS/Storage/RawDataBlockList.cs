@@ -25,11 +25,11 @@
  * 
  * ==============================================================*/
 
-using System.IO;
-using NPOI.POIFS.Common;
+using BetListNPOI.POIFS.Common;
 using System.Collections.Generic;
+using System.IO;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// A list of RawDataBlocks instances, and methods to manage the list

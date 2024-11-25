@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using NPOI.Util;
-    using System.Text;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Biff2 - Biff 4 Label Record (0x0004 / 0x0204) - read only support for 
      *  strings stored directly in the cell, from the older file formats that

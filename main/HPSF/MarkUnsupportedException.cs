@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This exception is thrown if an {@link java.io.InputStream} does
     /// not support the {@link java.io.InputStream#mark} operation.

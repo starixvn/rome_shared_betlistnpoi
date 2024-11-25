@@ -26,10 +26,10 @@
  * ==============================================================*/
 
 using System;
-using System.IO;
 using System.Globalization;
+using System.IO;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class ShortField
     {

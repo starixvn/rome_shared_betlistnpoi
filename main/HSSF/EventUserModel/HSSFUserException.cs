@@ -16,9 +16,10 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.EventUserModel
+using System;
+
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using System;
     /// <summary>
     /// This exception Is provided as a way for API users to throw
     /// exceptions from their event handling code. By doing so they

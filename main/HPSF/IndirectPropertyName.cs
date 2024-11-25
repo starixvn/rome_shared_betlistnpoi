@@ -1,4 +1,4 @@
-﻿namespace NPOI.HPSF
+﻿namespace BetListNPOI.HPSF
 {
     public class IndirectPropertyName
     {

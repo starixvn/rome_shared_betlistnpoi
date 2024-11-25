@@ -14,12 +14,12 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.HSSF.EventUserModel
-{
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.EventUserModel;
-    using NPOI.HSSF.EventUserModel.DummyRecord;
 
+using BetListNPOI.HSSF.EventUserModel.DummyRecord;
+using BetListNPOI.HSSF.Record;
+
+namespace BetListNPOI.HSSF.EventUserModel
+{
     /// <summary>
     /// A HSSFListener which tracks rows and columns, and will
     /// trigger your HSSFListener for all rows and cells,
@@ -57,7 +57,7 @@ namespace NPOI.HSSF.EventUserModel
         /// Process an HSSF Record. Called when a record occurs in an HSSF file.
         /// </summary>
         /// <param name="record"></param>
-        public void ProcessRecord(Record record)
+        public void ProcessRecord(Record.Record record)
         {
             int thisRow;
             int thisColumn;
@@ -208,7 +208,7 @@ namespace NPOI.HSSF.EventUserModel
             {
                 foreach (CellValueRecordInterface r in expandedRecords)
                 {
-                    childListener.ProcessRecord((Record)r);
+                    childListener.ProcessRecord((Record.Record)r);
                 }
             }
             else

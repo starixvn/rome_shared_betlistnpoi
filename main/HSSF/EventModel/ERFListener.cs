@@ -15,10 +15,8 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventModel
+namespace BetListNPOI.HSSF.EventModel
 {
-    using NPOI.HSSF.Record;
-
     /**
      * An ERFListener Is registered with the EventRecordFactory.
      * An ERFListener listens for Records coming from the stream
@@ -34,6 +32,6 @@ namespace NPOI.HSSF.EventModel
          * EventRecordFactory when a record Is returned.
          * @return bool specifying whether the effort was a success.
          */
-        bool ProcessRecord(Record rec);
+        bool ProcessRecord(Record.Record rec);
     }
 }

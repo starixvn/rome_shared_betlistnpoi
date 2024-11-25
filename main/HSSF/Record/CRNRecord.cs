@@ -15,15 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Formula.Constant;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-    using NPOI.SS.Formula.Constant;
-
     /**
      * Title:       CRN  
      * Description: This record stores the contents of an external cell or cell range 

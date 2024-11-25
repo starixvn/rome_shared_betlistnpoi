@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NPOI.SS.UserModel.Drawing
+﻿namespace BetListNPOI.SS.UserModel.Drawing
 {
     /// <summary>
     /// the type of fill to display with the shape or the background of the slide.

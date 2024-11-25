@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using NPOI.DDF;
-    using System;
-    using System.Collections;
+using BetListNPOI.DDF;
+using System;
+using System.Collections;
 
+namespace BetListNPOI.HSSF.Model
+{
     [Obsolete("deprecated in POI 3.15-beta2, scheduled for removal in 3.17, use DrawingManager2 instead")]
     public class DrawingManager
     {

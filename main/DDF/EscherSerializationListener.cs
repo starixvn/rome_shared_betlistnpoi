@@ -16,7 +16,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
     /**
      * Interface for listening to escher serialization events.

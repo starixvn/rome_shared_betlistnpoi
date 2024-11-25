@@ -17,14 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.SubRecord
 {
-    using System;
-    using System.Text;
-    using System.IO;
-
-    using NPOI.Util;
-
     /**
      * Subrecords are part of the OBJ class.
      */

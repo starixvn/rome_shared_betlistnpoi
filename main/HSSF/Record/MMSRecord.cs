@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using NPOI.Util;
-    using System;
-    using System.Text;
-
-
     /**
      * Title: MMS Record
      * Description: defines how many Add menu and del menu options are stored

@@ -25,11 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This exception is thrown if HPSF encounters a variant type that is illegal
     /// in the current context.

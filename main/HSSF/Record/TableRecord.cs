@@ -15,12 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using NPOI.SS.Util;
     /**
      * DATATABLE (0x0236)<p/>
      *

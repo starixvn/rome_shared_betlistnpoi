@@ -15,14 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.PivotTable
+using BetListNPOI.Util;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.PivotTable
 {
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-
-
-
     /**
      * SXIDSTM - Stream ID (0x00D5)<br/>
      * 

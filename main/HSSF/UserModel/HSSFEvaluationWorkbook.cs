@@ -15,20 +15,22 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Formula.Udf;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
     //using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
-using NPOI.Util;
-    using NPOI.SS.Util;
-   
+
     /**
      * Internal POI use only
      * 
@@ -38,9 +40,9 @@ using NPOI.Util;
     {
         private static POILogger logger = POILogFactory.GetLogger(typeof(HSSFEvaluationWorkbook));
         private HSSFWorkbook _uBook;
-        private NPOI.HSSF.Model.InternalWorkbook _iBook;
+        private InternalWorkbook _iBook;
 
-        public static HSSFEvaluationWorkbook Create(NPOI.SS.UserModel.IWorkbook book)
+        public static HSSFEvaluationWorkbook Create(IWorkbook book)
         {
             if (book == null)
             {

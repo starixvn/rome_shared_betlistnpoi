@@ -15,11 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using System;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-
     /**
      * A custom implementation of {@link java.util.HashSet} in order To reduce memory consumption.
      *

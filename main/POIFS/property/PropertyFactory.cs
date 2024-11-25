@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Storage;
 using System.Collections.Generic;
 
-using NPOI.POIFS.Storage;
-using NPOI.POIFS.Common;
-
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     public class PropertyFactory
     {

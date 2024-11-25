@@ -16,14 +16,11 @@
  *    limitations under the License.
  * ====================================================================
  */
-using NPOI.SS.Formula.Eval;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     public abstract class NumberListFuncBase : FreeRefFunction
     {

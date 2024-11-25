@@ -17,10 +17,10 @@
 ==================================================================== */
 
 
-namespace NPOI.Util
-{
-    using System.Collections.Generic;
+using System.Collections.Generic;
 
+namespace BetListNPOI.Util
+{
     /// <summary>
     /// A List of objects that are indexed AND keyed by an int; also allows for Getting
     /// the index of a value in the list

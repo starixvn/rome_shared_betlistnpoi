@@ -15,15 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using System.Globalization;
-    
-
-
     /**
      * Integer (unsigned short integer)
      * Stores an Unsigned short value (java int) in a formula

@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using System;
+using System.Collections;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.Collections;
-
-
     /// <summary>
     /// The <em>Variant</em> types as defined by Microsoft's COM. I
     /// found this information in <a href="http://www.marin.clara.net/COM/variant_type_definitions.htm">

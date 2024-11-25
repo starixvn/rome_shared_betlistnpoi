@@ -15,14 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.CryptoAPI
+using BetListNPOI.POIFS.Crypt.Standard;
+using BetListNPOI.Util;
+
+namespace BetListNPOI.POIFS.Crypt.CryptoAPI
 {
-    using System;
-
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.Crypt.Standard;
-    using NPOI.Util;
-
     public class CryptoAPIEncryptionVerifier : StandardEncryptionVerifier {
 
         protected internal CryptoAPIEncryptionVerifier(ILittleEndianInput is1,

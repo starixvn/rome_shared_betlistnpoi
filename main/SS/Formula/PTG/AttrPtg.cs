@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    
-
-
     /**
      * "Special Attributes"
      * This seems to be a Misc Stuff and Junk record.  One function it serves Is

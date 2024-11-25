@@ -15,16 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS.Util;
-    using NPOI.SS.UserModel;
-
-
     /// <summary>
     /// The Conditional Formatting facet of HSSFSheet
     /// @author Dmitriy Kumshayev

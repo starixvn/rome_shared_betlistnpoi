@@ -16,13 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Collections;
-    using NPOI.Util;
-    using System.Collections.Generic;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// Generates a property given a reference into the byte array storing that property.
     /// @author Glen Stampoultzis

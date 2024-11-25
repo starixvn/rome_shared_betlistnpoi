@@ -15,14 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.PivotTable
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.PivotTable
 {
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-
-
     /**
      * SXVD - View Fields (0x00B1)<br/>
      * 

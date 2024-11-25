@@ -17,15 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
-
     /**
      * The common object data record is used to store all common preferences for an excel object.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or
@@ -68,7 +65,7 @@ namespace NPOI.HSSF.Record
         MicrosoftOfficeDrawing = 30,
     }
 
-    public class CommonObjectDataSubRecord : SubRecord, ICloneable
+    public class CommonObjectDataSubRecord : SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x15;
         private short field_1_objectType;

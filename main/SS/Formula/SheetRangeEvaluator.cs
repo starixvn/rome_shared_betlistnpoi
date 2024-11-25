@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula
 {
-    using System;
-
-    using NPOI.SS.Formula.Eval;
-    using System.Text;
-
     /**
      * Evaluator for returning cells or sheets for a range of sheets
      */

@@ -26,14 +26,12 @@
  * ==============================================================*/
 
 
+using BetListNPOI.POIFS.Common;
 using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 
-using NPOI.POIFS.Common;
-using System.Collections.Generic;
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// Storage for documents that are too small to use regular

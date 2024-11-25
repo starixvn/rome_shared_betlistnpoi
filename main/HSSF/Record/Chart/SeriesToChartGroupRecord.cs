@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Indicates the chart-group index for a series.  The order probably defines the mapping.  So the 0th record probably means the 0th series.  The only field in this of course defines which chart Group the 0th series (for instance) would map to.  Confusing?  Well thats because it Is.  (p 522 BCG)
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

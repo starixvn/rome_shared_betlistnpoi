@@ -15,13 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using NPOI.Util;
-    using NPOI.SS.Formula;
-
-
     /**
      * A Name, be that a Named Range or a Function / User Defined
      *  Function, addressed in the HSSF External Sheet style.

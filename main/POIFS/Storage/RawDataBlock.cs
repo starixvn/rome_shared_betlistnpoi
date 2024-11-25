@@ -25,14 +25,12 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 using System;
 using System.IO;
 
-using NPOI.POIFS.Common;
-using NPOI.Util;
-
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// A big block created from an InputStream, holding the raw data

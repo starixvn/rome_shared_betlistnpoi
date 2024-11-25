@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Title:        Password Record
      * Description:  stores the encrypted password for a sheet or workbook (HSSF doesn't support encryption)

@@ -18,11 +18,12 @@
  * Created on May 14, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions.Numeric
+{
     public abstract class OneArg : Fixed1ArgFunction
     {
         protected OneArg()

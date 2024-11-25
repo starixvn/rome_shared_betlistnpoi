@@ -15,13 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.Formula
 {
-    using System.Collections;
-    using System.Collections.Generic;
-    using NPOI.SS.Formula.Eval;
-
-
     /**
      * Stores the cached result of a formula evaluation, along with the Set of sensititive input cells
      */

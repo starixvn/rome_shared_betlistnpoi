@@ -1,8 +1,8 @@
-﻿namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
-    using System;
+﻿using BetListNPOI.SS.Formula.Eval;
+using System;
 
+namespace BetListNPOI.SS.Formula.Functions.Numeric
+{
     public class Poisson : Fixed3ArgFunction
     {
         private const double DEFAULT_RETURN_RESULT = 1;

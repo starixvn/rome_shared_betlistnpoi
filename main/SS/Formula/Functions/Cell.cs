@@ -6,10 +6,12 @@ The COLUMN function will do that same thing as COLUMN(W2)
 But to avoid having to change existing templates, this implementation has been made.
 It only handles the "col" and "row" parameters.
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Text;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class Cell : Function2Arg
     {
         public ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0, ValueEval arg1)

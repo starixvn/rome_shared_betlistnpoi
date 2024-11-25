@@ -17,12 +17,11 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-
     /**
      * Title:        Header Record
      * Description:  Specifies a header for a sheet

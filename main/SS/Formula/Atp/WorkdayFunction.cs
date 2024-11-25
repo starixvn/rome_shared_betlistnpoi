@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.UserModel;
 using System;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.Formula.Functions;
-using NPOI.SS.UserModel;
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     /**
  * Implementation of Excel 'Analysis ToolPak' function WORKDAY()<br/>

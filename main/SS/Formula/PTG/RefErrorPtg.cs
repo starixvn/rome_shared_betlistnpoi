@@ -15,14 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
-
-
     /**
      * RefError - handles deleted cell reference
      * @author Jason Height (jheight at chariot dot net dot au)

@@ -25,12 +25,12 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF.Wellknown
-{
-    using System;
-    using System.Text;
-    using System.Collections;
+using System;
+using System.Collections;
+using System.Text;
 
+namespace BetListNPOI.HPSF.Wellknown
+{
     /// <summary>
     /// Maps section format IDs To {@link PropertyIDMap}s. It Is
     /// initialized with two well-known section format IDs: those of the

@@ -17,12 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
-{
-    using System.Text;
-    using NPOI.Util;
-    using System;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title:        Precision Record
      * Description:  defines whether to store with full precision or what's Displayed by the gui

@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel.DummyRecord
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.EventUserModel.DummyRecord
 {
-
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-
     /**
      */
-    public abstract class DummyRecordBase : Record
+    public abstract class DummyRecordBase : Record.Record
     {
 
         protected DummyRecordBase()

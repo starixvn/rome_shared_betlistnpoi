@@ -17,10 +17,11 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
       * Compute the interest portion of a payment.
       * 

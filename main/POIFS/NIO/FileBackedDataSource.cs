@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-using System.IO;
+using BetListNPOI.Util;
 using System;
-using NPOI.Util;
 using System.Collections.Generic;
-using System.Security;
-using System.Reflection;
+using System.IO;
+
 //using System.IO.MemoryMappedFiles;
-namespace NPOI.POIFS.NIO
+namespace BetListNPOI.POIFS.NIO
 {
     /// <summary>
     /// A POIFS DataSource backed by a File

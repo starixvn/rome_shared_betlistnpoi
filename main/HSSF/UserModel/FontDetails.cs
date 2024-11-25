@@ -15,13 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Collections;
-    using NPOI.Util.Collections;
-    using System.Globalization;
+using BetListNPOI.Util.Collections;
+using System;
+using System.Collections;
+using System.Globalization;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// Stores width and height details about a font.
     /// @author Glen Stampoultzis (glens at apache.org)

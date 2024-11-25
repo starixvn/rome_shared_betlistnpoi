@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using NPOI.SS.Formula.Eval;
-    using System;
-    using NPOI.SS.UserModel;
-
-
     /**
      * Implementation of Excel 'Analysis ToolPak' function EDATE()<br/>
      *

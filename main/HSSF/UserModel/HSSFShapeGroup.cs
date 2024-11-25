@@ -16,14 +16,14 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Record;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// A shape Group may contain other shapes.  It was no actual form on the
     /// sheet.

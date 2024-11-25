@@ -16,12 +16,12 @@
 */
 
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using System.Text;
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation for Excel function OFFSet()<p/>
      * 

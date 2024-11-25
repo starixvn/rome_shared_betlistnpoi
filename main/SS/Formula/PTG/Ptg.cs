@@ -15,18 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-
-    using System;
-    using System.IO;
-    using System.Runtime.Serialization.Formatters.Binary;
-    using System.Collections;
-
-    using NPOI.Util;
-    using System.Collections.Generic;
-
-
     /**
      * <c>Ptg</c> represents a syntactic token in a formula.  'PTG' is an acronym for 
      * '<b>p</b>arse <b>t</b>hin<b>g</b>'.  Originally, the name referred to the single 

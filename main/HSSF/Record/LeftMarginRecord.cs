@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Record for the left margin.
      * NOTE: This source was automatically generated.

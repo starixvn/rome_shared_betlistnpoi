@@ -18,11 +18,11 @@
  * Created on May 9, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
+
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula.Functions.Boolean
 {
-    using NPOI.SS.Formula.Eval;
-
-
     /*
      * @author Amol S. Deshmukh &lt; amol at apache dot org &gt;
      * The NOT bool function. Returns negation of specified value

@@ -1,10 +1,8 @@
 ﻿
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
 
+namespace BetListNPOI.HSSF.Record
+{
     public class PrintSizeRecord:StandardRecord
     {
         public const short sid = 0x33;

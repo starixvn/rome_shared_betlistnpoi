@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
+using BetListNPOI.Util;
+using System;
 using System.Text;
-using NPOI.Util;
 
-
-/**
+namespace BetListNPOI.HSSF.Record
+{
+    /**
  * The UserSViewBegin record specifies Settings for a custom view associated with the sheet.
  * This record also marks the start of custom view records, which save custom view Settings.
  * Records between {@link UserSViewBegin} and {@link UserSViewEnd} contain Settings for the custom view,

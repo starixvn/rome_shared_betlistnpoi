@@ -1,5 +1,5 @@
 ﻿
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval
 {
     public class MissingArgEval : ValueEval
     {

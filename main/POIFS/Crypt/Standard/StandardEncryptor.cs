@@ -15,16 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.Standard
-{
-    using System;
-    using System.IO;
-    using System.Security.AccessControl;
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.EventFileSystem;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.IO;
 
+namespace BetListNPOI.POIFS.Crypt.Standard
+{
     public class StandardEncryptor : Encryptor
     {
         private StandardEncryptionInfoBuilder builder;

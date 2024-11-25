@@ -15,13 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
+using BetListNPOI.HSSF.Model;
+using System.Collections;
+
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
-    using System.Collections;
-
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-
     /// <summary>
     /// Manages the DVALRecord and DVRecords for a single sheet
     /// See OOO excelfileformat.pdf section 4.14

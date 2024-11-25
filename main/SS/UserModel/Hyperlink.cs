@@ -14,10 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
-{
-    using System;
 
+using System;
+
+namespace BetListNPOI.SS.UserModel
+{
     public enum HyperlinkType : int
     {
         Unknown = 0,

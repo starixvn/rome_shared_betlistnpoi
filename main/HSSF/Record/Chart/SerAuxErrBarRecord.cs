@@ -15,7 +15,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The SerAuxErrBar record specifies properties of an error bar.
@@ -38,7 +40,7 @@ namespace NPOI.HSSF.Record.Chart
                 return base.DataSize;
             }
         }
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             base.Serialize(out1);
         }

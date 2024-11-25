@@ -15,10 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
 using System;
-using NPOI.SS.UserModel;
-using NPOI.SS.Formula.Eval;
-namespace NPOI.SS.Formula.Functions
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implementation of Excel NOW() Function

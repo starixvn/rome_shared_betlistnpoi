@@ -17,15 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    
-    using System.Text;
-    using System;
-    using NPOI.Util;
-
-
     /**
      * The dat record is used to store options for the chart.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

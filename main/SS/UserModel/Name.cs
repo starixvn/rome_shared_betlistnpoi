@@ -15,9 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+using System;
+
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
     /**
      * Represents a defined name for a range of cells.
      * A name is a meaningful shorthand that makes it easier to understand the purpose of a

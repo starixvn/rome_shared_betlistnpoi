@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
+using BetListNPOI.HSSF.Model;
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
-    using System;
-
-
-    using NPOI.HSSF.Model;
-    using System.Collections.Generic;
-    using System.IO;
-
     /**
      * Manages the all the records associated with a chart sub-stream.<br/>
      * Includes the Initial {@link BOFRecord} and {@link EOFRecord}.

@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     /// <summary>
     /// High level representation of chart legend.

@@ -15,18 +15,18 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.Model
+{
     /// <summary>
     /// Low level model implementation of a Sheet (one workbook Contains many sheets)
     /// This file Contains the low level binary records starting at the sheets BOF and
@@ -132,7 +132,7 @@ namespace NPOI.HSSF.Model
         /// <returns></returns>
         public InternalSheet CloneSheet()
         {
-            List<Record> clonedRecords = new List<Record>(this.records.Count);
+            List<Record.Record> clonedRecords = new List<Record.Record>(this.records.Count);
             for (int i = 0; i < this.records.Count; i++)
             {
                 RecordBase rb = (RecordBase)this.records[i];
@@ -151,7 +151,7 @@ namespace NPOI.HSSF.Model
                 }
                 try
                 {
-                    Record rec = (Record)((Record)rb).Clone();
+                    Record.Record rec = (Record.Record)((Record.Record)rb).Clone();
                     clonedRecords.Add(rec);
                 }
                 catch (NotSupportedException e)
@@ -179,17 +179,17 @@ namespace NPOI.HSSF.Model
 
         private class RecordCloner : RecordVisitor
         {
-            private IList<Record> _destList;
+            private IList<Record.Record> _destList;
 
-            public RecordCloner(IList<Record> destList)
+            public RecordCloner(IList<Record.Record> destList)
             {
                 _destList = destList;
             }
-            public void VisitRecord(Record r)
+            public void VisitRecord(Record.Record r)
             {
                 try
                 {
-                    _destList.Add((Record)r.Clone());
+                    _destList.Add((Record.Record)r.Clone());
                 }
                 catch (NotSupportedException e)
                 {
@@ -234,7 +234,7 @@ namespace NPOI.HSSF.Model
                 // Skip onto the EOF, then complain
                 while (rs.HasNext())
                 {
-                    Record rec = rs.GetNext();
+                    Record.Record rec = rs.GetNext();
                     if (rec is EOFRecord)
                     {
                         break;
@@ -335,7 +335,7 @@ namespace NPOI.HSSF.Model
                     //}
                     continue;
                 }
-                Record rec = rs.GetNext();
+                Record.Record rec = rs.GetNext();
                 if (recSid == IndexRecord.sid)
                 {
                     // ignore INDEX record because it is only needed by Excel,
@@ -457,7 +457,7 @@ namespace NPOI.HSSF.Model
             {
                 _records=recs;
             }
-            public void VisitRecord(Record r) {
+            public void VisitRecord(Record.Record r) {
                 _records.Add(r);
             }
         }
@@ -1117,8 +1117,8 @@ namespace NPOI.HSSF.Model
         /// <summary>
         /// Creates the DefaultRowHeight Record and Sets its options to 0 and rowheight to 0xff
         /// </summary>
-        /// <see cref="NPOI.HSSF.Record.DefaultRowHeightRecord"/>
-        /// <see cref="NPOI.HSSF.Record.Record"/>
+        /// <see cref="DefaultRowHeightRecord"/>
+        /// <see cref="Record"/>
         /// <returns>record containing a DefaultRowHeightRecord</returns>
         private static DefaultRowHeightRecord CreateDefaultRowHeight()
         {
@@ -1563,7 +1563,7 @@ namespace NPOI.HSSF.Model
         /// Creates the EOF record
         /// </summary>
         /// <returns>record containing a EOFRecord</returns>
-        protected Record CreateEOF()
+        protected Record.Record CreateEOF()
         {
             return new EOFRecord();
         }
@@ -1605,14 +1605,14 @@ namespace NPOI.HSSF.Model
         /// </summary>
         /// <param name="sid">The sid.</param>
         /// <returns></returns>
-        public Record FindFirstRecordBySid(short sid)
+        public Record.Record FindFirstRecordBySid(short sid)
         {
             int ix = FindFirstRecordLocBySid(sid);
             if (ix < 0)
             {
                 return null;
             }
-            return (Record)records[ix];
+            return (Record.Record)records[ix];
         }
 
         /// <summary>
@@ -1648,11 +1648,11 @@ namespace NPOI.HSSF.Model
             for (int i = 0; i < max; i++)
             {
                 Object rb = records[i];
-                if (!(rb is Record))
+                if (!(rb is Record.Record))
                 {
                     continue;
                 }
-                Record record = (Record)rb;
+                Record.Record record = (Record.Record)rb;
                 if (record.Sid == sid)
                 {
                     return i;
@@ -1842,7 +1842,7 @@ namespace NPOI.HSSF.Model
          * @see #PANE_UPPER_LEFT
          * @see #PANE_UPPER_RIGHT
          */
-        public void CreateSplitPane(int xSplitPos, int ySplitPos, int topRow, int leftmostColumn, NPOI.SS.UserModel.PanePosition activePane)
+        public void CreateSplitPane(int xSplitPos, int ySplitPos, int topRow, int leftmostColumn, PanePosition activePane)
         {
             int paneLoc = FindFirstRecordLocBySid(PaneRecord.sid);
             if (paneLoc != -1)
@@ -1861,7 +1861,7 @@ namespace NPOI.HSSF.Model
             windowTwo.FreezePanesNoSplit = (false);
 
             SelectionRecord sel = (SelectionRecord)FindFirstRecordBySid(SelectionRecord.sid);
-            sel.Pane = (byte)NPOI.SS.UserModel.PanePosition.LowerRight;
+            sel.Pane = (byte)PanePosition.LowerRight;
 
         }
 
@@ -1877,7 +1877,7 @@ namespace NPOI.HSSF.Model
                 if (rec == null)
                     return null;
 
-                return new NPOI.SS.Util.PaneInformation(rec.X, rec.Y, rec.TopRow,
+                return new PaneInformation(rec.X, rec.Y, rec.TopRow,
                                            rec.LeftColumn, (byte)rec.ActivePane, windowTwo.FreezePanes);
             }
         }
@@ -2194,7 +2194,7 @@ namespace NPOI.HSSF.Model
                     {
                         ((DefaultColWidthRecord)record).offsetForFilePointer = sheetOffset;
                     }
-                    ptv.VisitRecord((Record)record);
+                    ptv.VisitRecord((Record.Record)record);
                     sheetOffset += record.RecordSize;
                 }
 

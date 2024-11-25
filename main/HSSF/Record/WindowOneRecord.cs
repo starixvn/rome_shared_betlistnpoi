@@ -16,12 +16,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title:        Window1 Record
      * Description:  Stores the attributes of the workbook window.  This Is basically

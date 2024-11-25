@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.WP.UserModel
-{
-    using System;
+using System;
 
+namespace BetListNPOI.WP.UserModel
+{
     /**
      * This class represents a run of text that share common properties.
      */

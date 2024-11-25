@@ -15,13 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    
-
     /**
  * A (mostly) opaque interface To allow test clients To trace cache values
  * Each spreadsheet cell Gets one unique cache entry instance.  These objects

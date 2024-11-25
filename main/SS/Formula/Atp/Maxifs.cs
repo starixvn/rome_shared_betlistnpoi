@@ -16,13 +16,11 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula.Atp
-{
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
 
+namespace BetListNPOI.SS.Formula.Atp
+{
     /**
      * Implementation for the function MAXIFS
      * <p>

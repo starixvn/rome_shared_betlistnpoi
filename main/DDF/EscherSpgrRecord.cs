@@ -16,13 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
+using System;
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
-    using System;
-    using NPOI.Util;
-
     /// <summary>
     /// The spgr record defines information about a shape group.  Groups in escher
     /// are simply another form of shape that you can't physically see.

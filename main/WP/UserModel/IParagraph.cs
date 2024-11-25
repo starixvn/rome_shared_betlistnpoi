@@ -15,10 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.WP.UserModel
+namespace BetListNPOI.WP.UserModel
 {
-    using System;
-
     /**
      * This class represents a paragraph, made up of one or more
      *  Runs of text.

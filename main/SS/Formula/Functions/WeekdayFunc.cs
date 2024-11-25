@@ -16,11 +16,12 @@
  *    limitations under the License.
  * ====================================================================
  */
-using System;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.UserModel;
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
  * Implementation for the Excel function WEEKDAY

@@ -14,15 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
+
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using System;
+
+namespace BetListNPOI.SS.Format
 {
-    using NPOI.Util;
-    using SixLabors.ImageSharp;
-    using SixLabors.ImageSharp.PixelFormats;
-    using System;
-
-
-
     /**
      * This object Contains the result of Applying a cell format or cell format part
      * to a value.

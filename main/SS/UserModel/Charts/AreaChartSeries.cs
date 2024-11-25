@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NPOI.SS.UserModel.Charts
+﻿namespace BetListNPOI.SS.UserModel.Charts
 {
     public interface IAreaChartSeries<Tx, Ty> : IChartSeries
     {

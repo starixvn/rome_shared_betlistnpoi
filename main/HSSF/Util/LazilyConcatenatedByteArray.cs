@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Util
-{
-    using System;
-    using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.Util
+{
     /**
      * Utility for delaying the concatenation of multiple byte arrays.  Doing this up-front
      * causes significantly more copying, which for a large number of byte arrays can cost

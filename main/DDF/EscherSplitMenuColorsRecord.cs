@@ -16,13 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
+using System;
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
-    using System;
-    using NPOI.Util;
-
     /// <summary>
     /// A list of the most recently used colours for the drawings contained in
     /// this document.

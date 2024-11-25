@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Common;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.property;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// This class implements reading the small document block list from an

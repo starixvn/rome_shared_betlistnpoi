@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This class represents custum properties in the document summary
     /// information stream. The difference To normal properties is that custom

@@ -15,18 +15,18 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.DDF;
-    using NPOI.HSSF.UserModel;
-    using NPOI.HSSF.Model;
-    using NPOI.Util;
-    using System.Collections.Generic;
-    using System.IO;
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     internal class SerializationListener : EscherSerializationListener
     {
         IList<int> spEndingOffsets;

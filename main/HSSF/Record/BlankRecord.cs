@@ -22,13 +22,13 @@
  *
  * Created on December 10, 2001, 12:07 PM
  */
-namespace NPOI.HSSF.Record
+
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Title:        Blank cell record 
      * Description:  Represents a column in a row with no value but with styling.

@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt
-{
-    using System;
+using System;
 
+namespace BetListNPOI.POIFS.Crypt
+{
     public class CipherAlgorithm
     {
         // key size for rc4: 0x00000028 - 0x00000080 (inclusive) with 8-bit increments

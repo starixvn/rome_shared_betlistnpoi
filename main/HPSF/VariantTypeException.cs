@@ -25,9 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using System;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
     /// <summary>
     /// This exception is thrown if HPSF encounters a problem with a variant type.
     /// Concrete subclasses specifiy the problem further.

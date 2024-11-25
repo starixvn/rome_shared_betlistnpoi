@@ -14,17 +14,18 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-namespace NPOI.DDF
-{
-    using System;
-    using System.IO;
-    using System.Text;
-    using NPOI.Util;
-    using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-    using ICSharpCode.SharpZipLib.Zip.Compression;
-    using NPOI.HSSF.UserModel;
-    using SixLabors.ImageSharp;
 
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.Util;
+using ICSharpCode.SharpZipLib.Zip.Compression;
+using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
+using SixLabors.ImageSharp;
+using System;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// @author Daniel Noll
     /// </summary>

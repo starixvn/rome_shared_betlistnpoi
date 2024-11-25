@@ -1,11 +1,10 @@
-﻿using System;
+﻿using BetListNPOI.Util;
+using System;
 using System.Text;
-using NPOI.Util;
 
-
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    public class FtCblsSubRecord : SubRecord, ICloneable
+    public class FtCblsSubRecord : SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x0C;
         private const int ENCODED_SIZE = 20;

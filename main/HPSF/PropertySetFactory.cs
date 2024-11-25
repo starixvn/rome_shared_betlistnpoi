@@ -25,13 +25,13 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System.IO;
-    using NPOI.HPSF.Wellknown;
-    using System;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.HPSF.Wellknown;
+using BetListNPOI.POIFS.FileSystem;
+using System;
+using System.IO;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// Factory class To Create instances of {@link SummaryInformation},
     /// {@link DocumentSummaryInformation} and {@link PropertySet}.

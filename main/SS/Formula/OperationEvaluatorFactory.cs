@@ -15,17 +15,18 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval.RelationalOperationEval;
+using BetListNPOI.SS.Formula.Eval.TwoOperandNumeric;
+using BetListNPOI.SS.Formula.Function;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.PTG;
+using System;
+using System.Collections;
+using System.Reflection;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Collections;
-    using System.Reflection;
-
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.PTG;
-
     /**
      * This class Creates <c>OperationEval</c> instances To help evaluate <c>OperationPtg</c>
      * formula Tokens.
@@ -91,7 +92,7 @@ namespace NPOI.SS.Formula
             {
                 throw new ArgumentException("ptg must not be null");
             }
-            NPOI.SS.Formula.Functions.Function result = _instancesByPtgClass[ptg] as NPOI.SS.Formula.Functions.Function;
+            Functions.Function result = _instancesByPtgClass[ptg] as Functions.Function;
 
             FreeRefFunction udfFunc = null;
             if (result == null)
@@ -102,10 +103,10 @@ namespace NPOI.SS.Formula
                     int functionIndex = fptg.FunctionIndex;
                     switch (functionIndex)
                     {
-                        case NPOI.SS.Formula.Function.FunctionMetadataRegistry.FUNCTION_INDEX_INDIRECT:
+                        case FunctionMetadataRegistry.FUNCTION_INDEX_INDIRECT:
                             udfFunc = Indirect.instance;
                             break;
-                        case NPOI.SS.Formula.Function.FunctionMetadataRegistry.FUNCTION_INDEX_EXTERNAL:
+                        case FunctionMetadataRegistry.FUNCTION_INDEX_EXTERNAL:
                             udfFunc = UserDefinedFunction.instance;
                             break;
                         default:

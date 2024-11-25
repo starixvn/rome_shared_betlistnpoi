@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     public enum BOFRecordType {
         Workbook = 0x05,
         VBModule = 0x06,

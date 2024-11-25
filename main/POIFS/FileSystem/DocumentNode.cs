@@ -15,14 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.POIFS.property;
 using System;
 using System.Collections.Generic;
 
-using NPOI.POIFS.FileSystem;
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Dev;
-
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// Simple implementation of DocumentEntry

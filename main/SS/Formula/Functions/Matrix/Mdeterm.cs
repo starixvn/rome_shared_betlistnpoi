@@ -1,13 +1,10 @@
-﻿using MathNet.Numerics.LinearAlgebra;
-using NPOI.SS.Formula.Eval;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using static NPOI.SS.Formula.Functions.MatrixFunction;
+﻿using BetListNPOI.SS.Formula.Eval;
+using MathNet.Numerics.LinearAlgebra;
+using static BetListNPOI.SS.Formula.Functions.Matrix.MatrixFunction;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions.Matrix
 {
-    public class Mdeterm:OneArrayArg
+    public class Mdeterm:MatrixFunction.OneArrayArg
     {
         private MutableValueCollector instance = new MutableValueCollector(false, false);
         protected override double[] CollectValues(ValueEval arg)

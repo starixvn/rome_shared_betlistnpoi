@@ -16,14 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.IO;
-    using System.Text;
-    using NPOI.Util;
-
-
     /// <summary>
     /// The EscherClientDataRecord is used to store client specific data about the position of a
     /// shape within a container.

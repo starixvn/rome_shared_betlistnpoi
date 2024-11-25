@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
+using BetListNPOI.SS.Formula.Eval;
 
-    using NPOI.SS.Formula.Eval;
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Convenience base class for functions that must take exactly four arguments.
      *

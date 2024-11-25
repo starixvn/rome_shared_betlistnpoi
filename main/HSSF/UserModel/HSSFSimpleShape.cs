@@ -15,12 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
-    using System;
-    using NPOI.SS.UserModel;
     /// <summary>
     /// Represents a simple shape such as a line, rectangle or oval.
     /// @author Glen Stampoultzis (glens at apache.org)

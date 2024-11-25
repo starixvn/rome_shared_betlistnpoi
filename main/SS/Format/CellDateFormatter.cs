@@ -15,13 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
 using System;
-using System.Text.RegularExpressions;
-using System.Text;
-using NPOI.SS.Util;
 using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 
-namespace NPOI.SS.Format
+namespace BetListNPOI.SS.Format
 {
     /**
      * Formats a date value.
@@ -181,7 +182,7 @@ namespace NPOI.SS.Format
             if (value == null)
                 value = 0.0;
             //if (value is Number) {
-            if (NPOI.Util.Number.IsNumber(value))
+            if (Number.IsNumber(value))
             {
                 double v;
                 double.TryParse(value.ToString(), out v);

@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-    
-    using NPOI.Util;
-
-
     /**
      * String Stores a String value in a formula value stored in the format
      * &lt;Length 2 bytes&gt;char[]

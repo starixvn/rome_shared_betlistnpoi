@@ -18,11 +18,12 @@
  * Created on May 19, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using ExtendedNumerics;
-    using System;
 
+using ExtendedNumerics;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      * This class Is an extension to the standard math library

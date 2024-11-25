@@ -15,13 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
+using System;
+using System.IO;
+
+namespace BetListNPOI.POIFS.FileSystem
 {
-    using System;
-    using System.IO;
-
-
-
     /**
      * This exception is thrown when we try to open a file that doesn't
      *  seem to actually be an OLE2 file After all

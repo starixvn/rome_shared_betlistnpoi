@@ -17,10 +17,10 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
-{
-    using System;
+using System;
 
+namespace BetListNPOI.SS.UserModel
+{
     /**
      * Enum mapping the values of STDataConsolidateFunction
      */

@@ -15,14 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System.Text;
-    using System;
-    using NPOI.Util;
-    using System.Globalization;
-
-
     /**
      * NOTE: Comment Associated with a Cell (1Ch)
      *

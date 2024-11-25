@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This exception is thrown if a {@link MutablePropertySet} is To be written
     /// but does not have a formatID Set (see {@link

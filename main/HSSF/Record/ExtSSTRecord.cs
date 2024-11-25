@@ -17,16 +17,15 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Cont;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using NPOI.Util;
-
-    using System;
-    using System.Collections;
-    using System.Text;
-    using NPOI.HSSF.Record.Cont;
-    using System.Collections.Generic;
-
     /**
      * Title:        Extended Static String Table
      * Description: This record Is used for a quick Lookup into the SST record. This

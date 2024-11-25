@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-
-    using NPOI.HSSF.Record.Common;
-    using NPOI.SS.Util;
-    using NPOI.Util;
-
     /**
      * Conditional Formatting Header v12 record CFHEADER12 (0x0879),
      *  for conditional formattings introduced in Excel 2007 and newer.

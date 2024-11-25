@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.Formula.Function;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-
-    using NPOI.SS.Formula.Function;
-
-
     /**
      * This class provides the base functionality for Excel sheet functions
      * There are two kinds of function Ptgs - tFunc and tFuncVar

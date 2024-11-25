@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
-{
-    using System;
-    using System.Text;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula
+{
     public class NameIdentifier
     {
         private String _name;

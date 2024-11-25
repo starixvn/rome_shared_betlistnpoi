@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation of the DMin function:
      * Finds the minimum value of a column in an area with given conditions.

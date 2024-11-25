@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Text;
-    using System.Collections;
+using System;
+using System.Collections;
+using System.Text;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /**
      * Instances of this class keep track of multiple dependent cell evaluations due
      * to recursive calls to <c>HSSFFormulaEvaluator.internalEvaluate()</c>.

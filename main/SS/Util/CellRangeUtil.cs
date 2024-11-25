@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
-{
-    using System;
-    using System.Collections;
-    using NPOI.SS.Util;
-    using System.Collections.Generic;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.SS.Util
+{
     /**
      * Utility class that builds on {@link CellRangeAddress}
      * 

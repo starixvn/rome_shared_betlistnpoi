@@ -16,10 +16,10 @@
  *    limitations under the License.
  * ====================================================================
  */
-using System;
-using NPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implementation for the Excel function SUMIFS<br/>
@@ -89,10 +89,10 @@ namespace NPOI.SS.Formula.Functions
             {
 
                 // check for errors in predicate and return immediately using this error code
-                if (predicate is NPOI.SS.Formula.Functions.Countif.ErrorMatcher)
+                if (predicate is Countif.ErrorMatcher)
                 {
                     throw new EvaluationException(
-                        ErrorEval.ValueOf(((NPOI.SS.Formula.Functions.Countif.ErrorMatcher) predicate).Value));
+                        ErrorEval.ValueOf(((Countif.ErrorMatcher) predicate).Value));
                 }
             }
         }

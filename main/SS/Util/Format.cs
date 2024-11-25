@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Text;
 using System.Globalization;
+using System.Text;
 using System.Text.RegularExpressions;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     /// <summary>
     /// A substitute class for Format class in Java

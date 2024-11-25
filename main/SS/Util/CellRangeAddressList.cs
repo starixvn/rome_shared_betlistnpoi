@@ -1,12 +1,10 @@
-﻿using System;
+﻿using BetListNPOI.HSSF.Record;
+using BetListNPOI.Util;
+using System;
 using System.Collections;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
-    using NPOI.Util;
-
-    using NPOI.HSSF.Record;
-
     public class CellRangeAddressList
     {
         /**

@@ -17,15 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-    using System.Text;
-
-    using NPOI.SS.Formula.PTG;
-
     /**
      * Not implemented yet. May commit it anyway just so people can see
      * where I'm heading.

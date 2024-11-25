@@ -17,16 +17,15 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.HSSF.Record.Cont;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Collections;
-    using System.Text;
-    using NPOI.Util;
-    using NPOI.HSSF.Record.Cont;
-
-
     /**
      * Title:        Static String Table Record
      * 

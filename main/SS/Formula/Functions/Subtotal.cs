@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NPOI.SS.Formula.Eval;
-using NPOI.Util;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implementation for the Excel function SUBTOTAL<p>

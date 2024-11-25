@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
-{
-    using System;
-    using System.Globalization;
+using System;
+using System.Globalization;
 
+namespace BetListNPOI.Util
+{
     /// <summary>
-    /// Adapts a plain byte array to <see cref="T:NPOI.Util.ILittleEndianOutput"/>
+    /// Adapts a plain byte array to <see cref="T:BetListNPOI.Util.ILittleEndianOutput"/>
     /// </summary>
     /// <remarks>@author Josh Micich</remarks>
     public class LittleEndianByteArrayOutputStream : ILittleEndianOutput, IDelayableLittleEndianOutput

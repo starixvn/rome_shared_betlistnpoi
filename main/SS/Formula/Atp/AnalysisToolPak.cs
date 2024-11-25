@@ -15,19 +15,17 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Function;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.Functions.Text;
+using BetListNPOI.SS.Formula.Udf;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using NPOI.SS.Formula.Function;
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
-    using System;
-    using System.Collections;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.UDF;
-
     public class NotImplemented : FreeRefFunction
     {
         private String _functionName;

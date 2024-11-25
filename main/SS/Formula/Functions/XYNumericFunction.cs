@@ -15,12 +15,11 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Eval;
+using System;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     public interface Accumulator
     {
         double Accumulate(double x, double y);
@@ -229,7 +228,7 @@ namespace NPOI.SS.Formula.Functions
             return tarr;
         }
 
-        private static bool IsNumberEval(Eval eval)
+        private static bool IsNumberEval(Eval.Eval eval)
         {
             //bool retval = false;
 
@@ -248,7 +247,7 @@ namespace NPOI.SS.Formula.Functions
             throw new InvalidOperationException("not found in poi");
         }
 
-        private static double GetDoubleValue(Eval eval)
+        private static double GetDoubleValue(Eval.Eval eval)
         {
             //double retval = 0;
             //if (eval is NumberEval)

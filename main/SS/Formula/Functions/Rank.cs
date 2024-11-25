@@ -17,11 +17,11 @@
  * ====================================================================
  */
 
+using BetListNPOI.SS.Formula.Eval;
 using System;
 using System.Collections.Generic;
-using NPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Returns the rank of a number in a list of numbers. The rank of a number is its size relative to other values in a list.

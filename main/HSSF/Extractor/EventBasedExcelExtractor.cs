@@ -15,23 +15,22 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Extractor
-{
-    using System;
-    using System.Text;
-    using System.IO;
-    using System.Collections;
+using BetListNPOI.HPSF;
+using BetListNPOI.HSSF.EventUserModel;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections;
+using System.Globalization;
+using System.Text;
 
-    using NPOI.HSSF.UserModel;
-    using NPOI.HSSF.Record;
-    using NPOI.POIFS.FileSystem;
-    using NPOI;
-    using NPOI.HPSF;
-    using NPOI.HSSF.EventUserModel;
-    using NPOI.HSSF.Model;
+namespace BetListNPOI.HSSF.Extractor
+{
     //using NPOI.HSSF.Util;
-    using NPOI.SS.Util;
-    using System.Globalization;
 
     /// <summary>
     /// A text extractor for Excel files, that is based
@@ -181,7 +180,7 @@ namespace NPOI.HSSF.Extractor
             /// Process an HSSF Record. Called when a record occurs in an HSSF file.
             /// </summary>
             /// <param name="record"></param>
-            public void ProcessRecord(Record record)
+            public void ProcessRecord(Record.Record record)
             {
                 String thisText = null;
                 int thisRow = -1;
@@ -307,8 +306,8 @@ namespace NPOI.HSSF.Extractor
                 else
                 {
                     // Is it a date?
-                    if (NPOI.SS.UserModel.DateUtil.IsADateFormat(formatIndex, formatString) &&
-                            NPOI.SS.UserModel.DateUtil.IsValidExcelDate(value))
+                    if (DateUtil.IsADateFormat(formatIndex, formatString) &&
+                            DateUtil.IsValidExcelDate(value))
                     {
                         // Java wants M not m for month
                         formatString = formatString.Replace('m', 'M');
@@ -316,7 +315,7 @@ namespace NPOI.HSSF.Extractor
                         formatString = formatString.Replace("\\\\-", "-");
 
                         // Format as a date
-                        DateTime d = NPOI.SS.UserModel.DateUtil.GetJavaDate(value, false);
+                        DateTime d = DateUtil.GetJavaDate(value, false);
                         SimpleDateFormat df = new SimpleDateFormat(formatString);
                         return df.Format(d, CultureInfo.CurrentCulture);
                     }

@@ -1,7 +1,7 @@
-﻿using System;
-using NPOI.Util;
+﻿using BetListNPOI.Util;
+using System;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     public class NumberComparer
     {

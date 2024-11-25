@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
-{
-    using System;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using System.Collections.Generic;
+using BetListNPOI.HSSF.Model;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.Record.Aggregates
+{
     /**
      * Manages the all the records associated with a 'Custom View Settings' sub-stream.<br/>
      * Includes the Initial USERSVIEWBEGIN(0x01AA) and USERSVIEWEND(0x01AB).

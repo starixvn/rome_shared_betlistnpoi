@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using NPOI.Util;
-    using System;
-    using System.Text;
-
-
     /**
      * Title:        Dimensions Record
      * Description:  provides the minumum and maximum bounds

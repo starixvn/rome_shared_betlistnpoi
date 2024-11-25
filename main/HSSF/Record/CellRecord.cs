@@ -15,12 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System;
 using System.Text;
-using NPOI.Util;
 
-
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     public abstract class CellRecord : StandardRecord, CellValueRecordInterface,IComparable
     {

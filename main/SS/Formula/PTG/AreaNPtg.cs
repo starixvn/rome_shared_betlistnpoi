@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using NPOI.Util;
+using BetListNPOI.Util;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * Specifies a rectangular area of cells A1:A4 for instance.
      * @author Jason Height (jheight at chariot dot net dot au)

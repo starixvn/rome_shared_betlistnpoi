@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Eval
-{
-    using NPOI.SS.Util;
-    using System;
-    using System.Globalization;
+using BetListNPOI.SS.Util;
+using System;
+using System.Globalization;
 
+namespace BetListNPOI.SS.Formula.Eval
+{
     /**
      * Provides functionality for evaluating arguments to functions and operators.
      * 

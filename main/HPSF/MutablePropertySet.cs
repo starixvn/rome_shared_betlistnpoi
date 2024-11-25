@@ -25,17 +25,15 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.IO;
-    using System.Collections;
-    using NPOI.Util;
-    using NPOI.POIFS.FileSystem;
-
-
     /// <summary>
     /// Adds writing support To the {@link PropertySet} class.
     /// Please be aware that this class' functionality will be merged into the

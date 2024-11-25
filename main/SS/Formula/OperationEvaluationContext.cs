@@ -1,14 +1,13 @@
-using NPOI.Util;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using System.Globalization;
     /**
      * Contains all the contextual information required to Evaluate an operation
      * within a formula

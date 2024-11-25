@@ -15,18 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Constant;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using NPOI.SS.Formula;
-
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula.Constant;
-
-
     /**
      * EXTERNALNAME<p/>
      * 

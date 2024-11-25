@@ -25,17 +25,16 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.HPSF.Wellknown;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.IO;
-    using NPOI.HPSF.Wellknown;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
-    using System.Text;
-
     /// <summary>
     /// Abstract superclass for the convenience classes {@link
     /// SummaryInformation} and {@link DocumentSummaryInformation}.

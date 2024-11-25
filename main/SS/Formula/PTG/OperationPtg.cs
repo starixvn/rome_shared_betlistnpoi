@@ -15,9 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
     /**
      * defines a Ptg that is an operation instead of an operand
      * @author  andy

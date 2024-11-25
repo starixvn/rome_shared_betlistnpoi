@@ -17,19 +17,14 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Crypto;
+using BetListNPOI.Util;
+using System;
+using System.Diagnostics;
+using System.IO;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-
-    using System;
-    using System.IO;
-
-
-    using NPOI.HSSF.Record.Crypto;
-    using System.Diagnostics;
-
-
     [Serializable]
     public class LeftoverDataException : Exception
     {

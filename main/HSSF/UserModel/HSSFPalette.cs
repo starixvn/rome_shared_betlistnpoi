@@ -15,15 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Util;
-    using NPOI.Util;
-
-
     /// <summary>
     /// Represents a workbook color palette.
     /// Internally, the XLS format refers to colors using an offset into the palette

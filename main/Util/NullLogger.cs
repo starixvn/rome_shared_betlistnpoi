@@ -28,7 +28,7 @@
 
 using System;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// A Logger class that strives to make it as easy as possible for

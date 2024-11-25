@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.Util
 {
-    using System;
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
-
-
     /**
      * Various utility functions that make working with a cells and rows easier. The various methods
      * that deal with style's allow you to create your CellStyles as you need them. When you apply a

@@ -15,16 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Util
-{
-    using System;
-    using System.Collections;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-    using System.Collections.Generic;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Util;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.Util
+{
     /// <summary>
     /// Various utility functions that make working with a cells and rows easier.  The various
     /// methods that deal with style's allow you to Create your HSSFCellStyles as you need them.

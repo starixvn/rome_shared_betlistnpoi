@@ -15,15 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using NPOI.SS.Formula.Eval;
-    
-
     /// <summary>
     /// Instances of this class keep track of multiple dependent cell evaluations due
     /// To recursive calls To <see cref="WorkbookEvaluator.Evaluate"/>

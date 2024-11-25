@@ -15,14 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-using System.IO;
-using NPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using NPOI.Util;
-    using System;
-
     public interface IKey
     {
         string GetAlgorithm();

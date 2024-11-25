@@ -25,16 +25,15 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.HPSF.Wellknown;
+using BetListNPOI.Util;
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.IO;
-    using System.Text;
-    using NPOI.Util;
-    using NPOI.HPSF.Wellknown;
-
     /// <summary>
     /// Represents a property Set in the Horrible Property Set Format
     /// (HPSF). These are usually metadata of a Microsoft Office

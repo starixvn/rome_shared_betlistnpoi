@@ -16,13 +16,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS.UserModel;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.SS.UserModel;
+using System;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// Class to Read and manipulate the footer.
     /// The footer works by having a left, center, and right side.  The total cannot

@@ -15,18 +15,16 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.IO;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using System.IO;
-    using System.Collections;
-
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.DDF;
-
-
     /**
      * Represents binary object (i.e. OLE) data stored in the file.  Eg. A GIF, JPEG etc...
      *

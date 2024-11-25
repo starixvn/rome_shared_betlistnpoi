@@ -1,11 +1,6 @@
-﻿using NPOI.SS.Formula.Eval;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BetListNPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     public abstract class Baseifs : FreeRefFunction
     {
@@ -102,7 +97,7 @@ namespace NPOI.SS.Formula.Functions
                 if (predicate is Countif.ErrorMatcher)
                 {
                     throw new EvaluationException(
-                        ErrorEval.ValueOf(((NPOI.SS.Formula.Functions.Countif.ErrorMatcher)predicate).Value));
+                        ErrorEval.ValueOf(((Countif.ErrorMatcher)predicate).Value));
                 }
             }
         }

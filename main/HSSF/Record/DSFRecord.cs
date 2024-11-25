@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Title: double Stream Flag Record
      * Description:  tells if this Is a double stream file. (always no for HSSF generated files)

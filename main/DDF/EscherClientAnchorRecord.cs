@@ -16,13 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using System.IO;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// The escher client anchor specifies which rows and cells the shape is bound to as well as
     /// the offsets within those cells.  Each cell is 1024 units wide by 256 units long regardless

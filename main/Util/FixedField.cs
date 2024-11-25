@@ -27,8 +27,7 @@
 
 using System.IO;
 
-
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
 
     /// <summary>

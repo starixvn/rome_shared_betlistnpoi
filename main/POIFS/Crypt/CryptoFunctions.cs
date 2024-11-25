@@ -14,14 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt
-{
-    using NPOI.Util;
-    using Org.BouncyCastle.Crypto;
-    using Org.BouncyCastle.Security;
-    using System;
-    using System.Text;
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.POIFS.Crypt
+{
     /**
      * Helper functions used for standard and agile encryption
      */

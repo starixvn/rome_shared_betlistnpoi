@@ -14,11 +14,12 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
+
+using BetListNPOI.Util;
 using System;
 using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The CrtLayout12A record specifies layout information for a plot area.
@@ -126,7 +127,7 @@ namespace NPOI.HSSF.Record.Chart
             get { return 12 + 4 + 9 * 2 + 8 * 4 + 2; }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             out1.WriteShort(frtHeader.rt);
             out1.WriteShort(frtHeader.grbitFrt);

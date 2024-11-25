@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     /// <summary>
     /// Data for a Bar Chart

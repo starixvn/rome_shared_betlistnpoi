@@ -17,21 +17,18 @@
 ==================================================================== */
 
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
-
     /**
      * The Group marker record is used as a position holder for Groups.
 
      * @author Glen Stampoultzis (glens at apache.org)
      */
-    public class GroupMarkerSubRecord : SubRecord, ICloneable
+    public class GroupMarkerSubRecord : SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x06;
 

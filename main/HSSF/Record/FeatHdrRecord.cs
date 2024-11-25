@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-
-    using NPOI.HSSF.Record.Common;
-    using NPOI.Util;
-    using System.Text;
-
     /**
      * Title: FeatHdr (Feature Header) Record
      * 

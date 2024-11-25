@@ -1,11 +1,10 @@
-﻿using NPOI.SS.Formula;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.Util;
+﻿using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace NPOI.SS.UserModel.Helpers
+namespace BetListNPOI.SS.UserModel.Helpers
 {
     public abstract class BaseRowColShifter
     {

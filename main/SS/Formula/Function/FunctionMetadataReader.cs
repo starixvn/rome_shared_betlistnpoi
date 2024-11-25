@@ -15,17 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Function
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Text.RegularExpressions;
-    using NPOI.SS.Formula.PTG;
-    using System.Globalization;
-    using System.Text;
+using BetListNPOI.SS.Formula.PTG;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Text.RegularExpressions;
 
+namespace BetListNPOI.SS.Formula.Function
+{
     /**
      * Converts the text meta-data file into a <c>FunctionMetadataRegistry</c>
      * 

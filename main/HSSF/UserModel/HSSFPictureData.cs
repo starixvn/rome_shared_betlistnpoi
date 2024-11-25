@@ -15,13 +15,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.DDF;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+using BetListNPOI.DDF;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// Represents binary data stored in the file.  Eg. A GIF, JPEG etc...
     /// @author Daniel Noll

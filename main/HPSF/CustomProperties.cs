@@ -25,15 +25,14 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using BetListNPOI.HPSF.Wellknown;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Text;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.Collections;
-    using NPOI.HPSF.Wellknown;
-    using System.Text;
-    using NPOI.Util;
-
-
     /// <summary>
     /// Maintains the instances of {@link CustomProperty} that belong To a
     /// {@link DocumentSummaryInformation}. The class maintains the names of the
@@ -337,7 +336,7 @@ namespace NPOI.HPSF
                             codepage = (int)CodePageUtil.CP_UNICODE;
                         byte[] a= Encoding.GetEncoding(codepage).GetBytes(key);
                         byte[] b = Encoding.UTF8.GetBytes(name);
-                        if (NPOI.Util.Arrays.Equals(a, b))
+                        if (Arrays.Equals(a, b))
                             x = ((DictionaryEntry)dic.Current).Value;
                     }
                     if (x == null)

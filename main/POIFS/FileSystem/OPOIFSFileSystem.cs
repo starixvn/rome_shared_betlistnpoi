@@ -25,19 +25,18 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.POIFS.property;
+using BetListNPOI.POIFS.Storage;
+using BetListNPOI.Util;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Dev;
-using NPOI.POIFS.Storage;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.POIFS.Common;
-using NPOI.Util;
-using System.Collections.Generic;
-
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// This is the main class of the POIFS system; it manages the entire

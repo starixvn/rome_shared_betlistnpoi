@@ -15,19 +15,20 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Collections;
-    using System.Text.RegularExpressions;
-    using System.Text;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Text;
+using System.Text.RegularExpressions;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// Common class for HSSFHeader and HSSFFooter
     /// </summary>
-    public abstract class HeaderFooter:NPOI.SS.UserModel.IHeaderFooter
+    public abstract class HeaderFooter:IHeaderFooter
     {
         protected bool stripFields = false;
 

@@ -22,19 +22,19 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.IO;
-    using System.Reflection;
-    using System.Collections;
-    using System.Collections.Generic;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.HSSF.Record.PivotTable;
-    using NPOI.HSSF.Record.AutoFilter;
-    using NPOI.Util;
-    using System.Globalization;
+using BetListNPOI.HSSF.Record.AutoFilter;
+using BetListNPOI.HSSF.Record.Chart;
+using BetListNPOI.HSSF.Record.PivotTable;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Reflection;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title:  Record Factory
      * Description:  Takes a stream and outputs an array of Record objects.

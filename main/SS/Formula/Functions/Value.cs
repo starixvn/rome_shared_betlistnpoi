@@ -18,13 +18,14 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula.Eval;
-    using System.Globalization;
 
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Globalization;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class Value : Fixed1ArgFunction
     {
         /** "1,0000" is valid, "1,00" is not */

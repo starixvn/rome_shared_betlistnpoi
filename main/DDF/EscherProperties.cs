@@ -16,11 +16,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Collections;
+using System;
+using System.Collections;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// Provides a list of all known escher properties including the description and
     /// type.

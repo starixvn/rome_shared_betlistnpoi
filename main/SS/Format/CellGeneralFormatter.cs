@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
+
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Format
 {
-    using System;
-    using System.Text;
-
-
-
     /**
      * A formatter for the default "General" cell format.
      *
@@ -45,7 +45,7 @@ namespace NPOI.SS.Format
         public override void FormatValue(StringBuilder toAppendTo, Object value)
         {
             //if (value is Number) {
-            if (NPOI.Util.Number.IsNumber(value))
+            if (Number.IsNumber(value))
             {
                 double val ;
                 double.TryParse(value.ToString(), out val);

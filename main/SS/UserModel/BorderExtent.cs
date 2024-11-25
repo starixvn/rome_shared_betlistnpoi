@@ -16,13 +16,7 @@
 ==================================================================== */
 
 
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /// <summary>
     /// The enumeration value indicating which borders to Draw in a Property Template

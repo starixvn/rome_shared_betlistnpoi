@@ -15,13 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventModel
+using BetListNPOI.HSSF.Record;
+using System.Collections;
+using System.IO;
+
+namespace BetListNPOI.HSSF.EventModel
 {
-    using System.IO;
-    using System.Collections;
-    using NPOI.HSSF.Record;
-
-
     /**
      * Event-based record factory.  As opposed to RecordFactory
      * this refactored version throws record events as it comes
@@ -75,7 +74,7 @@ namespace NPOI.HSSF.EventModel
      * @return <c>false</c> to abort.  This aborts
      * out of the event loop should the listener return false
      */
-        private bool ProcessRecord(Record record)
+        private bool ProcessRecord(Record.Record record)
         {
             if (!IsSidIncluded(record.Sid))
             {
@@ -94,13 +93,13 @@ namespace NPOI.HSSF.EventModel
          */
         public void ProcessRecords(Stream in1)
         {
-            Record last_record = null;
+            Record.Record last_record = null;
 
             RecordInputStream recStream = new RecordInputStream(in1);
 
             while (recStream.HasNextRecord) {
                 recStream.NextRecord();
-                Record[] recs = RecordFactory.CreateRecord(recStream);   // handle MulRK records
+                Record.Record[] recs = RecordFactory.CreateRecord(recStream);   // handle MulRK records
                 if (recs.Length > 1) {
                     for (int k = 0; k < recs.Length; k++) {
                         if ( last_record != null ) {
@@ -111,7 +110,7 @@ namespace NPOI.HSSF.EventModel
                         last_record = recs[ k ]; // do to keep the algorithm homogeneous...you can't
                     }                            // actually continue a number record anyhow.
                 } else {
-                    Record record = recs[ 0 ];
+                    Record.Record record = recs[ 0 ];
 
                     if (record != null) {
                         if (last_record != null) {

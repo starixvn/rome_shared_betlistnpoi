@@ -15,19 +15,17 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
+using BetListNPOI.HSSF.Record;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.Model
 {
-    using System.Collections;
-    using NPOI.HSSF.Record;
-    using System.Collections.Generic;
-
-
     /// <summary>
     /// List for records in Workbook
     /// </summary>
     public class WorkbookRecordList
     {
-        private List<Record> records = new List<Record>();
+        private List<Record.Record> records = new List<Record.Record>();
 
         private int protpos = 0;   // holds the position of the protect record.
         private int bspos = 0;   // holds the position of the last bound sheet.
@@ -45,7 +43,7 @@ namespace NPOI.HSSF.Model
         /// Gets or sets the records.
         /// </summary>
         /// <value>The records.</value>
-        public List<Record> Records
+        public List<Record.Record> Records
         {
             get { return records; }
             set { this.records = value; }
@@ -61,12 +59,12 @@ namespace NPOI.HSSF.Model
         }
 
         /// <summary>
-        /// Gets the <see cref="NPOI.HSSF.Record.Record"/> at the specified index.
+        /// Gets the <see cref="Record"/> at the specified index.
         /// </summary>
         /// <value></value>
-        public Record this[int index]
+        public Record.Record this[int index]
         {
-            get { return (Record)records[index]; }
+            get { return (Record.Record)records[index]; }
 
         }
 
@@ -75,7 +73,7 @@ namespace NPOI.HSSF.Model
         /// </summary>
         /// <param name="pos">The pos.</param>
         /// <param name="r">The r.</param>
-        public void Add(int pos, Record r)
+        public void Add(int pos, Record.Record r)
         {
             records.Insert(pos, r);
             if (Protpos >= pos) Protpos=(protpos + 1);
@@ -89,7 +87,7 @@ namespace NPOI.HSSF.Model
             if ((Palettepos!= -1) && (Palettepos>= pos)) Palettepos=(palettepos + 1);
             if (ExternsheetPos >= pos) ExternsheetPos=ExternsheetPos + 1;
         }
-        public IEnumerator<Record> GetEnumerator()
+        public IEnumerator<Record.Record> GetEnumerator()
         {
             return records.GetEnumerator();
         }
@@ -98,7 +96,7 @@ namespace NPOI.HSSF.Model
         /// Removes the specified record.
         /// </summary>
         /// <param name="record">The record.</param>
-        public void Remove(Record record)
+        public void Remove(Record.Record record)
         {
             int i = records.IndexOf(record);
             this.Remove(i);

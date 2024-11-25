@@ -15,15 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.CryptoAPI
-{
-    using System;
-    using System.Diagnostics;
-    using System.IO;
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.Diagnostics;
+using System.IO;
 
+namespace BetListNPOI.POIFS.Crypt.CryptoAPI
+{
     public class CryptoAPIDecryptor : Decryptor {
 
         private long _length;

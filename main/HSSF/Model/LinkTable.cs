@@ -15,18 +15,18 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Model
+{
     /**
      * Link Table (OOO pdf reference: 4.10.3 ) <p/>
      *
@@ -222,7 +222,7 @@ namespace NPOI.HSSF.Model
         private int _recordCount;
         private WorkbookRecordList _workbookRecordList; // TODO - would be nice to Remove this
 
-        public LinkTable(List<Record> inputList, int startIndex, WorkbookRecordList workbookRecordList, Dictionary<String, NameCommentRecord> commentRecords)
+        public LinkTable(List<Record.Record> inputList, int startIndex, WorkbookRecordList workbookRecordList, Dictionary<String, NameCommentRecord> commentRecords)
         {
 
             _workbookRecordList = workbookRecordList;
@@ -497,7 +497,7 @@ namespace NPOI.HSSF.Model
             // the created ExternalNameRecord will be appended to it
             for (IEnumerator iterator = _workbookRecordList.GetEnumerator(); iterator.MoveNext(); supLinkIndex++)
             {
-                Record record = (Record)iterator.Current;
+                Record.Record record = (Record.Record)iterator.Current;
                 if (record is SupBookRecord)
                 {
                     if (((SupBookRecord)record).IsAddInFunctions) break;
@@ -681,9 +681,9 @@ namespace NPOI.HSSF.Model
         private int FindFirstRecordLocBySid(short sid)
         {
             int index = 0;
-            for (IEnumerator<Record> iterator = _workbookRecordList.GetEnumerator(); iterator.MoveNext(); )
+            for (IEnumerator<Record.Record> iterator = _workbookRecordList.GetEnumerator(); iterator.MoveNext(); )
             {
-                Record record = iterator.Current;
+                Record.Record record = iterator.Current;
 
                 if (record.Sid == sid)
                 {

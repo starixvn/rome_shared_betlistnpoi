@@ -15,17 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula;
-
-
-
     /**
      * Title:        Reference 3D Ptg 
      * Description:  Defined a cell in extern sheet. 

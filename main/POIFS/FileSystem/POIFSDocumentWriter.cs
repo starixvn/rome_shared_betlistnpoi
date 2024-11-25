@@ -24,10 +24,11 @@
  * Contributors:
  * 
  * ==============================================================*/
+
 using System;
 using System.IO;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// This class provides a wrapper over an OutputStream so that Document

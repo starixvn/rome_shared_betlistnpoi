@@ -26,10 +26,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This exception is thrown if a format error in a property Set stream Is
     /// detected or when the input data do not constitute a property Set stream.

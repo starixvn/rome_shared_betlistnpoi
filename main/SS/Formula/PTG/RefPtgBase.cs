@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using NPOI.Util;
-    
-    using NPOI.SS.Util;
-
-
     /**
      * ReferencePtgBase - handles references (such as A1, A2, IA4)
      * @author  Andrew C. Oliver (acoliver@apache.org)

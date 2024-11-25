@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record.Common;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title: Feat (Feature) Record
      * 

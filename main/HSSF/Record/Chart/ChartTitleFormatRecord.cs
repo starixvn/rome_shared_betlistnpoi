@@ -18,15 +18,14 @@
 /*
  * HSSF Chart Title Format Record Type
  */
-namespace NPOI.HSSF.Record.Chart
+
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    using System;
-    using System.Collections;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Describes the formatting runs associated with a chart title.
      */

@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HSSF.Record
+{
     public class DrawingSelectionRecord : AbstractEscherHolderRecord
     {
         public const short sid = 0xED;

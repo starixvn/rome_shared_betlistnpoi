@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Collections;
-    using System.IO;
-    using System.Configuration;
-    using NPOI.Util.Collections;
+using BetListNPOI.Util.Collections;
+using System;
+using System.Collections;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /**
      * Allows the user to lookup the font metrics for a particular font without
      * actually having the font on the system.  The font details are Loaded

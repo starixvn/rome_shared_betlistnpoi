@@ -14,12 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
-{
-    using NPOI.HPSF;
-    using NPOI.HPSF.Extractor;
-    using NPOI.POIFS.FileSystem;
 
+using BetListNPOI.HPSF;
+using BetListNPOI.HPSF.Extractor;
+using BetListNPOI.POIFS.FileSystem;
+
+namespace BetListNPOI
+{
     /// <summary>
     /// Common Parent for OLE2 based Text Extractors
     /// of POI Documents, such as .doc, .xls

@@ -15,16 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.CF;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-
-    using System;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-
     /**
      * 
      * High level representation of Conditional Formatting Rule.
@@ -301,7 +300,7 @@ namespace NPOI.HSSF.UserModel
         {
             get
             {
-                return NPOI.SS.UserModel.ConditionType.ForId(cfRuleRecord.ConditionType);
+                return ConditionType.ForId(cfRuleRecord.ConditionType);
             }
         }
         /**

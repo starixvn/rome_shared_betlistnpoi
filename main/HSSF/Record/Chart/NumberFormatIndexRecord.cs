@@ -16,14 +16,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-    using System.Collections;
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * The number format index record indexes format table.  This applies to an axis.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

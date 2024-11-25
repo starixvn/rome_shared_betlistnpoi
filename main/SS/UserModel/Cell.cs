@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
-{
-    using System;
-    using NPOI.SS.Util;
+using BetListNPOI.SS.Util;
+using System;
 
+namespace BetListNPOI.SS.UserModel
+{
     public enum CellType : int
     {
         Unknown = -1,

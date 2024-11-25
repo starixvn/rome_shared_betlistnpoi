@@ -15,14 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-
-    using System.Text;
-    using System;
-
     /**
      * Title: NAMECMT Record (0x0894)
      * Description: Defines a comment associated with a specified name.

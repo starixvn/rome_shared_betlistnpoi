@@ -1,7 +1,7 @@
-﻿namespace NPOI.SS.Util
-{
-    using System;
+﻿using System;
 
+namespace BetListNPOI.SS.Util
+{
     /**
 * See OOO documentation: excelfileformat.pdf sec 2.5.14 - 'Cell Range Address'<p/>
 * 

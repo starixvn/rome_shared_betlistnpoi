@@ -29,7 +29,7 @@ using System;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// Represents a class ID (16 bytes). Unlike other little-endian

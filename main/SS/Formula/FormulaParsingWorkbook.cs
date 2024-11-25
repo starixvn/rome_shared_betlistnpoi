@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-
     /**
      * Abstracts a workbook for the purpose of formula parsing.<br/>
      * 

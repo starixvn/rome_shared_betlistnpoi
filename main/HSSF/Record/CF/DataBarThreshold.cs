@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.CF
-{
-    using NPOI.Util;
-    using System;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.HSSF.Record.CF
+{
     /**
      * Data Bar specific Threshold / value (CFVO),
      *  for Changes in Conditional Formatting

@@ -15,13 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.UserModel;
-    using NPOI.HSSF.Record.Aggregates;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.SS.UserModel;
+using System;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// Class to Read and manipulate the header.
     /// The header works by having a left, center, and right side.  The total cannot

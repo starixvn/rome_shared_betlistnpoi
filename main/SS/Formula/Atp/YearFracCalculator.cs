@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Atp
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.SS.Formula.Atp
 {
-    using System;
-    using NPOI.SS.Formula.Eval;
-
-
     /// <summary>
     /// Internal calculation methods for Excel 'Analysis ToolPak' function YEARFRAC()
     /// Algorithm inspired by www.dwheeler.com/yearfrac
@@ -420,7 +420,7 @@ namespace NPOI.SS.Formula.Atp
         /// <returns></returns>
         private static SimpleDate CreateDate(int dayCount)
         {
-            var dt= NPOI.SS.UserModel.DateUtil.SetCalendar(dayCount, 0, false, false);
+            var dt= DateUtil.SetCalendar(dayCount, 0, false, false);
             return new SimpleDate(dt);
         }
 

@@ -15,18 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI
+using BetListNPOI.HPSF;
+using BetListNPOI.POIFS.Crypt;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.IO;
+
+namespace BetListNPOI
 {
-    using System;
-    using System.IO;
-    using System.Collections;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.HPSF;
-    using System.Collections.Generic;
-    using NPOI.POIFS.Crypt;
-    using NPOI.Util;
-
-
     /// <summary>
     /// This holds the common functionality for all POI
     /// Document classes.

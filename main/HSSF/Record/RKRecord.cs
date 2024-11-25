@@ -17,14 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using NPOI.HSSF.Util;
-
-
     /**
      * Title:        RK Record
      * Description:  An internal 32 bit number with the two most significant bits

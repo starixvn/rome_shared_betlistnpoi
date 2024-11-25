@@ -15,9 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Format
+using System;
+
+namespace BetListNPOI.SS.Format
 {
-    using System;
     internal class GeneralCellFormatType : CellFormatType
     {
         public override CellFormatter Formatter(String pattern)

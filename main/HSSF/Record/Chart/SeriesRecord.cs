@@ -17,12 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record.Chart
+{
     /**
      * The series record describes the overall data for a series.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

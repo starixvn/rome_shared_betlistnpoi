@@ -18,10 +18,11 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class T : Fixed1ArgFunction
     {
         public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex, ValueEval arg0)

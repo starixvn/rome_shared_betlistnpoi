@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Common
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Common
 {
-    using NPOI.Util;
-    using System;
-    using System.Text;
-
-
     /**
      * Title: CTColor (Extended Color) record part
      * <P>

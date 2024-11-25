@@ -16,13 +16,13 @@
  *    limitations under the License.
  * ====================================================================
  */
-using ExtendedNumerics;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.Util;
-using System;
-using System.Collections.Generic;
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using BetListNPOI.SS.Util;
+using ExtendedNumerics;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     public abstract class FloorCeilingMathBase : FreeRefFunction
     {

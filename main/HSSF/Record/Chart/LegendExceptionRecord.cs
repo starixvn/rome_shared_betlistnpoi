@@ -14,9 +14,11 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
+
+using BetListNPOI.Util;
 using System;
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The LegendException record specifies information about a legend entry which was 
@@ -45,7 +47,7 @@ namespace NPOI.HSSF.Record.Chart
                 return base.DataSize;
             }
         }
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             base.Serialize(out1);
         }

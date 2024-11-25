@@ -28,7 +28,7 @@
 using System;
 using System.IO;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     internal class CloseIgnoringInputStream : Stream
     {

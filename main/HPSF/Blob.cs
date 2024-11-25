@@ -1,6 +1,6 @@
-﻿using NPOI.Util;
+﻿using BetListNPOI.Util;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     internal class Blob
     {

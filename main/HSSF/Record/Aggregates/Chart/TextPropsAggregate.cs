@@ -15,10 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record.Chart;
 using System.Collections.Generic;
-using NPOI.HSSF.Model;
-using NPOI.HSSF.Record.Chart;
-namespace NPOI.HSSF.Record.Aggregates.Chart
+
+namespace BetListNPOI.HSSF.Record.Aggregates.Chart
 {
     /// <summary>
     /// TEXTPROPS = (RichTextStream / TextPropsStream) *ContinueFrt12

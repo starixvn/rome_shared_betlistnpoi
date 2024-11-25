@@ -17,7 +17,8 @@
 
 using System;
 using System.Text;
-namespace NPOI.SS.Util
+
+namespace BetListNPOI.SS.Util
 {
 
 

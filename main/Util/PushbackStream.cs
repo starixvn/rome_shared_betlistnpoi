@@ -26,12 +26,12 @@
  * ==============================================================*/
 
 
-namespace NPOI.Util
-{
-    using System;
-    using System.IO;
+using System;
+using System.IO;
 
-	public class PushbackStream:Stream
+namespace BetListNPOI.Util
+{
+    public class PushbackStream:Stream
 	{
 		private int buf = -1;
 

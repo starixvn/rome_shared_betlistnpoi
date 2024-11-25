@@ -15,15 +15,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using System.Collections;
-
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Model;
-    using System.Collections.Generic;
-
     /// <summary>
     /// Rich text Unicode string.  These strings can have fonts applied to
     /// arbitary parts of the string.
@@ -31,7 +32,7 @@ namespace NPOI.HSSF.UserModel
     /// @author Jason Height (jheight at apache.org)
     /// </summary> 
     [Serializable]
-    public class HSSFRichTextString : IComparable<HSSFRichTextString>,NPOI.SS.UserModel.IRichTextString
+    public class HSSFRichTextString : IComparable<HSSFRichTextString>,IRichTextString
     {
         /** Place holder for indicating that NO_FONT has been applied here */
         public const short NO_FONT = 0;
@@ -178,7 +179,7 @@ namespace NPOI.HSSF.UserModel
         /// <param name="startIndex">The start index to apply the font to (inclusive).</param>
         /// <param name="endIndex"> The end index to apply to font to (exclusive).</param>
         /// <param name="font">The index of the font to use.</param>
-        public void ApplyFont(int startIndex, int endIndex, NPOI.SS.UserModel.IFont font)
+        public void ApplyFont(int startIndex, int endIndex, IFont font)
         {
             ApplyFont(startIndex, endIndex, font.Index);
         }
@@ -187,7 +188,7 @@ namespace NPOI.HSSF.UserModel
         /// Sets the font of the entire string.
         /// </summary>
         /// <param name="font">The font to use.</param>
-        public void ApplyFont(NPOI.SS.UserModel.IFont font)
+        public void ApplyFont(IFont font)
         {
             ApplyFont(0, _string.CharCount, font);
         }

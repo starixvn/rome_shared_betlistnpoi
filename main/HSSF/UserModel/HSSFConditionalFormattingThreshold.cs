@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.CF;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-
-    using NPOI.HSSF.Record.CF;
-    using NPOI.SS.UserModel;
-
     /**
      * High level representation for Icon / Multi-State / Databar /
      *  Colour Scale change thresholds
@@ -59,7 +59,7 @@ namespace NPOI.HSSF.UserModel
         public String Formula
         {
             get { return HSSFConditionalFormattingRule.ToFormulaString(threshold.ParsedExpression, workbook); }
-            set { threshold.ParsedExpression = NPOI.HSSF.Record.CFRuleBase.ParseFormula(value, sheet); }
+            set { threshold.ParsedExpression = CFRuleBase.ParseFormula(value, sheet); }
         }
 
         public double? Value

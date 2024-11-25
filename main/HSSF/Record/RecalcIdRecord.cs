@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Title: Recalc Id Record
      * Description:  This record Contains an ID that marks when a worksheet was last

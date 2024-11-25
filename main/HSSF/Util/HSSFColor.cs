@@ -17,13 +17,13 @@
 
 // REMOVE-REFLECITON: Reflection is used to retrieve the 2nd index of a color. Refactored using virtual getter.
 
-namespace NPOI.HSSF.Util
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace BetListNPOI.HSSF.Util
 {
-    using NPOI.SS.UserModel;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.IO;
     /**
      * Intends to provide support for the very evil index to triplet Issue and
      * will likely replace the color constants interface for HSSF 2.0.

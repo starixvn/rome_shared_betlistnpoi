@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Parent of Conditional Formatting Header records,
      *  {@link CFHeaderRecord} and {@link CFHeader12Record}.

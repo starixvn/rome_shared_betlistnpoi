@@ -17,14 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using System.Globalization;
-
     /**
      * Title:        Continue Record - Helper class used primarily for SST Records 
      * Description:  handles overflow for prior record in the input

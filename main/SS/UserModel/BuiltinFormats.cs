@@ -14,17 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
+
+using System;
+
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Globalization;
-
-
-
-
-
-
     /**
      * Utility to identify built-in formats.  The following is a list of the formats as
      * returned by this class.<p/>

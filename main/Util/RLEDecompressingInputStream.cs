@@ -15,17 +15,17 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
-{
-    using System;
-    using System.IO;
+using System;
+using System.IO;
 
+namespace BetListNPOI.Util
+{
     /// <summary>
     /// Wrapper of InputStream which provides Run Length Encoding (RLE) 
     /// decompression on the fly. Uses MS-OVBA decompression algorithm. See
     /// http://download.microsoft.com/download/2/4/8/24862317-78F0-4C4B-B355-C7B2C1D997DB/[MS-OVBA].pdf
     /// </summary>
-    /// <seealso cref="NPOI.Util.InputStream" />
+    /// <seealso cref="InputStream" />
     public class RLEDecompressingInputStream : InputStream
     {
         /// <summary>

@@ -17,16 +17,14 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using System.Collections;
-
-    using NPOI.SS.Util;
-    using NPOI.Util;
-
     /**
      * Title: Merged Cells Record
      * 

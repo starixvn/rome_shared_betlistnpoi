@@ -15,9 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-using NPOI.DDF;
-using NPOI.SS.UserModel;
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.SS.UserModel;
+
+namespace BetListNPOI.HSSF.UserModel
 {
 
 

@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// This exception is the superclass of all other checked exceptions thrown
     /// in this package. It supports a nested "reason" throwable, i.e. an exception

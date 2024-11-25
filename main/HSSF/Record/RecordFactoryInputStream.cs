@@ -14,17 +14,17 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Collections.Generic;
-    using NPOI;
-    using System.IO;
-    using NPOI.HSSF.Record.Crypto;
-    using NPOI.Util;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.POIFS.Crypt;
 
+using BetListNPOI.HSSF.Record.Chart;
+using BetListNPOI.HSSF.Record.Crypto;
+using BetListNPOI.POIFS.Crypt;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace BetListNPOI.HSSF.Record
+{
     /**
 * A stream based way to get at complete records, with
 * as low a memory footprint as possible.

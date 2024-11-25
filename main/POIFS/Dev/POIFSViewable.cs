@@ -28,7 +28,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace NPOI.POIFS.Dev
+namespace BetListNPOI.POIFS.Dev
 {
     /// <summary>
     /// Interface for a drill-down viewable object. Such an object has

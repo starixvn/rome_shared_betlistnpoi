@@ -28,10 +28,8 @@
 
 using System;
 using System.Text;
-using System.Collections;
-using System.Globalization;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public abstract class POILogger
     {

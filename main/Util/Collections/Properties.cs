@@ -24,12 +24,13 @@
  * Contributors:
  * 
  * ==============================================================*/
-using System;
-using System.Text;
-using System.IO;
-using System.Collections;
 
-namespace NPOI.Util.Collections
+using System;
+using System.Collections;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.Util.Collections
 {
     /// <summary>
     /// This class comes from Java

@@ -1,13 +1,10 @@
-namespace NPOI.HSSF.Record.Crypto
+using BetListNPOI.Util;
+using System;
+using System.IO;
+using System.Security.Cryptography;
+
+namespace BetListNPOI.HSSF.Record.Crypto
 {
-    using System;
-    using System.IO;
-
-    using NPOI.Util;
-
-    
-    using System.Security.Cryptography;
-
     public class Biff8EncryptionKey
     {
         // these two constants coincidentally have the same value

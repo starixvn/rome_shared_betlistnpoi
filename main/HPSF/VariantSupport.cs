@@ -25,15 +25,14 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.Util;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.IO;
-    using System.Globalization;
-    using NPOI.Util;
-
     /// <summary>
     /// Supports Reading and writing of variant data.
     /// <strong>FIXME (3):</strong>

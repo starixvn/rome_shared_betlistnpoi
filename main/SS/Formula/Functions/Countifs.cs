@@ -16,12 +16,10 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation for the function COUNTIFS
      * <p>

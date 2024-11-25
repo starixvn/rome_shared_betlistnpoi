@@ -15,9 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using System;
+
+namespace BetListNPOI.SS.Formula
 {
-    using System;
     /**
      * Should be implemented by any {@link Ptg} subclass that needs a workbook To render its formula.
      * <br/>

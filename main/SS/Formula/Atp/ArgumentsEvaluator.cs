@@ -15,11 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-using System.Collections.Generic;
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
 using System;
-using NPOI.SS.UserModel;
-namespace NPOI.SS.Formula.Atp
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.Formula.Atp
 {
     /**
      * Evaluator for formula arguments.

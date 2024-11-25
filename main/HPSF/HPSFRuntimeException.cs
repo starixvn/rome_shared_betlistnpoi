@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-using NPOI.Util;
+using BetListNPOI.Util;
+using System;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
-    using System;
-
     /// <summary>
     /// This exception is the superclass of all other unchecked
     /// exceptions thrown in this package. It supports a nested "reason"

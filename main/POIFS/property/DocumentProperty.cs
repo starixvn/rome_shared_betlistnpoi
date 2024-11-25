@@ -25,11 +25,10 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.FileSystem;
 using System;
 
-using NPOI.POIFS.FileSystem;
-
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     /// <summary>
     /// Trivial extension of Property for POIFSDocuments

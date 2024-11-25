@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-using NPOI.POIFS.Common;
-using NPOI.Util;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// Constants used in reading/writing the Header block

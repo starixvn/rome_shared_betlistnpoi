@@ -25,7 +25,7 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     /// <summary>
     /// Constants used by Properties namespace

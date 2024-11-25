@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
-namespace NPOI
+
+namespace BetListNPOI
 {
     public class EmptyFileException : IOException
     {

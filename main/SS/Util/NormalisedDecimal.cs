@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
-    using System.Globalization;
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+using System.Text;
 
+namespace BetListNPOI.SS.Util
+{
     /*
      * Represents a transformation of a 64 bit IEEE double quantity having a decimal exponent and a
      * fixed point (15 decimal digit) significand.  Some quirks of Excel's calculation behaviour are

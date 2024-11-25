@@ -16,12 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// This record simply holds the number of shapes in the drawing group and the
     /// last shape id used for this drawing group.

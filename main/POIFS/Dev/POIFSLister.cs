@@ -25,13 +25,12 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.FileSystem;
 using System;
 using System.Collections;
 using System.IO;
 
-using NPOI.POIFS.FileSystem;
-
-namespace NPOI.POIFS.Dev
+namespace BetListNPOI.POIFS.Dev
 {
     public class POIFSLister
     {

@@ -25,16 +25,16 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
-    using System.IO;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
-    using NPOI.HPSF.Wellknown;
-    using System.Globalization;
+using BetListNPOI.HPSF.Wellknown;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Globalization;
+using System.IO;
+using System.Text;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// Adds writing capability To the {@link Section} class.
     /// Please be aware that this class' functionality will be merged into the

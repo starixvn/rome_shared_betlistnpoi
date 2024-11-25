@@ -16,11 +16,11 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using System;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Calculates Modified internal rate of return. Syntax is MIRR(cash_flow_values, finance_rate, reinvest_rate)
      *

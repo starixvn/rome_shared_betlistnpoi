@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
-{
-    using System.IO;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System.IO;
 
+namespace BetListNPOI.POIFS.FileSystem
+{
     /**
      * This class provides a wrapper over an OutputStream so that Document
      * Writers can't accidently go over their size limits

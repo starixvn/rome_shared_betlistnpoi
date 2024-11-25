@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.IO;
 using System.Threading;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
 	public static class RecyclableMemory
 	{

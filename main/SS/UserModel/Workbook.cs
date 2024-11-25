@@ -15,15 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
-{
-    using System;
-    using System.Collections;
-    using System.IO;
-    using NPOI.SS.Formula.UDF;
-    using System.Collections.Generic;
-    using NPOI.Util;
+using BetListNPOI.SS.Formula.Udf;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 
+namespace BetListNPOI.SS.UserModel
+{
     /// <summary>
     /// High level interface of a Excel workbook.  This is the first object most users 
     /// will construct whether they are reading or writing a workbook.  It is also the

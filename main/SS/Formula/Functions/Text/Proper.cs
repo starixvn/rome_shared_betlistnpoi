@@ -15,13 +15,13 @@
  * limitations Under the License.
  */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using System.Text;
-    using System.Globalization;
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Globalization;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.Functions.Text
+{
     /// <summary>
     /// Implementation of the PROPER function:
     /// Normalizes all words (separated by non-word characters) by

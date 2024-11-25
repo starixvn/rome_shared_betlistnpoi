@@ -16,11 +16,11 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
+using BetListNPOI.SS.UserModel;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// An interface that indicates whether a class can contain children.
     /// @author Glen Stampoultzis (glens at apache.org)

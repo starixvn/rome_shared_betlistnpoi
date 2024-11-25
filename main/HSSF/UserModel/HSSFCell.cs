@@ -16,24 +16,23 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Collections;
-    using System.IO;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using NPOI.SS;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula;
-    using System.Globalization;
-    using System.Collections.Generic;
-    using NPOI.Util;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// High level representation of a cell in a row of a spReadsheet.
     /// Cells can be numeric, formula-based or string-based (text).  The cell type
@@ -163,7 +162,7 @@ namespace NPOI.HSSF.UserModel
                 return CellType.Formula;
             }
 
-            Record record = (Record)cval;
+            Record.Record record = (Record.Record)cval;
             int sid = record.Sid;
 
             switch (sid)
@@ -606,7 +605,7 @@ namespace NPOI.HSSF.UserModel
                 return;
             }
 
-            if (value.Length > NPOI.SS.SpreadsheetVersion.EXCEL97.MaxTextLength)
+            if (value.Length > SpreadsheetVersion.EXCEL97.MaxTextLength)
             {
                 throw new ArgumentException("The maximum length of cell contents (text) is 32,767 characters");
             }
@@ -1201,7 +1200,7 @@ namespace NPOI.HSSF.UserModel
                 case CellType.Boolean:
                     return BooleanCellValue ? "TRUE" : "FALSE";
                 case CellType.Error:
-                    return NPOI.SS.Formula.Eval.ErrorEval.GetText(((BoolErrRecord)_record).ErrorValue);
+                    return ErrorEval.GetText(((BoolErrRecord)_record).ErrorValue);
                 case CellType.Formula:
                     return CellFormula;
                 case CellType.Numeric:

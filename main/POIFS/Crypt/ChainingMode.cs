@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt
-{
-    using System;
+using System;
 
+namespace BetListNPOI.POIFS.Crypt
+{
     public class ChainingMode
     {
         // ecb - only for standard encryption

@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
-{
-    using System;
-    using System.IO;
+using System;
+using System.IO;
 
+namespace BetListNPOI.Util
+{
     /// <summary>
-    /// <para>Wraps an <see cref="T:System.IO.Stream"/> providing <see cref="T:NPOI.Util.ILittleEndianInput"/><p/></para>
+    /// <para>Wraps an <see cref="T:System.IO.Stream"/> providing <see cref="T:BetListNPOI.Util.ILittleEndianInput"/><p/></para>
     /// <para>
     /// This class does not buffer any input, so the stream Read position maintained
     /// by this class is consistent with that of the inner stream.

@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System.Text;
-    using NPOI.Util;
-    using System;
-
-
     /**
      * Title:        Default Column Width Record
      * Description:  Specifies the default width for columns that have no specific

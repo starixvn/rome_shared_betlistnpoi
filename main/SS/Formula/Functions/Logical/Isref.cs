@@ -18,10 +18,11 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula.Functions.Logical
+{
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      *

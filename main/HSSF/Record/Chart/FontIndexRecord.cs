@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /*
      * The font index record indexes into the font table for the text record.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

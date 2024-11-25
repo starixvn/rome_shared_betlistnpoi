@@ -15,13 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.PTG;
+using System;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-
     /**
      * Abstracts a workbook for the purpose of converting formula To text.<br/>
      * 

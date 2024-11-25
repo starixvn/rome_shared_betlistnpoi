@@ -14,12 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt.Standard
-{
-    using System;
-    using NPOI.Util;
-    using System.Text;
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.POIFS.Crypt.Standard
+{
     public class StandardEncryptionHeader : EncryptionHeader, EncryptionRecord
     {
 

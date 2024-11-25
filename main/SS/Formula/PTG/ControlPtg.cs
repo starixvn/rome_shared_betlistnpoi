@@ -15,9 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
     /**
      * Common baseclass for 
      * tExp

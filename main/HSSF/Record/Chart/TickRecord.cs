@@ -17,12 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record.Chart
+{
     /**
      * The Tick record defines how tick marks and label positioning/formatting
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

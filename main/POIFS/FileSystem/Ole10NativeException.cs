@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
-{
-    using System;
+using System;
 
+namespace BetListNPOI.POIFS.FileSystem
+{
     [Serializable]
     public class Ole10NativeException : Exception
     {

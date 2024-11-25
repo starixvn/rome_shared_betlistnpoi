@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using System;
-    using NPOI.DDF;
-    using NPOI.HSSF.UserModel;
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.UserModel;
+using System;
 
+namespace BetListNPOI.HSSF.Model
+{
     public class ConvertAnchor
     {
         /// <summary>

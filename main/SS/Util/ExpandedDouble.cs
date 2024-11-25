@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System;
-namespace NPOI.SS.Util
-{
 
-    using NPOI.Util;
+namespace BetListNPOI.SS.Util
+{
     /*
      * Represents a 64 bit IEEE double quantity expressed with both decimal and binary exponents
      * Does not handle negative numbers or zero

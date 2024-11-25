@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Macros
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.POIFS.Macros
 {
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Text;
-
-
     /**
      * This tool extracts out the source of all VBA Modules of an office file,
      *  both OOXML (eg XLSM) and OLE2/POIFS (eg DOC), to STDOUT or a directory.

@@ -15,15 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.UserModel;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using System.Collections;
-
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.UserModel;
-    using System.Collections.Generic;
-
     /// <summary>
     /// When working with the EventUserModel, if you want to
     /// Process formulas, you need an instance of
@@ -58,7 +57,7 @@ namespace NPOI.HSSF.EventUserModel
         public static InternalWorkbook CreateStubWorkbook(ExternSheetRecord[] externs,
                 BoundSheetRecord[] bounds, SSTRecord sst)
         {
-            List<Record> wbRecords = new List<Record>();
+            List<Record.Record> wbRecords = new List<Record.Record>();
 
             // Core Workbook records go first
             if (bounds != null)
@@ -190,7 +189,7 @@ namespace NPOI.HSSF.EventUserModel
             /// pass it on to our child listener
             /// </summary>
             /// <param name="record">The record.</param>
-            public void ProcessRecord(Record record)
+            public void ProcessRecord(Record.Record record)
             {
                 // Handle it ourselves
                 ProcessRecordInternally(record);
@@ -204,7 +203,7 @@ namespace NPOI.HSSF.EventUserModel
             /// pass it on to the child Listener.
             /// </summary>
             /// <param name="record">The record.</param>
-            public void ProcessRecordInternally(Record record)
+            public void ProcessRecordInternally(Record.Record record)
             {
                 if (record is BoundSheetRecord)
                 {

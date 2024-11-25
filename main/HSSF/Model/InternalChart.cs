@@ -1,12 +1,12 @@
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.HSSF.Record.Chart;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
-using NPOI.HSSF.Record;
-using NPOI.HSSF.Record.Chart;
-using NPOI.HSSF.Record.Aggregates;
-using NPOI.Util;
-using NPOI.SS.UserModel;
 
-namespace NPOI.HSSF.Model
+namespace BetListNPOI.HSSF.Model
 {
 
     [Serializable]
@@ -142,7 +142,7 @@ namespace NPOI.HSSF.Model
             }
             #region RecordVisitor 成员
 
-            public void VisitRecord(NPOI.HSSF.Record.Record r)
+            public void VisitRecord(Record.Record r)
             {
                 container.Add((RecordBase)r);
             }
@@ -674,7 +674,7 @@ namespace NPOI.HSSF.Model
         #region SS
         //SS = DataFormat Begin [Chart3DBarShape] [LineFormat AreaFormat PieFormat] [SerFmt] 
         //[GELFRAME] [MarkerFormat] [AttachedLabel] *2SHAPEPROPS [CRTMLFRT] End
-        private static void CreateRuleSS(List<NPOI.HSSF.Record.Record> records)
+        private static void CreateRuleSS(List<Record.Record> records)
         {
             records.Add(CreateDataFormatRecord());
             records.Add(new BeginRecord());

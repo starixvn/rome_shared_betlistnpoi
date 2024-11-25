@@ -15,11 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Eval;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * For most Excel functions, involving references ((cell, area), (2d, 3d)), the references are 
      * passed in as arguments, and the exact location remains fixed.  However, a select few Excel

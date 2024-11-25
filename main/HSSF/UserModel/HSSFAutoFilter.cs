@@ -1,11 +1,11 @@
-﻿using System;
-using NPOI.HSSF.Record.AutoFilter;
-using NPOI.HSSF.Model;
-using NPOI.HSSF.Record;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.UserModel;
+﻿using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.AutoFilter;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using System;
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     public class HSSFAutoFilter : IAutoFilter
     {
@@ -47,7 +47,7 @@ namespace NPOI.HSSF.UserModel
         private void CreateFilterModeRecord(HSSFSheet sheet,int insertPos)
         {
             //look for the FilterModeRecord
-            NPOI.HSSF.Record.Record record = sheet.Sheet.FindFirstRecordBySid(FilterModeRecord.sid);
+            Record.Record record = sheet.Sheet.FindFirstRecordBySid(FilterModeRecord.sid);
 
             // this local variable hides the class one: FilterModeRecord filtermode;
             //if not found, add a new one
@@ -61,7 +61,7 @@ namespace NPOI.HSSF.UserModel
         private void CreateAutoFilterInfoRecord(HSSFSheet sheet, int insertPos, Area3DPtg ptg)
         {
             //look for the AutoFilterInfo Record
-            NPOI.HSSF.Record.Record record = sheet.Sheet.FindFirstRecordBySid(AutoFilterInfoRecord.sid);
+            Record.Record record = sheet.Sheet.FindFirstRecordBySid(AutoFilterInfoRecord.sid);
             AutoFilterInfoRecord info;
             if (record == null)
             {

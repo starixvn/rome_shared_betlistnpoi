@@ -17,16 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
-    using System.Collections.Generic;
-
-
     public class RefSubRecord
     {
         public const int ENCODED_SIZE = 6;

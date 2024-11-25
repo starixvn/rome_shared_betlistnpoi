@@ -26,13 +26,12 @@
  * ==============================================================*/
 
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 using System;
 using System.IO;
 
-using NPOI.POIFS.Common;
-using NPOI.Util;
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// The block containing the archive header

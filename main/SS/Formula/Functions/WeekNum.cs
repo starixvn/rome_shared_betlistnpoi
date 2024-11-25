@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using BetListNPOI.SS.UserModel;
 using System;
-using NPOI.SS.Util;
-using NPOI.SS.UserModel;
-using System.Globalization;
 using System.Collections.Generic;
+using System.Globalization;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
 
 

@@ -31,7 +31,7 @@
 using System;
 using System.IO;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// a utility class for handling little-endian numbers, which the 80x86 world is
@@ -349,7 +349,7 @@ namespace NPOI.Util
         /// <param name="stream">the Stream from which the int is to be read</param>
         /// <returns>the int (32-bit) value</returns>
         /// <exception cref="T:System.IO.IOException">will be propagated back to the caller</exception>
-        /// <exception cref="T:NPOI.Util.BufferUnderrunException">if the stream cannot provide enough bytes</exception>
+        /// <exception cref="T:BetListNPOI.Util.BufferUnderrunException">if the stream cannot provide enough bytes</exception>
         public static int ReadInt(Stream stream)
         {
             //return GetInt(ReadFromStream(stream, LittleEndianConsts.INT_SIZE));
@@ -370,7 +370,7 @@ namespace NPOI.Util
         /// <param name="stream">the Stream from which the long is to be read</param>
         /// <returns>the long (64-bit) value</returns>
         /// <exception cref="T:System.IO.IOException">will be propagated back to the caller</exception>
-        /// <exception cref="T:NPOI.Util.BufferUnderrunException">if the stream cannot provide enough bytes</exception>
+        /// <exception cref="T:BetListNPOI.Util.BufferUnderrunException">if the stream cannot provide enough bytes</exception>
         public static long ReadLong(Stream stream)
         {
             //return GetLong(ReadFromStream(stream, LittleEndianConsts.LONG_SIZE));

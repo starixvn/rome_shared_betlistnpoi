@@ -1,5 +1,5 @@
 ﻿
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     /**
      * Common base class of {@link Record} and {@link RecordAggregate}

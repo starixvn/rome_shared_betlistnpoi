@@ -18,9 +18,11 @@
  * Created on May 21, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
+
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using System;
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      * 

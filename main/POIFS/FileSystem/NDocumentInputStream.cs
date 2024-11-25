@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.POIFS.Properties;
-using NPOI.Util;
-using System.IO;
+using BetListNPOI.POIFS.property;
+using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// This class provides methods to read a DocumentEntry managed by a <see cref="NPOIFSFileSystem"/> instance

@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF.Wellknown
+using System;
+using System.Collections;
+
+namespace BetListNPOI.HPSF.Wellknown
 {
-    using System;
-    using System.Collections;
-
-
     /// <summary>
     /// This is a dictionary which maps property ID values To property
     /// ID strings.

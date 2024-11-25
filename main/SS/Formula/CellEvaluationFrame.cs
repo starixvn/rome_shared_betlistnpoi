@@ -15,16 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using NPOI.SS.Formula.Eval;
-
     /**
      * Stores details about the current evaluation of a cell.<br/>
      */

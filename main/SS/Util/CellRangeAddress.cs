@@ -1,11 +1,10 @@
-﻿using System;
+﻿using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.Util;
+using System;
 using System.Text;
-using NPOI.Util;
-using NPOI.HSSF.Record;
 
-using NPOI.SS.Formula;
-
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
     public class CellRangeAddress : CellRangeAddressBase
     {

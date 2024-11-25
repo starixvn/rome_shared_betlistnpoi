@@ -25,17 +25,15 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.Util;
 using System;
-using System.Text;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
-using NPOI.POIFS.Dev;
-using NPOI.POIFS.Common;
-using NPOI.Util;
-
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     /// <summary>
     /// This abstract base class is the ancestor of all classes

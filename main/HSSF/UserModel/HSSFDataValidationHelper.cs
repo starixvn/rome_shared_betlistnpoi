@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-
     /**
      * @author <a href="rjankiraman@emptoris.com">Radhakrishnan J</a>
      * 

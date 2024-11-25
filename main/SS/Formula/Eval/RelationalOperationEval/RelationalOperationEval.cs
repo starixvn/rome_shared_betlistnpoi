@@ -18,12 +18,13 @@
  * Created on May 10, 2005
  *
  */
-namespace NPOI.SS.Formula.Eval
-{
-    using System;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Util;
 
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.Eval.RelationalOperationEval
+{
     //public class RelationalValues
     //{
     //    public double[] ds = new Double[2];
@@ -248,11 +249,11 @@ namespace NPOI.SS.Formula.Eval
         public abstract bool ConvertComparisonResult(int cmpResult);
 
 
-        public static Function EqualEval = new EqualEval();
-        public static Function NotEqualEval = new NotEqualEval();
-        public static Function LessEqualEval = new LessEqualEval();
-        public static Function LessThanEval = new LessThanEval();
-        public static Function GreaterEqualEval = new GreaterEqualEval();
-        public static Function GreaterThanEval = new GreaterThanEval();
+        public static Functions.Function EqualEval = new EqualEval();
+        public static Functions.Function NotEqualEval = new NotEqualEval();
+        public static Functions.Function LessEqualEval = new LessEqualEval();
+        public static Functions.Function LessThanEval = new LessThanEval();
+        public static Functions.Function GreaterEqualEval = new GreaterEqualEval();
+        public static Functions.Function GreaterThanEval = new GreaterThanEval();
     }
 }

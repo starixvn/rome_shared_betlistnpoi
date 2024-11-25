@@ -25,10 +25,10 @@
  * 
  * ==============================================================*/
 
-using NPOI.POIFS.Common;
-using NPOI.POIFS.Storage;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Storage;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     public class RootProperty:DirectoryProperty
     {

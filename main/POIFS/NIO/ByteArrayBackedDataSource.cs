@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-using System.IO;
+using BetListNPOI.Util;
 using System;
-using NPOI.Util;
+using System.IO;
 
-namespace NPOI.POIFS.NIO
+namespace BetListNPOI.POIFS.NIO
 {
     /// <summary>
-    /// A POIFS <see cref="T:NPOI.POIFS.NIO.DataSource"/> backed by a byte array.
+    /// A POIFS <see cref="T:BetListNPOI.POIFS.NIO.DataSource"/> backed by a byte array.
     /// </summary>
     public class ByteArrayBackedDataSource : DataSource
     {

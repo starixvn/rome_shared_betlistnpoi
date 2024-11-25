@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.Util
-{
-    using System;
-    using System.IO;
-    using System.Runtime.Serialization;
+using System;
+using System.IO;
 
+namespace BetListNPOI.Util
+{
     public class IOUtils
     {
         private static POILogger logger = POILogFactory.GetLogger(typeof(IOUtils));

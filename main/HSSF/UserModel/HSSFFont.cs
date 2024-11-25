@@ -16,20 +16,19 @@
 ==================================================================== */
 
 
-using NPOI.HSSF.Util;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.SS.UserModel;
+using System;
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.UserModel;
-
     /// <summary>
     /// Represents a Font used in a workbook.
     /// @version 1.0-pre
     /// @author  Andrew C. Oliver
     /// </summary>
-    public class HSSFFont:NPOI.SS.UserModel.IFont
+    public class HSSFFont:IFont
     {
         public const String FONT_ARIAL = "Arial";
 

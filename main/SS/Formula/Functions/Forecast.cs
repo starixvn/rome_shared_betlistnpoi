@@ -1,7 +1,8 @@
-﻿using System;
-using NPOI.SS.Formula.Eval;
+﻿using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using System;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /// <summary>
     /// The Forecast class is a representation of the Excel FORECAST function.

@@ -1,5 +1,7 @@
 ﻿
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record
 {
     public class Excel9FileRecord:StandardRecord
     {
@@ -23,7 +25,7 @@ namespace NPOI.HSSF.Record
             get { return 0; }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             
         }

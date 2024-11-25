@@ -17,17 +17,15 @@
 ==================================================================== */
 
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using ICSharpCode.SharpZipLib.Zip.Compression;
+using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
+using System;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.IO;
-    using System.Text;
-
-
-    using NPOI.Util;
-    using ICSharpCode.SharpZipLib.Zip.Compression;
-    using ICSharpCode.SharpZipLib.Zip.Compression.Streams;
-
     /// <summary>
     /// Used to dump the contents of escher records to a PrintStream.
     /// @author Glen Stampoultzis (glens at apache.org)

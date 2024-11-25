@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
     /**
      * Title:        Use Natural Language Formulas Flag
      * Description:  Tells the GUI if this was written by something that can use

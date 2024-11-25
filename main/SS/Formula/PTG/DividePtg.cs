@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
-    using System.Text;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * This PTG implements the standard binomial divide "/"
      * @author  Andrew C. Oliver acoliver at apache dot org

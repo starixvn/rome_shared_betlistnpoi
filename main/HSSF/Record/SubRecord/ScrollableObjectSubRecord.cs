@@ -1,8 +1,8 @@
-﻿using System;
-using NPOI.Util;
+﻿using BetListNPOI.Util;
+using System;
 using System.Globalization;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record.SubRecord
 {
     /// <summary>
     /// FtSbs structure

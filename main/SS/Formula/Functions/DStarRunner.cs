@@ -15,15 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using System;
-
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Util;
-    using NPOI.Util;
-
     /**
      * This class performs a D* calculation. It takes an {@link IDStarAlgorithm} object and
      * uses it for calculating the result value. Iterating a database and Checking the

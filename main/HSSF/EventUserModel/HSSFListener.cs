@@ -16,10 +16,8 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using NPOI.HSSF.Record;
-
     /// <summary>
     /// Interface for use with the HSSFRequest and HSSFEventFactory.  Users should Create
     /// a listener supporting this interface and register it with the HSSFRequest (associating
@@ -33,6 +31,6 @@ namespace NPOI.HSSF.EventUserModel
         /// Process an HSSF Record. Called when a record occurs in an HSSF file.
         /// </summary>
         /// <param name="record">The record.</param>
-        void ProcessRecord(Record record);
+        void ProcessRecord(Record.Record record);
     }
 }

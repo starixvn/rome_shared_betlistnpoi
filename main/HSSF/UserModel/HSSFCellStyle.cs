@@ -16,14 +16,15 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Util;
-    using NPOI.SS.UserModel;
-    using System.Collections.Generic;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// High level representation of the style of a cell in a sheet of a workbook.
     /// @author  Andrew C. Oliver (acoliver at apache dot org)
@@ -33,7 +34,7 @@ namespace NPOI.HSSF.UserModel
     {
         private ExtendedFormatRecord _format = null;
         private short index = 0;
-        private NPOI.HSSF.Model.InternalWorkbook _workbook = null;
+        private InternalWorkbook _workbook = null;
 
 
         /// <summary>
@@ -53,7 +54,7 @@ namespace NPOI.HSSF.UserModel
         /// <param name="index">The index.</param>
         /// <param name="rec">The record.</param>
         /// <param name="workbook">The workbook.</param>
-        public HSSFCellStyle(short index, ExtendedFormatRecord rec, NPOI.HSSF.Model.InternalWorkbook workbook)
+        public HSSFCellStyle(short index, ExtendedFormatRecord rec, InternalWorkbook workbook)
         {
             this._workbook = workbook;
             this.index = index;
@@ -148,7 +149,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="workbook">The internal workbook.</param>
         /// <returns></returns>
-        public String GetDataFormatString(NPOI.HSSF.Model.InternalWorkbook workbook)
+        public String GetDataFormatString(InternalWorkbook workbook)
         {
             HSSFDataFormat format = new HSSFDataFormat(workbook);
 
@@ -160,7 +161,7 @@ namespace NPOI.HSSF.UserModel
         /// Set the font for this style
         /// </summary>
         /// <param name="font">a font object Created or retreived from the HSSFWorkbook object</param>
-        public void SetFont(NPOI.SS.UserModel.IFont font)
+        public void SetFont(IFont font)
         {
             _format.IsIndentNotParentFont=(true);
             short fontindex = font.Index;

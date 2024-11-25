@@ -16,10 +16,10 @@
 */
 
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Counts the number of cells that contain data within the list of arguments. 
      *

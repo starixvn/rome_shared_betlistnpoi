@@ -15,18 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.POIFS.Crypt.Standard;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
 using System.IO;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.Util;
+using System.Text;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using System;
-    using System.Text;
-    using NPOI.POIFS.Crypt.Standard;
-    using NPOI.POIFS.FileSystem;
-
-
     public class DataSpaceMapUtils
     {
         public static void AddDefaultDataSpace(DirectoryEntry dir)

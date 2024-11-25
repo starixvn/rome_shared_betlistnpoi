@@ -14,12 +14,10 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-using System;
-using System.Collections.Generic;
-using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HSSF.Record.Drawing
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.Drawing
 {
     /// <summary>
     /// specifies the common record header for all the OfficeArt records.

@@ -25,12 +25,12 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
-    using System.IO;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.IO;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// Class for writing little-endian data and more.
     /// @author Rainer Klute 

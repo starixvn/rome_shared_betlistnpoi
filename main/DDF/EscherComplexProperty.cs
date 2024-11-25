@@ -16,14 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
+using System;
+using System.IO;
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.IO;
-    using NPOI.Util;
-
     /// <summary>
     /// A complex property differs from a simple property in that the data can not fit inside a 32 bit
     /// integer.  See the specification for more detailed information regarding exactly what is

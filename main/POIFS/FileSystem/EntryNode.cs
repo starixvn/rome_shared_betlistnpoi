@@ -25,11 +25,10 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.property;
 using System;
 
-using NPOI.POIFS.Properties;
-
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// Abstract implementation of Entry

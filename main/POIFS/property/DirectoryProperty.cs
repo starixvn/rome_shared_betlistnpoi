@@ -26,11 +26,11 @@
  * ==============================================================*/
 
 using System;
-using System.IO;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     /// <summary>
     /// Trivial extension of Property for POIFSDocuments

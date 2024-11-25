@@ -1,5 +1,7 @@
 ﻿
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The Fbi2 record specifies the font information at the time the scalable font is added to the chart.
@@ -22,7 +24,7 @@ namespace NPOI.HSSF.Record.Chart
                 return base.DataSize;
             }
         }
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             base.Serialize(out1);
         }

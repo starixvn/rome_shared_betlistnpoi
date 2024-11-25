@@ -1,4 +1,4 @@
-﻿namespace NPOI.Util
+﻿namespace BetListNPOI.Util
 {
     public class Character
     {

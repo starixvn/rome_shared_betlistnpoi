@@ -1,12 +1,10 @@
-﻿using NPOI.SS.Formula;
-using NPOI.SS.Formula.PTG;
-using NPOI.SS.UserModel;
-using NPOI.Util;
+﻿using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NPOI.HSSF.UserModel.Helpers
+namespace BetListNPOI.HSSF.UserModel.Helpers
 {
     public class HSSFRowColShifter
     {

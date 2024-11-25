@@ -16,13 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /// <summary>
     /// The opt record is used to store property values for a shape.  It is the key to determining
     /// the attributes of a shape.  Properties can be of two types: simple or complex.  Simple types

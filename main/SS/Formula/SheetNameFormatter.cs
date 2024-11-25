@@ -16,14 +16,15 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula
-{
-    using System;
-    using System.Text;
-    using System.Text.RegularExpressions;
-    using NPOI.Util;
-    using System.Globalization;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 
+namespace BetListNPOI.SS.Formula
+{
     /**
      * Formats sheet names for use in formula expressions.
      * 
@@ -216,7 +217,7 @@ namespace NPOI.SS.Formula
          */
         public static bool CellReferenceIsWithinRange(String lettersPrefix, String numbersSuffix)
         {
-            return NPOI.SS.Util.CellReference.CellReferenceIsWithinRange(lettersPrefix, numbersSuffix, NPOI.SS.SpreadsheetVersion.EXCEL97);
+            return CellReference.CellReferenceIsWithinRange(lettersPrefix, numbersSuffix, SpreadsheetVersion.EXCEL97);
         }
 
         /**

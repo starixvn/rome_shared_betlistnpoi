@@ -16,7 +16,8 @@
 ==================================================================== */
 
 using System;
-namespace NPOI.SS.Formula.Eval
+
+namespace BetListNPOI.SS.Formula.Eval
 {
     /**
      * An exception thrown by implementors of {@link FormulaEvaluator} when 

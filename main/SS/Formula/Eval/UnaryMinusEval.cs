@@ -15,10 +15,10 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Eval
-{
-    using NPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.Functions;
 
+namespace BetListNPOI.SS.Formula.Eval
+{
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      *  
@@ -26,7 +26,7 @@ namespace NPOI.SS.Formula.Eval
     public class UnaryMinusEval : Fixed1ArgFunction
     {
 
-        public static Function instance = new UnaryMinusEval();
+        public static Functions.Function instance = new UnaryMinusEval();
 
         private UnaryMinusEval()
         {

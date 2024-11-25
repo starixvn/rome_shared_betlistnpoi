@@ -14,12 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt
+
+using System;
+
+namespace BetListNPOI.POIFS.Crypt
 {
-    using System;
-
-
-/**
+    /**
  * Used when Checking if a key is valid for a document 
  */
 

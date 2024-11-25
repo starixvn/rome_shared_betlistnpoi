@@ -23,15 +23,13 @@
  * Created on January 22, 2008, 10:05 PM
  */
 
-namespace NPOI.HSSF.Record.CF
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.CF
 {
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
-
-
     /**
      * Pattern Formatting Block of the Conditional Formatting Rule Record.
      * 

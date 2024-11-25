@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     /// <summary>
     /// Data for a Pie Chart

@@ -17,12 +17,10 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using System;
+using BetListNPOI.SS.Formula.Eval;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation of Excel function INTERCEPT()<p/>
      *

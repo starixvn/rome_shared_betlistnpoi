@@ -16,11 +16,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
-    using System.Text;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * Ptg class to implement less than or equal
      *

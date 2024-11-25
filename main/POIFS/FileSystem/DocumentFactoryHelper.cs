@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.POIFS.Common;
-using NPOI.POIFS.Crypt;
-using NPOI.Util;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Crypt;
+using BetListNPOI.Util;
 using System;
 using System.IO;
 using System.Text;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// A small base class for the various factories, e.g. WorkbookFactory, SlideShowFactory to combine common code here.

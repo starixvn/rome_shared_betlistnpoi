@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Represents a NoteStructure (0xD) sub record.
      *
@@ -30,7 +30,7 @@ namespace NPOI.HSSF.Record
      *
      * @author Yegor Kozlov
      */
-    public class NoteStructureSubRecord: SubRecord, ICloneable
+    public class NoteStructureSubRecord: SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x0D;
         private const int ENCODED_SIZE = 22;

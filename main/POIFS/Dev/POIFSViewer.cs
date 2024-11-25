@@ -25,15 +25,14 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.FileSystem;
 using System;
-using System.Text;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
-namespace NPOI.POIFS.Dev
+namespace BetListNPOI.POIFS.Dev
 {
-    using NPOI.POIFS.FileSystem;
-
     public class POIFSViewer
     {
         public static void ViewFile(String filename, bool printName)

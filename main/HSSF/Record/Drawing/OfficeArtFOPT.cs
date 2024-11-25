@@ -1,9 +1,7 @@
-﻿using System;
+﻿using BetListNPOI.Util;
 using System.Collections.Generic;
-using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HSSF.Record.Drawing
+namespace BetListNPOI.HSSF.Record.Drawing
 {
     public class OfficeArtFOPT
     {

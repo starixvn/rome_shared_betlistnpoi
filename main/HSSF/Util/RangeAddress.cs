@@ -17,10 +17,10 @@
 
 
 using System;
-using System.Text;
 using System.Globalization;
+using System.Text;
 
-namespace NPOI.HSSF.Util
+namespace BetListNPOI.HSSF.Util
 {
 
 

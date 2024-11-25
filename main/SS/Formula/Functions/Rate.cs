@@ -14,11 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using System;
-using NPOI.SS.Formula.Eval;
-using NPOI.Util;
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * Implements the Excel Rate function

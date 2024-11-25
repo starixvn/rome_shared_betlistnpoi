@@ -19,7 +19,7 @@
  *
  */
 
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval.RelationalOperationEval
 {
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;

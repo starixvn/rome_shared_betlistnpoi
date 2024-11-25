@@ -16,13 +16,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.POIFS.FileSystem;
+using System.IO;
+
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using System.IO;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.HSSF.Record;
-
-
     /// <summary>
     /// Low level event based HSSF Reader.  Pass either a DocumentInputStream to
     /// Process events along with a request object or pass a POIFS POIFSFileSystem to
@@ -112,7 +111,7 @@ namespace NPOI.HSSF.EventUserModel
         {
             bool going = true;
             short userCode = 0;
-            Record r = null;
+            Record.Record r = null;
 
             // Create a new RecordStream and use that
             HSSFRecordStream recordStream = new HSSFRecordStream(in1);

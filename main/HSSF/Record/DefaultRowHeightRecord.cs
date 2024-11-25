@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-    using System;
-    using System.Text;
-
     /**
      * Title:        Default Row Height Record
      * Description:  Row height for rows with Undefined or not explicitly defined

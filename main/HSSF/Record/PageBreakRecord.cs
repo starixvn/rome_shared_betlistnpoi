@@ -16,15 +16,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Collections;
-    using System.Text;
-    using NPOI.Util;
-    using System.Collections.Generic;
-
-
     /**
      * Record that Contains the functionality page _breaks (horizontal and vertical)
      * 

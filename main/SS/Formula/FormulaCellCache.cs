@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
-{
-    using System.Collections;
+using System.Collections;
 
+namespace BetListNPOI.SS.Formula
+{
     public interface IEntryOperation
     {
         void ProcessEntry(FormulaCellCacheEntry entry);

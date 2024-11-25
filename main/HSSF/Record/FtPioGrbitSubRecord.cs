@@ -15,17 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using NPOI.Util;
-    using System.Text;
-
-
     /**
      * This structure appears as part of an Obj record that represents image display properties.
      */
-    public class FtPioGrbitSubRecord : SubRecord, ICloneable
+    public class FtPioGrbitSubRecord : SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x08;
         public const short length = 0x02;

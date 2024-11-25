@@ -1,12 +1,12 @@
-﻿using System;
-using System.Text;
-using NPOI.Util;
-using NPOI.SS.Formula.PTG;
+﻿using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
 using System.Globalization;
+using System.Text;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    public class LbsDataSubRecord : SubRecord, ICloneable
+    public class LbsDataSubRecord : SubRecord.SubRecord, ICloneable
     {
 
         public const int sid = 0x0013;

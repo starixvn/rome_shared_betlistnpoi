@@ -14,13 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using System;
-using System.Collections.Generic;
-using System.Text;
-using NPOI.SS.Formula.Functions;
-using NPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Atp
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
+
+namespace BetListNPOI.SS.Formula.Atp
 {
     class Ifs : FreeRefFunction
     {

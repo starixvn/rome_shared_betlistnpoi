@@ -15,12 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using System.Text;
-
-
     /**
      * Addition operator PTG the "+" binomial operator.  If you need more 
      * explanation than that then well...We really can't help you here.

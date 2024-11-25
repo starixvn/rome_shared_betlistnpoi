@@ -16,11 +16,11 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
-    using System.Text;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * PTG class to implement greater or equal to
      *

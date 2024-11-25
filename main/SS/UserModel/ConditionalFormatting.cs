@@ -17,10 +17,10 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
-{
-    using NPOI.SS.Util;
+using BetListNPOI.SS.Util;
 
+namespace BetListNPOI.SS.UserModel
+{
     /**
      * The ConditionalFormatting class encapsulates all Settings of Conditional Formatting.
      *

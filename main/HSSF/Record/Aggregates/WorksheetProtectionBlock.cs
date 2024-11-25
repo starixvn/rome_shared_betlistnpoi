@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.POIFS.Crypt;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
-
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.POIFS.Crypt;
-    using NPOI.Util;
-    using System;
-
     /**
      * Groups the sheet protection records for a worksheet.
      * <p/>

@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Function
-{
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.SS.Formula.Function
+{
     /**
      * Allows clients to Get <c>FunctionMetadata</c> instances for any built-in function of Excel.
      * 

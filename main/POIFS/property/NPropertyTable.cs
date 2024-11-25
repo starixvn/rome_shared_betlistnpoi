@@ -16,16 +16,14 @@
 ==================================================================== */
 
 
-
-using System;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.Storage;
+using BetListNPOI.Util;
 using System.Collections.Generic;
 using System.IO;
-using NPOI.POIFS.Common;
-using NPOI.POIFS.FileSystem;
-using NPOI.POIFS.Storage;
-using NPOI.Util;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     public class NPropertyTable : PropertyTableBase
     {

@@ -27,7 +27,7 @@ using System.Collections;
  * 
  * ==============================================================*/
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// Returns immutable Btfield instances.

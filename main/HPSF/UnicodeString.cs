@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System;
-using NPOI.Util;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     public class UnicodeString
     {

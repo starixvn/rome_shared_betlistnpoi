@@ -15,13 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-    using System;
-    using System.Text;
-
     /**
      * Title:        DBCell Record
      * Description:  Used by Excel and other MS apps to quickly Find rows in the sheets.

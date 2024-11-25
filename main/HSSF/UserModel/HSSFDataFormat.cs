@@ -15,15 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Collections;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// <para>
     /// Identifies both built-in and user defined formats within a workbook.

@@ -26,11 +26,11 @@
  * ==============================================================*/
 
 using System;
-using System.Text;
-using System.IO;
 using System.Collections;
+using System.IO;
+using System.Text;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class HexRead
     {

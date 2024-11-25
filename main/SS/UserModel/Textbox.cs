@@ -17,7 +17,7 @@
 
 using System;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /**
      * This interface isn't implemented ...

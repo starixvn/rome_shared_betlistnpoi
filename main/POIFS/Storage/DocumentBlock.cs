@@ -25,15 +25,13 @@
  * 
  * ==============================================================*/
 
+
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 using System;
 using System.IO;
 
-
-using NPOI.POIFS.Common;
-using NPOI.Util;
-
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     public class DocumentBlock : BigBlock
     {

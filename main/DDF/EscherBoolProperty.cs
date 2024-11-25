@@ -16,12 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// Represents a bool property.  The actual utility of this property is in doubt because many
     /// of the properties marked as bool seem to actually contain special values.  In other words

@@ -27,12 +27,10 @@
  * ==============================================================*/
 
 using System;
-using System.Text;
 using System.Collections.Generic;
+using System.Text;
 
-
-
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// Title: String Utility Description: Collection of string handling utilities

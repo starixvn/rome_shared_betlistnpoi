@@ -16,17 +16,11 @@
  *    limitations under the License.
  * ====================================================================
  */
-using ExtendedNumerics;
-using NPOI.SS.Formula.UDF;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Permissions;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace NPOI.SS.Util
+using ExtendedNumerics;
+using System;
+
+namespace BetListNPOI.SS.Util
 {
     internal static class DoublePrecisionHelper
     {
@@ -65,7 +59,7 @@ namespace NPOI.SS.Util
                 number = -number;
 
             int decimalPlaces = number.DecimalPlaces;
-            int realSigDigits = number.SignifigantDigits;
+            int realSigDigits = number.SignificantDigits;
             int integerPlaces = realSigDigits - decimalPlaces;
 
             if (integerPlaces >= significantDigits)

@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
     /**
      * Title:        VCenter record
      * Description:  tells whether to center the sheet between vertical margins

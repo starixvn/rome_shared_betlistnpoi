@@ -1,8 +1,8 @@
-﻿using MathNet.Numerics.Distributions;
-using NPOI.SS.Formula.Eval;
+﻿using BetListNPOI.SS.Formula.Eval;
+using MathNet.Numerics.Distributions;
 using System;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     public class TInv : Fixed2ArgFunction, FreeRefFunction
     {

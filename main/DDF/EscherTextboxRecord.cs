@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.Text;
-    using Util;
-
-
     /// <summary>
     /// Holds data from the parent application. Most commonly used to store
     /// text in the format of the parent application, rather than in

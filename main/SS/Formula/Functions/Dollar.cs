@@ -18,12 +18,13 @@
  * Created on May 6, 2005
  *
  */
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.Util;
+
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Util;
 using System;
 using System.Text;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;

@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.Formula;
-using NPOI.SS.Util;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NPOI.SS.UserModel.Helpers
+namespace BetListNPOI.SS.UserModel.Helpers
 {
     /// <summary>
     /// Helper for Shifting rows up or down

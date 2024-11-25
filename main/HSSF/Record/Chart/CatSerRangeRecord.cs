@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
     /*
      * This record refers to a category or series axis and is used to specify label/tickmark frequency.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

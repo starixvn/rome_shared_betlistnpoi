@@ -17,10 +17,10 @@
  * ====================================================================
  */
 
+using BetListNPOI.SS.Util;
 using System;
-using NPOI.SS.Util;
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     public class DataSources {
 

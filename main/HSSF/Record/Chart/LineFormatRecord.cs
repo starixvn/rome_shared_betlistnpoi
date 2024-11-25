@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Describes a line format record.  The line format record controls how a line on a chart appears.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

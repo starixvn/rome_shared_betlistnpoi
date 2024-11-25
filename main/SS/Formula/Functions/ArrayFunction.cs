@@ -1,9 +1,6 @@
-﻿using NPOI.SS.Formula.Eval;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using BetListNPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     public interface ArrayFunction
     {

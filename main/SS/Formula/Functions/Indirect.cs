@@ -15,16 +15,14 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    
-    using NPOI.SS.Formula;
-    using System.Text;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation for Excel function INDIRECT<p/>
      * 

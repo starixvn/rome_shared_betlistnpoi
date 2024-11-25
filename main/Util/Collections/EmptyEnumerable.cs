@@ -25,7 +25,7 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.Util.Collections
+namespace BetListNPOI.Util.Collections
 {
     //public sealed class EmptyEnumerable
     //    : IEnumerable

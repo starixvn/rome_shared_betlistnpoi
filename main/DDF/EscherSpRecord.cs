@@ -16,13 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /// <summary>
     /// ToGether the the EscherOptRecord this record defines some of the basic
     /// properties of a shape.

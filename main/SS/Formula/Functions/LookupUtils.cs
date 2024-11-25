@@ -15,17 +15,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using System.Globalization;
-    using System.Text.RegularExpressions;
-    using System.Collections.Generic;
-    using EnumsNET;
+using BetListNPOI.SS.Formula.Eval;
+using EnumsNET;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Common functionality used by VLOOKUP, HLOOKUP, LOOKUP and MATCH
      * 

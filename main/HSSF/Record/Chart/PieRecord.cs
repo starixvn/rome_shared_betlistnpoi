@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The Pie record specifies that the chart group is a pie chart group or 
@@ -55,7 +55,7 @@ namespace NPOI.HSSF.Record.Chart
             get { return 2 + 2 + 2; }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             out1.WriteShort(field_1_anStart);
             out1.WriteShort(field_2_pcDonut);

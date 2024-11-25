@@ -26,12 +26,11 @@
  * ==============================================================*/
 
 using System;
-using System.Text;
-using System.IO;
 using System.Globalization;
+using System.IO;
+using System.Text;
 
-
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// dump data in hexadecimal format; derived from a HexDump utility I

@@ -15,11 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-
-
     public class CellCopyPolicy
     {
         // cell-level policies

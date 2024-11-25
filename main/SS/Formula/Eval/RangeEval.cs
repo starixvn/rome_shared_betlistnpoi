@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Eval
-{
-    using System;
+using BetListNPOI.SS.Formula.Functions;
+using System;
 
-    using NPOI.SS.Formula.Functions;
+namespace BetListNPOI.SS.Formula.Eval
+{
     /**
      * 
      * @author Josh Micich 
@@ -27,7 +27,7 @@ namespace NPOI.SS.Formula.Eval
     public class RangeEval : Fixed2ArgFunction
     {
 
-        public static Function instance = new RangeEval();
+        public static Functions.Function instance = new RangeEval();
 
         private RangeEval()
         {

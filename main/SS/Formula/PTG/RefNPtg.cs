@@ -15,10 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using NPOI.Util;
+using BetListNPOI.Util;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * RefNPtg
      * @author Jason Height (jheight at apache dot com)

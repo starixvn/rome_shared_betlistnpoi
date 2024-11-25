@@ -17,7 +17,7 @@
 
 using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /// <summary>
     /// High level representation of a column of a spreadsheet.

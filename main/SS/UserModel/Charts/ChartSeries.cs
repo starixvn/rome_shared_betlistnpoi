@@ -1,9 +1,7 @@
-﻿using NPOI.SS.Util;
+﻿using BetListNPOI.SS.Util;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NPOI.SS.UserModel.Charts
+namespace BetListNPOI.SS.UserModel.Charts
 {
     public enum TitleType
     {

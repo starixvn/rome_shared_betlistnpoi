@@ -15,14 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-
-    using NPOI.SS.Formula.Eval;
-    
-
     /**
      * Performance optimisation for {@link HSSFFormulaEvaluator}. This class stores previously
      * calculated values of already visited cells, To avoid unnecessary re-calculation when the 
@@ -56,7 +54,7 @@ namespace NPOI.SS.Formula
             Loc loc = new Loc(bookIndex, sheetIndex, cell.RowIndex, cell.ColumnIndex);
             PlainValueCellCacheEntry pcce = _plainCellCache.Get(loc);
 
-            if (cell.CellType == NPOI.SS.UserModel.CellType.Formula)
+            if (cell.CellType == CellType.Formula)
             {
                 if (fcce == null)
                 {
@@ -253,7 +251,7 @@ namespace NPOI.SS.Formula
         public void NotifyDeleteCell(int bookIndex, int sheetIndex, IEvaluationCell cell)
         {
 
-            if (cell.CellType == NPOI.SS.UserModel.CellType.Formula)
+            if (cell.CellType == CellType.Formula)
             {
                 FormulaCellCacheEntry fcce = _formulaCellCache.Remove(cell);
                 if (fcce == null)

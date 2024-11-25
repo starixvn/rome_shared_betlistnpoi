@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
-{
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record.Chart
+{
     /**
      * This record refers to a category or series axis and is used to specify label/tickmark frequency.<p/>
      * 

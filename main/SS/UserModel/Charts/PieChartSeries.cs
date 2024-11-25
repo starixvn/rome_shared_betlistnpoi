@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NPOI.SS.UserModel.Charts
+﻿namespace BetListNPOI.SS.UserModel.Charts
 {
     public interface IPieChartSeries<Tx, Ty> : IChartSeries
     {

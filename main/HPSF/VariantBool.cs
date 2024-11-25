@@ -14,9 +14,10 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-using NPOI.Util;
 
-namespace NPOI.HPSF
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HPSF
 {
     public class VariantBool
     {

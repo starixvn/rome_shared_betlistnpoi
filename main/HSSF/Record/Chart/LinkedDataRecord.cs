@@ -15,16 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-    using System;
-
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula;
-    using NPOI.Util;
-    using System.Text;
-
     /**
      * Describes a linked data record.  This record refers to the series data or text.<p/>
      *

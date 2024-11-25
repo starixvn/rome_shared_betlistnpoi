@@ -18,7 +18,7 @@
  * Created on May 9, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions.Boolean
 {
     public class And : BooleanFunction
     {

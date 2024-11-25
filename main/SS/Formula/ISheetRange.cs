@@ -15,10 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+namespace BetListNPOI.SS.Formula
 {
-    using System;
-
     public interface ISheetRange
     {
         int FirstSheetIndex { get; }

@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using BetListNPOI.HPSF.Wellknown;
+using System;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using NPOI.HPSF.Wellknown;
-
-
     /// <summary>
     /// Convenience class representing a Summary Information stream in a
     /// Microsoft Office document.

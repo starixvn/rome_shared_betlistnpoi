@@ -25,9 +25,10 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using System;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
     /// <summary>
     /// This exception is thrown when there is an illegal value Set in a
     /// {@link PropertySet}. For example, a {@link Variant#VT_BOOL} must

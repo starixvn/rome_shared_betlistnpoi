@@ -15,15 +15,14 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Eval
-{
-    using System;
-    using System.Text;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-    using System.Collections.Generic;
-    using NPOI.Util;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.Eval
+{
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      *

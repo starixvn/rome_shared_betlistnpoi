@@ -17,10 +17,10 @@
 ==================================================================== */
 
 
-namespace NPOI.Util
-{
-    using System;
+using System;
 
+namespace BetListNPOI.Util
+{
     /**
      * A common exception thrown by our binary format Parsers
      *  (especially HSSF and DDF), when they hit invalid

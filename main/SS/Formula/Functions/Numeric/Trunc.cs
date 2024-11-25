@@ -18,11 +18,12 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions.Numeric
+{
     public class Trunc : Var1or2ArgFunction
     {
         private static NumberEval TRUNC_ARG2_DEFAULT = new NumberEval(0);

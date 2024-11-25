@@ -14,14 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-using NPOI.POIFS.FileSystem;
+
+using BetListNPOI.POIFS.FileSystem;
+using SixLabors.ImageSharp.PixelFormats;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
 
-namespace NPOI.Util
+namespace BetListNPOI
 {
     public class POIUtils
     {

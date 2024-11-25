@@ -17,15 +17,14 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
-
-
     /*
      * Describes a linked data record.  This record referes to the series data or text.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

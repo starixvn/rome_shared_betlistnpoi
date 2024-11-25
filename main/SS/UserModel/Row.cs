@@ -15,11 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
-{
-    using System.Collections.Generic;
-    using System.Collections;
+using System.Collections.Generic;
 
+namespace BetListNPOI.SS.UserModel
+{
     /**
      * Used to specify the different possible policies
      *  if for the case of null and blank cells
@@ -62,7 +61,7 @@ namespace NPOI.SS.UserModel
         /// <throws>ArgumentException if columnIndex &lt; 0 or greater than the maximum number of supported columns
         /// (255 for *.xls, 1048576 for *.xlsx)
         /// </throws>
-        ICell CreateCell(int column, NPOI.SS.UserModel.CellType type);
+        ICell CreateCell(int column, CellType type);
 
         /// <summary>
         /// Remove the Cell from this row.
@@ -82,7 +81,7 @@ namespace NPOI.SS.UserModel
         /// </summary>
         /// <param name="cellnum">0 based column number</param>
         /// <returns>Cell representing that column or null if undefined.</returns>
-        /// <see cref="GetCell(int, NPOI.SS.UserModel.MissingCellPolicy)"/>
+        /// <see cref="GetCell(int,BetListNPOI.SS.UserModel.MissingCellPolicy)"/>
         ICell GetCell(int cellnum);
 
         /// <summary>

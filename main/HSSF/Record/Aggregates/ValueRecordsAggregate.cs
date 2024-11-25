@@ -17,17 +17,15 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Aggregates
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
-
-    using System;
-    using System.Collections;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Formula;
-    using NPOI.HSSF.Model;
-    using NPOI.SS.Formula.PTG;
-    using System.Collections.Generic;
-
     /**
      *
      * Aggregate value records toGether.  Things are easier to handle that way.

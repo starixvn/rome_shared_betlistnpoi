@@ -15,10 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Util;
 using System;
-using NPOI.SS.Util;
-namespace NPOI.SS.Formula.Functions
+
+namespace BetListNPOI.SS.Formula.Functions
 {
 
 

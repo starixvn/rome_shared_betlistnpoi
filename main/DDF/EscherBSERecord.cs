@@ -16,14 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using System;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.IO;
-    using System.Text;
-    using NPOI.Util;
-
-
     /// <summary>
     /// The BSE record is related closely to the EscherBlipRecord and stores
     /// extra information about the blip.  A blip record is actually stored inside

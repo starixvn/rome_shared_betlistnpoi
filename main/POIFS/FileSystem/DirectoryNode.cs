@@ -25,20 +25,17 @@
  * 
  * ==============================================================*/
 
+
+using BetListNPOI.POIFS.Dev;
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.POIFS.property;
+using BetListNPOI.Util;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Collections;
 
-
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.Dev;
-using NPOI.POIFS.FileSystem;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.Util;
-using NPOI.Util.Collections;
-
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// Simple implementation of DirectoryEntry

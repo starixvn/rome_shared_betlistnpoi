@@ -15,13 +15,11 @@
  * limitations Under the License.
  */
 
-namespace NPOI.SS.Formula.Eval
+using BetListNPOI.SS.Formula.PTG;
+using System;
+
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.PTG;
-
-
     /**
      * @author Josh Micich
      */

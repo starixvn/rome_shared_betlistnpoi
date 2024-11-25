@@ -15,15 +15,11 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula;
-    using System.Collections.Generic;
-    using System.Linq;
+using BetListNPOI.SS.Formula.Eval;
+using System;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class SingleValueVector : ValueVector
     {
 

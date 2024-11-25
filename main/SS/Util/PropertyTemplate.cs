@@ -16,19 +16,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.SS.UserModel;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
-namespace NPOI.SS.Util
+namespace BetListNPOI.SS.Util
 {
-
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS;
-    using NPOI.SS.UserModel;
-
     /// <summary>
     /// <para>
     /// A <see cref="PropertyTemplate"/> is a template that can be applied to any sheet in

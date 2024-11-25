@@ -15,15 +15,15 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Util;
-    using NPOI.Util;
-
     /**
      * ARRAY (0x0221)<p/>
      * 
@@ -40,7 +40,7 @@ namespace NPOI.HSSF.Record
 
         private int _options;
         private int _field3notUsed;
-        private NPOI.SS.Formula.Formula _formula;
+        private Formula _formula;
 
         public ArrayRecord(RecordInputStream in1)
             : base(in1)
@@ -50,9 +50,9 @@ namespace NPOI.HSSF.Record
             _field3notUsed = in1.ReadInt();
             int formulaTokenLen = in1.ReadUShort();
             int totalFormulaLen = in1.Available();
-            _formula = NPOI.SS.Formula.Formula.Read(formulaTokenLen, in1, totalFormulaLen);
+            _formula = Formula.Read(formulaTokenLen, in1, totalFormulaLen);
         }
-        public ArrayRecord(NPOI.SS.Formula.Formula formula, CellRangeAddress8Bit range):base(range)
+        public ArrayRecord(Formula formula, CellRangeAddress8Bit range):base(range)
         {
             _options = 0; //YK: Excel 2007 leaves this field unset
             _field3notUsed = 0;

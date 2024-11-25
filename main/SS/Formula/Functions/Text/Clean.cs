@@ -1,8 +1,8 @@
-﻿using System;
+﻿using BetListNPOI.SS.Formula.Eval;
+using System;
 using System.Text;
-using NPOI.SS.Formula.Eval;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions.Text
 {
     public class Clean : SingleArgTextFunc
     {

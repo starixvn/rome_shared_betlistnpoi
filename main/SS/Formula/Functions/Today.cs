@@ -18,17 +18,18 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class Today : Fixed0ArgFunction
     {
         public override ValueEval Evaluate(int srcRowIndex, int srcColumnIndex)
         {
-            return new NumberEval(NPOI.SS.UserModel.DateUtil.GetExcelDate(DateTime.Today));
+            return new NumberEval(DateUtil.GetExcelDate(DateTime.Today));
         }
     }
 }

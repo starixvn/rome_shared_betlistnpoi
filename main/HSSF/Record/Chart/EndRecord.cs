@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
-
     /**
      * The end record defines the end of a block of records for a (Graphing)
      * data object. This record is matched with a corresponding BeginRecord.

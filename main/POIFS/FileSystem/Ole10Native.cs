@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
-{
-    using System;
-    using System.IO;
-    using NPOI.Util;
-    using System.Text;
+using BetListNPOI.Util;
+using System;
+using System.IO;
+using System.Text;
 
+namespace BetListNPOI.POIFS.FileSystem
+{
     /**
      * Represents an Ole10Native record which is wrapped around certain binary
      * files being embedded in OLE2 documents.

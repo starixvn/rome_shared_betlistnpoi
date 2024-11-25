@@ -1,6 +1,7 @@
-﻿using System;
+﻿using BetListNPOI.Util;
+using System;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     /// <summary>
     /// this record only used for record that has name and not implemented.
@@ -20,7 +21,7 @@ namespace NPOI.HSSF.Record
             }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             out1.Write(_rawData);
         }

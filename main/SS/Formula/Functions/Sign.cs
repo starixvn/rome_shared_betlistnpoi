@@ -18,7 +18,10 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
+
+using BetListNPOI.SS.Formula.Functions.Numeric;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
     public class Sign : OneArg
     {

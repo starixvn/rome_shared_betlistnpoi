@@ -17,15 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-    using NPOI.HSSF.Record;
-
     /**
      * Specifies the window's zoom magnification.  If this record Isn't present then the windows zoom is 100%. see p384 Excel Dev Kit
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

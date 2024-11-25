@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NPOI.SS.UserModel
+﻿namespace BetListNPOI.SS.UserModel
 {
     public interface DifferentialStyleProvider
     {

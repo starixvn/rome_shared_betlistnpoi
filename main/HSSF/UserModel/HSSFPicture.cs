@@ -15,20 +15,18 @@
 * limitations Under the License.
 */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using SixLabors.ImageSharp;
+using System;
+using System.IO;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using System.Text;
-    using System.IO;
-    using NPOI.DDF;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.Util;
-    using SixLabors.ImageSharp;
-
-
     /// <summary>
     /// Represents a escher picture.  Eg. A GIF, JPEG etc...
     /// @author Glen Stampoultzis

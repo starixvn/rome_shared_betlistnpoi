@@ -1,5 +1,7 @@
 ﻿
-namespace NPOI.HSSF.Record.AutoFilter
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.AutoFilter
 {
     public class FilterModeRecord:StandardRecord
     {
@@ -23,7 +25,7 @@ namespace NPOI.HSSF.Record.AutoFilter
             get { return 0; }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             
         }

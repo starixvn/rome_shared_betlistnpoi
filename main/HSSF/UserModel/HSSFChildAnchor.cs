@@ -16,11 +16,11 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using NPOI.DDF;
-    using System;
+using BetListNPOI.DDF;
+using System;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     public class HSSFChildAnchor : HSSFAnchor
     {
         private EscherChildAnchorRecord _escherChildAnchor;

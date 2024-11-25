@@ -17,15 +17,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Title:        Calc Mode Record
      * Description:  Tells the gui whether to calculate formulas

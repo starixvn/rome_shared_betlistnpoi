@@ -15,12 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using NPOI.SS.Util;
-    using NPOI.Util;
-
-
     /**
      * Common base class for {@link SharedFormulaRecord}, {@link ArrayRecord} and
      * {@link TableRecord} which are have similarities.

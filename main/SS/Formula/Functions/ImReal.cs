@@ -15,13 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using System;
-    using NPOI.SS.Formula.Eval;
-
-    using NPOI.SS.Formula;
-
     /**
      * Implementation for Excel ImReal() function.<p/>
      * <p/>

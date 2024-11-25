@@ -15,11 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
+using System;
+using System.Globalization;
+#if NETFRAMEWORK
+using System.Configuration;
+#endif
+namespace BetListNPOI.Util
 {
-    using System;
-    using System.Configuration;
-    using System.Globalization;
     /// <summary>
     /// A logger class that strives to make it as easy as possible for
     /// developers to write log calls, while simultaneously making those

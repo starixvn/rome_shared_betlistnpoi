@@ -15,11 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using NPOI.HSSF.Record.Cont;
-    using NPOI.Util;
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.HSSF.Record.Cont;
+using BetListNPOI.Util;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * This class handles serialization of SST records.  It utilizes the record processor
      * class write individual records. This has been refactored from the SSTRecord class.

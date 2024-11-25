@@ -17,13 +17,11 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.Eval;
-    using System;
-
-
     /**
      * Base class for linear regression functions.
      *

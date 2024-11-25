@@ -26,10 +26,10 @@
  * ==============================================================*/
 
 using System;
-using System.IO;
 using System.Globalization;
+using System.IO;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     /// <summary>
     /// representation of a byte (8-bit) field at a fixed location within a

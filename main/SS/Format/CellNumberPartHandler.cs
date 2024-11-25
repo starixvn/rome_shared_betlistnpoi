@@ -14,13 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
-{
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using System.Text.RegularExpressions;
 
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace BetListNPOI.SS.Format
+{
     /**
      * Internal helper class for CellNumberFormatter
      */

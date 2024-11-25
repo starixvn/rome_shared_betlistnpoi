@@ -15,7 +15,7 @@
    limitations under the License.
    ==================================================================== */
 
-namespace NPOI.SS.Util.CellWalk
+namespace BetListNPOI.SS.Util.Cellwalk
 {
     /**
      * @author Roman Kashitsyn

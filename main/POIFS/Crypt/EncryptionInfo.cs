@@ -15,15 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
 using System.IO;
-using NPOI.POIFS.FileSystem;
-using NPOI.Util;
+using System.Reflection;
 
-namespace NPOI.POIFS.Crypt
+namespace BetListNPOI.POIFS.Crypt
 {
-    using System;
-    using System.Reflection;
-
     public class EncryptionInfo
     {
 

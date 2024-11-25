@@ -1,8 +1,9 @@
-﻿using System;
-using NPOI.SS.Formula.Eval;
-using NPOI.SS.UserModel;
+﻿using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using BetListNPOI.SS.UserModel;
+using System;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     /**
      * <p>Calculates the number of days between two dates based on a 360-day year

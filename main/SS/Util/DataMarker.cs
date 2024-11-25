@@ -17,9 +17,10 @@
  * ====================================================================
  */
 
+using BetListNPOI.SS.UserModel;
 using System;
-using NPOI.SS.UserModel;
-namespace NPOI.SS.Util
+
+namespace BetListNPOI.SS.Util
 {
     /// <summary>
     /// Represents data marker used in charts.

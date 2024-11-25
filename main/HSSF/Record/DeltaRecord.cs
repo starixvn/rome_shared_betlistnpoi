@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System.Text;
-    using NPOI.Util;
-    using System;
-
-
     /**
      * Title:        Delta Record
      * Description:  controls the accuracy of the calculations

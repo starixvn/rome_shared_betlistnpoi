@@ -15,21 +15,18 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+using BetListNPOI.SS.Format;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-    using System.Collections;
-    using System.Text;
-    using System.Text.RegularExpressions;
-
-    using NPOI.SS.Util;
-    using System.Globalization;
-    using NPOI.SS.Format;
-    using NPOI.Util;
-    using System.Collections.Generic;
-
-
-
     /**
      * HSSFDataFormatter contains methods for Formatting the value stored in an
      * Cell. This can be useful for reports and GUI presentations when you
@@ -37,8 +34,8 @@ namespace NPOI.SS.UserModel
      * include currency, SSN, percentages, decimals, dates, phone numbers, zip
      * codes, etc.
      * 
-     * Internally, Formats will be implemented using subclasses of <see cref="NPOI.SS.Util.FormatBase"/>
-     * such as <see cref="NPOI.SS.Util.DecimalFormat"/> and <see cref="NPOI.SS.Util.SimpleDateFormat"/>. Therefore the
+     * Internally, Formats will be implemented using subclasses of <see cref="FormatBase"/>
+     * such as <see cref="DecimalFormat"/> and <see cref="SimpleDateFormat"/>. Therefore the
      * Formats used by this class must obey the same pattern rules as these FormatBase
      * subclasses. This means that only legal number pattern characters ("0", "#",
      * ".", "," etc.) may appear in number formats. Other characters can be

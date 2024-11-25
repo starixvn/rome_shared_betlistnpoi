@@ -15,15 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-
-    using NPOI.Util;
-
-    using NPOI.SS.Util;
-    using System.Globalization;
-
     /**
      * Number
      * Stores a floating point value in a formula

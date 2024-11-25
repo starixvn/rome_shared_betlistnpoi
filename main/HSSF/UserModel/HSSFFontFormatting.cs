@@ -15,14 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.CF;
-    using NPOI.HSSF.Util;
-    using NPOI.SS.UserModel;
-    using System;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.CF;
+using BetListNPOI.HSSF.Util;
+using BetListNPOI.SS.UserModel;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /**
      * High level representation for Font Formatting component
      * of Conditional Formatting Settings

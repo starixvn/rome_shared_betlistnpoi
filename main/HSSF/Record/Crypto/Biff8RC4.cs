@@ -15,11 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Crypto
-{
-    using System;
-    using NPOI.HSSF.Record;
+using System;
 
+namespace BetListNPOI.HSSF.Record.Crypto
+{
     /**
      * Used for both encrypting and decrypting BIFF8 streams. The internal
      * {@link RC4} instance is renewed (re-keyed) every 1024 bytes.

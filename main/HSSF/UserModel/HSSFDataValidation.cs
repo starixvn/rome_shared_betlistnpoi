@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-
     /**
      *Utility class for creating data validation cells
      * 
@@ -233,7 +231,7 @@ namespace NPOI.HSSF.UserModel
         public DVRecord CreateDVRecord(HSSFSheet sheet)
         {
 
-            NPOI.HSSF.UserModel.DVConstraint.FormulaPair fp = _constraint.CreateFormulas(sheet);
+            DVConstraint.FormulaPair fp = _constraint.CreateFormulas(sheet);
 
             return new DVRecord(_constraint.GetValidationType(),
                     _constraint.Operator,

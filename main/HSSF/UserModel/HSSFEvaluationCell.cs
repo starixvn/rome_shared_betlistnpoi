@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-using NPOI.SS.UserModel;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Util;
-
     /// <summary>
     /// HSSF wrapper for a cell under evaluation
     /// @author Josh Micich
@@ -31,14 +30,14 @@ namespace NPOI.HSSF.UserModel
     {
 
         private IEvaluationSheet _evalSheet;
-        private NPOI.SS.UserModel.ICell _cell;
+        private ICell _cell;
 
-        public HSSFEvaluationCell(NPOI.SS.UserModel.ICell cell, IEvaluationSheet evalSheet)
+        public HSSFEvaluationCell(ICell cell, IEvaluationSheet evalSheet)
         {
             _cell = cell;
             _evalSheet = evalSheet;
         }
-        public HSSFEvaluationCell(NPOI.SS.UserModel.ICell cell)
+        public HSSFEvaluationCell(ICell cell)
         {
             _cell = cell;
             _evalSheet = new HSSFEvaluationSheet((HSSFSheet)cell.Sheet);
@@ -50,14 +49,14 @@ namespace NPOI.HSSF.UserModel
         }
         public override bool Equals(Object obj)
         {
-            NPOI.SS.UserModel.ICell cellb = ((HSSFEvaluationCell)obj)._cell;
+            ICell cellb = ((HSSFEvaluationCell)obj)._cell;
             return _cell.RowIndex == cellb.RowIndex
                 && _cell.ColumnIndex == cellb.ColumnIndex
                 && _cell.CellFormula == cellb.CellFormula
                 && _cell.Sheet == cellb.Sheet;
         }
 
-        public NPOI.SS.UserModel.ICell HSSFCell
+        public ICell HSSFCell
         {
             get
             {
@@ -71,7 +70,7 @@ namespace NPOI.HSSF.UserModel
                 return _cell.BooleanCellValue;
             }
         }
-        public NPOI.SS.UserModel.CellType CellType
+        public CellType CellType
         {
             get
             {

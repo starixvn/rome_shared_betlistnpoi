@@ -15,12 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.SubRecord;
+using BetListNPOI.POIFS.FileSystem;
 using System.Collections.Generic;
-using NPOI.DDF;
-using NPOI.HSSF.Record;
-using NPOI.POIFS.FileSystem;
 
-namespace NPOI.HSSF.UserModel
+namespace BetListNPOI.HSSF.UserModel
 {
     /**
      * @author Evgeniy Berlog

@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using NPOI.Util;
-
-    using System;
-    using System.Text;
-
     /**
      * The HEADERFOOTER record stores information Added in Office Excel 2007 for headers/footers.
      *

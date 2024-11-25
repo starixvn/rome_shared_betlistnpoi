@@ -25,11 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// Class To manipulate data in the Clipboard Variant (Variant#VT_CF VT_CF) format.
     /// @author Drew Varner (Drew.Varner inOrAround sc.edu)

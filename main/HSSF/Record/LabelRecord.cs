@@ -15,13 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
     /**
      * Label Record - Read only support for strings stored directly in the cell..  Don't
      * use this (except to Read), use LabelSST instead 

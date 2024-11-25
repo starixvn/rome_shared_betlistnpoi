@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
-{
-    using System;
+using System;
 
+namespace BetListNPOI.SS.UserModel
+{
     public interface IPictureData
     {
 

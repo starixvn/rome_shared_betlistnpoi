@@ -17,10 +17,11 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     public class IPMT : NumericFunction
     {
         protected override double Eval(ValueEval[] args, int srcCellRow, int srcCellCol)

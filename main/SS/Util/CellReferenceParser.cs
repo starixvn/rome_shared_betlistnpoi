@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NPOI.SS.Util;
+namespace BetListNPOI.SS.Util;
 
 internal static class CellReferenceParser
 {

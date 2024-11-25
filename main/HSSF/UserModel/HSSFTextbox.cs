@@ -15,14 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Record;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
-    using NPOI.SS.UserModel;
-
-
     /// <summary>
     /// A textbox Is a shape that may hold a rich text string.
     /// @author Glen Stampoultzis (glens at apache.org)

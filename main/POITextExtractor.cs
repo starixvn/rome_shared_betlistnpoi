@@ -14,10 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
+
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI
 {
-    using NPOI.Util;
-    using System;
     /// <summary>
     /// Common Parent for Text Extractors
     /// of POI Documents.

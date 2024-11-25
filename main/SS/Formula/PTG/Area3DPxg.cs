@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * <p>Title:        XSSF Area 3D Reference (Sheet + Area)</p>
      * <p>Description:  Defined an area in an external or different sheet. </p>

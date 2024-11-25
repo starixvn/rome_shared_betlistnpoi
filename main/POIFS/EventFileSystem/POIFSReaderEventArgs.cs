@@ -25,11 +25,10 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.FileSystem;
 using System;
 
-using NPOI.POIFS.FileSystem;
-
-namespace NPOI.POIFS.EventFileSystem
+namespace BetListNPOI.POIFS.EventFileSystem
 {
     /// <summary>
     /// EventArgs for POIFSReader

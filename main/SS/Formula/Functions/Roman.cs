@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Text;
 
-    using NPOI.SS.Formula;
-    using System.Text;
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation for Excel WeekNum() function.<p/>
      * <p/>

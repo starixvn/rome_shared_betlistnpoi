@@ -15,14 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
-{
-    using System.Globalization;
-    using System;
-    using System.Text.RegularExpressions;
-    using System.Text;
-    using NPOI.Util;
+using System;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 
+namespace BetListNPOI.SS.UserModel
+{
     /// <summary>
     /// Contains methods for dealing with Excel dates.
     /// @author  Michael Harhen

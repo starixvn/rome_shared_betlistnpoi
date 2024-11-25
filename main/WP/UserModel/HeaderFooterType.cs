@@ -15,7 +15,7 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.WP.UserModel
+namespace BetListNPOI.WP.UserModel
 {
     /**
      * @since POI v3.16 beta 1

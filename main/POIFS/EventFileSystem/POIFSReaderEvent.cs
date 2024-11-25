@@ -15,12 +15,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-        
+
+using BetListNPOI.POIFS.FileSystem;
 using System;
 
-using NPOI.POIFS.FileSystem;
-
-namespace NPOI.POIFS.EventFileSystem
+namespace BetListNPOI.POIFS.EventFileSystem
 {
 
 /**

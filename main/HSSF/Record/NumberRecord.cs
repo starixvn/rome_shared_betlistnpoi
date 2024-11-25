@@ -22,15 +22,14 @@
  *
  * Created on October 1, 2001, 8:01 PM
  */
-namespace NPOI.HSSF.Record
+
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-
-    using System;
-    using System.Text;
-    using NPOI.SS.Util;
-
     /**
      * Contains a numeric cell value. 
      * REFERENCE:  PG 334 Microsoft Excel 97 Developer's Kit (ISBN: 1-57231-498-2)

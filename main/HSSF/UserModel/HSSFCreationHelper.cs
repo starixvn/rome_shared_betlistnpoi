@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.SS.UserModel;
+using BetListNPOI.SS.UserModel;
+using System;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     public class HSSFCreationHelper : ICreationHelper
     {
         private HSSFWorkbook workbook;
@@ -33,17 +33,17 @@ namespace NPOI.HSSF.UserModel
             dataFormat = new HSSFDataFormat(workbook.Workbook);
         }
 
-        public NPOI.SS.UserModel.IRichTextString CreateRichTextString(String text)
+        public IRichTextString CreateRichTextString(String text)
         {
             return new HSSFRichTextString(text);
         }
 
-        public NPOI.SS.UserModel.IDataFormat CreateDataFormat()
+        public IDataFormat CreateDataFormat()
         {
             return dataFormat;
         }
 
-        public NPOI.SS.UserModel.IHyperlink CreateHyperlink(HyperlinkType type)
+        public IHyperlink CreateHyperlink(HyperlinkType type)
         {
             return new HSSFHyperlink(type);
         }
@@ -53,7 +53,7 @@ namespace NPOI.HSSF.UserModel
          *
          * @return a HSSFFormulaEvaluator instance
          */
-        public NPOI.SS.UserModel.IFormulaEvaluator CreateFormulaEvaluator()
+        public IFormulaEvaluator CreateFormulaEvaluator()
         {
             return new HSSFFormulaEvaluator(workbook);
         }
@@ -64,14 +64,14 @@ namespace NPOI.HSSF.UserModel
          * @return a HSSFClientAnchor instance
          * @see NPOI.SS.usermodel.Drawing
          */
-        public NPOI.SS.UserModel.IClientAnchor CreateClientAnchor()
+        public IClientAnchor CreateClientAnchor()
         {
             return new HSSFClientAnchor();
         }
 
         public ExtendedColor CreateExtendedColor()
         {
-            return new HSSFExtendedColor(new NPOI.HSSF.Record.Common.ExtendedColor());
+            return new HSSFExtendedColor(new Record.Common.ExtendedColor());
         }
     }
 }

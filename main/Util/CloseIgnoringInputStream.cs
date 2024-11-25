@@ -27,7 +27,7 @@
 
 using System.IO;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     internal class CloseIgnoringInputStream : Stream
     {

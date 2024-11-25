@@ -15,11 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using NPOI.SS.UserModel;
-    using RecordExtendedColor = NPOI.HSSF.Record.Common.ExtendedColor;
+    using RecordExtendedColor = Record.Common.ExtendedColor;
 
     /**
      * The HSSF file format normally stores Color information in the
@@ -31,12 +32,12 @@ namespace NPOI.HSSF.UserModel
     {
         private RecordExtendedColor color;
 
-        public HSSFExtendedColor(NPOI.HSSF.Record.Common.ExtendedColor color)
+        public HSSFExtendedColor(RecordExtendedColor color)
         {
             this.color = color;
         }
 
-        protected NPOI.HSSF.Record.Common.ExtendedColor GetExtendedColor()
+        protected RecordExtendedColor GetExtendedColor()
         {
             return color;
         }

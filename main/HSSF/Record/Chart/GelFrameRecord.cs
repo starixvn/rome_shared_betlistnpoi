@@ -18,7 +18,9 @@
 //using NPOI.HSSF.Record.Drawing;
 //using NPOI.SS.UserModel.Drawing;
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// specifies the properties of a fill pattern for parts of a chart.
@@ -50,7 +52,7 @@ namespace NPOI.HSSF.Record.Chart
             }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             base.Serialize(out1);
             //fillOption.Serialize(out1);

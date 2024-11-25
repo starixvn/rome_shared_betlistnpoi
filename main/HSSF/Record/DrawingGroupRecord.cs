@@ -15,14 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.DDF;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Collections;
-    using NPOI.Util;
-    using NPOI.DDF;
-
     public class DrawingGroupRecord : AbstractEscherHolderRecord
     {
         public const short sid = 0xEB;

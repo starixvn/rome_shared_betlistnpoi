@@ -16,13 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Reflection;
-    using NPOI.Util;
-    using System.Collections.Generic;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Reflection;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// Generates escher records when provided the byte array containing those records.
     /// @author Glen Stampoultzis

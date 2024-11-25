@@ -16,14 +16,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.SS;
+using BetListNPOI.SS.UserModel;
+using System;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using NPOI.DDF;
-    using NPOI.SS;
-    using NPOI.SS.UserModel;
-    using System;
-
-
     /// <summary>
     /// A client anchor Is attached to an excel worksheet.  It anchors against a
     /// top-left and buttom-right cell.
@@ -98,7 +97,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="sheet">the sheet the anchor will be attached to</param>
         /// <returns>the shape height.</returns>     
-        public float GetAnchorHeightInPoints(NPOI.SS.UserModel.ISheet sheet)
+        public float GetAnchorHeightInPoints(ISheet sheet)
         {
             int y1 = Dy1;
             int y2 = Dy2;
@@ -129,9 +128,9 @@ namespace NPOI.HSSF.UserModel
         /// <param name="sheet">The sheet.</param>
         /// <param name="rowNum">The row num.</param>
         /// <returns></returns>
-        private float GetRowHeightInPoints(NPOI.SS.UserModel.ISheet sheet, int rowNum)
+        private float GetRowHeightInPoints(ISheet sheet, int rowNum)
         {
-            NPOI.SS.UserModel.IRow row = sheet.GetRow(rowNum);
+            IRow row = sheet.GetRow(rowNum);
             if (row == null)
                 return sheet.DefaultRowHeightInPoints;
             else

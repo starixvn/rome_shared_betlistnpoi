@@ -14,13 +14,14 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
+
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record.Chart;
 using System;
 using System.Collections.Generic;
-using NPOI.HSSF.Model;
 using System.IO;
-using NPOI.HSSF.Record.Chart;
 
-namespace NPOI.HSSF.Record.Aggregates.Chart
+namespace BetListNPOI.HSSF.Record.Aggregates.Chart
 {
     /// <summary>
     /// CHARTSHEET = BOF CHARTSHEETCONTENT

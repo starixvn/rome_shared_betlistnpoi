@@ -15,12 +15,12 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using System;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using System;
-    using NPOI.SS.Formula.Eval;
-
-
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      * Super class for all Evals for financial function evaluation.

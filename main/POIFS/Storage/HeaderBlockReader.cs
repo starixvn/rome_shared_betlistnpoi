@@ -26,16 +26,13 @@
  * ==============================================================*/
 
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
 using System;
 using System.IO;
 
-using NPOI.Util;
-
-using NPOI.POIFS.Common;
-using NPOI.POIFS.FileSystem;
-
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
 
     /// <summary>

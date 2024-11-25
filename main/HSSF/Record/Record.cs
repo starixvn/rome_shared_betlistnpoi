@@ -17,12 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
-{
-    using NPOI.Util;
-    using System;
-    using System.IO;
+using BetListNPOI.Util;
+using System;
+using System.IO;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title: Record
      * Description: All HSSF Records inherit from this class.  It

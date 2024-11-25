@@ -15,16 +15,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.EventUserModel
-{
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.UserModel;
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-    using System.Globalization;
-    using NPOI.Util;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
 
+namespace BetListNPOI.HSSF.EventUserModel
+{
     /**
      * A proxy HSSFListener that keeps track of the document
      *  formatting records, and provides an easy way to look
@@ -61,7 +61,7 @@ namespace NPOI.HSSF.EventUserModel
          * Process this record ourselves, and then
          *  pass it on to our child listener
          */
-        public void ProcessRecord(Record record)
+        public void ProcessRecord(Record.Record record)
         {
             // Handle it ourselves
             ProcessRecordInternally(record);
@@ -75,7 +75,7 @@ namespace NPOI.HSSF.EventUserModel
          *  pass it on to the child Listener.
          * @param record
          */
-        public void ProcessRecordInternally(Record record)
+        public void ProcessRecordInternally(Record.Record record)
         {
             if (record is FormatRecord)
             {

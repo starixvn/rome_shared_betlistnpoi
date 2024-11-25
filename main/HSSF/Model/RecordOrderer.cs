@@ -15,14 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using System;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Aggregates;
-    using System.Collections.Generic;
-    using NPOI.HSSF.Record.PivotTable;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.HSSF.Record.PivotTable;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.HSSF.Model
+{
     /**
      * Finds correct insert positions for records in workbook streams<p/>
      * 
@@ -129,9 +129,9 @@ namespace NPOI.HSSF.Model
             {
                 return true; // oo COLINFO
             }
-            if (rb is Record)
+            if (rb is Record.Record)
             {
-                Record record = (Record)rb;
+                Record.Record record = (Record.Record)rb;
                 switch (record.Sid)
                 {
                     case DefaultColWidthRecord.sid:
@@ -158,9 +158,9 @@ namespace NPOI.HSSF.Model
         }
         private static bool IsPageBreakPriorRecord(RecordBase rb)
         {
-            if (rb is Record)
+            if (rb is Record.Record)
             {
-                Record record = (Record)rb;
+                Record.Record record = (Record.Record)rb;
                 switch (record.Sid)
                 {
                     case BOFRecord.sid:
@@ -206,7 +206,7 @@ namespace NPOI.HSSF.Model
                 {
                     continue;
                 }
-                Record rec = (Record)rb;
+                Record.Record rec = (Record.Record)rb;
                 switch (rec.Sid)
                 {
                     case WindowTwoRecord.sid:
@@ -231,13 +231,13 @@ namespace NPOI.HSSF.Model
             for (int i = records.Count - 2; i >= 0; i--)
             { // -2 to skip EOF record
                 Object rb = records[i];
-                if (!(rb is Record))
+                if (!(rb is Record.Record))
                 {
                     // DataValidityTable, ConditionalFormattingTable, 
                     // even PageSettingsBlock (which doesn't normally appear after 'View Settings')
                     continue;
                 }
-                Record rec = (Record)rb;
+                Record.Record rec = (Record.Record)rb;
                 switch (rec.Sid)
                 {
                     // 'View Settings' (4 records) 
@@ -287,7 +287,7 @@ namespace NPOI.HSSF.Model
                 RecordBase rb = records[i];
                 if (IsDVTPriorRecord(rb))
                 {
-                    Record nextRec = (Record)records[i + 1];
+                    Record.Record nextRec = (Record.Record)records[i + 1];
                     if (!IsDVTSubsequentRecord(nextRec.Sid))
                     {
                         throw new InvalidOperationException("Unexpected (" + nextRec.GetType().Name
@@ -295,7 +295,7 @@ namespace NPOI.HSSF.Model
                     }
                     return i + 1;
                 }
-                Record rec = (Record)rb;
+                Record.Record rec = (Record.Record)rb;
                 if (!IsDVTSubsequentRecord(rec.Sid))
                 {
                     throw new InvalidOperationException("Unexpected (" + rec.GetType().Name
@@ -312,7 +312,7 @@ namespace NPOI.HSSF.Model
             {
                 return true;
             }
-            short sid = ((Record)rb).Sid;
+            short sid = ((Record.Record)rb).Sid;
             switch (sid)
             {
                 case WindowTwoRecord.sid:
@@ -381,9 +381,9 @@ namespace NPOI.HSSF.Model
 
         private static bool IsGutsPriorRecord(RecordBase rb)
         {
-            if (rb is Record)
+            if (rb is Record.Record)
             {
-                Record record = (Record)rb;
+                Record.Record record = (Record.Record)rb;
                 switch (record.Sid)
                 {
                     case BOFRecord.sid:

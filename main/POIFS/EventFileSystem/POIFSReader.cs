@@ -25,17 +25,16 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.POIFS.EventFileSystem
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.property;
+using BetListNPOI.POIFS.Storage;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+
+namespace BetListNPOI.POIFS.EventFileSystem
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.IO;
-
-    using NPOI.POIFS.FileSystem;
-    using NPOI.POIFS.Properties;
-    using NPOI.POIFS.Storage;
-
     /// <summary>
     /// An event-driven Reader for POIFS file systems. Users of this class
     /// first Create an instance of it, then use the RegisterListener

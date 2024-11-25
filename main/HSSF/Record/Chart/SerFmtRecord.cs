@@ -15,7 +15,9 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The SerFmt record specifies properties of the associated data points, data markers, 
@@ -43,7 +45,7 @@ namespace NPOI.HSSF.Record.Chart
                 return base.DataSize;
             }
         }
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             base.Serialize(out1);
         }

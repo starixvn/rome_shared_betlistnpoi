@@ -25,14 +25,13 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-using NPOI.Util;
-using NPOI.POIFS.Common;
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// This class manages and creates the Block Allocation Table, which is

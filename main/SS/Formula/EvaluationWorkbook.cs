@@ -15,14 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Formula.Udf;
+using System;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.Formula.PTG;
-
     public class ExternalSheet
     {
         private String _workbookName;

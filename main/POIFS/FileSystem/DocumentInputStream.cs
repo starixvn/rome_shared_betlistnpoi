@@ -15,18 +15,18 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
-{
-    using System.IO;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System.IO;
 
+namespace BetListNPOI.POIFS.FileSystem
+{
     /// <summary>
     /// This class provides methods to read a DocumentEntry managed by a
     ///  <see cref="POIFSFileSystem"/> or <see cref="NPOIFSFileSystem"/> instance.
     /// It Creates the appropriate one, and delegates, allowing us to
     ///  work transparently with the two.
-    /// <seealso cref="NPOI.Util.ByteArrayInputStream" />
-    /// <seealso cref="NPOI.Util.ILittleEndianInput" />
+    /// <seealso cref="ByteArrayInputStream" />
+    /// <seealso cref="ILittleEndianInput" />
     public class DocumentInputStream : ByteArrayInputStream, ILittleEndianInput
     {
         /** returned by read operations if we're at end of document */

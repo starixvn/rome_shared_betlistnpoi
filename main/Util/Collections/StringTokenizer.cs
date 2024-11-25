@@ -1,4 +1,5 @@
 using System;
+
 /*
  * $Id: StringTokenizer.cs,v 1.4 2006/06/16 10:52:26 psoares33 Exp $
  *
@@ -48,7 +49,7 @@ using System;
  * http://www.lowagie.com/iText/
  */
 
-namespace NPOI.Util.Collections
+namespace BetListNPOI.Util.Collections
 {
 
     // a replacement for the StringTokenizer java class

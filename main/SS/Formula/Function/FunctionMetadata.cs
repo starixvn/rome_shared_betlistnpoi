@@ -15,10 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Function
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.Function
 {
-    using System;
-    using System.Text;
     /**
      * Holds information about Excel built-in functions.
      * 

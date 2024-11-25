@@ -15,9 +15,10 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Eval
+using System;
+
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using System;
     /**
      * This class is used to simplify error handling logic <i>within</i> operator and function
      * implementations.   Note - <c>OperationEval.Evaluate()</c> and <c>Function.Evaluate()</c>

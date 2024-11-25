@@ -15,16 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
-    using NPOI.Util;
-    
-    using NPOI.SS.Formula;
-
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-
     /**
      * Title:        Deleted Area 3D Ptg - 3D referecnce (Sheet + Area)
      * Description:  Defined a area in Extern Sheet. 

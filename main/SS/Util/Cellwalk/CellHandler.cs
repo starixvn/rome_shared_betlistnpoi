@@ -15,10 +15,10 @@
    limitations under the License.
    ==================================================================== */
 
-namespace NPOI.SS.Util.CellWalk
-{
-    using NPOI.SS.UserModel;
+using BetListNPOI.SS.UserModel;
 
+namespace BetListNPOI.SS.Util.Cellwalk
+{
     /**
      * Represents callback for CellWalk traverse method.  
      * @author Roman Kashitsyn

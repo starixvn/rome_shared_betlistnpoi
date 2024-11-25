@@ -26,13 +26,11 @@
  * 
  * ==============================================================*/
 
+using System.IO;
 using System.Text;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
-    using System;
-    using System.IO;
-    
     /// <summary>
     /// CRC Verification
     /// </summary>

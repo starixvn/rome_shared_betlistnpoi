@@ -16,11 +16,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
+using System;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// This is the abstract base class for all escher properties.
     /// @see EscherOptRecord

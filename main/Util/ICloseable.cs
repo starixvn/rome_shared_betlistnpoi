@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace NPOI.Util
+﻿namespace BetListNPOI.Util
 {
     public interface ICloseable
     {

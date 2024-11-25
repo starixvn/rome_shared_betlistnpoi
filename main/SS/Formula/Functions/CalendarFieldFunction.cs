@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
-    using System;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation of Excel functions Date parsing functions:
      *  Date - DAY, MONTH and YEAR

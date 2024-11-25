@@ -14,15 +14,13 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
+
+using System;
+using System.Globalization;
+using System.Text;
+
+namespace BetListNPOI.SS.Format
 {
-    using System;
-    using System.Text;
-    using System.Globalization;
-
-
-
-
     /**
      * This is the abstract supertype for the various cell formatters.
      *

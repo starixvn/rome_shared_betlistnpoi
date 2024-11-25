@@ -16,10 +16,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
+using System;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// This class stores the type and description of an escher property.
     /// @author Glen Stampoultzis (glens at apache.org)

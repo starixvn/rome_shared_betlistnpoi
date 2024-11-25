@@ -17,13 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.EventUserModel
+using BetListNPOI.HSSF.Record;
+using System;
+using System.Collections;
+
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using System;
-    using System.Collections;
-    using NPOI.HSSF.Record;
-
-
     /// <summary>
     /// An HSSFRequest object should be constructed registering an instance or multiple
     /// instances of HSSFListener with each Record.sid you wish to listen for.
@@ -96,7 +95,7 @@ namespace NPOI.HSSF.EventUserModel
         /// </summary>
         /// <param name="rec">The record.</param>
         /// <returns>numeric user-specified result code. If zero continue Processing.</returns>
-        public short ProcessRecord(Record rec)
+        public short ProcessRecord(Record.Record rec)
         {
             Object obj = records[rec.Sid];
             short userCode = 0;

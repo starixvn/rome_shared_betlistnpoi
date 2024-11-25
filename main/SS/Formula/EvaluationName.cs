@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
-{
+using BetListNPOI.SS.Formula.PTG;
+using System;
 
-    using System;
-    using NPOI.SS.Formula.PTG;
+namespace BetListNPOI.SS.Formula
+{
     /**
      * Abstracts a name record for formula evaluation.<br/>
      * 

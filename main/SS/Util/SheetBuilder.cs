@@ -14,11 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
    ==================================================================== */
-using System;
-using NPOI.SS.UserModel;
-using NPOI.Util;
 
-namespace NPOI.SS.Util
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.SS.Util
 {
 
     /**

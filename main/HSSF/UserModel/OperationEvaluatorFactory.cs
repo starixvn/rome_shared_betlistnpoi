@@ -15,16 +15,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval.RelationalOperationEval;
+using BetListNPOI.SS.Formula.Eval.TwoOperandNumeric;
+using BetListNPOI.SS.Formula.PTG;
+using System;
+using System.Collections;
+using System.Reflection;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using NPOI.SS.Formula.Eval;
-
-    using System.Collections;
-    using System.Reflection;
-    using NPOI.SS.Formula.PTG;
-
-
     /**
      * This class Creates <c>OperationEval</c> instances to help evaluate <c>OperationPtg</c>
      * formula tokens.

@@ -14,15 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.UserModel
-{
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Util;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
-    using SixLabors.ImageSharp.PixelFormats;
 
+using BetListNPOI.HSSF.Util;
+using SixLabors.ImageSharp.PixelFormats;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.UserModel
+{
     /**
      * Represents a XSSF-style color (based on either a
      *  {@link NPOI.XSSF.UserModel.XSSFColor} or a

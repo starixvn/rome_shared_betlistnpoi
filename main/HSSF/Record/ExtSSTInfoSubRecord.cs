@@ -22,14 +22,13 @@
  *
  * Created on September 8, 2001, 8:37 PM
  */
-namespace NPOI.HSSF.Record
+
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * Extended SST table info subrecord
      * Contains the elements of "info" in the SST's array field

@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt
-{
-    using System;
+using System;
 
+namespace BetListNPOI.POIFS.Crypt
+{
     public class HashAlgorithm
     {
         public static readonly HashAlgorithm none = new HashAlgorithm("", 0x0000, "", 0, "", false);

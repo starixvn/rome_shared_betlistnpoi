@@ -14,10 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.Util
-{
-    using System.IO;
 
+using System.IO;
+
+namespace BetListNPOI.Util
+{
     /**
      * This class provides common functionality for the
      *  various LZW implementations in the different file

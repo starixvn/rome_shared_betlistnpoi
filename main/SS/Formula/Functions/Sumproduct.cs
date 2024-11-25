@@ -16,15 +16,12 @@
 */
 
 
-using NPOI.Util;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.Util;
+using System;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.Formula;
-
-
     /*
      * Implementation for the Excel function SUMPRODUCT<p/>
      * 

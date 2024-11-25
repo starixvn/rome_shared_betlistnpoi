@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NPOI.HSSF
+namespace BetListNPOI.HSSF
 {
     [Serializable]
     public class OldExcelFormatException:Exception

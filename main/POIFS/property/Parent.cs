@@ -27,7 +27,7 @@
 
 using System.Collections.Generic;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     /// <summary>
     /// Behavior for parent (directory) properties

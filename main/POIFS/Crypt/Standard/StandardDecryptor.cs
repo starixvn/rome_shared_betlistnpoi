@@ -14,17 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.POIFS.Crypt.Standard
+
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using Org.BouncyCastle.Crypto;
+using System;
+using System.Diagnostics;
+using System.IO;
+
+namespace BetListNPOI.POIFS.Crypt.Standard
 {
-    using System;
-    using System.Diagnostics;
-    using System.IO;
-    using NPOI.POIFS.Crypt;
-
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
-    using Org.BouncyCastle.Crypto;
-
     /**
      */
     public class StandardDecryptor : Decryptor {

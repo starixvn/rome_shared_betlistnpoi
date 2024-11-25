@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
-{
-    using System;
+using System;
 
+namespace BetListNPOI.Util
+{
     /// <summary>
     /// A List of int's; as full an implementation of the java.Util.List interface as possible, with an eye toward minimal creation of objects
     /// 

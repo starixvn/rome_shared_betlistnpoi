@@ -14,10 +14,11 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
+
 using System;
 using System.IO;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     /**
      * The Character Encoding is not supported.

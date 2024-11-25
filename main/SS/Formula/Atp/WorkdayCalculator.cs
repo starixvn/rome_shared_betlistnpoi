@@ -14,10 +14,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
+
+using BetListNPOI.SS.UserModel;
 using System;
 using System.Collections.Generic;
-using NPOI.SS.UserModel;
-namespace NPOI.SS.Formula.Atp
+
+namespace BetListNPOI.SS.Formula.Atp
 {
     /**
      * A calculator for workdays, considering dates as excel representations.

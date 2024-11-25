@@ -25,13 +25,12 @@
  * 
  * ==============================================================*/
 
-using System.IO;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.Storage;
 using System.Collections.Generic;
+using System.IO;
 
-using NPOI.POIFS.Storage;
-using NPOI.POIFS.Common;
-
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     public class PropertyTable : PropertyTableBase, BlockWritable
     {

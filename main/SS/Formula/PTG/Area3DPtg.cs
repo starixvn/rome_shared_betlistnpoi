@@ -15,14 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Util;
-    using NPOI.Util;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * <p>Title:        Area 3D Ptg - 3D reference (Sheet + Area)</p>
      * <p>Description:  Defined an area in Extern Sheet. </p>

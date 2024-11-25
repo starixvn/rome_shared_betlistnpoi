@@ -14,17 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
+
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.SS.Format
 {
-    using System;
-    using System.Text.RegularExpressions;
-    using System.Text;
-    using System.Collections.Generic;
-    using NPOI.SS.Util;
-    using System.Collections;
-    using NPOI.Util;
-
-
     /**
      * This class : printing out a value using a number format.
      *
@@ -85,7 +84,7 @@ namespace NPOI.SS.Format
 
                 CellFormatter cf;
                 //if (value is Number)
-                if (NPOI.Util.Number.IsNumber(value))
+                if (Number.IsNumber(value))
                 {
                     double num;
                     double.TryParse(value.ToString(), out num);
@@ -115,7 +114,7 @@ namespace NPOI.SS.Format
                 if (value == null)
                     return;
                 //if (value is Number) {
-                if (NPOI.Util.Number.IsNumber(value))
+                if (Number.IsNumber(value))
                 {
                     double num;
                     double.TryParse(value.ToString(), out num);

@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * bool (bool)
      * Stores a (java) bool value in a formula.

@@ -16,13 +16,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.Storage;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using NPOI.POIFS.FileSystem;
-using NPOI.POIFS.Storage;
 
-namespace NPOI.POIFS.Properties
+namespace BetListNPOI.POIFS.property
 {
     public abstract class PropertyTableBase : BATManaged
     {

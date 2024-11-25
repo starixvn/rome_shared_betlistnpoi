@@ -15,16 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Macros
-{
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Text;
-    using ICSharpCode.SharpZipLib.Zip;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using ICSharpCode.SharpZipLib.Zip;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
+namespace BetListNPOI.POIFS.Macros
+{
     /**
      * Finds all VBA Macros in an office file (OLE2/POIFS and OOXML/OPC),
      *  and returns them.

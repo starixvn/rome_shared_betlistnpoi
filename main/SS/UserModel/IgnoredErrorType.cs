@@ -15,10 +15,8 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-
     /**
      * Types of ignored workbook and worksheet error.
      * 

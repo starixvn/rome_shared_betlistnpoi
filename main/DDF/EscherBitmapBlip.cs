@@ -15,14 +15,12 @@
 * limitations under the License.
 */
 
+using BetListNPOI.Util;
+using System;
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.IO;
-    using NPOI.Util;
-
     /// <summary>
     /// @author Glen Stampoultzis
     /// @version $Id: EscherBitmapBlip.java 569827 2007-08-26 15:26:29Z yegor $

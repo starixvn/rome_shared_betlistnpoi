@@ -16,10 +16,10 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// pecifies positioning mode for position information saved in a Pos record.

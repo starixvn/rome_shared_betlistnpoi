@@ -25,16 +25,13 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.EventFileSystem;
+using BetListNPOI.Util;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-using NPOI.Util;
-using NPOI.POIFS.EventFileSystem;
-using NPOI.Util.Collections;
-
-
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /// <summary>
     /// This interface defines methods specific to Directory objects

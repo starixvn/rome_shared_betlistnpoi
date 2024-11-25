@@ -28,12 +28,10 @@
 
 using System;
 using System.Collections;
-using System.Text;
 using System.Collections.Generic;
-using NPOI.Util.Collections;
+using System.Text;
 
-
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class Arrays
     {
@@ -1005,12 +1003,11 @@ namespace NPOI.Util
             if (a.Length != 0 && bufLen <= 0)
                 bufLen = Int32.MaxValue;
             StringBuilder buf = new StringBuilder(bufLen);
-            DeepToString(a, buf, new NPOI.Util.Collections.HashSet<Object[]>());
+            DeepToString(a, buf, new Collections.HashSet<Object[]>());
             return buf.ToString();
         }
 
-        private static void DeepToString(Object[] a, StringBuilder buf,
-                                         NPOI.Util.Collections.HashSet<Object[]> dejaVu)
+        private static void DeepToString(Object[] a, StringBuilder buf, Collections.HashSet<Object[]> dejaVu)
         {
             if (a == null)
             {

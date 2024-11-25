@@ -17,13 +17,11 @@
  * ====================================================================
  */
 
+using System;
 using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-
-
     /**
      * The Threshold / CFVO / Conditional Formatting Value Object.
      * <p>This defines how to calculate the ranges for a conditional

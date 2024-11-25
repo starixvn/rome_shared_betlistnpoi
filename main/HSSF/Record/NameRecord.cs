@@ -15,18 +15,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Cont;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+using Formula = BetListNPOI.SS.Formula.Formula;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-
-    using NPOI.Util;
-    using NPOI.HSSF.Record;
-    using SSFormula=NPOI.SS.Formula;
-    using NPOI.HSSF.Record.Cont;
-    using NPOI.SS.Formula.PTG;
-
     /**
      * Title:        Name Record (aka Named Range) 
      * Description:  Defines a named range within a workbook. 
@@ -132,7 +129,7 @@ namespace NPOI.HSSF.Record
         private bool field_11_nameIsMultibyte;
         private byte field_12_built_in_code;
         private String field_12_name_text;
-        private SSFormula.Formula field_13_name_definition;
+        private Formula field_13_name_definition;
         private String field_14_custom_menu_text;
         private String field_15_description_text;
         private String field_16_help_topic_text;
@@ -142,7 +139,7 @@ namespace NPOI.HSSF.Record
         /** Creates new NameRecord */
         public NameRecord()
         {
-            field_13_name_definition = SSFormula.Formula.Create(Ptg.EMPTY_PTG_ARRAY);
+            field_13_name_definition = Formula.Create(Ptg.EMPTY_PTG_ARRAY);
 
             field_12_name_text = "";
             field_14_custom_menu_text = "";
@@ -195,7 +192,7 @@ namespace NPOI.HSSF.Record
 		    }
           int nBytesAvailable = in1.Available() - (field_7_length_custom_menu
 				+ field_8_length_description_text + field_9_length_help_topic_text + field_10_length_status_bar_text);
-		    field_13_name_definition = SSFormula.Formula.Read(field_4_length_name_definition, in1, nBytesAvailable);
+		    field_13_name_definition = Formula.Read(field_4_length_name_definition, in1, nBytesAvailable);
 
 		    //Who says that this can only ever be compressed unicode???
             field_14_custom_menu_text = StringUtil.ReadCompressedUnicode(in1, field_7_length_custom_menu);
@@ -413,7 +410,7 @@ namespace NPOI.HSSF.Record
         public Ptg[] NameDefinition
         {
             get { return field_13_name_definition.Tokens; }
-            set { field_13_name_definition = SSFormula.Formula.Create(value); }
+            set { field_13_name_definition = Formula.Create(value); }
         }
         /** Get the custom menu text
          * @return custom menu text

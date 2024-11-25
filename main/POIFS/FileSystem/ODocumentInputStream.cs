@@ -16,11 +16,11 @@
 ==================================================================== */
 
 
+using BetListNPOI.POIFS.Storage;
 using System;
-using NPOI.POIFS.Storage;
 using System.IO;
 
-namespace NPOI.POIFS.FileSystem
+namespace BetListNPOI.POIFS.FileSystem
 {
     /**
      * This class provides methods to read a DocumentEntry managed by a

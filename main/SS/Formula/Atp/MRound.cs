@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Atp
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using System;
+
+namespace BetListNPOI.SS.Formula.Atp
 {
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.Eval;
-    using System;
-
-
     /**
      * Implementation of Excel 'Analysis ToolPak' function MROUND()<br/>
      *

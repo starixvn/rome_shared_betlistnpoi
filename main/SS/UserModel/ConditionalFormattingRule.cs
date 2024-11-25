@@ -17,10 +17,10 @@
  * ====================================================================
  */
 
-namespace NPOI.SS.UserModel
-{
-    using System;
+using System;
 
+namespace BetListNPOI.SS.UserModel
+{
     /**
      * Represents a description of a conditional formatting rule
      *

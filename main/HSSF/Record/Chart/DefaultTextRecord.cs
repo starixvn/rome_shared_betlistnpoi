@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    using System.Text;
-    using System;
-
-    using NPOI.Util;
-
     /// <summary>
     /// specifies the text elements that are formatted using the position and appearance information 
     /// specified by the Text record immediately following this record.

@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using System;
+using System.Collections;
+
+namespace BetListNPOI.HPSF
 {
-    using System;
-    using System.Collections;
-
-
     /// <summary>
     /// Provides various static utility methods.
     /// @author Rainer Klute (klute@rainer-klute.de)

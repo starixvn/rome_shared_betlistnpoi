@@ -1,11 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;net6.0</TargetFrameworks>
-    <RootNamespace>NPOI</RootNamespace>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\npoi.snk</AssemblyOriginatorKeyFile>
-    <OutputPath>..\solution\$(Configuration)\</OutputPath>
+    <TargetFrameworks>net472;net8.0;netstandard2.0;net6.0</TargetFrameworks>
+    <RootNamespace>BetListNPOI</RootNamespace>
+    <AssemblyName>BetListNPOI</AssemblyName>
+    <LangVersion>13.0</LangVersion>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Version>2.7.2.1</Version>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>BetListNPOI</Title>
+    <Description>BetListNPOI</Description>
+    <PackageTags>BetListNPOI</PackageTags>
+    <PackageId>BetListNPOI</PackageId>
+    <Authors>Jacob</Authors>
+    <Company>Nexdev</Company>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,18 +23,20 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Enums.NET" />
-    <PackageReference Include="ExtendedNumerics.BigDecimal" />
-    <PackageReference Include="MathNet.Numerics.Signed" />
-    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" />
-    <PackageReference Include="BouncyCastle.Cryptography" />
-    <PackageReference Include="SharpZipLib" />
-    <PackageReference Include="SixLabors.Fonts" />
-    <PackageReference Include="SixLabors.ImageSharp" />
+    <PackageReference Include="Enums.NET" Version="5.0.0" />
+    <PackageReference Include="ExtendedNumerics.BigDecimal" Version="3000.0.1.312" />
+    <PackageReference Include="MathNet.Numerics.Signed" Version="5.0.0"/>
+    <PackageReference Include="Microsoft.IO.RecyclableMemoryStream" Version="3.0.1"/>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.4.0" />
+    <PackageReference Include="SharpZipLib" Version="1.4.2"/>
+    <PackageReference Include="SixLabors.Fonts" Version="1.0.1"/>
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.9"/>
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net472' ">
     <Reference Include="System.Configuration" />
   </ItemGroup>
+
+
 
 </Project>

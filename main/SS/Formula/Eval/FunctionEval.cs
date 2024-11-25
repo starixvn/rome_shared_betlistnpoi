@@ -19,17 +19,20 @@
  *
  */
 
-using NPOI.SS.Formula.Atp;
-
-namespace NPOI.SS.Formula.Eval
+using BetListNPOI.SS.Formula.Atp;
+using BetListNPOI.SS.Formula.Function;
+using BetListNPOI.SS.Formula.Functions;
+using BetListNPOI.SS.Formula.Functions.Boolean;
+using BetListNPOI.SS.Formula.Functions.Logical;
+using BetListNPOI.SS.Formula.Functions.Matrix;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using BetListNPOI.SS.Formula.Functions.Text;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using Index = BetListNPOI.SS.Formula.Functions.Index;
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using System;
-    using NPOI.SS.Formula.Functions;
-    using NPOI.SS.Formula.Function;
-    using System.Collections.Generic;
-    using System.Collections.ObjectModel;
-    using Index = NPOI.SS.Formula.Functions.Index;
-
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      *  
@@ -59,7 +62,7 @@ namespace NPOI.SS.Formula.Eval
             /** 255 */
             public const int EXTERNAL_FUNC = FunctionMetadataRegistry.FUNCTION_INDEX_EXTERNAL;
         }
-        protected static Function[] functions = ProduceFunctions();
+        protected static Functions.Function[] functions = ProduceFunctions();
 
         // fix warning CS0169 "never used": private static Hashtable freeRefFunctionsByIdMap;
         private static FunctionMetadataRegistry _instance;
@@ -74,7 +77,7 @@ namespace NPOI.SS.Formula.Eval
         }
 
 
-        public static Function GetBasicFunction(int functionIndex)
+        public static Functions.Function GetBasicFunction(int functionIndex)
         {
             // check for 'free ref' functions first
             switch (functionIndex)
@@ -84,7 +87,7 @@ namespace NPOI.SS.Formula.Eval
                     return null;
             }
             // else - must be plain function
-            Function result = functions[functionIndex];
+            Functions.Function result = functions[functionIndex];
             if (result == null)
             {
                 throw new NotImplementedException("FuncIx=" + functionIndex);
@@ -94,9 +97,9 @@ namespace NPOI.SS.Formula.Eval
         /**
          * @see https://www.openoffice.org/sc/excelfileformat.pdf
          */
-        private static Function[] ProduceFunctions()
+        private static Functions.Function[] ProduceFunctions()
         {
-            Function[] retval = new Function[368];
+            Functions.Function[] retval = new Functions.Function[368];
             retval[0] = new Count(); // COUNT
             retval[FunctionID.IF] = new IfFunc(); //nominally 1
             retval[2] = LogicalFunction.ISNA; // IsNA
@@ -126,7 +129,7 @@ namespace NPOI.SS.Formula.Eval
             retval[26] = NumericFunction.SIGN; // SIGN
             retval[27] = NumericFunction.ROUND; // ROUND
             retval[28] = new Lookup(); // LOOKUP
-            retval[29] = new NPOI.SS.Formula.Functions.Index(); // INDEX
+            retval[29] = new Index(); // INDEX
             retval[30] = new Rept(); // REPT
             retval[31] = TextFunction.MID; // MID
             retval[32] = TextFunction.LEN; // LEN
@@ -462,7 +465,7 @@ namespace NPOI.SS.Formula.Eval
      * @since 3.8 beta6
      */
 
-        public static void RegisterFunction(String name, Function func)
+        public static void RegisterFunction(String name, Functions.Function func)
         {
             FunctionMetadata metaData = FunctionMetadataRegistry.GetFunctionByName(name);
             if (metaData == null)
@@ -502,7 +505,7 @@ namespace NPOI.SS.Formula.Eval
             List<String> lst = new List<String>();
             for (int i = 0; i < functions.Length; i++)
             {
-                Function func = functions[i];
+                Functions.Function func = functions[i];
                 FunctionMetadata metaData = FunctionMetadataRegistry.GetFunctionByIndex(i);
                 if (func != null && !(func is NotImplementedFunction))
                 {
@@ -525,7 +528,7 @@ namespace NPOI.SS.Formula.Eval
             List<String> lst = new List<String>();
             for (int i = 0; i < functions.Length; i++)
             {
-                Function func = functions[i];
+                Functions.Function func = functions[i];
                 if (func != null && (func is NotImplementedFunction))
                 {
                     FunctionMetadata metaData = FunctionMetadataRegistry.GetFunctionByIndex(i);

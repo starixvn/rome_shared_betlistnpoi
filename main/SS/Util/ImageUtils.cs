@@ -14,15 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Util
-{
-    using System;
-    using System.IO;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
-    using SixLabors.ImageSharp;
 
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using SixLabors.ImageSharp;
+using System;
+using System.IO;
+
+namespace BetListNPOI.SS.Util
+{
     /**
      * @author Yegor Kozlov
      */

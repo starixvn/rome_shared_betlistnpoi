@@ -15,13 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using NPOI.Util;
-    using System.Text;
-    using System.Diagnostics;
+using BetListNPOI.Util;
+using System;
+using System.Diagnostics;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title: File Pass Record (0x002F) <p>
      *

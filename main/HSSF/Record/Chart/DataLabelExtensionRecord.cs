@@ -15,14 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Chart
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.Chart
 {
-    using System;
-    using System.IO;
-    using System.Text;
-    using NPOI.Util;
-
-
     /**
      * DATALABEXT - Chart Data Label Extension (0x086A) <br/>
      * 

@@ -17,12 +17,10 @@
  * ====================================================================
  */
 
-namespace NPOI.HSSF.Record.Cont
+using BetListNPOI.Util;
+
+namespace BetListNPOI.HSSF.Record.Cont
 {
-
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-
     /**
      * A decorated {@link RecordInputStream} that can read primitive data types
      * (short, int, long, etc.) spanned across a {@link ContinueRecord } boundary.

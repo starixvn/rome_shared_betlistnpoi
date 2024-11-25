@@ -15,19 +15,18 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Model;
-    using NPOI.SS.Formula;
-    using System.Collections.Generic;
-    using NPOI.SS.Util;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.Util;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record.Aggregates
+{
     /// <summary>
     /// 
     /// </summary>

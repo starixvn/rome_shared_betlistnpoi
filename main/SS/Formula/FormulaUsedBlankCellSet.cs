@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.SS.Util;
-
     public class BookSheetKey
     {
 

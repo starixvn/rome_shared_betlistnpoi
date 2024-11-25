@@ -16,15 +16,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.DDF
 {
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
-    using System.Collections.Generic;
-
-
     /// <summary>
     /// Escher container records store other escher records as children.
     /// The container records themselves never store any information beyond

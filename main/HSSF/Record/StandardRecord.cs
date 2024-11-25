@@ -15,12 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using NPOI.Util;
-
-
     /**
      * Subclasses of this class (the majority of BIFF records) are non-continuable.  This allows for
      * some simplification of serialization logic

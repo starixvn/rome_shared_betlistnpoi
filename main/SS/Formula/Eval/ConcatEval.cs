@@ -15,18 +15,19 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Eval
+using BetListNPOI.SS.Formula.Functions;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.Eval
 {
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula.Functions;
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;
      *  
      */
     public class ConcatEval : Fixed2ArgFunction
     {
-        public static Function instance = new ConcatEval();
+        public static Functions.Function instance = new ConcatEval();
 
         private ConcatEval()
         {

@@ -17,10 +17,11 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
-{
-    using NPOI.Util;
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.Util;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Handles the task of deserializing a SST string.  The two main entry points are
      *

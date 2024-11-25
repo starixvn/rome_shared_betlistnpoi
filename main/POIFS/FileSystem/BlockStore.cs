@@ -16,12 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.FileSystem
-{
-    using System;
-    using NPOI.POIFS.Storage;
-    using NPOI.Util;
+using BetListNPOI.POIFS.Storage;
+using BetListNPOI.Util;
+using System;
 
+namespace BetListNPOI.POIFS.FileSystem
+{
     /// <summary>
     /// This abstract class describes a way to read, store, chain
     /// and free a series of blocks (be they Big or Small ones)

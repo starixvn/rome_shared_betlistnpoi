@@ -14,18 +14,16 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Format
+
+using BetListNPOI.HSSF.Util;
+using SixLabors.ImageSharp;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
+
+namespace BetListNPOI.SS.Format
 {
-    using System;
-
-    using NPOI.HSSF.Util;
-    using System.Collections.Generic;
-    using System.Collections;
-    using System.Text.RegularExpressions;
-    using System.Text;
-    using SixLabors.ImageSharp;
-    using NPOI.Util;
-
     /**
      * Objects of this class represent a single part of a cell format expression.
      * Each cell can have up to four of these for positive, zero, negative, and text

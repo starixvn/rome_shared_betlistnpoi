@@ -1,10 +1,8 @@
-﻿using MathNet.Numerics.Distributions;
-using NPOI.SS.Formula.Eval;
+﻿using BetListNPOI.SS.Formula.Eval;
+using MathNet.Numerics.Distributions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NPOI.SS.Formula.Functions
+namespace BetListNPOI.SS.Formula.Functions
 {
     public class TDist : Fixed3ArgFunction, FreeRefFunction
     {

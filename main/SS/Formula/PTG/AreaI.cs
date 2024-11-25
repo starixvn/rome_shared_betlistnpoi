@@ -14,9 +14,11 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.SS.Formula.PTG
+
+using System;
+
+namespace BetListNPOI.SS.Formula.PTG
 {
-    using System;
     /**
      * Common interface for AreaPtg and Area3DPtg, and their
      *  child classes.

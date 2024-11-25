@@ -15,30 +15,29 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Aggregates;
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.POIFS.Crypt;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.SS;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.Udf;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.IO;
-    using System.Reflection;
-    using System.Security.Cryptography;
-    using System.Text;
-    using NPOI.DDF;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.SS;
-    using NPOI.SS.Formula;
-    using NPOI.SS.Formula.UDF;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.Util;
-
-
     /// <summary>
     /// High level representation of a workbook.  This is the first object most users
     /// will construct whether they are reading or writing a workbook.  It is also the
@@ -113,7 +112,7 @@ namespace NPOI.HSSF.UserModel
 
         //private static POILogger log = POILogFactory.GetLogger(typeof(HSSFWorkbook));
 
-        public NPOI.SS.UserModel.ICreationHelper GetCreationHelper()
+        public ICreationHelper GetCreationHelper()
         {
             return new HSSFCreationHelper(this);
         }
@@ -121,7 +120,7 @@ namespace NPOI.HSSF.UserModel
         /// <summary>
         /// Totals the sizes of all sheet records and eventually serializes them
         /// </summary>
-        private class SheetRecordCollector : NPOI.HSSF.Record.Aggregates.RecordVisitor,IDisposable
+        private class SheetRecordCollector : RecordVisitor,IDisposable
         {
 
             private ArrayList _list;
@@ -139,7 +138,7 @@ namespace NPOI.HSSF.UserModel
                     return _totalSize;
                 }
             }
-            public void VisitRecord(Record r)
+            public void VisitRecord(Record.Record r)
             {
                 _list.Add(r);
                 _totalSize += r.RecordSize;
@@ -148,7 +147,7 @@ namespace NPOI.HSSF.UserModel
             {
                 int result = 0;
                 int nRecs = _list.Count;
-                foreach (Record rec in _list)
+                foreach (Record.Record rec in _list)
                 {
                     result += rec.Serialize(offset + result, data);
                 }
@@ -320,7 +319,7 @@ namespace NPOI.HSSF.UserModel
             Stream stream = directory.CreatePOIFSDocumentReader(workbookName);
 
 
-            List<Record> records = RecordFactory.CreateRecords(stream);
+            List<Record.Record> records = RecordFactory.CreateRecords(stream);
 
             workbook = InternalWorkbook.CreateWorkbook(records);
             SetPropertiesFromWorkbook(workbook);
@@ -405,7 +404,7 @@ namespace NPOI.HSSF.UserModel
             //    log.Log(POILogger.DEBUG, "ConvertLabelRecords called");
             for (int k = offset; k < records.Count; k++)
             {
-                Record rec = (Record)records[k];
+                Record.Record rec = (Record.Record)records[k];
 
                 if (rec.Sid == LabelRecord.sid)
                 {
@@ -427,14 +426,14 @@ namespace NPOI.HSSF.UserModel
             //    log.Log(POILogger.DEBUG, "ConvertLabelRecords exit");
         }
         [NonSerialized]
-        private NPOI.SS.UserModel.MissingCellPolicy missingCellPolicy = NPOI.SS.UserModel.MissingCellPolicy.RETURN_NULL_AND_BLANK;
+        private MissingCellPolicy missingCellPolicy = MissingCellPolicy.RETURN_NULL_AND_BLANK;
         /// <summary>
         /// Retrieves the current policy on what to do when
         /// getting missing or blank cells from a row.
         /// The default is to return blank and null cells.
         /// </summary>
         /// <value>The missing cell policy.</value>
-        public NPOI.SS.UserModel.MissingCellPolicy MissingCellPolicy
+        public MissingCellPolicy MissingCellPolicy
         {
             get { return missingCellPolicy; }
             set { this.missingCellPolicy = value; }
@@ -982,7 +981,7 @@ namespace NPOI.HSSF.UserModel
         ///</summary>
         /// <param name="index">index of the sheet number (0-based)</param>
         /// <returns>HSSFSheet at the provided index</returns>
-        public NPOI.SS.UserModel.ISheet GetSheetAt(int index)
+        public ISheet GetSheetAt(int index)
         {
             return (HSSFSheet)_sheets[index];
         }
@@ -992,7 +991,7 @@ namespace NPOI.HSSF.UserModel
         /// </summary>
         /// <param name="name">name of the sheet</param>
         /// <returns>HSSFSheet with the name provided or null if it does not exist</returns>
-        public NPOI.SS.UserModel.ISheet GetSheet(String name)
+        public ISheet GetSheet(String name)
         {
             HSSFSheet retval = null;
 
@@ -1148,7 +1147,7 @@ namespace NPOI.HSSF.UserModel
         /// Create a new Font and Add it to the workbook's font table
         /// </summary>
         /// <returns>new font object</returns>
-        public NPOI.SS.UserModel.IFont CreateFont()
+        public IFont CreateFont()
         {
             FontRecord font = workbook.CreateNewFont();
             short fontindex = (short)(NumberOfFonts - 1);
@@ -1186,7 +1185,7 @@ namespace NPOI.HSSF.UserModel
         /// <param name="underline">The underline.</param>
         /// <returns></returns>
         [Obsolete("deprecated 3.15 beta 2. Use {@link #findFont(boolean, short, short, String, boolean, boolean, short, byte)} instead.")]
-        public NPOI.SS.UserModel.IFont FindFont(short boldWeight, short color, short fontHeight,
+        public IFont FindFont(short boldWeight, short color, short fontHeight,
                          String name, bool italic, bool strikeout,
                          FontSuperScript typeOffset, FontUnderlineType underline)
         {
@@ -1197,7 +1196,7 @@ namespace NPOI.HSSF.UserModel
                 if (i == 4)
                     continue;
 
-                NPOI.SS.UserModel.IFont hssfFont = GetFontAt(i);
+                IFont hssfFont = GetFontAt(i);
                 if (hssfFont.Boldweight == boldWeight
                         && hssfFont.Color == color
                         && hssfFont.FontHeight == fontHeight
@@ -1753,7 +1752,7 @@ namespace NPOI.HSSF.UserModel
         /// Creates a new named range and Add it to the model
         /// </summary>
         /// <returns>named range high level</returns>
-        public NPOI.SS.UserModel.IName CreateName()
+        public IName CreateName()
         {
             NameRecord nameRecord = workbook.CreateName();
 
@@ -1822,7 +1821,7 @@ namespace NPOI.HSSF.UserModel
         /// Creates the instance of HSSFDataFormat for this workbook.
         /// </summary>
         /// <returns>the HSSFDataFormat object</returns>
-        public NPOI.SS.UserModel.IDataFormat CreateDataFormat()
+        public IDataFormat CreateDataFormat()
         {
             if (formatter == null)
                 formatter = new HSSFDataFormat(workbook);
@@ -1925,7 +1924,7 @@ namespace NPOI.HSSF.UserModel
         /// <param name="format">The format of the picture.  One of 
         /// PictureType.</param>
         /// <returns>the index to this picture (1 based).</returns>
-        public int AddPicture(byte[] pictureData, NPOI.SS.UserModel.PictureType format)
+        public int AddPicture(byte[] pictureData, PictureType format)
         {
             InitDrawings();
 
@@ -2025,7 +2024,7 @@ namespace NPOI.HSSF.UserModel
         {
             // The drawing Group record always exists at the top level, so we won't need to do this recursively.
             List<HSSFPictureData> pictures = new List<HSSFPictureData>();
-            foreach (Record r in workbook.Records)
+            foreach (Record.Record r in workbook.Records)
             {
                 if (r is AbstractEscherHolderRecord) {
                     ((AbstractEscherHolderRecord)r).Decode();

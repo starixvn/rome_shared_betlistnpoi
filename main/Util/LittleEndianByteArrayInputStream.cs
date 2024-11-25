@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.Util
-{
-    using System;
+using System;
 
+namespace BetListNPOI.Util
+{
     /// <summary>
-    /// Adapts a plain byte array to <see cref="T:NPOI.Util.ILittleEndianInput"/>
+    /// Adapts a plain byte array to <see cref="T:BetListNPOI.Util.ILittleEndianInput"/>
     /// </summary>
     /// <remarks>@author Josh Micich</remarks>
     public class LittleEndianByteArrayInputStream : ILittleEndianInput

@@ -15,15 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Aggregates
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.Record.Aggregates
 {
-
-    using System;
-    using System.Collections.Generic;
-    using NPOI.HSSF.Model;
-    using NPOI.HSSF.Record;
-
-    using NPOI.SS.Util;
     /**
      * 
      * @author Josh Micich

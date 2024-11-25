@@ -15,17 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Util
+using BetListNPOI.SS.UserModel;
+using SixLabors.Fonts;
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+
+namespace BetListNPOI.SS.Util
 {
-    using System;
-
-    using NPOI.SS.UserModel;
-    using System.Collections.Concurrent;
-    using System.Collections.Generic;
-    using SixLabors.Fonts;
-    using System.Linq;
-    using System.Globalization;
-
     /**
      * Helper methods for when working with Usermodel sheets
      *

@@ -17,16 +17,12 @@
 ==================================================================== */
 
 
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
-
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-
-
     /**
      * The area record is used to define a area chart.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or

@@ -25,13 +25,13 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Text;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// A property in a {@link Section} of a {@link PropertySet}.
     /// The property's ID gives the property a meaning

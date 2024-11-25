@@ -15,18 +15,18 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using NPOI.HSSF.Model;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula;
-    using NPOI.SS.UserModel;
-    using System.Text;
-    using NPOI.SS.Util;
-    using System.Globalization;
-using NPOI.HSSF.Record;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using System;
+using System.Globalization;
+using System.Text;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /**
      * 
      * @author Josh Micich

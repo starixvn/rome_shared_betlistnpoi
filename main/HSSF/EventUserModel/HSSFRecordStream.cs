@@ -14,13 +14,13 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.HSSF.EventUserModel
+
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.Util;
+using System.Collections;
+
+namespace BetListNPOI.HSSF.EventUserModel
 {
-    using System.Collections;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-
-
     /// <summary>
     /// A stream based way to Get at complete records, with
     /// as low a memory footprint as possible.
@@ -54,11 +54,11 @@ namespace NPOI.HSSF.EventUserModel
          * The next record to return, which may need to have its
          *  continue records passed to it before we do
          */
-        private Record rec = null;
+        private Record.Record rec = null;
         /**
          * The most recent record that we gave to the user
          */
-        private Record lastRec = null;
+        private Record.Record lastRec = null;
         /**
          * The most recent DrawingRecord seen
          */
@@ -74,9 +74,9 @@ namespace NPOI.HSSF.EventUserModel
         /// stream, or null if there are no more.
         /// </summary>
         /// <returns></returns>
-        public Record NextRecord()
+        public Record.Record NextRecord()
         {
-            Record r = null;
+            Record.Record r = null;
 
             // Loop Until we Get something
             while (r == null && !complete)
@@ -103,11 +103,11 @@ namespace NPOI.HSSF.EventUserModel
         /// If not, returns null;
         /// </summary>
         /// <returns></returns>
-        private Record GetBonusRecord()
+        private Record.Record GetBonusRecord()
         {
             if (bonusRecords != null)
             {
-                Record r = (Record)bonusRecords[0];
+                Record.Record r = (Record.Record)bonusRecords[0];
                 bonusRecords.RemoveAt(0);
 
                 if (bonusRecords.Count == 0)
@@ -125,9 +125,9 @@ namespace NPOI.HSSF.EventUserModel
         /// suitable for returning (eg was a continue record).
         /// </summary>
         /// <returns></returns>
-        private Record GetNextRecord()
+        private Record.Record GetNextRecord()
         {
-            Record toReturn = null;
+            Record.Record toReturn = null;
 
             if (in1.HasNextRecord)
             {
@@ -166,7 +166,7 @@ namespace NPOI.HSSF.EventUserModel
                 if (sid != ContinueRecord.sid)
                 {
                     //Console.WriteLine("creating "+sid);
-                    Record[] recs = RecordFactory.CreateRecord(in1);
+                    Record.Record[] recs = RecordFactory.CreateRecord(in1);
 
                     // We know that the multiple record situations
                     //  don't contain continue records, so just
@@ -193,7 +193,7 @@ namespace NPOI.HSSF.EventUserModel
                     // However, in a few cases, there Is a gap between a record at
                     //  its Continue, so we have to handle them specially
                     // This logic Is much like in RecordFactory.CreateRecords()
-                    Record[] recs = RecordFactory.CreateRecord(in1);
+                    Record.Record[] recs = RecordFactory.CreateRecord(in1);
                     ContinueRecord crec = (ContinueRecord)recs[0];
                     if ((lastRec is ObjRecord) || (lastRec is TextObjectRecord))
                     {

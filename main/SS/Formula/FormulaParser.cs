@@ -15,24 +15,21 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.SS.Formula.Constant;
+using BetListNPOI.SS.Formula.Function;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using SixLabors.Fonts.Unicode;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Globalization;
-    using System.Text;
-    using System.Text.RegularExpressions;
-    using NPOI.HSSF.UserModel;
-    using NPOI.SS.Formula.Constant;
-    using NPOI.SS.Formula.Function;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Util;
-    using NPOI.Util;
-    using SixLabors.Fonts.Unicode;
-
     /// <summary>
     /// Specific exception thrown when a supplied formula does not Parse properly.
     ///  Primarily used by test cases when testing for specific parsing exceptions.

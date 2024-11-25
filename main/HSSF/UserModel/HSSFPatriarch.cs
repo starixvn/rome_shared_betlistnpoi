@@ -15,20 +15,20 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
-{
-    using System;
-    using System.Collections;
-    using NPOI.DDF;
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-    using NPOI.SS.UserModel;
-    using System.Collections.Generic;
-    using NPOI.HSSF.Model;
-    using NPOI.SS.Util;
-    using NPOI.POIFS.FileSystem;
-    using System.IO;
+using BetListNPOI.DDF;
+using BetListNPOI.HSSF.Model;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// The patriarch is the toplevel container for shapes in a sheet.  It does
     /// little other than act as a container for other shapes and Groups.

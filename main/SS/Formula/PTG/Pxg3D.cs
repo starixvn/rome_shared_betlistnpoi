@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.PTG
-{
-    using System;
+using System;
 
+namespace BetListNPOI.SS.Formula.PTG
+{
     /**
      * An XSSF only special kind of Ptg, which stores a range of 
      *  sheet / book references in string form.

@@ -14,11 +14,12 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
-namespace NPOI.HSSF.Record
-{
 
-    using System;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * DrawingRecord (0x00EC)<p/>
      *

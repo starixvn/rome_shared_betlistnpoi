@@ -16,14 +16,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
-    using System.Collections.Generic;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// This record is used whenever a escher record is encountered that
     /// we do not explicitly support.

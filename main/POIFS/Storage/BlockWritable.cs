@@ -27,8 +27,7 @@
 
 using System.IO;
 
-
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// An interface for persisting block storage of POIFS components.

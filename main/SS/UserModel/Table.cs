@@ -15,12 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+using System;
+using System.Text.RegularExpressions;
+
+namespace BetListNPOI.SS.UserModel
 {
-    using System;
-    using System.Text.RegularExpressions;
-
-
     public static class Table
     {
         /**

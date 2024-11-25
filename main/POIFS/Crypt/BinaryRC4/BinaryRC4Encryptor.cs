@@ -15,16 +15,14 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.BinaryRC4
+using BetListNPOI.POIFS.Crypt.Standard;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.IO;
+
+namespace BetListNPOI.POIFS.Crypt.BinaryRC4
 {
-    using System;
-    using System.IO;
-    using NPOI.POIFS.Crypt;
-
-    using NPOI.POIFS.Crypt.Standard;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
-
     public class BinaryRC4Encryptor : Encryptor
     {
 

@@ -27,7 +27,7 @@
 
 using System.Collections.Generic;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// A list of SmallDocumentBlocks instances, and methods to manage the list

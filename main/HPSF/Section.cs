@@ -25,14 +25,14 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
-    using NPOI.HPSF.Wellknown;
+using BetListNPOI.HPSF.Wellknown;
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+using System.Text;
 
+namespace BetListNPOI.HPSF
+{
     /// <summary>
     /// Represents a section in a {@link PropertySet}.
     /// @author Rainer Klute 

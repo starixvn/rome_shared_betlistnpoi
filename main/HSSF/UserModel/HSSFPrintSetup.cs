@@ -16,15 +16,16 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.UserModel
-{
-    using NPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.SS.UserModel;
 
+namespace BetListNPOI.HSSF.UserModel
+{
     /// <summary>
     /// Used to modify the print Setup.
     /// @author Shawn Laubach (slaubach at apache dot org)
     /// </summary>
-    public class HSSFPrintSetup :NPOI.SS.UserModel.IPrintSetup
+    public class HSSFPrintSetup :IPrintSetup
     {
         PrintSetupRecord printSetupRecord;
 
@@ -199,9 +200,9 @@ namespace NPOI.HSSF.UserModel
                 printSetupRecord.EndNote = value;
             }
         }
-        public NPOI.SS.UserModel.DisplayCellErrorType CellError
+        public DisplayCellErrorType CellError
         {
-            get { return (NPOI.SS.UserModel.DisplayCellErrorType)printSetupRecord.CellError; }
+            get { return (DisplayCellErrorType)printSetupRecord.CellError; }
             set { printSetupRecord.CellError=(short)value; }
         }
 

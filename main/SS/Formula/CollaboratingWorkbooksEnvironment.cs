@@ -14,15 +14,15 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI.SS.Formula
+
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Text;
-    using System.Collections;
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-
     [Serializable]
     public class WorkbookNotFoundException : Exception
     {

@@ -15,11 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.Util;
 using System;
-using NPOI.SS.Formula.Eval;
-using NPOI.Util;
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     /**
      * Parser for java dates.

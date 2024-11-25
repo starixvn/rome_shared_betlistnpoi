@@ -15,12 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System;
 using System.IO;
 using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     public class CodePageString
     {

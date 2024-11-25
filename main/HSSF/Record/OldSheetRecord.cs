@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.Text;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * Title:        Bound Sheet Record (aka BundleSheet) (0x0085) for BIFF 5<br/>
      * Description:  Defines a sheet within a workbook.  Basically stores the sheet name

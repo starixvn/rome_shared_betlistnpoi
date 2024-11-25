@@ -1,7 +1,7 @@
-﻿using System.IO;
-using NPOI.Util;
+﻿using BetListNPOI.Util;
+using System.IO;
 
-namespace NPOI.HPSF
+namespace BetListNPOI.HPSF
 {
     public class Filetime
     {

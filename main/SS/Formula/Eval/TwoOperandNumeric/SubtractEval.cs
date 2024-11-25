@@ -15,7 +15,7 @@
 * limitations Under the License.
 */
 
-namespace NPOI.SS.Formula.Eval
+namespace BetListNPOI.SS.Formula.Eval.TwoOperandNumeric
 {
     /**
      * @author Amol S. Deshmukh &lt; amolweb at ya hoo dot com &gt;

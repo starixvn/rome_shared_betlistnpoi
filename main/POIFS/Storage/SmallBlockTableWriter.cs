@@ -25,15 +25,14 @@
  * 
  * ==============================================================*/
 
-using System.IO;
+using BetListNPOI.POIFS.Common;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.POIFS.property;
 using System.Collections;
-
-using NPOI.POIFS.Common;
-using NPOI.POIFS.Properties;
-using NPOI.POIFS.FileSystem;
 using System.Collections.Generic;
+using System.IO;
 
-namespace NPOI.POIFS.Storage
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// This class implements reading the small document block list from an

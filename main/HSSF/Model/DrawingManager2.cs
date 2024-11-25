@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using NPOI.DDF;
-    using System.Collections;
+using BetListNPOI.DDF;
+using System.Collections;
 
+namespace BetListNPOI.HSSF.Model
+{
     /// <summary>
     /// Provides utilities to manage drawing Groups.
     /// </summary>

@@ -15,13 +15,13 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Model
-{
-    using System;
-    using System.Collections;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Chart;
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Chart;
+using System;
+using System.Collections;
 
+namespace BetListNPOI.HSSF.Model
+{
     /// <summary>
     /// Simplifies iteration over a sequence of Record objects.
     /// @author Josh Micich
@@ -63,14 +63,14 @@ namespace NPOI.HSSF.Model
         /// Gets the next record
         /// </summary>
         /// <returns></returns>
-        public Record GetNext()
+        public Record.Record GetNext()
         {
             if (_nextIndex >= _list.Count)
             {
                 throw new Exception("Attempt to Read past end of record stream");
             }
             _countRead++;
-            return (Record)_list[_nextIndex++];
+            return (Record.Record)_list[_nextIndex++];
         }
         /// <summary>
         /// Peeks the next sid.
@@ -82,7 +82,7 @@ namespace NPOI.HSSF.Model
             {
                 return -1;
             }
-            return ((Record)_list[_nextIndex]).Sid;
+            return ((Record.Record)_list[_nextIndex]).Sid;
         }
         /// <summary>
         /// Peeks the next class.
@@ -119,7 +119,7 @@ namespace NPOI.HSSF.Model
         {
             while (PeekNextSid() > -1)
             {
-                Record r = GetNext();
+                Record.Record r = GetNext();
                 if (r.Sid == BOFRecord.sid && (r as BOFRecord).Type == BOFRecordType.Chart)
                 {
                     _nextIndex--;

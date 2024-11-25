@@ -15,17 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using NPOI.Util;
-    using System.Text;
-
-
     /**
      * The FtCf structure specifies the clipboard format of the picture-type Obj record Containing this FtCf.
      */
-    public class FtCfSubRecord : SubRecord, ICloneable
+    public class FtCfSubRecord : SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x07;
         public const short length = 0x02;

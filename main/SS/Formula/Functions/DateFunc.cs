@@ -14,11 +14,13 @@
 * See the License for the specific language governing permissions and
 * limitations Under the License.
 */
-namespace NPOI.SS.Formula.Functions
-{
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
 
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions.Numeric;
+using BetListNPOI.SS.UserModel;
+
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * @author Pavel Krupets (pkrupets at palmtreebusiness dot com)
      */

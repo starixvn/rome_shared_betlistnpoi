@@ -16,18 +16,15 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.Util;
+using System;
+using System.Globalization;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using System.IO;
-
-    using NPOI.Util;
-
-    using NPOI.SS.Formula.PTG;
-    using System.Globalization;
-
     /**
      * A sub-record within the OBJ record which stores a reference to an object
      * stored in a Separate entry within the OLE2 compound file.
@@ -35,7 +32,7 @@ namespace NPOI.HSSF.Record
      * @author Daniel Noll
      */
     public class EmbeddedObjectRefSubRecord
-       : SubRecord, ICloneable
+       : SubRecord.SubRecord, ICloneable
     {
         private static POILogger logger = POILogFactory.GetLogger(typeof(EmbeddedObjectRefSubRecord));
         public const short sid = 0x9;

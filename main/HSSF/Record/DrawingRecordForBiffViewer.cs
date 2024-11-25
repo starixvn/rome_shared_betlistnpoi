@@ -15,11 +15,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
-{
-    using System;
-    using System.IO;
+using BetListNPOI.Util;
+using System;
+using System.IO;
 
+namespace BetListNPOI.HSSF.Record
+{
     /**
      * This Is purely for the biff viewer.  During normal operations we don't want
      * to be seeing this.
@@ -48,7 +49,7 @@ namespace NPOI.HSSF.Record
         private static RecordInputStream ConvertToInputStream(DrawingRecord r)
         {
             byte[] data = r.Serialize();
-            using (MemoryStream ms = NPOI.Util.RecyclableMemory.GetStream(data))
+            using (MemoryStream ms = RecyclableMemory.GetStream(data))
             {
                 RecordInputStream rinp = new RecordInputStream(ms);
                 rinp.NextRecord();

@@ -15,15 +15,14 @@
   limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Format
+using BetListNPOI.SS.UserModel;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+
+namespace BetListNPOI.SS.Format
 {
-    using System;
-
-    using NPOI.SS.UserModel;
-    using System.Text.RegularExpressions;
-    using System.Collections.Generic;
-    using NPOI.Util;
-
     /**
      * Format a value according to the standard Excel behavior.  This "standard" is
      * not explicitly documented by Microsoft, so the behavior is determined by
@@ -218,7 +217,7 @@ namespace NPOI.SS.Format
         public virtual CellFormatResult Apply(Object value)
         {
             //if (value is Number) {
-            if (NPOI.Util.Number.IsNumber(value))
+            if (Number.IsNumber(value))
             {
                 double val ;
                 double.TryParse(value.ToString(), out val);
@@ -321,7 +320,7 @@ namespace NPOI.SS.Format
         private CellFormatPart GetApplicableFormatPart(Object value)
         {
             //if (value is Number) {
-            if (NPOI.Util.Number.IsNumber(value))
+            if (Number.IsNumber(value))
             {
                 double val;
                 double.TryParse(value.ToString(), out val);

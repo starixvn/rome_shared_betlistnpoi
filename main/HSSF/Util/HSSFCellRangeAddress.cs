@@ -14,12 +14,12 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Util
-{
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.Util;
+using System.Collections;
 
-    using NPOI.Util;
-    using System.Collections;
-    using NPOI.HSSF.Record;
+namespace BetListNPOI.HSSF.Util
+{
     /**
      * <p>Title: HSSFCellRangeAddress</p>
      * <p>Description:

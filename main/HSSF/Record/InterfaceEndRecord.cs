@@ -17,12 +17,11 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using NPOI.Util;
-
-
     /**
      * Title: Interface End Record
      * Description: Shows where the Interface Records end (MMS)

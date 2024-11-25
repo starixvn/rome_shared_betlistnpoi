@@ -15,11 +15,11 @@
    limitations Under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System;
 using System.Text;
-using NPOI.Util;
 
-namespace NPOI.HSSF.Record
+namespace BetListNPOI.HSSF.Record
 {
     /**
  * DConRef records specify a range in a workbook (internal or external) that serves as a data source

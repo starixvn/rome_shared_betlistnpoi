@@ -15,9 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
 using System.IO;
-using NPOI.Util;
-namespace NPOI.POIFS.NIO
+
+namespace BetListNPOI.POIFS.NIO
 {
     /// <summary>
     /// Common definition of how we read and write bytes

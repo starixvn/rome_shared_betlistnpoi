@@ -14,10 +14,11 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 ==================================================================== */
-namespace NPOI
-{
-    using System;
 
+using System;
+
+namespace BetListNPOI
+{
     /**
      * Base class of all the exceptions that POI throws in the event
      * that it's given a file that isn't supported

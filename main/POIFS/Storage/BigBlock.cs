@@ -25,9 +25,10 @@
  * 
  * ==============================================================*/
 
+using BetListNPOI.POIFS.Common;
 using System.IO;
-using NPOI.POIFS.Common;
-namespace NPOI.POIFS.Storage
+
+namespace BetListNPOI.POIFS.Storage
 {
     /// <summary>
     /// Abstract base class of all POIFS block storage classes. All

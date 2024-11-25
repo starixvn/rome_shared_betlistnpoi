@@ -15,10 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt
-{
-    using System;
+using System;
 
+namespace BetListNPOI.POIFS.Crypt
+{
     public class CipherProvider
     {
         public static readonly CipherProvider rc4 = new CipherProvider("RC4", 1,

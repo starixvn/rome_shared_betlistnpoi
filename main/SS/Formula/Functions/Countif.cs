@@ -16,15 +16,15 @@
 */
 
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using System.Text;
-    using System.Text.RegularExpressions;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
-    using System.Globalization;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation for the function COUNTIF<p/>
      *
@@ -339,7 +339,7 @@ namespace NPOI.SS.Formula.Functions
                         return false;
                     }
                     StringEval se = (StringEval)x;
-                    Boolean? val = ParseBoolean(se.StringValue);
+                    System.Boolean? val = ParseBoolean(se.StringValue);
                     if (val == null)
                     {
                         // x is text that is not a boolean

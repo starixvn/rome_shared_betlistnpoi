@@ -15,17 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.UserModel
+using BetListNPOI.HSSF.Record;
+using BetListNPOI.HSSF.Record.Chart;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.HSSF.UserModel
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using NPOI.HSSF.Record;
-    using NPOI.HSSF.Record.Chart;
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Util;
-
-
     public enum HSSFChartType : int
     {
         Area = 0x101A,
@@ -202,11 +201,11 @@ namespace NPOI.HSSF.UserModel
                 {
                     lastChart.valueRanges.Add((ValueRangeRecord)r);
                 }
-                else if (r is Record)
+                else if (r is Record.Record)
                 {
                     if (lastChart != null)
                     {
-                        Record record = (Record)r;
+                        Record.Record record = (Record.Record)r;
                         foreach (int type in Enum.GetValues(typeof(HSSFChartType)))
                         {
                             if (type == 0)
@@ -1283,7 +1282,7 @@ namespace NPOI.HSSF.UserModel
             foreach (RecordBase record in seriesTemplate)
             {
 
-                Record newRecord = null;
+                Record.Record newRecord = null;
 
                 if (record is BeginRecord)
                 {
@@ -1326,9 +1325,9 @@ namespace NPOI.HSSF.UserModel
                     }
                     newRecord = seriesTextRecord;
                 }
-                else if (record is Record)
+                else if (record is Record.Record)
                 {
-                    newRecord = (Record)((Record)record).Clone();
+                    newRecord = (Record.Record)((Record.Record)record).Clone();
                 }
 
                 if (newRecord != null)

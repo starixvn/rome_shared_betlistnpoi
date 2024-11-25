@@ -17,14 +17,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-    using System;
-    using System.Text;
-
-
     /**
      * The end data record is used to denote the end of the subrecords.
      * NOTE: This source is automatically generated please do not modify this file.  Either subclass or
@@ -33,7 +31,7 @@ namespace NPOI.HSSF.Record
      * @author Glen Stampoultzis (glens at apache.org)
      */
     public class EndSubRecord
-       : SubRecord, ICloneable
+       : SubRecord.SubRecord, ICloneable
     {
         public const short sid = 0x00;
         private const int ENCODED_SIZE = 0;

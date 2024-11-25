@@ -16,13 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using System.Collections.Generic;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// Escher array properties are the most wierd construction ever invented
     /// with all sorts of special cases.  I'm hopeful I've got them all.

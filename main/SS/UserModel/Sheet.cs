@@ -15,16 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.UserModel
+using BetListNPOI.SS.Util;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BetListNPOI.SS.UserModel
 {
-
-    using System;
-    using System.Collections.Generic;
-
-    using NPOI.SS.Util;
-    using System.Collections;
-    using NPOI.Util;
-
     /// <summary>
     /// Indicate the position of the margin. One of left, right, top and bottom.
     /// </summary>
@@ -225,7 +222,7 @@ namespace NPOI.SS.UserModel
         /// </summary>
         /// <param name="region">(rowfrom/colfrom-rowto/colto) to merge.</param>
         /// <returns>index of this region</returns>
-        int AddMergedRegion(NPOI.SS.Util.CellRangeAddress region);
+        int AddMergedRegion(CellRangeAddress region);
 
         /// <summary>
         /// Adds a merged region of cells (hence those cells form one).
@@ -292,7 +289,7 @@ namespace NPOI.SS.UserModel
         /// <returns>
         /// an iterator of the PHYSICAL rows.  Meaning the 3rd element may not
         /// be the third row if say for instance the second row is undefined.
-        /// Call <see cref="NPOI.SS.UserModel.IRow.RowNum"/> on each row 
+        /// Call <see cref="IRow.RowNum"/> on each row 
         /// if you care which one it is.
         /// </returns>
         IEnumerator GetRowEnumerator();

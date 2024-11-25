@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class Number
     {

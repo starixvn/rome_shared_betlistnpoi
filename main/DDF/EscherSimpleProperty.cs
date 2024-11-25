@@ -16,13 +16,12 @@
    limitations under the License.
 ==================================================================== */
 
+using BetListNPOI.Util;
+using System;
 using System.Text;
 
-namespace NPOI.DDF
+namespace BetListNPOI.DDF
 {
-    using System;
-    using NPOI.Util;
-
     /// <summary>
     /// A simple property is of fixed Length and as a property number in Addition
     /// to a 32-bit value.  Properties that can't be stored in only 32-bits are

@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
+using BetListNPOI.Util;
+using System;
+using System.Collections;
+
+namespace BetListNPOI.SS.Formula
 {
-
-    using System;
-    using System.Collections;
-    using NPOI.Util;
-
     public class Loc
     {
 

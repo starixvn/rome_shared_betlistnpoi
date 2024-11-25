@@ -16,14 +16,12 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-
-    using System;
-    using System.Text;
-
     /**
      * Record for the right margin. * NOTE: This source was automatically generated. * @author Shawn Laubach (slaubach at apache dot org)
      */

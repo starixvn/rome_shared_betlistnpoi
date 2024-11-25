@@ -1,10 +1,8 @@
-﻿using NPOI.SS.Formula.Eval;
-using NPOI.SS.Formula.Functions;
+﻿using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Functions;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace NPOI.SS.Formula.Atp
+namespace BetListNPOI.SS.Formula.Atp
 {
     class XLookupFunction : FreeRefFunction, ArrayFunction
     {

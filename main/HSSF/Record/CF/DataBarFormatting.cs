@@ -15,14 +15,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.CF
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record.CF
 {
-    using System;
-    using System.Text;
-    using NPOI.HSSF.Record.Common;
-    using NPOI.Util;
-
-
     /**
      * Data Bar Conditional Formatting Rule Record.
      */

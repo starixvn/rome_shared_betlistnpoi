@@ -17,14 +17,13 @@
 ==================================================================== */
 
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using NPOI.Util;
-    using System;
-    using System.Text;
-    using System.Collections.Generic;
-
     /**
      * PaletteRecord - Supports custom palettes.
      * @author Andrew C. Oliver (acoliver at apache dot org)

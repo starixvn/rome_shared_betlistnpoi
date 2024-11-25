@@ -15,19 +15,17 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.POIFS.Crypt.CryptoAPI
+using BetListNPOI.HPSF;
+using BetListNPOI.POIFS.Crypt.Standard;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+
+namespace BetListNPOI.POIFS.Crypt.CryptoAPI
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Diagnostics;
-    using System.IO;
-    using NPOI.HPSF;
-
-    using NPOI.POIFS.Crypt;
-    using NPOI.POIFS.Crypt.Standard;
-    using NPOI.POIFS.FileSystem;
-    using NPOI.Util;
-
     public class CryptoAPIEncryptor : Encryptor
     {
         private CryptoAPIEncryptionInfoBuilder builder;

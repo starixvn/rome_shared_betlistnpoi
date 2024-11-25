@@ -15,13 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
-{
-    using System;
-    using System.Collections.Generic;
-    using NPOI.SS.UserModel;
-    using NPOI.Util;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Collections.Generic;
 
+namespace BetListNPOI.SS.Formula
+{
     /**
     * Common functionality across file formats for Evaluating formula cells.<p/>
     */

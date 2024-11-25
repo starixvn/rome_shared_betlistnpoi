@@ -15,12 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-    using System;
-
-    using NPOI.SS.Formula.Eval;
-
     /**
      * Interface specifying how an algorithm to be used by {@link DStarRunner} should look like.
      * Each implementing class should correspond to one of the D* functions.

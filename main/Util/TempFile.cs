@@ -1,10 +1,10 @@
 
-namespace NPOI.Util
-{
-    using System;
-    using System.IO;
-    using System.Threading;
+using System;
+using System.IO;
+using System.Threading;
 
+namespace BetListNPOI.Util
+{
     public class TempFile
     {
 

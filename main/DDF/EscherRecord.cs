@@ -16,13 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using NPOI.Util;
-    using System.Collections.Generic;
-    using System.Text;
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.Text;
 
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// The base abstract record from which all escher records are defined.  Subclasses will need
     /// to define methods for serialization/deserialization and for determining the record size.

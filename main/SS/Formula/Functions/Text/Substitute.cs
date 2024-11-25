@@ -18,12 +18,13 @@
  * Created on May 15, 2005
  *
  */
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using System.Text;
-    using NPOI.SS.Formula.Eval;
 
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Text;
+
+namespace BetListNPOI.SS.Formula.Functions.Text
+{
     /**
      * An implementation of the SUBSTITUTE function:
      * Substitutes text in a text string with new text, some number of times.

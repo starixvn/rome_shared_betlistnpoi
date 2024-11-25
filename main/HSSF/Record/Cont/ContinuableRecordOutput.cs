@@ -15,13 +15,11 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record.Cont
+using BetListNPOI.Util;
+using System;
+
+namespace BetListNPOI.HSSF.Record.Cont
 {
-    using System;
-
-    using NPOI.HSSF.Record;
-    using NPOI.Util;
-
     /**
      * An augmented {@link LittleEndianOutput} used for serialization of {@link ContinuableRecord}s.
      * This class keeps track of how much remaining space is available in the current BIFF record and

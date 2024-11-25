@@ -15,18 +15,16 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Extractor
+using BetListNPOI.HSSF.UserModel;
+using BetListNPOI.POIFS.FileSystem;
+using BetListNPOI.SS.Extractor;
+using BetListNPOI.SS.Formula.Eval;
+using BetListNPOI.SS.UserModel;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Extractor
 {
-    using System;
-    using System.Text;
-
-    using NPOI.HSSF.UserModel;
-    using NPOI.POIFS.FileSystem;
-    using NPOI;
-    using NPOI.SS.Formula.Eval;
-    using NPOI.SS.UserModel;
-    using NPOI.SS.Extractor;
-
     /// <summary>
     /// A text extractor for Excel files.
     /// Returns the textual content of the file, suitable for
@@ -266,7 +264,7 @@ namespace NPOI.HSSF.Extractor
                                 }
 
                                 // Output the comment, if requested and exists
-                                NPOI.SS.UserModel.IComment comment = cell.CellComment;
+                                IComment comment = cell.CellComment;
                                 if (includeCellComments && comment != null)
                                 {
                                     // Replace any newlines with spaces, otherwise it
@@ -305,7 +303,7 @@ namespace NPOI.HSSF.Extractor
         /// </summary>
         /// <param name="hf">The header or footer</param>
         /// <returns></returns>
-        public static String ExtractHeaderFooter(NPOI.SS.UserModel.IHeaderFooter hf)
+        public static String ExtractHeaderFooter(IHeaderFooter hf)
         {
             StringBuilder text = new StringBuilder();
 

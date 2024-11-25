@@ -25,12 +25,11 @@
  * 
  * ==============================================================*/
 
-namespace NPOI.HPSF
+using BetListNPOI.Util;
+using System.IO;
+
+namespace BetListNPOI.HPSF
 {
-    using System.IO;
-    using NPOI.Util;
-
-
     /// <summary>
     /// Adds writing capability To the {@link Property} class.
     /// Please be aware that this class' functionality will be merged into the

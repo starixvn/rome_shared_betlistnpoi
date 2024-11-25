@@ -15,12 +15,12 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
-    using System.Diagnostics;
+using BetListNPOI.SS.Formula.Eval;
+using System;
+using System.Diagnostics;
 
+namespace BetListNPOI.SS.Formula.Functions
+{
     /**
      * Implementation for the Excel function INDEX
      *

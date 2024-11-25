@@ -27,7 +27,7 @@
 
 using System;
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class LittleEndianConsts
     {

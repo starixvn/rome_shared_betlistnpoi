@@ -15,16 +15,14 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.Util;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-    using System;
-    using System.Text;
-    using NPOI.Util;
-
-    using System.IO;
-    using System.Collections.Generic;
-
-
     /**
      * The obj record is used to hold various graphic objects and controls.
      *
@@ -36,7 +34,7 @@ namespace NPOI.HSSF.Record
 	    private const int MAX_PAD_ALIGNMENT = 4;
 
         public const short sid = 0x5D;
-        private List<SubRecord> subrecords;
+        private List<SubRecord.SubRecord> subrecords;
         	/** used when POI has no idea what is going on */
 	    private byte[] _uninterpretedData;
     /**
@@ -50,7 +48,7 @@ namespace NPOI.HSSF.Record
 
         public ObjRecord()
         {
-            subrecords = new List<SubRecord>(2);
+            subrecords = new List<SubRecord.SubRecord>(2);
             // TODO - ensure 2 sub-records (ftCmo 15h, and ftEnd 00h) are always created
             _uninterpretedData = null;
         }
@@ -91,15 +89,15 @@ namespace NPOI.HSSF.Record
             //    String msg = "Unexpected length of subRecordData : " + HexDump.ToHex(subRecordData);
             //    throw new RecordFormatException(msg);
             //}
-            subrecords = new List<SubRecord>();
+            subrecords = new List<SubRecord.SubRecord>();
             using (MemoryStream bais = RecyclableMemory.GetStream(subRecordData))
             {
                 LittleEndianInputStream subRecStream = new LittleEndianInputStream(bais);
-                CommonObjectDataSubRecord cmo = (CommonObjectDataSubRecord)SubRecord.CreateSubRecord(subRecStream, 0);
+                CommonObjectDataSubRecord cmo = (CommonObjectDataSubRecord)SubRecord.SubRecord.CreateSubRecord(subRecStream, 0);
                 subrecords.Add(cmo);
                 while (true)
                 {
-                    SubRecord subRecord = SubRecord.CreateSubRecord(subRecStream, cmo.ObjectType);
+                    SubRecord.SubRecord subRecord = SubRecord.SubRecord.CreateSubRecord(subRecStream, cmo.ObjectType);
                     subrecords.Add(subRecord);
                     if (subRecord.IsTerminating)
                     {
@@ -158,7 +156,7 @@ namespace NPOI.HSSF.Record
             sb.Append("[OBJ]\n");
             for (int i = 0; i < subrecords.Count; i++)
             {
-                SubRecord record = subrecords[i];
+                SubRecord.SubRecord record = subrecords[i];
                 sb.Append("SUBRECORD: ").Append(record.ToString());
             }
             sb.Append("[/OBJ]\n");
@@ -179,7 +177,7 @@ namespace NPOI.HSSF.Record
             {
                 for (int i = 0; i < subrecords.Count; i++)
                 {
-                    SubRecord record = subrecords[i];
+                    SubRecord.SubRecord record = subrecords[i];
                     record.Serialize(out1);
                 }
                 int expectedEndIx = offset + dataSize;
@@ -210,7 +208,7 @@ namespace NPOI.HSSF.Record
                 int size = 0;
                 for (int i = subrecords.Count - 1; i >= 0; i--)
                 {
-                    SubRecord record = subrecords[i];
+                    SubRecord.SubRecord record = subrecords[i];
                     size += record.DataSize + 4;
                 }
                 if (_isPaddedToQuadByteMultiple)
@@ -236,7 +234,7 @@ namespace NPOI.HSSF.Record
             get { return sid; }
         }
 
-        public List<SubRecord> SubRecords
+        public List<SubRecord.SubRecord> SubRecords
         {
             get
             {
@@ -249,12 +247,12 @@ namespace NPOI.HSSF.Record
             subrecords.Clear();
         }
 
-        public void AddSubRecord(int index, SubRecord element)
+        public void AddSubRecord(int index, SubRecord.SubRecord element)
         {
             subrecords.Insert(index, element);
         }
 
-        public void AddSubRecord(SubRecord o)
+        public void AddSubRecord(SubRecord.SubRecord o)
         {
             subrecords.Add(o);
         }
@@ -265,8 +263,8 @@ namespace NPOI.HSSF.Record
 
             for (int i = 0; i < subrecords.Count; i++)
             {
-                SubRecord record = subrecords[i];
-                rec.AddSubRecord((SubRecord)record.Clone());
+                SubRecord.SubRecord record = subrecords[i];
+                rec.AddSubRecord((SubRecord.SubRecord)record.Clone());
             }
 
             return rec;

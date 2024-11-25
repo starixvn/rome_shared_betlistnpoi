@@ -1,7 +1,7 @@
-﻿using System.Text;
-using NPOI.Util;
+﻿using BetListNPOI.Util;
+using System.Text;
 
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     /// <summary>
     /// The Chart3d record specifies that the plot area of the chart group is rendered in a 3-D scene 
@@ -51,7 +51,7 @@ namespace NPOI.HSSF.Record.Chart
             get { return 14; }
         }
 
-        public override void Serialize(NPOI.Util.ILittleEndianOutput out1)
+        public override void Serialize(ILittleEndianOutput out1)
         {
             out1.WriteShort(field_1_anRot);
             out1.WriteShort(field_2_anElev);

@@ -15,11 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula.Functions
+using BetListNPOI.SS.Formula.Eval;
+
+namespace BetListNPOI.SS.Formula.Functions
 {
-
-    using NPOI.SS.Formula.Eval;
-
     /**
      * Implementation for the Excel function TIME
      *

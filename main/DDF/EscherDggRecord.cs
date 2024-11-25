@@ -16,15 +16,13 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.DDF
-{
-    using System;
-    using System.Text;
-    using System.Collections;
-    using NPOI.Util;
+using BetListNPOI.Util;
+using System;
 using System.Collections.Generic;
+using System.Text;
 
-
+namespace BetListNPOI.DDF
+{
     /// <summary>
     /// This record defines the drawing groups used for a particular sheet.
     /// </summary>

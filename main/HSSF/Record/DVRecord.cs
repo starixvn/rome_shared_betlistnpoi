@@ -14,20 +14,16 @@
    limitations Under the License.
 ==================================================================== */
 
-namespace NPOI.HSSF.Record
+using BetListNPOI.HSSF.Record.Common;
+using BetListNPOI.SS.Formula;
+using BetListNPOI.SS.Formula.PTG;
+using BetListNPOI.SS.Util;
+using BetListNPOI.Util;
+using System;
+using System.Text;
+
+namespace BetListNPOI.HSSF.Record
 {
-
-    using System;
-    using System.Text;
-    using NPOI.SS.Util;
-
-    using NPOI.Util;
-
-    using NPOI.SS.Formula.PTG;
-    using NPOI.SS.Formula;
-    
-
-
     /**
      * Title:        DATAVALIDATION Record (0x01BE)<p/>
      * Description:  This record stores data validation Settings and a list of cell ranges
@@ -56,11 +52,11 @@ namespace NPOI.HSSF.Record
         /** Not used - Excel seems to always write 0x3FE0 */
         private short _not_used_1 = 0x3FE0;
         /** Formula data for first condition (RPN token array without size field) */
-        private NPOI.SS.Formula.Formula _formula1;
+        private Formula _formula1;
         /** Not used - Excel seems to always write 0x0000 */
         private short _not_used_2 = 0x0000;
         /** Formula data for second condition (RPN token array without size field) */
-        private NPOI.SS.Formula.Formula _formula2;
+        private Formula _formula2;
         /** Cell range address list with all affected ranges */
         private CellRangeAddressList _regions;
 
@@ -126,8 +122,8 @@ namespace NPOI.HSSF.Record
             _promptText = ResolveTitleText(promptText);
             _errorTitle = ResolveTitleText(errorTitle);
             _errorText = ResolveTitleText(errorText);
-            _formula1 = NPOI.SS.Formula.Formula.Create(formula1);
-            _formula2 = NPOI.SS.Formula.Formula.Create(formula2);
+            _formula1 = Formula.Create(formula1);
+            _formula2 = Formula.Create(formula2);
             _regions = regions;
         }
 
@@ -150,13 +146,13 @@ namespace NPOI.HSSF.Record
             _not_used_1 = in1.ReadShort();
 
             //read first formula data condition
-            _formula1 = NPOI.SS.Formula.Formula.Read(field_size_first_formula, in1);
+            _formula1 = Formula.Read(field_size_first_formula, in1);
 
             int field_size_sec_formula = in1.ReadUShort();
             _not_used_2 = in1.ReadShort();
 
             //read sec formula data condition
-            _formula2 = NPOI.SS.Formula.Formula.Read(field_size_sec_formula, in1);
+            _formula2 = Formula.Read(field_size_sec_formula, in1);
 
             //read cell range address list with all affected ranges
             _regions = new CellRangeAddressList(in1);

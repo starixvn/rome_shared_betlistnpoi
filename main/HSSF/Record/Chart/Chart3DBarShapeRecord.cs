@@ -14,12 +14,12 @@
    See the License for the specific language governing permissions and
    limitations Under the License.
 ==================================================================== */
+
+using BetListNPOI.Util;
 using System;
 using System.Text;
 
-using NPOI.Util;
-
-namespace NPOI.HSSF.Record.Chart
+namespace BetListNPOI.HSSF.Record.Chart
 {
     public class Chart3DBarShapeRecord:StandardRecord
     {

@@ -16,7 +16,7 @@
 ==================================================================== */
 
 
-namespace NPOI.SS.UserModel
+namespace BetListNPOI.SS.UserModel
 {
     /// <summary>
     /// Common interface for anchors.

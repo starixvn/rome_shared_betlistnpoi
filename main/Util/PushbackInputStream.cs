@@ -26,12 +26,12 @@
  * ==============================================================*/
 
 
-namespace NPOI.Util
-{
-    using System;
-    using System.IO;
+using System;
+using System.IO;
 
-	public class PushbackInputStream : FilterInputStream
+namespace BetListNPOI.Util
+{
+    public class PushbackInputStream : FilterInputStream
     {
         protected byte[] buf;
         private int bufint = -1;

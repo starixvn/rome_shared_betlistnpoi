@@ -15,11 +15,10 @@
    limitations under the License.
 ==================================================================== */
 
-namespace NPOI.SS.Formula
-{
-    using System;
-    using NPOI.SS.Formula.Eval;
+using BetListNPOI.SS.Formula.Eval;
 
+namespace BetListNPOI.SS.Formula
+{
     /**
      * Optional Extension to the likes of {@link AreaEval} and 
      *  {@link NPOI.SS.Formula.Eval.AreaEvalBase},

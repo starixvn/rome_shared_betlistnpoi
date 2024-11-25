@@ -28,9 +28,11 @@
 
 using System;
 using System.Collections;
+#if NETFRAMEWORK
 using System.Configuration;
+#endif
 
-namespace NPOI.Util
+namespace BetListNPOI.Util
 {
     public class POILogFactory
     {

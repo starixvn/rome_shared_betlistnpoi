@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
-namespace NPOI.SS.UserModel.Drawing
+namespace BetListNPOI.SS.UserModel.Drawing
 {
     public static class OfficeArtProperties
     {
